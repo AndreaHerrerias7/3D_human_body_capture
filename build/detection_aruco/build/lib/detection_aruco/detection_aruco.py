@@ -62,16 +62,7 @@ class DrawAruco():
                 image = cv2.aruco.drawAxis(image, K, distorsion, rvecs_matrix, tvecs, marker_length)
 
         return image
-        """        axis = np.float32([[0,0,0], [0,marker_length,0], [marker_length,marker_length,0], [marker_length,0,0],
-                                [0,0,-marker_length],[0,marker_length,-marker_length],[marker_length,marker_length,-marker_length],[marker_length,0,-marker_length] ]).reshape(-1,3)
-            axisImgpts, _ = cv2.projectPoints(axis, R, t, k, distorsion)
-            axisImgpts = tuple(map(tuple, axisImgpts.reshape(8,2)))
-            # Draw axis lines
-            image = cv2.line(image, axisImgpts[0], axisImgpts[1], (255,0,0), 5)
-            image = cv2.line(image, axisImgpts[0], axisImgpts[2], (0,255,0), 5)
-            image = cv2.line(image, axisImgpts[0], axisImgpts[3], (0,0,255), 5)
-            return image
-        """
+
 
     
 class DetectionAruco(Node):
@@ -87,26 +78,35 @@ class DetectionAruco(Node):
         #                    (0., 0., 1.)))
         # self.distorsion = np.array((0.019135, -0.44869, 0.000693, -0.014817, 0.0))
 
-        # Parámetros cámara nueva
-        self.K = np.array([[613.957058, 0., 323.62420],
+        # camera matrix camera without sticker
+        self.K_1 = np.array([[739.901716, 0.000000, 348.296261],
+                           [0.000000, 730.526241, 193.897742],
+                           [0.000000, 0.000000, 1.000000]])
+
+        # distortion camera without sticker
+        self.distorsion_1 = np.array([0.251910, -0.443212, 0.005339, 0.024901, 0.000000])
+
+        # Parámetros cámara nueva (tiene la pegatina)
+        self.K_2 = np.array([[613.957058, 0., 323.62420],
                             [0., 618.575469, 216.459925],
                             [0., 0., 1.]])
-        self.distorsion = np.array([-0.083010, 0.161326, -0.007532, 0.000727, 0.0])
+        self.distorsion_2 = np.array([-0.083010, 0.161326, -0.007532, 0.000727, 0.0])
         
         self.R = np.eye(3)
         self.t = np.zeros((3, 1))
 
-        """ Parámetros Aruco"""
+
+        """ Parámetros Aruco opencv"""
         self.marker_length = 17.2
 
         """Parámetros Detector Aruco"""
-        self.arucoDict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_100)
+        self.arucoDict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_50)
         self.arucoParams = cv2.aruco.DetectorParameters_create()
         
         self.observations = [None, None] # cameras one and two
 
-        self.image_sub = self.create_subscription(Image, '/usb_cam_0/image_raw', self.on_camera1, 10)
-        self.image_sub = self.create_subscription(Image, '/usb_cam_1/image_raw', self.on_camera2, 10)
+        self.image_sub = self.create_subscription(Image, '/usb_cam_1/image_raw', self.on_camera1, 10)
+        self.image_sub = self.create_subscription(Image, '/usb_cam_2/image_raw', self.on_camera2, 10)
         self.publisher = self.create_publisher(Correspondences, '/detection_aruco/topic', 10)
 
         # timer to send info every 5 secs
@@ -118,12 +118,14 @@ class DetectionAruco(Node):
 
         # process image
         cv_image = self.br.imgmsg_to_cv2(image)
-        cv_image_bgr = cv2.cvtColor(cv_image, cv2.COLOR_YUV2BGR_YUYV)
+        cv_image_bgr = cv2.cvtColor(cv_image, cv2.COLOR_YUV2BGR_YUYV)  
+
 
         # initialize observation
         obs = CArucoObservation()
         obs.cam = 0
         obs.tstamp = image.header.stamp
+
 
         drawImage = DrawAruco()
 
@@ -136,7 +138,7 @@ class DetectionAruco(Node):
 
         cv_image_bgr = drawImage.drawMarker(cv_image_bgr, corners, ids)
         cv_image_bgr = drawImage.drawCenter(cv_image_bgr, corners, ids)
-        cv_image_bgr = drawImage.drawAxis(cv_image_bgr, ids, corners, self.K, self.distorsion, self.marker_length)
+        cv_image_bgr = drawImage.drawAxis(cv_image_bgr, ids, corners, self.K_1, self.distorsion_1, self.marker_length)
 
         cv2.imshow('Imagen 1', cv_image_bgr)
         cv2.waitKey(1)
@@ -153,7 +155,7 @@ class DetectionAruco(Node):
             for (markerCorner, markerID) in zip(corners, ids):
 
                 # Calcula la posición y orientación del marcador
-                rvecs, tvecs, markerPoints = cv2.aruco.estimatePoseSingleMarkers(markerCorner, self.marker_length, self.K, self.distorsion)
+                rvecs, tvecs, markerPoints = cv2.aruco.estimatePoseSingleMarkers(markerCorner, self.marker_length, self.K_1, self.distorsion_1)
 
                 self.get_logger().info(f'Marcador detectado, {markerID}')
 
@@ -180,9 +182,6 @@ class DetectionAruco(Node):
             # store observation (and implicitly set ready flag)
             self.observations[0] = obs
 
-        # Mostrar la imagen
-
-   
 
 
     def on_camera2(self, image):
@@ -217,7 +216,7 @@ class DetectionAruco(Node):
 
         cv_image_bgr = drawImage.drawMarker(cv_image_bgr, corners, ids)
         cv_image_bgr = drawImage.drawCenter(cv_image_bgr, corners, ids)
-        cv_image_bgr = drawImage.drawAxis(cv_image_bgr, ids, corners, self.K, self.distorsion, self.marker_length)
+        cv_image_bgr = drawImage.drawAxis(cv_image_bgr, ids, corners, self.K_2, self.distorsion_2, self.marker_length)
 
         cv2.imshow('Imagen 2', cv_image_bgr)
         cv2.waitKey(1)
@@ -235,7 +234,7 @@ class DetectionAruco(Node):
             for (markerCorner, markerID) in zip(corners, ids): 
 
                 # Calcula la posición y orientación del marcador
-                rvecs, tvecs, markerPoints = cv2.aruco.estimatePoseSingleMarkers(markerCorner, self.marker_length, self.K, self.distorsion)
+                rvecs, tvecs, markerPoints = cv2.aruco.estimatePoseSingleMarkers(markerCorner, self.marker_length, self.K_2, self.distorsion_2)
 
 
                 self.get_logger().info(f'Marcador detectado, {markerID}')

@@ -1,0 +1,13 @@
+/home/andrea/ros2_ws/build/CMakeFiles/uninstall.dir
+/home/andrea/ros2_ws/build/CMakeFiles/apriltag_ros_uninstall.dir
+/home/andrea/ros2_ws/build/CMakeFiles/tags.dir
+/home/andrea/ros2_ws/build/CMakeFiles/pose_estimation.dir
+/home/andrea/ros2_ws/build/CMakeFiles/AprilTagNode.dir
+/home/andrea/ros2_ws/build/CMakeFiles/apriltag_node.dir
+/home/andrea/ros2_ws/build/CMakeFiles/test.dir
+/home/andrea/ros2_ws/build/CMakeFiles/edit_cache.dir
+/home/andrea/ros2_ws/build/CMakeFiles/rebuild_cache.dir
+/home/andrea/ros2_ws/build/CMakeFiles/list_install_components.dir
+/home/andrea/ros2_ws/build/CMakeFiles/install.dir
+/home/andrea/ros2_ws/build/CMakeFiles/install/local.dir
+/home/andrea/ros2_ws/build/CMakeFiles/install/strip.dir
