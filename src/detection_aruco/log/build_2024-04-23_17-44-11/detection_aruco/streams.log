@@ -1,0 +1,30 @@
+[0.996s] Invoking command in '/home/andrea/ros2_ws/src/detection_aruco': PYTHONPATH=/home/andrea/ros2_ws/build/detection_aruco/prefix_override:/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_aruco build --build-base /home/andrea/ros2_ws/build/detection_aruco/build install --record /home/andrea/ros2_ws/build/detection_aruco/install.log --single-version-externally-managed install_data
+[1.314s] running egg_info
+[1.334s] writing ../../build/detection_aruco/detection_aruco.egg-info/PKG-INFO
+[1.334s] writing dependency_links to ../../build/detection_aruco/detection_aruco.egg-info/dependency_links.txt
+[1.335s] writing entry points to ../../build/detection_aruco/detection_aruco.egg-info/entry_points.txt
+[1.335s] writing requirements to ../../build/detection_aruco/detection_aruco.egg-info/requires.txt
+[1.335s] writing top-level names to ../../build/detection_aruco/detection_aruco.egg-info/top_level.txt
+[1.377s] reading manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'
+[1.377s] adding license file 'LICENSE'
+[1.379s] writing manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'
+[1.379s] running build
+[1.379s] running build_py
+[1.379s] copying detection_aruco/detection_aruco.py -> /home/andrea/ros2_ws/build/detection_aruco/build/lib/detection_aruco
+[1.380s] copying detection_aruco/obtener_imagen.py -> /home/andrea/ros2_ws/build/detection_aruco/build/lib/detection_aruco
+[1.380s] copying detection_aruco/__init__.py -> /home/andrea/ros2_ws/build/detection_aruco/build/lib/detection_aruco
+[1.380s] running install
+[1.389s] running install_lib
+[1.409s] copying /home/andrea/ros2_ws/build/detection_aruco/build/lib/detection_aruco/detection_aruco.py -> /home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco
+[1.410s] byte-compiling /home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco/detection_aruco.py to detection_aruco.cpython-310.pyc
+[1.413s] running install_data
+[1.413s] copying resource/detection_aruco -> /home/andrea/ros2_ws/install/detection_aruco/share/ament_index/resource_index/packages
+[1.413s] copying package.xml -> /home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco
+[1.413s] running install_egg_info
+[1.434s] removing '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info' (and everything under it)
+[1.435s] Copying ../../build/detection_aruco/detection_aruco.egg-info to /home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info
+[1.436s] running install_scripts
+[1.619s] Installing obtain script to /home/andrea/ros2_ws/install/detection_aruco/lib/detection_aruco
+[1.619s] Installing see script to /home/andrea/ros2_ws/install/detection_aruco/lib/detection_aruco
+[1.620s] writing list of installed files to '/home/andrea/ros2_ws/build/detection_aruco/install.log'
+[1.660s] Invoked command in '/home/andrea/ros2_ws/src/detection_aruco' returned '0': PYTHONPATH=/home/andrea/ros2_ws/build/detection_aruco/prefix_override:/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_aruco build --build-base /home/andrea/ros2_ws/build/detection_aruco/build install --record /home/andrea/ros2_ws/build/detection_aruco/install.log --single-version-externally-managed install_data

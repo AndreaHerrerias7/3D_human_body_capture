@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000267] (-) JobUnselected: {'identifier': 'apriltag_ros'}
+[0.000349] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.000397] (-) JobUnselected: {'identifier': 'datos_camara'}
+[0.000424] (detection_aruco) JobQueued: {'identifier': 'detection_aruco', 'dependencies': OrderedDict([('custom_msgs', '/home/andrea/ros2_ws/install/custom_msgs'), ('datos_camara', '/home/andrea/ros2_ws/install/datos_camara'), ('apriltag_ros', '/home/andrea/ros2_ws/install/apriltag_ros')])}
+[0.000477] (detection_aruco) JobStarted: {'identifier': 'detection_aruco'}
+[0.009715] (detection_aruco) JobEnded: {'identifier': 'detection_aruco', 'rc': 1}
+[0.020257] (-) EventReactorShutdown: {}

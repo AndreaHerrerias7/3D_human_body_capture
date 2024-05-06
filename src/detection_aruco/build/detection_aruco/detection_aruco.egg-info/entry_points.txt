@@ -1,0 +1,3 @@
+[console_scripts]
+obtain = detection_aruco.detection_aruco:main
+see = detection_aruco.obtener_imagen:main

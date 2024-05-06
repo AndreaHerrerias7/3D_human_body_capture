@@ -1,0 +1,351 @@
+[0.139s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.139s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x740ad4c3cd90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x740ad4c3c280>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x740ad4c3c280>>)
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.187s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/andrea/ros2_ws'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/apriltag_ros' with type 'ros.ament_cmake' and name 'apriltag_ros'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/datos_camara) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/datos_camara) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/datos_camara) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/datos_camara) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/datos_camara) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/datos_camara) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/datos_camara) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/datos_camara) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/datos_camara) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/datos_camara' with type 'ros.ament_cmake' and name 'datos_camara'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection_aruco' with type 'ros.ament_python' and name 'detection_aruco'
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.243s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/andrea/ros2_ws/install
+[0.245s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 299 installed packages in /opt/ros/humble
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.266s] ERROR:colcon.colcon_core.package_augmentation:Exception in package augmentation extension 'python': 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/package_augmentation/__init__.py", line 97, in augment_packages
+    retval = extension.augment_packages(
+  File "/usr/lib/python3/dist-packages/colcon_installed_package_information/package_augmentation/python.py", line 44, in augment_packages
+    dist = next(iter(dists))
+StopIteration
+
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrea/ros2_ws/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrea/ros2_ws/install/custom_msgs', 'merge_install': False, 'path': '/home/andrea/ros2_ws/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'datos_camara' build argument 'cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'datos_camara' build argument 'cmake_target' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'datos_camara' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'datos_camara' build argument 'cmake_clean_cache' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'datos_camara' build argument 'cmake_clean_first' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'datos_camara' build argument 'cmake_force_configure' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'datos_camara' build argument 'ament_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'datos_camara' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'datos_camara' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'datos_camara' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrea/ros2_ws/build/datos_camara', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrea/ros2_ws/install/datos_camara', 'merge_install': False, 'path': '/home/andrea/ros2_ws/src/datos_camara', 'symlink_install': False, 'test_result_base': None}
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'apriltag_ros' build argument 'cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'apriltag_ros' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'apriltag_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'apriltag_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'apriltag_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'apriltag_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'apriltag_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'apriltag_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'apriltag_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.274s] DEBUG:colcon.colcon_core.verb:Building package 'apriltag_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrea/ros2_ws/build/apriltag_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrea/ros2_ws/install/apriltag_ros', 'merge_install': False, 'path': '/home/andrea/ros2_ws/src/apriltag_ros', 'symlink_install': False, 'test_result_base': None}
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'detection_aruco' build argument 'cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'detection_aruco' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'detection_aruco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'detection_aruco' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'detection_aruco' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'detection_aruco' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'detection_aruco' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'detection_aruco' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'detection_aruco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'detection_aruco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrea/ros2_ws/build/detection_aruco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrea/ros2_ws/install/detection_aruco', 'merge_install': False, 'path': '/home/andrea/ros2_ws/src/detection_aruco', 'symlink_install': False, 'test_result_base': None}
+[0.275s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.276s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.276s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andrea/ros2_ws/src/datos_camara' with build type 'ament_cmake'
+[0.277s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andrea/ros2_ws/src/datos_camara'
+[0.280s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.280s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.280s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.285s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andrea/ros2_ws/src/custom_msgs' with build type 'ament_cmake'
+[0.285s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andrea/ros2_ws/src/custom_msgs'
+[0.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.286s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrea/ros2_ws/build/datos_camara': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andrea/ros2_ws/build/datos_camara -- -j4 -l4
+[0.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrea/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andrea/ros2_ws/build/custom_msgs -- -j4 -l4
+[1.090s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrea/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andrea/ros2_ws/build/custom_msgs -- -j4 -l4
+[1.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrea/ros2_ws/build/datos_camara' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andrea/ros2_ws/build/datos_camara -- -j4 -l4
+[1.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrea/ros2_ws/build/datos_camara': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andrea/ros2_ws/build/datos_camara
+[1.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrea/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andrea/ros2_ws/build/custom_msgs
+[1.310s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(datos_camara)
+[1.315s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara' for CMake module files
+[1.318s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara' for CMake config files
+[1.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrea/ros2_ws/build/datos_camara' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andrea/ros2_ws/build/datos_camara
+[1.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('datos_camara', 'cmake_prefix_path')
+[1.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/cmake_prefix_path.ps1'
+[1.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/cmake_prefix_path.dsv'
+[1.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/cmake_prefix_path.sh'
+[1.332s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/lib'
+[1.332s] Level 1:colcon.colcon_core.shell:create_environment_hook('datos_camara', 'ld_library_path_lib')
+[1.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/ld_library_path_lib.ps1'
+[1.334s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/ld_library_path_lib.dsv'
+[1.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/ld_library_path_lib.sh'
+[1.336s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/bin'
+[1.337s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/lib/pkgconfig/datos_camara.pc'
+[1.337s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/lib/python3.10/site-packages'
+[1.338s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/bin'
+[1.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.ps1'
+[1.340s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.dsv'
+[1.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.sh'
+[1.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.bash'
+[1.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.zsh'
+[1.346s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrea/ros2_ws/install/datos_camara/share/colcon-core/packages/datos_camara)
+[1.349s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.349s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs' for CMake module files
+[1.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrea/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andrea/ros2_ws/build/custom_msgs
+[1.351s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs' for CMake config files
+[1.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.355s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/lib'
+[1.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.356s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/bin'
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/lib/python3.10/site-packages'
+[1.360s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/bin'
+[1.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.361s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[1.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[1.364s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.365s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrea/ros2_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.456s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(datos_camara)
+[1.456s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara' for CMake module files
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara' for CMake config files
+[1.458s] Level 1:colcon.colcon_core.shell:create_environment_hook('datos_camara', 'cmake_prefix_path')
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/cmake_prefix_path.ps1'
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/cmake_prefix_path.dsv'
+[1.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/cmake_prefix_path.sh'
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/lib'
+[1.460s] Level 1:colcon.colcon_core.shell:create_environment_hook('datos_camara', 'ld_library_path_lib')
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/ld_library_path_lib.ps1'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/ld_library_path_lib.dsv'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/hook/ld_library_path_lib.sh'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/bin'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/lib/pkgconfig/datos_camara.pc'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/lib/python3.10/site-packages'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/datos_camara/bin'
+[1.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.ps1'
+[1.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.dsv'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.sh'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.bash'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.zsh'
+[1.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrea/ros2_ws/install/datos_camara/share/colcon-core/packages/datos_camara)
+[1.469s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andrea/ros2_ws/src/apriltag_ros' with build type 'ament_cmake'
+[1.469s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andrea/ros2_ws/src/apriltag_ros'
+[1.469s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.470s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrea/ros2_ws/build/apriltag_ros': CMAKE_PREFIX_PATH=/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/custom_msgs:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble LD_LIBRARY_PATH=/home/andrea/ros2_ws/install/datos_camara/lib:/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/andrea/ros2_ws/build/apriltag_ros -- -j4 -l4
+[1.520s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.520s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs' for CMake module files
+[1.521s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs' for CMake config files
+[1.522s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.557s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/lib'
+[1.558s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.560s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/bin'
+[1.560s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.561s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/lib/python3.10/site-packages'
+[1.561s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/custom_msgs/bin'
+[1.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.563s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[1.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[1.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.568s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrea/ros2_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrea/ros2_ws/build/apriltag_ros' returned '0': CMAKE_PREFIX_PATH=/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/custom_msgs:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble LD_LIBRARY_PATH=/home/andrea/ros2_ws/install/datos_camara/lib:/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/andrea/ros2_ws/build/apriltag_ros -- -j4 -l4
+[1.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrea/ros2_ws/build/apriltag_ros': CMAKE_PREFIX_PATH=/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/custom_msgs:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble LD_LIBRARY_PATH=/home/andrea/ros2_ws/install/datos_camara/lib:/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/andrea/ros2_ws/build/apriltag_ros
+[1.679s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(apriltag_ros)
+[1.679s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros' for CMake module files
+[1.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrea/ros2_ws/build/apriltag_ros' returned '0': CMAKE_PREFIX_PATH=/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/custom_msgs:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble LD_LIBRARY_PATH=/home/andrea/ros2_ws/install/datos_camara/lib:/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/andrea/ros2_ws/build/apriltag_ros
+[1.680s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros' for CMake config files
+[1.681s] Level 1:colcon.colcon_core.shell:create_environment_hook('apriltag_ros', 'cmake_prefix_path')
+[1.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/cmake_prefix_path.ps1'
+[1.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/cmake_prefix_path.dsv'
+[1.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/cmake_prefix_path.sh'
+[1.683s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/lib'
+[1.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('apriltag_ros', 'ld_library_path_lib')
+[1.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/ld_library_path_lib.ps1'
+[1.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/ld_library_path_lib.dsv'
+[1.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/ld_library_path_lib.sh'
+[1.685s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/bin'
+[1.685s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/lib/pkgconfig/apriltag_ros.pc'
+[1.685s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/lib/python3.10/site-packages'
+[1.685s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/bin'
+[1.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.ps1'
+[1.686s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.dsv'
+[1.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.sh'
+[1.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.bash'
+[1.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.zsh'
+[1.688s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrea/ros2_ws/install/apriltag_ros/share/colcon-core/packages/apriltag_ros)
+[1.732s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(apriltag_ros)
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros' for CMake module files
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros' for CMake config files
+[1.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('apriltag_ros', 'cmake_prefix_path')
+[1.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/cmake_prefix_path.ps1'
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/cmake_prefix_path.dsv'
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/cmake_prefix_path.sh'
+[1.736s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/lib'
+[1.736s] Level 1:colcon.colcon_core.shell:create_environment_hook('apriltag_ros', 'ld_library_path_lib')
+[1.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/ld_library_path_lib.ps1'
+[1.737s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/ld_library_path_lib.dsv'
+[1.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/hook/ld_library_path_lib.sh'
+[1.738s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/bin'
+[1.738s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/lib/pkgconfig/apriltag_ros.pc'
+[1.738s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/lib/python3.10/site-packages'
+[1.739s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/apriltag_ros/bin'
+[1.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.ps1'
+[1.740s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.dsv'
+[1.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.sh'
+[1.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.bash'
+[1.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.zsh'
+[1.743s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrea/ros2_ws/install/apriltag_ros/share/colcon-core/packages/apriltag_ros)
+[1.743s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andrea/ros2_ws/src/detection_aruco' with build type 'ament_python'
+[1.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('detection_aruco', 'ament_prefix_path')
+[1.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/hook/ament_prefix_path.ps1'
+[1.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/hook/ament_prefix_path.dsv'
+[1.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/hook/ament_prefix_path.sh'
+[1.746s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.747s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.038s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrea/ros2_ws/src/detection_aruco'
+[2.038s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.038s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrea/ros2_ws/src/detection_aruco': PYTHONPATH=/home/andrea/ros2_ws/build/detection_aruco/prefix_override:/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_aruco build --build-base /home/andrea/ros2_ws/build/detection_aruco/build install --record /home/andrea/ros2_ws/build/detection_aruco/install.log --single-version-externally-managed install_data
+[3.379s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/detection_aruco' for CMake module files
+[3.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrea/ros2_ws/src/detection_aruco' returned '0': PYTHONPATH=/home/andrea/ros2_ws/build/detection_aruco/prefix_override:/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_aruco build --build-base /home/andrea/ros2_ws/build/detection_aruco/build install --record /home/andrea/ros2_ws/build/detection_aruco/install.log --single-version-externally-managed install_data
+[3.380s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/detection_aruco' for CMake config files
+[3.381s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/detection_aruco/lib'
+[3.381s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/detection_aruco/bin'
+[3.381s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/detection_aruco/lib/pkgconfig/detection_aruco.pc'
+[3.382s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages'
+[3.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('detection_aruco', 'pythonpath')
+[3.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/hook/pythonpath.ps1'
+[3.383s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/hook/pythonpath.dsv'
+[3.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/hook/pythonpath.sh'
+[3.384s] Level 1:colcon.colcon_core.environment:checking '/home/andrea/ros2_ws/install/detection_aruco/bin'
+[3.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(detection_aruco)
+[3.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/package.ps1'
+[3.385s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/package.dsv'
+[3.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/package.sh'
+[3.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/package.bash'
+[3.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco/package.zsh'
+[3.387s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrea/ros2_ws/install/detection_aruco/share/colcon-core/packages/detection_aruco)
+[3.388s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.388s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.388s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.388s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.395s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.395s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.395s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.408s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.409s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andrea/ros2_ws/install/local_setup.ps1'
+[3.410s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andrea/ros2_ws/install/_local_setup_util_ps1.py'
+[3.414s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andrea/ros2_ws/install/setup.ps1'
+[3.416s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andrea/ros2_ws/install/local_setup.sh'
+[3.417s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andrea/ros2_ws/install/_local_setup_util_sh.py'
+[3.417s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andrea/ros2_ws/install/setup.sh'
+[3.420s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andrea/ros2_ws/install/local_setup.bash'
+[3.421s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andrea/ros2_ws/install/setup.bash'
+[3.422s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andrea/ros2_ws/install/local_setup.zsh'
+[3.423s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andrea/ros2_ws/install/setup.zsh'

@@ -1,0 +1,689 @@
+[0.000000] (-) TimerEvent: {}
+[0.000813] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.001101] (datos_camara) JobQueued: {'identifier': 'datos_camara', 'dependencies': OrderedDict()}
+[0.001194] (apriltag_ros) JobQueued: {'identifier': 'apriltag_ros', 'dependencies': OrderedDict([('datos_camara', '/home/andrea/ros2_ws/install/datos_camara')])}
+[0.001271] (detection_aruco) JobQueued: {'identifier': 'detection_aruco', 'dependencies': OrderedDict([('custom_msgs', '/home/andrea/ros2_ws/install/custom_msgs'), ('datos_camara', '/home/andrea/ros2_ws/install/datos_camara'), ('apriltag_ros', '/home/andrea/ros2_ws/install/apriltag_ros')])}
+[0.001353] (datos_camara) JobStarted: {'identifier': 'datos_camara'}
+[0.010420] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.017613] (datos_camara) JobProgress: {'identifier': 'datos_camara', 'progress': 'cmake'}
+[0.058054] (datos_camara) JobProgress: {'identifier': 'datos_camara', 'progress': 'build'}
+[0.059103] (datos_camara) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andrea/ros2_ws/build/datos_camara', '--', '-j4', '-l4'], 'cwd': '/home/andrea/ros2_ws/build/datos_camara', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrea'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/datos_camara/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andrea'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '7875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andrea/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andrea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andrea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andrea-HP-Laptop:@/tmp/.ICE-unix/1584,unix/andrea-HP-Laptop:/tmp/.ICE-unix/1584'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/947c9fd7_cf5b_4786_ad9a_98069f6187b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ODHWM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.257'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrea/ros2_ws/build/datos_camara'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[0.064162] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.064662] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/andrea/ros2_ws/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/andrea/ros2_ws/install/custom_msgs'], 'cwd': '/home/andrea/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrea'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/datos_camara/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andrea'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '7875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andrea/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andrea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andrea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andrea-HP-Laptop:@/tmp/.ICE-unix/1584,unix/andrea-HP-Laptop:/tmp/.ICE-unix/1584'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/947c9fd7_cf5b_4786_ad9a_98069f6187b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ODHWM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.257'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrea/ros2_ws/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[0.099547] (-) TimerEvent: {}
+[0.199978] (-) TimerEvent: {}
+[0.300667] (-) TimerEvent: {}
+[0.401060] (-) TimerEvent: {}
+[0.501815] (-) TimerEvent: {}
+[0.602590] (-) TimerEvent: {}
+[0.703438] (-) TimerEvent: {}
+[0.804156] (-) TimerEvent: {}
+[0.904769] (-) TimerEvent: {}
+[0.943475] (datos_camara) StdoutLine: {'line': b'[  3%] Built target datos_camara__cpp\n'}
+[1.005348] (-) TimerEvent: {}
+[1.105698] (-) TimerEvent: {}
+[1.114158] (datos_camara) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_datos_camara\n'}
+[1.206015] (-) TimerEvent: {}
+[1.306816] (-) TimerEvent: {}
+[1.407303] (-) TimerEvent: {}
+[1.478718] (datos_camara) StdoutLine: {'line': b'[ 12%] Built target datos_camara__rosidl_generator_c\n'}
+[1.507390] (-) TimerEvent: {}
+[1.580792] (datos_camara) StdoutLine: {'line': b'[ 35%] Built target datos_camara__rosidl_typesupport_cpp\n'}
+[1.581153] (datos_camara) StdoutLine: {'line': b'[ 35%] Built target datos_camara__rosidl_typesupport_fastrtps_cpp\n'}
+[1.582687] (datos_camara) StdoutLine: {'line': b'[ 41%] Built target datos_camara__rosidl_typesupport_introspection_cpp\n'}
+[1.607488] (-) TimerEvent: {}
+[1.645716] (datos_camara) StdoutLine: {'line': b'[ 51%] Built target datos_camara__rosidl_typesupport_introspection_c\n'}
+[1.672419] (datos_camara) StdoutLine: {'line': b'[ 61%] Built target datos_camara__rosidl_typesupport_fastrtps_c\n'}
+[1.684264] (datos_camara) StdoutLine: {'line': b'[ 70%] Built target datos_camara__rosidl_typesupport_c\n'}
+[1.707603] (-) TimerEvent: {}
+[1.731194] (datos_camara) StdoutLine: {'line': b'[ 70%] Built target datos_camara\n'}
+[1.803905] (datos_camara) StdoutLine: {'line': b'[ 74%] Built target datos_camara__py\n'}
+[1.807698] (-) TimerEvent: {}
+[1.878433] (datos_camara) StdoutLine: {'line': b'running egg_info\n'}
+[1.898503] (datos_camara) StdoutLine: {'line': b'writing datos_camara.egg-info/PKG-INFO\n'}
+[1.899096] (datos_camara) StdoutLine: {'line': b'writing dependency_links to datos_camara.egg-info/dependency_links.txt\n'}
+[1.899534] (datos_camara) StdoutLine: {'line': b'writing top-level names to datos_camara.egg-info/top_level.txt\n'}
+[1.907793] (-) TimerEvent: {}
+[1.958927] (datos_camara) StdoutLine: {'line': b"reading manifest file 'datos_camara.egg-info/SOURCES.txt'\n"}
+[1.982097] (datos_camara) StdoutLine: {'line': b"writing manifest file 'datos_camara.egg-info/SOURCES.txt'\n"}
+[2.007900] (-) TimerEvent: {}
+[2.017495] (datos_camara) StdoutLine: {'line': b'[ 74%] Built target ament_cmake_python_build_datos_camara_egg\n'}
+[2.055996] (datos_camara) StdoutLine: {'line': b'[ 80%] Built target datos_camara__rosidl_generator_py\n'}
+[2.108018] (-) TimerEvent: {}
+[2.206945] (datos_camara) StdoutLine: {'line': b'[ 87%] Built target datos_camara__rosidl_typesupport_introspection_c__pyext\n'}
+[2.207952] (datos_camara) StdoutLine: {'line': b'[ 93%] Built target datos_camara__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.208209] (-) TimerEvent: {}
+[2.210653] (datos_camara) StdoutLine: {'line': b'[100%] Built target datos_camara__rosidl_typesupport_c__pyext\n'}
+[2.224715] (datos_camara) CommandEnded: {'returncode': 0}
+[2.297895] (datos_camara) JobProgress: {'identifier': 'datos_camara', 'progress': 'install'}
+[2.309231] (datos_camara) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andrea/ros2_ws/build/datos_camara'], 'cwd': '/home/andrea/ros2_ws/build/datos_camara', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrea'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/datos_camara/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andrea'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '7875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andrea/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andrea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andrea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andrea-HP-Laptop:@/tmp/.ICE-unix/1584,unix/andrea-HP-Laptop:/tmp/.ICE-unix/1584'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/947c9fd7_cf5b_4786_ad9a_98069f6187b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ODHWM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.257'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrea/ros2_ws/build/datos_camara'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[2.310252] (-) TimerEvent: {}
+[2.321450] (datos_camara) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.321788] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/ament_index/resource_index/rosidl_interfaces/datos_camara\n'}
+[2.322055] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[2.322243] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[2.322379] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/num.h\n'}
+[2.322506] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[2.322622] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.h\n'}
+[2.322784] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__functions.h\n'}
+[2.322921] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__struct.h\n'}
+[2.323043] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__functions.c\n'}
+[2.323278] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.323429] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/library_path.sh\n'}
+[2.323567] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/library_path.dsv\n'}
+[2.323683] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_c.so\n'}
+[2.323800] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[2.323961] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[2.324077] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[2.324369] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[2.324831] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.324956] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_c.so\n'}
+[2.325074] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[2.325188] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[2.325303] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[2.325416] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__builder.hpp\n'}
+[2.325533] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__struct.hpp\n'}
+[2.325647] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__traits.hpp\n'}
+[2.325762] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/num.hpp\n'}
+[2.325895] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[2.326009] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[2.326191] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.326337] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[2.326457] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.326571] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/dds_fastrtps\n'}
+[2.373030] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.373469] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[2.373678] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[2.373853] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.373982] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[2.374099] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[2.374262] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.c\n'}
+[2.374387] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_c.so\n'}
+[2.374776] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_c.so\n'}
+[2.375078] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[2.375296] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[2.375458] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[2.375583] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.375698] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.cpp\n'}
+[2.375869] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_cpp.so\n'}
+[2.376432] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_cpp.so\n'}
+[2.376754] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/pythonpath.sh\n'}
+[2.376936] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/pythonpath.dsv\n'}
+[2.377097] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info\n'}
+[2.377250] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.377371] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.377520] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.377653] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.377885] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara\n'}
+[2.378171] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.378444] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_c.c\n'}
+[2.378569] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/libdatos_camara__rosidl_generator_py.so\n'}
+[2.378685] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.378819] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.378985] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg\n'}
+[2.379100] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/_num_s.c\n'}
+[2.379247] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/_num.py\n'}
+[2.379414] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/__init__.py\n'}
+[2.379564] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.379717] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/__init__.py\n'}
+[2.379869] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.410451] (-) TimerEvent: {}
+[2.464011] (datos_camara) StdoutLine: {'line': b"Listing '/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara'...\n"}
+[2.464282] (datos_camara) StdoutLine: {'line': b"Listing '/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg'...\n"}
+[2.477713] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.498834] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.510630] (-) TimerEvent: {}
+[2.517159] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.530079] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_py.so\n'}
+[2.530949] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/msg/Num.idl\n'}
+[2.531420] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/msg/Num.msg\n'}
+[2.531986] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/ament_index/resource_index/package_run_dependencies/datos_camara\n'}
+[2.532501] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/ament_index/resource_index/parent_prefix_path/datos_camara\n'}
+[2.533190] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/ament_prefix_path.sh\n'}
+[2.533583] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/ament_prefix_path.dsv\n'}
+[2.533951] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/path.sh\n'}
+[2.534315] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/path.dsv\n'}
+[2.534677] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/local_setup.bash\n'}
+[2.535032] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/local_setup.sh\n'}
+[2.535307] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/local_setup.zsh\n'}
+[2.535558] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/local_setup.dsv\n'}
+[2.535836] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.dsv\n'}
+[2.548819] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/ament_index/resource_index/packages/datos_camara\n'}
+[2.589620] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cExport.cmake\n'}
+[2.590390] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.610907] (-) TimerEvent: {}
+[2.612593] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.613548] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.614421] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cppExport.cmake\n'}
+[2.615489] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.616304] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.617226] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.617805] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.627898] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cExport.cmake\n'}
+[2.628845] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.629578] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.630316] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.631102] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cppExport.cmake\n'}
+[2.631894] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.632660] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_pyExport.cmake\n'}
+[2.633446] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.634511] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake-extras.cmake\n'}
+[2.635474] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.636360] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.636905] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.637395] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.637977] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.638470] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.643709] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camaraConfig.cmake\n'}
+[2.644278] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camaraConfig-version.cmake\n'}
+[2.645662] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.xml\n'}
+[2.648452] (datos_camara) CommandEnded: {'returncode': 0}
+[2.710973] (-) TimerEvent: {}
+[2.750957] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.779952] (datos_camara) JobEnded: {'identifier': 'datos_camara', 'rc': 0}
+[2.781330] (apriltag_ros) JobStarted: {'identifier': 'apriltag_ros'}
+[2.790393] (apriltag_ros) JobProgress: {'identifier': 'apriltag_ros', 'progress': 'cmake'}
+[2.811083] (-) TimerEvent: {}
+[2.818631] (apriltag_ros) JobProgress: {'identifier': 'apriltag_ros', 'progress': 'build'}
+[2.819549] (apriltag_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andrea/ros2_ws/build/apriltag_ros', '--', '-j4', '-l4'], 'cwd': '/home/andrea/ros2_ws/build/apriltag_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrea'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andrea/ros2_ws/install/datos_camara/lib:/home/andrea/ros2_ws/install/apriltag_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andrea'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '7875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andrea/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andrea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andrea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andrea-HP-Laptop:@/tmp/.ICE-unix/1584,unix/andrea-HP-Laptop:/tmp/.ICE-unix/1584'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/947c9fd7_cf5b_4786_ad9a_98069f6187b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ODHWM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.257'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrea/ros2_ws/build/apriltag_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[2.911407] (-) TimerEvent: {}
+[3.012011] (-) TimerEvent: {}
+[3.112730] (-) TimerEvent: {}
+[3.213582] (-) TimerEvent: {}
+[3.314436] (-) TimerEvent: {}
+[3.415251] (-) TimerEvent: {}
+[3.516122] (-) TimerEvent: {}
+[3.616959] (-) TimerEvent: {}
+[3.717868] (-) TimerEvent: {}
+[3.818704] (-) TimerEvent: {}
+[3.919687] (-) TimerEvent: {}
+[4.020479] (-) TimerEvent: {}
+[4.121299] (-) TimerEvent: {}
+[4.222163] (-) TimerEvent: {}
+[4.323063] (-) TimerEvent: {}
+[4.423873] (-) TimerEvent: {}
+[4.511037] (apriltag_ros) StdoutLine: {'line': b'[ 16%] Built target tags\n'}
+[4.524038] (-) TimerEvent: {}
+[4.624465] (-) TimerEvent: {}
+[4.725249] (-) TimerEvent: {}
+[4.807784] (apriltag_ros) StdoutLine: {'line': b'[ 33%] Built target pose_estimation\n'}
+[4.825398] (-) TimerEvent: {}
+[4.859022] (apriltag_ros) StdoutLine: {'line': b'[ 66%] Built target apriltag_node\n'}
+[4.925642] (-) TimerEvent: {}
+[5.026327] (-) TimerEvent: {}
+[5.084727] (apriltag_ros) StdoutLine: {'line': b'[100%] Built target AprilTagNode\n'}
+[5.107201] (apriltag_ros) CommandEnded: {'returncode': 0}
+[5.126389] (-) TimerEvent: {}
+[5.152634] (apriltag_ros) JobProgress: {'identifier': 'apriltag_ros', 'progress': 'install'}
+[5.153388] (apriltag_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andrea/ros2_ws/build/apriltag_ros'], 'cwd': '/home/andrea/ros2_ws/build/apriltag_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrea'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andrea/ros2_ws/install/datos_camara/lib:/home/andrea/ros2_ws/install/apriltag_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andrea'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '7875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andrea/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andrea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andrea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andrea-HP-Laptop:@/tmp/.ICE-unix/1584,unix/andrea-HP-Laptop:/tmp/.ICE-unix/1584'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/947c9fd7_cf5b_4786_ad9a_98069f6187b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ODHWM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.257'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrea/ros2_ws/build/apriltag_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[5.166386] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.167512] (apriltag_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.186193] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/lib/apriltag_ros/apriltag_node\n'}
+[5.186546] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/library_path.sh\n'}
+[5.186744] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/library_path.dsv\n'}
+[5.226625] (-) TimerEvent: {}
+[5.264703] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/lib/libAprilTagNode.so\n'}
+[5.266204] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/cfg\n'}
+[5.267211] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/cfg/tags_36h11.yaml\n'}
+[5.267917] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/launch\n'}
+[5.268774] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/launch/v4l2_36h11.launch.yml\n'}
+[5.269833] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/ament_index/resource_index/package_run_dependencies/apriltag_ros\n'}
+[5.270715] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/ament_index/resource_index/parent_prefix_path/apriltag_ros\n'}
+[5.271280] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/ament_prefix_path.sh\n'}
+[5.271758] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/ament_prefix_path.dsv\n'}
+[5.272230] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/path.sh\n'}
+[5.272682] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/path.dsv\n'}
+[5.273151] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/local_setup.bash\n'}
+[5.273461] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/local_setup.sh\n'}
+[5.273791] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/local_setup.zsh\n'}
+[5.274131] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/local_setup.dsv\n'}
+[5.274408] (apriltag_ros) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.dsv\n'}
+[5.285917] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/ament_index/resource_index/packages/apriltag_ros\n'}
+[5.286957] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/ament_index/resource_index/rclcpp_components/apriltag_ros\n'}
+[5.287333] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/cmake/apriltag_rosConfig.cmake\n'}
+[5.287671] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/cmake/apriltag_rosConfig-version.cmake\n'}
+[5.287991] (apriltag_ros) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.xml\n'}
+[5.294390] (apriltag_ros) CommandEnded: {'returncode': 0}
+[5.327204] (-) TimerEvent: {}
+[5.334958] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.427459] (-) TimerEvent: {}
+[5.443248] (apriltag_ros) JobEnded: {'identifier': 'apriltag_ros', 'rc': 0}
+[5.527623] (-) TimerEvent: {}
+[5.628112] (-) TimerEvent: {}
+[5.689061] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.702343] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.702944] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.728229] (-) TimerEvent: {}
+[5.765636] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.780664] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.828448] (-) TimerEvent: {}
+[5.928777] (-) TimerEvent: {}
+[5.933770] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.942640] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.943029] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.943951] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.975692] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.028974] (-) TimerEvent: {}
+[6.129492] (-) TimerEvent: {}
+[6.229840] (-) TimerEvent: {}
+[6.330157] (-) TimerEvent: {}
+[6.430473] (-) TimerEvent: {}
+[6.530821] (-) TimerEvent: {}
+[6.569230] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.630934] (-) TimerEvent: {}
+[6.731332] (-) TimerEvent: {}
+[6.831800] (-) TimerEvent: {}
+[6.932618] (-) TimerEvent: {}
+[7.033117] (-) TimerEvent: {}
+[7.057761] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[7.102937] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.133335] (-) TimerEvent: {}
+[7.181143] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.233513] (-) TimerEvent: {}
+[7.334685] (-) TimerEvent: {}
+[7.435296] (-) TimerEvent: {}
+[7.470903] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.535483] (-) TimerEvent: {}
+[7.635965] (-) TimerEvent: {}
+[7.690167] (custom_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[7.736151] (-) TimerEvent: {}
+[7.836844] (-) TimerEvent: {}
+[7.937275] (-) TimerEvent: {}
+[8.037569] (-) TimerEvent: {}
+[8.137985] (-) TimerEvent: {}
+[8.238262] (-) TimerEvent: {}
+[8.338574] (-) TimerEvent: {}
+[8.370340] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[8.438843] (-) TimerEvent: {}
+[8.539546] (-) TimerEvent: {}
+[8.639903] (-) TimerEvent: {}
+[8.740402] (-) TimerEvent: {}
+[8.840753] (-) TimerEvent: {}
+[8.878624] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.940862] (-) TimerEvent: {}
+[9.041174] (-) TimerEvent: {}
+[9.141485] (-) TimerEvent: {}
+[9.241807] (-) TimerEvent: {}
+[9.294283] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.340604] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[9.341913] (-) TimerEvent: {}
+[9.355054] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[9.409514] (custom_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[9.409812] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.410001] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[9.410178] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[9.438243] (custom_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[9.442012] (-) TimerEvent: {}
+[9.542468] (-) TimerEvent: {}
+[9.556743] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.603524] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[9.606561] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/andrea/ros2_ws/build/custom_msgs\n'}
+[9.617443] (custom_msgs) CommandEnded: {'returncode': 0}
+[9.618154] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[9.618629] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andrea/ros2_ws/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/andrea/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrea'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/datos_camara/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andrea'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '7875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andrea/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andrea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andrea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andrea-HP-Laptop:@/tmp/.ICE-unix/1584,unix/andrea-HP-Laptop:/tmp/.ICE-unix/1584'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/947c9fd7_cf5b_4786_ad9a_98069f6187b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ODHWM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.257'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrea/ros2_ws/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[9.642605] (-) TimerEvent: {}
+[9.671277] (custom_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.687458] (custom_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.698860] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[9.742716] (-) TimerEvent: {}
+[9.843230] (-) TimerEvent: {}
+[9.943660] (-) TimerEvent: {}
+[10.008584] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[10.010269] (custom_msgs) StdoutLine: {'line': b'creating custom_msgs.egg-info\n'}
+[10.029243] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[10.030312] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[10.031341] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[10.032307] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[10.043761] (-) TimerEvent: {}
+[10.091661] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[10.092883] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[10.132930] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[10.143915] (-) TimerEvent: {}
+[10.244217] (-) TimerEvent: {}
+[10.344535] (-) TimerEvent: {}
+[10.431791] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target custom_msgs__cpp\n'}
+[10.444656] (-) TimerEvent: {}
+[10.450923] (custom_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.453630] (custom_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.518667] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.544755] (-) TimerEvent: {}
+[10.548296] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/plane__functions.c.o\x1b[0m\n'}
+[10.644857] (-) TimerEvent: {}
+[10.745176] (-) TimerEvent: {}
+[10.845522] (-) TimerEvent: {}
+[10.945860] (-) TimerEvent: {}
+[11.046428] (-) TimerEvent: {}
+[11.046891] (custom_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp.o\x1b[0m\n'}
+[11.071511] (custom_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/plane__type_support.cpp.o\x1b[0m\n'}
+[11.140393] (custom_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/plane_match__functions.c.o\x1b[0m\n'}
+[11.146552] (-) TimerEvent: {}
+[11.150022] (custom_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/plane__type_support.cpp.o\x1b[0m\n'}
+[11.204717] (custom_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/correspondences__functions.c.o\x1b[0m\n'}
+[11.246689] (-) TimerEvent: {}
+[11.280909] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[11.346796] (-) TimerEvent: {}
+[11.447255] (-) TimerEvent: {}
+[11.511662] (custom_msgs) StdoutLine: {'line': b'[ 25%] Built target custom_msgs__rosidl_generator_c\n'}
+[11.539356] (custom_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[11.547355] (-) TimerEvent: {}
+[11.647744] (-) TimerEvent: {}
+[11.748498] (-) TimerEvent: {}
+[11.848848] (-) TimerEvent: {}
+[11.949173] (-) TimerEvent: {}
+[12.049897] (-) TimerEvent: {}
+[12.150523] (-) TimerEvent: {}
+[12.251241] (-) TimerEvent: {}
+[12.290590] (custom_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/plane__type_support_c.cpp.o\x1b[0m\n'}
+[12.351343] (-) TimerEvent: {}
+[12.446859] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/plane_match__type_support.cpp.o\x1b[0m\n'}
+[12.451461] (-) TimerEvent: {}
+[12.551946] (-) TimerEvent: {}
+[12.594470] (custom_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane_match__type_support.cpp.o\x1b[0m\n'}
+[12.601978] (custom_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/plane_match__type_support.cpp.o\x1b[0m\n'}
+[12.652062] (-) TimerEvent: {}
+[12.752639] (-) TimerEvent: {}
+[12.853229] (-) TimerEvent: {}
+[12.953806] (-) TimerEvent: {}
+[12.978153] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/plane_match__type_support_c.cpp.o\x1b[0m\n'}
+[12.982886] (custom_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/correspondences__type_support.cpp.o\x1b[0m\n'}
+[13.053921] (-) TimerEvent: {}
+[13.154539] (-) TimerEvent: {}
+[13.255156] (-) TimerEvent: {}
+[13.355730] (-) TimerEvent: {}
+[13.372751] (custom_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp.o\x1b[0m\n'}
+[13.405046] (custom_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/correspondences__type_support.cpp.o\x1b[0m\n'}
+[13.455848] (-) TimerEvent: {}
+[13.527770] (custom_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[13.555958] (-) TimerEvent: {}
+[13.645110] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/correspondences__type_support_c.cpp.o\x1b[0m\n'}
+[13.648493] (custom_msgs) StdoutLine: {'line': b'[ 48%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[13.656098] (-) TimerEvent: {}
+[13.668790] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[13.756201] (-) TimerEvent: {}
+[13.856654] (-) TimerEvent: {}
+[13.957232] (-) TimerEvent: {}
+[14.057794] (-) TimerEvent: {}
+[14.158341] (-) TimerEvent: {}
+[14.224188] (custom_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[14.258456] (-) TimerEvent: {}
+[14.271192] (custom_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[14.312173] (custom_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.358613] (-) TimerEvent: {}
+[14.399362] (custom_msgs) StdoutLine: {'line': b'[ 57%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[14.419034] (custom_msgs) StdoutLine: {'line': b'[ 59%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.456711] (custom_msgs) StdoutLine: {'line': b'[ 59%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[14.458763] (-) TimerEvent: {}
+[14.495460] (custom_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/plane_match__type_support.c.o\x1b[0m\n'}
+[14.497969] (custom_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/plane__type_support.c.o\x1b[0m\n'}
+[14.538064] (custom_msgs) StdoutLine: {'line': b'[ 63%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[14.551949] (custom_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/correspondences__type_support.c.o\x1b[0m\n'}
+[14.558891] (-) TimerEvent: {}
+[14.605248] (custom_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.658955] (-) TimerEvent: {}
+[14.662489] (custom_msgs) StdoutLine: {'line': b'[ 68%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[14.759050] (-) TimerEvent: {}
+[14.820565] (custom_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/plane_match__type_support.cpp.o\x1b[0m\n'}
+[14.824111] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/correspondences__type_support.cpp.o\x1b[0m\n'}
+[14.824394] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/plane__type_support.cpp.o\x1b[0m\n'}
+[14.859154] (-) TimerEvent: {}
+[14.874621] (custom_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.928225] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[14.952712] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs\n'}
+[14.959251] (-) TimerEvent: {}
+[14.977647] (custom_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[15.059367] (-) TimerEvent: {}
+[15.159670] (-) TimerEvent: {}
+[15.259969] (-) TimerEvent: {}
+[15.360230] (-) TimerEvent: {}
+[15.460507] (-) TimerEvent: {}
+[15.533762] (custom_msgs) StdoutLine: {'line': b'[ 78%] Built target custom_msgs__py\n'}
+[15.558926] (custom_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_plane_match_s.c.o\x1b[0m\n'}
+[15.560585] (-) TimerEvent: {}
+[15.562806] (custom_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_correspondences_s.c.o\x1b[0m\n'}
+[15.564408] (custom_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_plane_s.c.o\x1b[0m\n'}
+[15.660709] (-) TimerEvent: {}
+[15.761297] (-) TimerEvent: {}
+[15.861719] (-) TimerEvent: {}
+[15.962068] (-) TimerEvent: {}
+[15.966045] (custom_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[16.062253] (-) TimerEvent: {}
+[16.092721] (custom_msgs) StdoutLine: {'line': b'[ 87%] Built target custom_msgs__rosidl_generator_py\n'}
+[16.122601] (custom_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[16.124085] (custom_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[16.128574] (custom_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[16.162653] (-) TimerEvent: {}
+[16.263025] (-) TimerEvent: {}
+[16.284075] (custom_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.308487] (custom_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.335947] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.363248] (-) TimerEvent: {}
+[16.365355] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[16.380365] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[16.393697] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[16.408479] (custom_msgs) CommandEnded: {'returncode': 0}
+[16.463500] (-) TimerEvent: {}
+[16.541511] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[16.542629] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andrea/ros2_ws/build/custom_msgs'], 'cwd': '/home/andrea/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andrea'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/datos_camara/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andrea'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '7875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andrea/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andrea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andrea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andrea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andrea-HP-Laptop:@/tmp/.ICE-unix/1584,unix/andrea-HP-Laptop:/tmp/.ICE-unix/1584'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/947c9fd7_cf5b_4786_ad9a_98069f6187b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ODHWM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.257'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andrea/ros2_ws/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[16.552502] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.552802] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[16.552981] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[16.553225] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[16.553392] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane.h\n'}
+[16.553554] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane_match.h\n'}
+[16.553719] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[16.553870] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__functions.h\n'}
+[16.554030] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__functions.h\n'}
+[16.554180] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__functions.h\n'}
+[16.554326] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.h\n'}
+[16.554472] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.h\n'}
+[16.554645] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.h\n'}
+[16.554794] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__functions.c\n'}
+[16.554960] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.h\n'}
+[16.555107] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__functions.c\n'}
+[16.555251] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.h\n'}
+[16.555403] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__functions.c\n'}
+[16.555546] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.h\n'}
+[16.555693] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.h\n'}
+[16.555810] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[16.555957] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[16.556101] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[16.556342] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[16.556946] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[16.557181] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[16.557396] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[16.557597] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[16.557793] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_fastrtps_c.h\n'}
+[16.557993] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_c.h\n'}
+[16.558193] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_fastrtps_c.h\n'}
+[16.558355] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[16.558541] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[16.558801] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.559096] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[16.559291] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[16.559519] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.559773] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[16.559997] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.c\n'}
+[16.560208] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_c.h\n'}
+[16.560383] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_c.h\n'}
+[16.560594] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_c.h\n'}
+[16.560807] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.c\n'}
+[16.560943] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.c\n'}
+[16.561160] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[16.561671] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.561874] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[16.562326] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[16.562800] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[16.563097] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[16.563319] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane_match.hpp\n'}
+[16.563529] (-) TimerEvent: {}
+[16.563737] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.hpp\n'}
+[16.563920] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[16.564140] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__traits.hpp\n'}
+[16.564351] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.hpp\n'}
+[16.564562] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.hpp\n'}
+[16.564775] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.hpp\n'}
+[16.564980] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__builder.hpp\n'}
+[16.565182] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__builder.hpp\n'}
+[16.565380] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__traits.hpp\n'}
+[16.565596] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__builder.hpp\n'}
+[16.565738] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__traits.hpp\n'}
+[16.565985] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane.hpp\n'}
+[16.566193] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[16.566433] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[16.566605] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[16.566811] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[16.567040] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.567271] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[16.567418] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.567632] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.567805] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[16.568288] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[16.568510] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[16.568737] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[16.568937] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[16.569138] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.569337] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.569547] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.cpp\n'}
+[16.569743] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.569883] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.cpp\n'}
+[16.570086] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.cpp\n'}
+[16.570252] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[16.570751] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[16.570962] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[16.571838] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[16.572059] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[16.572257] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[16.572438] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info\n'}
+[16.572649] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[16.572862] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[16.573059] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[16.573256] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[16.573427] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs\n'}
+[16.573619] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.573811] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.574032] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[16.574273] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg\n'}
+[16.574472] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match_s.c\n'}
+[16.574692] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences.py\n'}
+[16.574914] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_s.c\n'}
+[16.575131] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[16.575344] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane.py\n'}
+[16.575577] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match.py\n'}
+[16.575820] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences_s.c\n'}
+[16.576030] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.576272] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[16.576507] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.576750] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.576980] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[16.623674] (custom_msgs) StdoutLine: {'line': b"Listing '/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[16.623954] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py'...\n"}
+[16.624098] (custom_msgs) StdoutLine: {'line': b"Listing '/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[16.624221] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py'...\n"}
+[16.624341] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences.py'...\n"}
+[16.624458] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane.py'...\n"}
+[16.624575] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match.py'...\n"}
+[16.630819] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.631242] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.631652] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.632201] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.632589] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.633135] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.633411] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[16.633945] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andrea/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""\n'}
+[16.634243] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Plane.idl\n'}
+[16.634506] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PlaneMatch.idl\n'}
+[16.634762] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Correspondences.idl\n'}
+[16.635037] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Plane.msg\n'}
+[16.635295] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PlaneMatch.msg\n'}
+[16.635536] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Correspondences.msg\n'}
+[16.635784] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[16.636062] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[16.636317] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[16.636554] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[16.636789] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[16.637043] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[16.637265] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[16.637505] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[16.637747] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[16.637979] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[16.638207] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[16.638509] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[16.638803] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[16.639081] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[16.639737] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[16.639998] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[16.640260] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[16.640505] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[16.640772] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[16.641014] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[16.641271] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[16.641527] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[16.641781] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[16.642039] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[16.642278] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[16.642541] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[16.642792] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[16.643076] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[16.643321] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[16.643562] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[16.643796] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.644039] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.644273] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.644518] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.644754] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[16.644982] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[16.645212] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[16.645455] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[16.645678] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andrea/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[16.648310] (custom_msgs) CommandEnded: {'returncode': 0}
+[16.663675] (-) TimerEvent: {}
+[16.763968] (-) TimerEvent: {}
+[16.786171] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[16.787548] (detection_aruco) JobStarted: {'identifier': 'detection_aruco'}
+[16.864067] (-) TimerEvent: {}
+[16.964362] (-) TimerEvent: {}
+[17.064685] (-) TimerEvent: {}
+[17.165029] (-) TimerEvent: {}
+[17.265351] (-) TimerEvent: {}
+[17.365655] (-) TimerEvent: {}
+[17.465966] (-) TimerEvent: {}
+[17.566270] (-) TimerEvent: {}
+[17.666608] (-) TimerEvent: {}
+[17.723799] (detection_aruco) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/detection_aruco', 'build', '--build-base', '/home/andrea/ros2_ws/build/detection_aruco/build', 'install', '--record', '/home/andrea/ros2_ws/build/detection_aruco/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/andrea/ros2_ws/src/detection_aruco', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'andrea', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/andrea/ros2_ws/install/apriltag_ros/lib:/home/andrea/ros2_ws/install/datos_camara/lib:/home/andrea/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/andrea', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '7875', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/andrea/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'andrea', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'andrea', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/andrea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/andrea-HP-Laptop:@/tmp/.ICE-unix/1584,unix/andrea-HP-Laptop:/tmp/.ICE-unix/1584', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/947c9fd7_cf5b_4786_ad9a_98069f6187b1', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ODHWM2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.257', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/andrea/ros2_ws/install/custom_msgs:/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/andrea/ros2_ws/build/detection_aruco', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andrea/ros2_ws/build/detection_aruco/prefix_override:/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andrea/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/andrea/ros2_ws/install/apriltag_ros:/home/andrea/ros2_ws/install/datos_camara:/home/andrea/ros2_ws/install/custom_msgs'}, 'shell': False}
+[17.766715] (-) TimerEvent: {}
+[17.867103] (-) TimerEvent: {}
+[17.967414] (-) TimerEvent: {}
+[18.023559] (detection_aruco) StdoutLine: {'line': b'running egg_info\n'}
+[18.042097] (detection_aruco) StdoutLine: {'line': b'writing ../../build/detection_aruco/detection_aruco.egg-info/PKG-INFO\n'}
+[18.042612] (detection_aruco) StdoutLine: {'line': b'writing dependency_links to ../../build/detection_aruco/detection_aruco.egg-info/dependency_links.txt\n'}
+[18.042956] (detection_aruco) StdoutLine: {'line': b'writing entry points to ../../build/detection_aruco/detection_aruco.egg-info/entry_points.txt\n'}
+[18.043224] (detection_aruco) StdoutLine: {'line': b'writing requirements to ../../build/detection_aruco/detection_aruco.egg-info/requires.txt\n'}
+[18.043404] (detection_aruco) StdoutLine: {'line': b'writing top-level names to ../../build/detection_aruco/detection_aruco.egg-info/top_level.txt\n'}
+[18.067525] (-) TimerEvent: {}
+[18.081801] (detection_aruco) StdoutLine: {'line': b"reading manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'\n"}
+[18.082180] (detection_aruco) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[18.083392] (detection_aruco) StdoutLine: {'line': b"writing manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'\n"}
+[18.083589] (detection_aruco) StdoutLine: {'line': b'running build\n'}
+[18.083743] (detection_aruco) StdoutLine: {'line': b'running build_py\n'}
+[18.083980] (detection_aruco) StdoutLine: {'line': b'copying detection_aruco/detection_aruco.py -> /home/andrea/ros2_ws/build/detection_aruco/build/lib/detection_aruco\n'}
+[18.084360] (detection_aruco) StdoutLine: {'line': b'copying detection_aruco/obtener_imagen.py -> /home/andrea/ros2_ws/build/detection_aruco/build/lib/detection_aruco\n'}
+[18.084636] (detection_aruco) StdoutLine: {'line': b'copying detection_aruco/__init__.py -> /home/andrea/ros2_ws/build/detection_aruco/build/lib/detection_aruco\n'}
+[18.085085] (detection_aruco) StdoutLine: {'line': b'running install\n'}
+[18.094447] (detection_aruco) StdoutLine: {'line': b'running install_lib\n'}
+[18.114419] (detection_aruco) StdoutLine: {'line': b'copying /home/andrea/ros2_ws/build/detection_aruco/build/lib/detection_aruco/detection_aruco.py -> /home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco\n'}
+[18.115529] (detection_aruco) StdoutLine: {'line': b'byte-compiling /home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco/detection_aruco.py to detection_aruco.cpython-310.pyc\n'}
+[18.118393] (detection_aruco) StdoutLine: {'line': b'running install_data\n'}
+[18.118604] (detection_aruco) StdoutLine: {'line': b'copying resource/detection_aruco -> /home/andrea/ros2_ws/install/detection_aruco/share/ament_index/resource_index/packages\n'}
+[18.118789] (detection_aruco) StdoutLine: {'line': b'copying package.xml -> /home/andrea/ros2_ws/install/detection_aruco/share/detection_aruco\n'}
+[18.119082] (detection_aruco) StdoutLine: {'line': b'running install_egg_info\n'}
+[18.140496] (detection_aruco) StdoutLine: {'line': b"removing '/home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[18.140981] (detection_aruco) StdoutLine: {'line': b'Copying ../../build/detection_aruco/detection_aruco.egg-info to /home/andrea/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info\n'}
+[18.142341] (detection_aruco) StdoutLine: {'line': b'running install_scripts\n'}
+[18.167650] (-) TimerEvent: {}
+[18.267954] (-) TimerEvent: {}
+[18.317132] (detection_aruco) StdoutLine: {'line': b'Installing obtain script to /home/andrea/ros2_ws/install/detection_aruco/lib/detection_aruco\n'}
+[18.317369] (detection_aruco) StdoutLine: {'line': b'Installing see script to /home/andrea/ros2_ws/install/detection_aruco/lib/detection_aruco\n'}
+[18.317998] (detection_aruco) StdoutLine: {'line': b"writing list of installed files to '/home/andrea/ros2_ws/build/detection_aruco/install.log'\n"}
+[18.353623] (detection_aruco) CommandEnded: {'returncode': 0}
+[18.361790] (detection_aruco) JobEnded: {'identifier': 'detection_aruco', 'rc': 0}
+[18.362744] (-) EventReactorShutdown: {}
