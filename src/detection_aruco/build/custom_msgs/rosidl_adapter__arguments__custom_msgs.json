@@ -1,0 +1,8 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/home/andrea/ros2_ws/src/custom_msgs:msg/Plane.msg",
+    "/home/andrea/ros2_ws/src/custom_msgs:msg/PlaneMatch.msg",
+    "/home/andrea/ros2_ws/src/custom_msgs:msg/Correspondences.msg"
+  ]
+}

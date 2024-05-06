@@ -1,0 +1,4 @@
+Invoking command in '/home/andrea/ros2_ws/build/datos_camara': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andrea/ros2_ws/build/datos_camara -- -j4 -l4
+Invoked command in '/home/andrea/ros2_ws/build/datos_camara' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andrea/ros2_ws/build/datos_camara -- -j4 -l4
+Invoking command in '/home/andrea/ros2_ws/build/datos_camara': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andrea/ros2_ws/build/datos_camara
+Invoked command in '/home/andrea/ros2_ws/build/datos_camara' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andrea/ros2_ws/build/datos_camara

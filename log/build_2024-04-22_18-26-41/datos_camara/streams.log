@@ -1,0 +1,142 @@
+[0.016s] Invoking command in '/home/andrea/ros2_ws/build/datos_camara': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/py_pubsub:/home/andrea/ros2_ws/install/python_parameters:/home/andrea/ros2_ws/install/prueba_pkg:/home/andrea/ros2_ws/install/my_package:/home/andrea/ros2_ws/install/launch_testing_examples:/home/andrea/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/andrea/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/andrea/ros2_ws/install/examples_rclpy_minimal_service:/home/andrea/ros2_ws/install/examples_rclpy_minimal_publisher:/home/andrea/ros2_ws/install/examples_rclpy_minimal_client:/home/andrea/ros2_ws/install/examples_rclpy_minimal_action_server:/home/andrea/ros2_ws/install/examples_rclpy_minimal_action_client:/home/andrea/ros2_ws/install/examples_rclpy_guard_conditions:/home/andrea/ros2_ws/install/examples_rclpy_executors:/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/cv_basics:/opt/ros/humble /usr/bin/cmake --build /home/andrea/ros2_ws/build/datos_camara -- -j4 -l4
+[0.091s] [  3%] Built target datos_camara__cpp
+[0.093s] [ 12%] Built target datos_camara__rosidl_generator_c
+[0.101s] [ 12%] Built target ament_cmake_python_copy_datos_camara
+[0.139s] [ 22%] Built target datos_camara__rosidl_typesupport_cpp
+[0.143s] [ 32%] Built target datos_camara__rosidl_typesupport_introspection_cpp
+[0.143s] [ 41%] Built target datos_camara__rosidl_typesupport_fastrtps_cpp
+[0.156s] [ 51%] Built target datos_camara__rosidl_typesupport_fastrtps_c
+[0.178s] [ 61%] Built target datos_camara__rosidl_typesupport_c
+[0.181s] [ 70%] Built target datos_camara__rosidl_typesupport_introspection_c
+[0.210s] [ 70%] Built target datos_camara
+[0.239s] [ 74%] Built target datos_camara__py
+[0.269s] [ 80%] Built target datos_camara__rosidl_generator_py
+[0.313s] [ 87%] Built target datos_camara__rosidl_typesupport_introspection_c__pyext
+[0.313s] [ 93%] Built target datos_camara__rosidl_typesupport_c__pyext
+[0.314s] [100%] Built target datos_camara__rosidl_typesupport_fastrtps_c__pyext
+[0.455s] running egg_info
+[0.476s] writing datos_camara.egg-info/PKG-INFO
+[0.476s] writing dependency_links to datos_camara.egg-info/dependency_links.txt
+[0.477s] writing top-level names to datos_camara.egg-info/top_level.txt
+[0.539s] reading manifest file 'datos_camara.egg-info/SOURCES.txt'
+[0.540s] writing manifest file 'datos_camara.egg-info/SOURCES.txt'
+[0.578s] [100%] Built target ament_cmake_python_build_datos_camara_egg
+[0.592s] Invoked command in '/home/andrea/ros2_ws/build/datos_camara' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/py_pubsub:/home/andrea/ros2_ws/install/python_parameters:/home/andrea/ros2_ws/install/prueba_pkg:/home/andrea/ros2_ws/install/my_package:/home/andrea/ros2_ws/install/launch_testing_examples:/home/andrea/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/andrea/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/andrea/ros2_ws/install/examples_rclpy_minimal_service:/home/andrea/ros2_ws/install/examples_rclpy_minimal_publisher:/home/andrea/ros2_ws/install/examples_rclpy_minimal_client:/home/andrea/ros2_ws/install/examples_rclpy_minimal_action_server:/home/andrea/ros2_ws/install/examples_rclpy_minimal_action_client:/home/andrea/ros2_ws/install/examples_rclpy_guard_conditions:/home/andrea/ros2_ws/install/examples_rclpy_executors:/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/cv_basics:/opt/ros/humble /usr/bin/cmake --build /home/andrea/ros2_ws/build/datos_camara -- -j4 -l4
+[0.700s] Invoking command in '/home/andrea/ros2_ws/build/datos_camara': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/py_pubsub:/home/andrea/ros2_ws/install/python_parameters:/home/andrea/ros2_ws/install/prueba_pkg:/home/andrea/ros2_ws/install/my_package:/home/andrea/ros2_ws/install/launch_testing_examples:/home/andrea/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/andrea/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/andrea/ros2_ws/install/examples_rclpy_minimal_service:/home/andrea/ros2_ws/install/examples_rclpy_minimal_publisher:/home/andrea/ros2_ws/install/examples_rclpy_minimal_client:/home/andrea/ros2_ws/install/examples_rclpy_minimal_action_server:/home/andrea/ros2_ws/install/examples_rclpy_minimal_action_client:/home/andrea/ros2_ws/install/examples_rclpy_guard_conditions:/home/andrea/ros2_ws/install/examples_rclpy_executors:/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/cv_basics:/opt/ros/humble /usr/bin/cmake --install /home/andrea/ros2_ws/build/datos_camara
+[0.710s] -- Install configuration: ""
+[0.710s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/ament_index/resource_index/rosidl_interfaces/datos_camara
+[0.710s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara
+[0.711s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg
+[0.711s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/num.h
+[0.711s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail
+[0.711s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.h
+[0.711s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__functions.h
+[0.711s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__struct.h
+[0.711s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__functions.c
+[0.712s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_generator_c__visibility_control.h
+[0.712s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/library_path.sh
+[0.712s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/library_path.dsv
+[0.712s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_c.so
+[0.712s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara
+[0.712s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg
+[0.712s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail
+[0.713s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+[0.713s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.713s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_c.so
+[0.713s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara
+[0.713s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg
+[0.713s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail
+[0.713s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__builder.hpp
+[0.714s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__struct.hpp
+[0.714s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__traits.hpp
+[0.714s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/num.hpp
+[0.714s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara
+[0.714s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg
+[0.714s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.715s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail
+[0.715s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+[0.715s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/dds_fastrtps
+[0.715s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_cpp.so
+[0.715s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara
+[0.715s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg
+[0.715s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.716s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail
+[0.716s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_introspection_c.h
+[0.716s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.c
+[0.716s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_c.so
+[0.716s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_c.so
+[0.716s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara
+[0.716s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg
+[0.717s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail
+[0.717s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+[0.717s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.cpp
+[0.717s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_cpp.so
+[0.717s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_cpp.so
+[0.717s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/pythonpath.sh
+[0.718s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/pythonpath.dsv
+[0.718s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info
+[0.718s] -- Installing: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.718s] -- Installing: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.718s] -- Installing: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/PKG-INFO
+[0.718s] -- Installing: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/top_level.txt
+[0.718s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara
+[0.719s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.719s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_c.c
+[0.719s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/libdatos_camara__rosidl_generator_py.so
+[0.719s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_introspection_c.c
+[0.719s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.719s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg
+[0.720s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/_num_s.c
+[0.720s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/_num.py
+[0.720s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/__init__.py
+[0.720s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.720s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/__init__.py
+[0.720s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.762s] Listing '/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara'...
+[0.762s] Listing '/home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg'...
+[0.768s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.768s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.769s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.769s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_py.so
+[0.770s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/msg/Num.idl
+[0.770s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/msg/Num.msg
+[0.770s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/ament_index/resource_index/package_run_dependencies/datos_camara
+[0.770s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/ament_index/resource_index/parent_prefix_path/datos_camara
+[0.770s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/ament_prefix_path.sh
+[0.771s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/ament_prefix_path.dsv
+[0.771s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/path.sh
+[0.771s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/environment/path.dsv
+[0.771s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/local_setup.bash
+[0.771s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/local_setup.sh
+[0.771s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/local_setup.zsh
+[0.772s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/local_setup.dsv
+[0.772s] -- Installing: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.dsv
+[0.772s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/ament_index/resource_index/packages/datos_camara
+[0.772s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cExport.cmake
+[0.772s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cExport-noconfig.cmake
+[0.772s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cExport.cmake
+[0.773s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.773s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cppExport.cmake
+[0.773s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.773s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.773s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cExport.cmake
+[0.774s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.774s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cExport.cmake
+[0.774s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cExport-noconfig.cmake
+[0.774s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cppExport.cmake
+[0.774s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.774s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cppExport.cmake
+[0.774s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cppExport-noconfig.cmake
+[0.774s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_pyExport.cmake
+[0.774s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_pyExport-noconfig.cmake
+[0.775s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake-extras.cmake
+[0.775s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.775s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.775s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_libraries-extras.cmake
+[0.775s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_targets-extras.cmake
+[0.775s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.775s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.775s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camaraConfig.cmake
+[0.776s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camaraConfig-version.cmake
+[0.776s] -- Up-to-date: /home/andrea/ros2_ws/install/datos_camara/share/datos_camara/package.xml
+[0.777s] Invoked command in '/home/andrea/ros2_ws/build/datos_camara' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andrea/ros2_ws/install/py_pubsub:/home/andrea/ros2_ws/install/python_parameters:/home/andrea/ros2_ws/install/prueba_pkg:/home/andrea/ros2_ws/install/my_package:/home/andrea/ros2_ws/install/launch_testing_examples:/home/andrea/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/andrea/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/andrea/ros2_ws/install/examples_rclpy_minimal_service:/home/andrea/ros2_ws/install/examples_rclpy_minimal_publisher:/home/andrea/ros2_ws/install/examples_rclpy_minimal_client:/home/andrea/ros2_ws/install/examples_rclpy_minimal_action_server:/home/andrea/ros2_ws/install/examples_rclpy_minimal_action_client:/home/andrea/ros2_ws/install/examples_rclpy_guard_conditions:/home/andrea/ros2_ws/install/examples_rclpy_executors:/home/andrea/ros2_ws/install/detection_aruco:/home/andrea/ros2_ws/install/cv_basics:/opt/ros/humble /usr/bin/cmake --install /home/andrea/ros2_ws/build/datos_camara
