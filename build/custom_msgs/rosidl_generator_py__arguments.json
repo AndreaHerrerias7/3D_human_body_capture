@@ -1,11 +1,11 @@
 {
   "package_name": "custom_msgs",
-  "output_dir": "/home/andrea/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs",
+  "output_dir": "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/andrea/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Plane.idl",
-    "/home/andrea/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PlaneMatch.idl",
-    "/home/andrea/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Correspondences.idl"
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Plane.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PlaneMatch.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Correspondences.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -82,9 +82,9 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/andrea/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Plane.idl",
-    "/home/andrea/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/PlaneMatch.idl",
-    "/home/andrea/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Correspondences.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Plane.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/PlaneMatch.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Correspondences.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

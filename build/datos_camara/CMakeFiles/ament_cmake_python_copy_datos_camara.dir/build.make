@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrea/ros2_ws/src/datos_camara
+CMAKE_SOURCE_DIR = /home/andre/ros2_ws/src/datos_camara
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrea/ros2_ws/build/datos_camara
+CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/datos_camara
 
 # Utility rule file for ament_cmake_python_copy_datos_camara.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_datos_camara.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_datos_camara.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_datos_camara:
-	/usr/bin/cmake -E copy_directory /home/andrea/ros2_ws/build/datos_camara/rosidl_generator_py/datos_camara /home/andrea/ros2_ws/build/datos_camara/ament_cmake_python/datos_camara/datos_camara
+	/usr/bin/cmake -E copy_directory /home/andre/ros2_ws/build/datos_camara/rosidl_generator_py/datos_camara /home/andre/ros2_ws/build/datos_camara/ament_cmake_python/datos_camara/datos_camara
 
 ament_cmake_python_copy_datos_camara: CMakeFiles/ament_cmake_python_copy_datos_camara
 ament_cmake_python_copy_datos_camara: CMakeFiles/ament_cmake_python_copy_datos_camara.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_datos_camara.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_datos_camara.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_datos_camara.dir/depend:
-	cd /home/andrea/ros2_ws/build/datos_camara && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrea/ros2_ws/src/datos_camara /home/andrea/ros2_ws/src/datos_camara /home/andrea/ros2_ws/build/datos_camara /home/andrea/ros2_ws/build/datos_camara /home/andrea/ros2_ws/build/datos_camara/CMakeFiles/ament_cmake_python_copy_datos_camara.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andre/ros2_ws/build/datos_camara && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andre/ros2_ws/src/datos_camara /home/andre/ros2_ws/src/datos_camara /home/andre/ros2_ws/build/datos_camara /home/andre/ros2_ws/build/datos_camara /home/andre/ros2_ws/build/datos_camara/CMakeFiles/ament_cmake_python_copy_datos_camara.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_datos_camara.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrea/ros2_ws/src/datos_camara
+CMAKE_SOURCE_DIR = /home/andre/ros2_ws/src/datos_camara
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrea/ros2_ws/build/datos_camara
+CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/datos_camara
 
 # Utility rule file for datos_camara__py.
 
@@ -146,8 +146,8 @@ rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_
 rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/andrea/ros2_ws/build/datos_camara/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/andrea/ros2_ws/build/datos_camara/datos_camara__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/andrea/ros2_ws/build/datos_camara/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/andre/ros2_ws/build/datos_camara/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/andre/ros2_ws/build/datos_camara/datos_camara__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/andre/ros2_ws/build/datos_camara/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_introspection_c.c
@@ -179,10 +179,10 @@ datos_camara__py/CMakeFiles/datos_camara__py.dir/build: datos_camara__py
 .PHONY : datos_camara__py/CMakeFiles/datos_camara__py.dir/build
 
 datos_camara__py/CMakeFiles/datos_camara__py.dir/clean:
-	cd /home/andrea/ros2_ws/build/datos_camara/datos_camara__py && $(CMAKE_COMMAND) -P CMakeFiles/datos_camara__py.dir/cmake_clean.cmake
+	cd /home/andre/ros2_ws/build/datos_camara/datos_camara__py && $(CMAKE_COMMAND) -P CMakeFiles/datos_camara__py.dir/cmake_clean.cmake
 .PHONY : datos_camara__py/CMakeFiles/datos_camara__py.dir/clean
 
 datos_camara__py/CMakeFiles/datos_camara__py.dir/depend:
-	cd /home/andrea/ros2_ws/build/datos_camara && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrea/ros2_ws/src/datos_camara /home/andrea/ros2_ws/build/datos_camara/datos_camara__py /home/andrea/ros2_ws/build/datos_camara /home/andrea/ros2_ws/build/datos_camara/datos_camara__py /home/andrea/ros2_ws/build/datos_camara/datos_camara__py/CMakeFiles/datos_camara__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andre/ros2_ws/build/datos_camara && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andre/ros2_ws/src/datos_camara /home/andre/ros2_ws/build/datos_camara/datos_camara__py /home/andre/ros2_ws/build/datos_camara /home/andre/ros2_ws/build/datos_camara/datos_camara__py /home/andre/ros2_ws/build/datos_camara/datos_camara__py/CMakeFiles/datos_camara__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : datos_camara__py/CMakeFiles/datos_camara__py.dir/depend
 

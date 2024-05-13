@@ -1,0 +1,1065 @@
+[0.000000] (-) TimerEvent: {}
+[0.000340] (astra_camera_msgs) JobQueued: {'identifier': 'astra_camera_msgs', 'dependencies': OrderedDict()}
+[0.000460] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.000630] (datos_camara) JobQueued: {'identifier': 'datos_camara', 'dependencies': OrderedDict()}
+[0.000710] (apriltag_ros) JobQueued: {'identifier': 'apriltag_ros', 'dependencies': OrderedDict([('datos_camara', '/home/andre/ros2_ws/install/datos_camara')])}
+[0.000782] (astra_camera) JobQueued: {'identifier': 'astra_camera', 'dependencies': OrderedDict([('astra_camera_msgs', '/home/andre/ros2_ws/install/astra_camera_msgs')])}
+[0.000844] (detection_aruco) JobQueued: {'identifier': 'detection_aruco', 'dependencies': OrderedDict([('custom_msgs', '/home/andre/ros2_ws/install/custom_msgs'), ('datos_camara', '/home/andre/ros2_ws/install/datos_camara'), ('apriltag_ros', '/home/andre/ros2_ws/install/apriltag_ros')])}
+[0.001060] (datos_camara) JobStarted: {'identifier': 'datos_camara'}
+[0.007890] (astra_camera_msgs) JobStarted: {'identifier': 'astra_camera_msgs'}
+[0.012740] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.020204] (datos_camara) JobProgress: {'identifier': 'datos_camara', 'progress': 'cmake'}
+[0.020723] (datos_camara) Command: {'cmd': ['/usr/bin/cmake', '/home/andre/ros2_ws/src/datos_camara', '-DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/datos_camara'], 'cwd': '/home/andre/ros2_ws/build/datos_camara', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1770'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1741,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1741'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46fecebb_0805_4aad_b9cc_464193d32d2a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BBFVN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.172'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', 'humble'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/datos_camara'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.024455] (astra_camera_msgs) JobProgress: {'identifier': 'astra_camera_msgs', 'progress': 'cmake'}
+[0.024952] (astra_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/andre/ros2_ws/src/astra_camera/astra_camera_msgs', '-DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/astra_camera_msgs'], 'cwd': '/home/andre/ros2_ws/build/astra_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1770'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1741,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1741'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46fecebb_0805_4aad_b9cc_464193d32d2a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BBFVN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.172'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', 'humble'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/astra_camera_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.035079] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.035985] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/andre/ros2_ws/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/custom_msgs'], 'cwd': '/home/andre/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1770'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1741,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1741'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46fecebb_0805_4aad_b9cc_464193d32d2a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BBFVN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.172'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', 'humble'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098830] (-) TimerEvent: {}
+[0.130932] (astra_camera_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.136701] (datos_camara) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.158024] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.198947] (-) TimerEvent: {}
+[0.253720] (datos_camara) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.255946] (astra_camera_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.266320] (datos_camara) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.272668] (astra_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299853] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.300147] (-) TimerEvent: {}
+[0.312518] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400303] (-) TimerEvent: {}
+[0.413460] (datos_camara) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.429822] (astra_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.436135] (datos_camara) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.436576] (datos_camara) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.437415] (datos_camara) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.444791] (datos_camara) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.448361] (astra_camera_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.449040] (astra_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.450497] (astra_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.455951] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.457148] (astra_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.480815] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.481425] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.482129] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.487469] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500410] (-) TimerEvent: {}
+[0.600815] (-) TimerEvent: {}
+[0.638988] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.641242] (astra_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.643928] (datos_camara) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.656076] (datos_camara) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.656685] (datos_camara) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.656967] (astra_camera_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.657479] (astra_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.658005] (datos_camara) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.658590] (astra_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.662073] (datos_camara) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.662376] (astra_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.663478] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.664010] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.664652] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.667375] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.701008] (-) TimerEvent: {}
+[0.807845] (-) TimerEvent: {}
+[0.908232] (-) TimerEvent: {}
+[1.008769] (-) TimerEvent: {}
+[1.012171] (datos_camara) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.072368] (astra_camera_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.082962] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.108887] (-) TimerEvent: {}
+[1.197355] (datos_camara) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.208998] (-) TimerEvent: {}
+[1.221174] (astra_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.239027] (astra_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.249418] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.255227] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.263415] (astra_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.268227] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.309092] (-) TimerEvent: {}
+[1.391634] (datos_camara) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.409317] (-) TimerEvent: {}
+[1.454640] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.458467] (astra_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.509511] (-) TimerEvent: {}
+[1.579668] (datos_camara) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.587970] (datos_camara) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.602434] (custom_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.606181] (datos_camara) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.609587] (-) TimerEvent: {}
+[1.611330] (astra_camera_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.627796] (datos_camara) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.674067] (datos_camara) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.709706] (-) TimerEvent: {}
+[1.810193] (-) TimerEvent: {}
+[1.910688] (-) TimerEvent: {}
+[1.990437] (datos_camara) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.010809] (-) TimerEvent: {}
+[2.111210] (-) TimerEvent: {}
+[2.211749] (-) TimerEvent: {}
+[2.255729] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.311855] (-) TimerEvent: {}
+[2.402435] (datos_camara) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.411987] (-) TimerEvent: {}
+[2.512513] (-) TimerEvent: {}
+[2.613059] (-) TimerEvent: {}
+[2.714011] (-) TimerEvent: {}
+[2.777635] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.814141] (-) TimerEvent: {}
+[2.914687] (-) TimerEvent: {}
+[2.997590] (astra_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.014798] (-) TimerEvent: {}
+[3.115437] (-) TimerEvent: {}
+[3.215967] (-) TimerEvent: {}
+[3.269857] (datos_camara) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.316079] (-) TimerEvent: {}
+[3.416582] (-) TimerEvent: {}
+[3.431508] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.480829] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.483938] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.516679] (-) TimerEvent: {}
+[3.554839] (custom_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.555466] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.555818] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.558259] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.595742] (custom_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.616818] (-) TimerEvent: {}
+[3.672019] (datos_camara) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.683219] (astra_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.715929] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.716917] (-) TimerEvent: {}
+[3.720770] (datos_camara) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.723666] (datos_camara) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.781655] (datos_camara) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.782455] (datos_camara) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.782845] (datos_camara) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.783133] (datos_camara) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.810895] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.817103] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/andre/ros2_ws/build/custom_msgs\n'}
+[3.817355] (-) TimerEvent: {}
+[3.841020] (custom_msgs) CommandEnded: {'returncode': 0}
+[3.841966] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[3.842056] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1770'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1741,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1741'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46fecebb_0805_4aad_b9cc_464193d32d2a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BBFVN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.172'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', 'humble'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.843071] (datos_camara) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.917490] (-) TimerEvent: {}
+[3.925308] (custom_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.949350] (custom_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[3.955445] (custom_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.017600] (-) TimerEvent: {}
+[4.050177] (datos_camara) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.062725] (datos_camara) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.099935] (datos_camara) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.117721] (-) TimerEvent: {}
+[4.218270] (-) TimerEvent: {}
+[4.251136] (datos_camara) StdoutLine: {'line': b'-- Generating done\n'}
+[4.266620] (datos_camara) StdoutLine: {'line': b'-- Build files have been written to: /home/andre/ros2_ws/build/datos_camara\n'}
+[4.292265] (datos_camara) CommandEnded: {'returncode': 0}
+[4.292960] (datos_camara) JobProgress: {'identifier': 'datos_camara', 'progress': 'build'}
+[4.293028] (datos_camara) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/datos_camara', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/datos_camara', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1770'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1741,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1741'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46fecebb_0805_4aad_b9cc_464193d32d2a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BBFVN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.172'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', 'humble'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/datos_camara'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.318380] (-) TimerEvent: {}
+[4.418773] (-) TimerEvent: {}
+[4.519178] (-) TimerEvent: {}
+[4.527839] (datos_camara) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.619456] (-) TimerEvent: {}
+[4.631306] (datos_camara) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.670669] (datos_camara) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_datos_camara\n'}
+[4.719567] (-) TimerEvent: {}
+[4.766661] (astra_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.816016] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.817834] (custom_msgs) StdoutLine: {'line': b'creating custom_msgs.egg-info\n'}
+[4.818282] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[4.818839] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[4.819270] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[4.819646] (-) TimerEvent: {}
+[4.819948] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[4.829874] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[4.831920] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[4.842726] (astra_camera_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.845357] (astra_camera_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.919816] (-) TimerEvent: {}
+[4.973294] (astra_camera_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.973693] (astra_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.973875] (astra_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.974019] (astra_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.992050] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[5.019917] (-) TimerEvent: {}
+[5.075120] (astra_camera_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.120025] (-) TimerEvent: {}
+[5.177114] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target custom_msgs__cpp\n'}
+[5.204728] (custom_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.220130] (-) TimerEvent: {}
+[5.263228] (custom_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.265892] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.320236] (-) TimerEvent: {}
+[5.420616] (-) TimerEvent: {}
+[5.521003] (-) TimerEvent: {}
+[5.566902] (astra_camera_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.621125] (-) TimerEvent: {}
+[5.721547] (-) TimerEvent: {}
+[5.727559] (astra_camera_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.733268] (astra_camera_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.736702] (astra_camera_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.756192] (astra_camera_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.821650] (-) TimerEvent: {}
+[5.822106] (datos_camara) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/datos_camara__rosidl_generator_c.dir/rosidl_generator_c/datos_camara/msg/detail/num__functions.c.o\x1b[0m\n'}
+[5.908152] (datos_camara) StdoutLine: {'line': b'[  9%] Built target datos_camara__cpp\n'}
+[5.921765] (-) TimerEvent: {}
+[5.970437] (datos_camara) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.984182] (datos_camara) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.021885] (-) TimerEvent: {}
+[6.122417] (-) TimerEvent: {}
+[6.175811] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/plane__functions.c.o\x1b[0m\n'}
+[6.189008] (astra_camera_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[6.198698] (datos_camara) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libdatos_camara__rosidl_generator_c.so\x1b[0m\n'}
+[6.199911] (astra_camera_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/andre/ros2_ws/build/astra_camera_msgs\n'}
+[6.207941] (datos_camara) StdoutLine: {'line': b'running egg_info\n'}
+[6.215954] (datos_camara) StdoutLine: {'line': b'creating datos_camara.egg-info\n'}
+[6.220278] (datos_camara) StdoutLine: {'line': b'writing datos_camara.egg-info/PKG-INFO\n'}
+[6.220987] (datos_camara) StdoutLine: {'line': b'writing dependency_links to datos_camara.egg-info/dependency_links.txt\n'}
+[6.221857] (datos_camara) StdoutLine: {'line': b'writing top-level names to datos_camara.egg-info/top_level.txt\n'}
+[6.222500] (-) TimerEvent: {}
+[6.222977] (datos_camara) StdoutLine: {'line': b"writing manifest file 'datos_camara.egg-info/SOURCES.txt'\n"}
+[6.236197] (datos_camara) StdoutLine: {'line': b"reading manifest file 'datos_camara.egg-info/SOURCES.txt'\n"}
+[6.239946] (datos_camara) StdoutLine: {'line': b"writing manifest file 'datos_camara.egg-info/SOURCES.txt'\n"}
+[6.283927] (astra_camera_msgs) CommandEnded: {'returncode': 0}
+[6.284597] (astra_camera_msgs) JobProgress: {'identifier': 'astra_camera_msgs', 'progress': 'build'}
+[6.284657] (astra_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/astra_camera_msgs', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/astra_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1770'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1741,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1741'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46fecebb_0805_4aad_b9cc_464193d32d2a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BBFVN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.172'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', 'humble'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/astra_camera_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.322614] (-) TimerEvent: {}
+[6.339028] (custom_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/plane__type_support.cpp.o\x1b[0m\n'}
+[6.355622] (datos_camara) StdoutLine: {'line': b'[ 19%] Built target datos_camara__rosidl_generator_c\n'}
+[6.422740] (-) TimerEvent: {}
+[6.426355] (datos_camara) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_datos_camara_egg\n'}
+[6.434969] (datos_camara) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.515865] (datos_camara) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.522854] (-) TimerEvent: {}
+[6.527934] (astra_camera_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.552417] (custom_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/plane_match__functions.c.o\x1b[0m\n'}
+[6.580628] (astra_camera_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.622973] (-) TimerEvent: {}
+[6.723560] (-) TimerEvent: {}
+[6.784708] (astra_camera_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_astra_camera_msgs\n'}
+[6.823676] (-) TimerEvent: {}
+[6.898609] (custom_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/correspondences__functions.c.o\x1b[0m\n'}
+[6.923827] (-) TimerEvent: {}
+[6.944347] (datos_camara) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/datos_camara__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/datos_camara/msg/num__type_support.cpp.o\x1b[0m\n'}
+[7.023945] (-) TimerEvent: {}
+[7.124412] (-) TimerEvent: {}
+[7.126995] (custom_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[7.224522] (-) TimerEvent: {}
+[7.225938] (custom_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/plane__type_support.cpp.o\x1b[0m\n'}
+[7.324631] (-) TimerEvent: {}
+[7.383558] (custom_msgs) StdoutLine: {'line': b'[ 23%] Built target custom_msgs__rosidl_generator_c\n'}
+[7.424744] (-) TimerEvent: {}
+[7.426609] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/plane_match__type_support.cpp.o\x1b[0m\n'}
+[7.436243] (datos_camara) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/datos_camara__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/datos_camara/msg/detail/dds_fastrtps/num__type_support.cpp.o\x1b[0m\n'}
+[7.524863] (-) TimerEvent: {}
+[7.538166] (custom_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp.o\x1b[0m\n'}
+[7.631864] (-) TimerEvent: {}
+[7.664462] (datos_camara) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/datos_camara__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/datos_camara/msg/detail/num__type_support.cpp.o\x1b[0m\n'}
+[7.731987] (-) TimerEvent: {}
+[7.832451] (-) TimerEvent: {}
+[7.932865] (-) TimerEvent: {}
+[8.033285] (-) TimerEvent: {}
+[8.133679] (-) TimerEvent: {}
+[8.234106] (-) TimerEvent: {}
+[8.334524] (-) TimerEvent: {}
+[8.435012] (-) TimerEvent: {}
+[8.535442] (-) TimerEvent: {}
+[8.549312] (custom_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/plane_match__type_support.cpp.o\x1b[0m\n'}
+[8.635552] (-) TimerEvent: {}
+[8.735954] (-) TimerEvent: {}
+[8.836364] (-) TimerEvent: {}
+[8.872367] (datos_camara) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/datos_camara__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/datos_camara/msg/detail/num__type_support_c.cpp.o\x1b[0m\n'}
+[8.899343] (astra_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[8.901295] (astra_camera_msgs) StdoutLine: {'line': b'creating astra_camera_msgs.egg-info\n'}
+[8.908993] (astra_camera_msgs) StdoutLine: {'line': b'writing astra_camera_msgs.egg-info/PKG-INFO\n'}
+[8.917031] (astra_camera_msgs) StdoutLine: {'line': b'writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt\n'}
+[8.918193] (astra_camera_msgs) StdoutLine: {'line': b'writing top-level names to astra_camera_msgs.egg-info/top_level.txt\n'}
+[8.919416] (astra_camera_msgs) StdoutLine: {'line': b"writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'\n"}
+[8.923989] (astra_camera_msgs) StdoutLine: {'line': b"reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'\n"}
+[8.936480] (-) TimerEvent: {}
+[8.941040] (astra_camera_msgs) StdoutLine: {'line': b"writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'\n"}
+[8.982474] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/correspondences__type_support.cpp.o\x1b[0m\n'}
+[9.036754] (-) TimerEvent: {}
+[9.137249] (-) TimerEvent: {}
+[9.157983] (astra_camera_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_astra_camera_msgs_egg\n'}
+[9.237373] (-) TimerEvent: {}
+[9.338007] (-) TimerEvent: {}
+[9.346729] (datos_camara) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libdatos_camara__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.438120] (-) TimerEvent: {}
+[9.538530] (-) TimerEvent: {}
+[9.581262] (custom_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/correspondences__type_support.cpp.o\x1b[0m\n'}
+[9.638661] (-) TimerEvent: {}
+[9.684439] (datos_camara) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libdatos_camara__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.738790] (-) TimerEvent: {}
+[9.740587] (datos_camara) StdoutLine: {'line': b'[ 45%] Built target datos_camara__rosidl_typesupport_cpp\n'}
+[9.838919] (-) TimerEvent: {}
+[9.858046] (datos_camara) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.939038] (-) TimerEvent: {}
+[10.039613] (-) TimerEvent: {}
+[10.072259] (datos_camara) StdoutLine: {'line': b'[ 48%] Built target datos_camara__rosidl_typesupport_introspection_cpp\n'}
+[10.135540] (datos_camara) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.139726] (-) TimerEvent: {}
+[10.171317] (datos_camara) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libdatos_camara__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.239891] (-) TimerEvent: {}
+[10.340428] (-) TimerEvent: {}
+[10.441002] (-) TimerEvent: {}
+[10.541584] (-) TimerEvent: {}
+[10.642110] (-) TimerEvent: {}
+[10.642554] (custom_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane_match__type_support.cpp.o\x1b[0m\n'}
+[10.672768] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.681018] (datos_camara) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libdatos_camara__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[10.704613] (custom_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.742236] (-) TimerEvent: {}
+[10.828784] (datos_camara) StdoutLine: {'line': b'[ 58%] Built target datos_camara__rosidl_typesupport_fastrtps_c\n'}
+[10.842341] (-) TimerEvent: {}
+[10.937731] (custom_msgs) StdoutLine: {'line': b'[ 40%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[10.942505] (-) TimerEvent: {}
+[10.963401] (custom_msgs) StdoutLine: {'line': b'[ 42%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[11.042661] (-) TimerEvent: {}
+[11.118073] (datos_camara) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/datos_camara__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/datos_camara/msg/detail/num__type_support.c.o\x1b[0m\n'}
+[11.142766] (-) TimerEvent: {}
+[11.243290] (-) TimerEvent: {}
+[11.301349] (datos_camara) StdoutLine: {'line': b'[ 61%] Built target datos_camara__rosidl_typesupport_fastrtps_cpp\n'}
+[11.326925] (datos_camara) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libdatos_camara__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[11.343408] (-) TimerEvent: {}
+[11.443921] (-) TimerEvent: {}
+[11.521007] (datos_camara) StdoutLine: {'line': b'[ 64%] Built target datos_camara__rosidl_typesupport_introspection_c\n'}
+[11.544031] (-) TimerEvent: {}
+[11.644431] (-) TimerEvent: {}
+[11.715932] (datos_camara) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/datos_camara__rosidl_typesupport_c.dir/rosidl_typesupport_c/datos_camara/msg/num__type_support.cpp.o\x1b[0m\n'}
+[11.744565] (-) TimerEvent: {}
+[11.845144] (-) TimerEvent: {}
+[11.876512] (custom_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp.o\x1b[0m\n'}
+[11.905084] (datos_camara) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libdatos_camara__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.945258] (-) TimerEvent: {}
+[11.988742] (custom_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.045378] (-) TimerEvent: {}
+[12.145938] (-) TimerEvent: {}
+[12.242010] (datos_camara) StdoutLine: {'line': b'[ 70%] Built target datos_camara__rosidl_typesupport_c\n'}
+[12.246108] (-) TimerEvent: {}
+[12.346596] (-) TimerEvent: {}
+[12.358177] (datos_camara) StdoutLine: {'line': b'[ 70%] Built target datos_camara\n'}
+[12.424244] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/plane__type_support.c.o\x1b[0m\n'}
+[12.446722] (-) TimerEvent: {}
+[12.452085] (datos_camara) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.524482] (custom_msgs) StdoutLine: {'line': b'[ 48%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[12.546864] (-) TimerEvent: {}
+[12.602424] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.611833] (custom_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/plane_match__type_support.c.o\x1b[0m\n'}
+[12.646970] (-) TimerEvent: {}
+[12.666579] (custom_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/plane__type_support_c.cpp.o\x1b[0m\n'}
+[12.707568] (astra_camera_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_camera_msgs/msg/detail/extrinsics__functions.c.o\x1b[0m\n'}
+[12.728187] (astra_camera_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_camera_msgs/msg/detail/device_info__functions.c.o\x1b[0m\n'}
+[12.729846] (astra_camera_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_camera_msgs/msg/detail/metadata__functions.c.o\x1b[0m\n'}
+[12.747091] (-) TimerEvent: {}
+[12.770796] (custom_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/correspondences__type_support.c.o\x1b[0m\n'}
+[12.847206] (-) TimerEvent: {}
+[12.947642] (-) TimerEvent: {}
+[13.048091] (-) TimerEvent: {}
+[13.063068] (custom_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[13.112523] (astra_camera_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_camera_msgs/srv/detail/get_device_info__functions.c.o\x1b[0m\n'}
+[13.129278] (astra_camera_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_camera_msgs/srv/detail/get_camera_info__functions.c.o\x1b[0m\n'}
+[13.148201] (-) TimerEvent: {}
+[13.169599] (astra_camera_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_camera_msgs/srv/detail/get_camera_params__functions.c.o\x1b[0m\n'}
+[13.248334] (-) TimerEvent: {}
+[13.310156] (custom_msgs) StdoutLine: {'line': b'[ 59%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[13.348442] (-) TimerEvent: {}
+[13.378141] (custom_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/plane_match__type_support_c.cpp.o\x1b[0m\n'}
+[13.387269] (astra_camera_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_camera_msgs/srv/detail/get_int32__functions.c.o\x1b[0m\n'}
+[13.448553] (-) TimerEvent: {}
+[13.548981] (-) TimerEvent: {}
+[13.649386] (-) TimerEvent: {}
+[13.704457] (astra_camera_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_camera_msgs/srv/detail/get_string__functions.c.o\x1b[0m\n'}
+[13.716639] (astra_camera_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_camera_msgs/srv/detail/set_int32__functions.c.o\x1b[0m\n'}
+[13.749513] (-) TimerEvent: {}
+[13.817224] (datos_camara) StdoutLine: {'line': b'[ 74%] Built target datos_camara__py\n'}
+[13.849636] (-) TimerEvent: {}
+[13.935906] (datos_camara) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/datos_camara__rosidl_generator_py.dir/rosidl_generator_py/datos_camara/msg/_num_s.c.o\x1b[0m\n'}
+[13.949765] (-) TimerEvent: {}
+[14.024856] (custom_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[14.048621] (astra_camera_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libastra_camera_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[14.049857] (-) TimerEvent: {}
+[14.098273] (astra_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target astra_camera_msgs__cpp\n'}
+[14.123711] (custom_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/plane__type_support.cpp.o\x1b[0m\n'}
+[14.145590] (astra_camera_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.149986] (-) TimerEvent: {}
+[14.165446] (astra_camera_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[14.196617] (astra_camera_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.250109] (-) TimerEvent: {}
+[14.266745] (astra_camera_msgs) StdoutLine: {'line': b'[ 15%] Built target astra_camera_msgs__rosidl_generator_c\n'}
+[14.316635] (custom_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/plane_match__type_support.cpp.o\x1b[0m\n'}
+[14.337546] (astra_camera_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.350245] (-) TimerEvent: {}
+[14.364386] (datos_camara) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/datos_camara/libdatos_camara__rosidl_generator_py.so\x1b[0m\n'}
+[14.450366] (-) TimerEvent: {}
+[14.478766] (custom_msgs) StdoutLine: {'line': b'[ 68%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[14.501687] (custom_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/correspondences__type_support.cpp.o\x1b[0m\n'}
+[14.550485] (-) TimerEvent: {}
+[14.558866] (custom_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/correspondences__type_support_c.cpp.o\x1b[0m\n'}
+[14.650606] (-) TimerEvent: {}
+[14.695221] (datos_camara) StdoutLine: {'line': b'[ 80%] Built target datos_camara__rosidl_generator_py\n'}
+[14.750721] (-) TimerEvent: {}
+[14.756474] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.828548] (datos_camara) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/datos_camara__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.850840] (-) TimerEvent: {}
+[14.874038] (datos_camara) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/datos_camara__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.874346] (datos_camara) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/datos_camara__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/datos_camara/_datos_camara_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.950956] (-) TimerEvent: {}
+[15.051512] (-) TimerEvent: {}
+[15.066836] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[15.151599] (-) TimerEvent: {}
+[15.252274] (-) TimerEvent: {}
+[15.352789] (-) TimerEvent: {}
+[15.453501] (-) TimerEvent: {}
+[15.548663] (datos_camara) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.553610] (-) TimerEvent: {}
+[15.582845] (datos_camara) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.639276] (datos_camara) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.653725] (-) TimerEvent: {}
+[15.709142] (custom_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[15.753841] (-) TimerEvent: {}
+[15.783664] (datos_camara) StdoutLine: {'line': b'[100%] Built target datos_camara__rosidl_typesupport_introspection_c__pyext\n'}
+[15.831236] (datos_camara) StdoutLine: {'line': b'[100%] Built target datos_camara__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.854017] (-) TimerEvent: {}
+[15.854447] (datos_camara) StdoutLine: {'line': b'[100%] Built target datos_camara__rosidl_typesupport_c__pyext\n'}
+[15.904609] (datos_camara) CommandEnded: {'returncode': 0}
+[15.954137] (-) TimerEvent: {}
+[16.048009] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[16.054241] (-) TimerEvent: {}
+[16.154730] (-) TimerEvent: {}
+[16.175559] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs\n'}
+[16.254845] (-) TimerEvent: {}
+[16.294128] (custom_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[16.354960] (-) TimerEvent: {}
+[16.455451] (-) TimerEvent: {}
+[16.555995] (-) TimerEvent: {}
+[16.648662] (astra_camera_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_camera_msgs/msg/device_info__type_support.cpp.o\x1b[0m\n'}
+[16.656101] (-) TimerEvent: {}
+[16.756521] (-) TimerEvent: {}
+[16.843919] (datos_camara) JobProgress: {'identifier': 'datos_camara', 'progress': 'install'}
+[16.856631] (-) TimerEvent: {}
+[16.878667] (datos_camara) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/datos_camara'], 'cwd': '/home/andre/ros2_ws/build/datos_camara', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1770'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1741,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1741'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46fecebb_0805_4aad_b9cc_464193d32d2a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BBFVN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.172'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', 'humble'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/datos_camara'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[16.923937] (datos_camara) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.924394] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/ament_index/resource_index/rosidl_interfaces/datos_camara\n'}
+[16.924959] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[16.925243] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[16.925481] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[16.925637] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__functions.h\n'}
+[16.925862] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__struct.h\n'}
+[16.926074] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__functions.c\n'}
+[16.926269] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.h\n'}
+[16.926489] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_generator_c__visibility_control.h\n'}
+[16.926701] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/num.h\n'}
+[16.926995] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/library_path.sh\n'}
+[16.927261] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/library_path.dsv\n'}
+[16.927669] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_c.so\n'}
+[16.936683] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_c.so" to ""\n'}
+[16.937095] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[16.937328] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[16.937483] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[16.937698] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[16.937837] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[16.937980] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_c.so\n'}
+[16.938465] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.938731] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[16.938874] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[16.939071] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/num.hpp\n'}
+[16.939290] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[16.939468] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__struct.hpp\n'}
+[16.939625] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__traits.hpp\n'}
+[16.939879] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__builder.hpp\n'}
+[16.940043] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[16.947976] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[16.948360] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[16.948585] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.948741] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/dds_fastrtps\n'}
+[16.948938] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[16.949142] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_cpp.so\n'}
+[16.949842] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[16.950163] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[16.950317] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[16.950492] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[16.950645] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[16.950854] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.c\n'}
+[16.951026] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.951214] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_c.so\n'}
+[16.951841] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.952106] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_c.so\n'}
+[16.952751] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_c.so" to ""\n'}
+[16.953068] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[16.953219] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[16.953397] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[16.953535] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.953726] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.cpp\n'}
+[16.953862] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_cpp.so\n'}
+[16.954523] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[16.954777] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_cpp.so\n'}
+[16.955468] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_cpp.so" to ""\n'}
+[16.955717] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/pythonpath.sh\n'}
+[16.956707] (-) TimerEvent: {}
+[16.967983] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/pythonpath.dsv\n'}
+[16.968335] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info\n'}
+[16.968775] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[16.969124] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[16.969436] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[16.969758] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[16.970227] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara\n'}
+[16.970510] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.970856] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.971215] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.971575] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_c.c\n'}
+[16.971963] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.972306] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/libdatos_camara__rosidl_generator_py.so\n'}
+[16.972663] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/__init__.py\n'}
+[16.972959] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.973307] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg\n'}
+[16.973582] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/_num.py\n'}
+[16.973844] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/_num_s.c\n'}
+[16.974118] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/__init__.py\n'}
+[17.056827] (-) TimerEvent: {}
+[17.100297] (datos_camara) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara'...\n"}
+[17.100551] (datos_camara) StdoutLine: {'line': b"Compiling '/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/__init__.py'...\n"}
+[17.100712] (datos_camara) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg'...\n"}
+[17.100859] (datos_camara) StdoutLine: {'line': b"Compiling '/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/__init__.py'...\n"}
+[17.101003] (datos_camara) StdoutLine: {'line': b"Compiling '/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/_num.py'...\n"}
+[17.123357] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[17.124597] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[17.125528] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[17.126718] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[17.127579] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[17.128907] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[17.129497] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_py.so\n'}
+[17.130736] (datos_camara) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_py.so" to ""\n'}
+[17.131316] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/msg/Num.idl\n'}
+[17.131906] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/msg/Num.msg\n'}
+[17.132620] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/ament_index/resource_index/package_run_dependencies/datos_camara\n'}
+[17.133381] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/ament_index/resource_index/parent_prefix_path/datos_camara\n'}
+[17.134035] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/ament_prefix_path.sh\n'}
+[17.134659] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/ament_prefix_path.dsv\n'}
+[17.135268] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/path.sh\n'}
+[17.135959] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/path.dsv\n'}
+[17.136589] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/local_setup.bash\n'}
+[17.147916] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/local_setup.sh\n'}
+[17.148744] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/local_setup.zsh\n'}
+[17.149513] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/local_setup.dsv\n'}
+[17.150267] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/package.dsv\n'}
+[17.151056] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/ament_index/resource_index/packages/datos_camara\n'}
+[17.151910] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cExport.cmake\n'}
+[17.152666] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cExport-noconfig.cmake\n'}
+[17.153375] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.154051] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.154861] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cppExport.cmake\n'}
+[17.155616] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.156324] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.156919] (-) TimerEvent: {}
+[17.157398] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.158155] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.158892] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cExport.cmake\n'}
+[17.159585] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.160300] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.160924] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.161540] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cppExport.cmake\n'}
+[17.162143] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.162783] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_pyExport.cmake\n'}
+[17.163374] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.163980] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake-extras.cmake\n'}
+[17.164560] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.165144] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.165730] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.166356] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.166972] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.167558] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.172936] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camaraConfig.cmake\n'}
+[17.173589] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camaraConfig-version.cmake\n'}
+[17.174192] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/package.xml\n'}
+[17.192940] (datos_camara) CommandEnded: {'returncode': 0}
+[17.257066] (-) TimerEvent: {}
+[17.357458] (-) TimerEvent: {}
+[17.405843] (astra_camera_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_camera_msgs/msg/detail/device_info__type_support.cpp.o\x1b[0m\n'}
+[17.457579] (-) TimerEvent: {}
+[17.558149] (-) TimerEvent: {}
+[17.573685] (astra_camera_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[17.648028] (datos_camara) JobEnded: {'identifier': 'datos_camara', 'rc': 0}
+[17.649496] (apriltag_ros) JobStarted: {'identifier': 'apriltag_ros'}
+[17.658276] (-) TimerEvent: {}
+[17.716246] (apriltag_ros) JobProgress: {'identifier': 'apriltag_ros', 'progress': 'cmake'}
+[17.724576] (apriltag_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/andre/ros2_ws/src/apriltag_ros', '-DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/apriltag_ros'], 'cwd': '/home/andre/ros2_ws/build/apriltag_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/datos_camara/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1770'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1741,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1741'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46fecebb_0805_4aad_b9cc_464193d32d2a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BBFVN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.172'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', 'humble'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/datos_camara:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/apriltag_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/datos_camara:/opt/ros/humble')]), 'shell': False}
+[17.758400] (-) TimerEvent: {}
+[17.819671] (custom_msgs) StdoutLine: {'line': b'[ 78%] Built target custom_msgs__py\n'}
+[17.858524] (-) TimerEvent: {}
+[17.866192] (astra_camera_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_camera_msgs/msg/detail/dds_fastrtps/device_info__type_support.cpp.o\x1b[0m\n'}
+[17.920905] (apriltag_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[17.945907] (custom_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_plane_s.c.o\x1b[0m\n'}
+[17.955158] (custom_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_plane_match_s.c.o\x1b[0m\n'}
+[17.955554] (custom_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_correspondences_s.c.o\x1b[0m\n'}
+[17.958641] (-) TimerEvent: {}
+[18.059373] (-) TimerEvent: {}
+[18.159813] (-) TimerEvent: {}
+[18.257825] (apriltag_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[18.259929] (-) TimerEvent: {}
+[18.262747] (astra_camera_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_camera_msgs/msg/detail/device_info__type_support_c.cpp.o\x1b[0m\n'}
+[18.303997] (apriltag_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[18.360047] (-) TimerEvent: {}
+[18.460585] (-) TimerEvent: {}
+[18.561031] (-) TimerEvent: {}
+[18.636526] (custom_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[18.661449] (-) TimerEvent: {}
+[18.693184] (astra_camera_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[18.700332] (apriltag_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[18.730449] (apriltag_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[18.731440] (apriltag_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[18.732804] (apriltag_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[18.735712] (astra_camera_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_camera_msgs/msg/detail/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[18.741298] (apriltag_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[18.761566] (-) TimerEvent: {}
+[18.862080] (-) TimerEvent: {}
+[18.891173] (custom_msgs) StdoutLine: {'line': b'[ 87%] Built target custom_msgs__rosidl_generator_py\n'}
+[18.962207] (-) TimerEvent: {}
+[19.014766] (custom_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[19.029304] (custom_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[19.055573] (custom_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[19.062333] (-) TimerEvent: {}
+[19.162922] (-) TimerEvent: {}
+[19.263460] (-) TimerEvent: {}
+[19.303256] (apriltag_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[19.338835] (apriltag_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[19.339428] (apriltag_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[19.340646] (apriltag_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[19.361561] (astra_camera_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_camera_msgs/msg/detail/extrinsics__type_support_c.cpp.o\x1b[0m\n'}
+[19.361965] (apriltag_ros) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[19.363562] (-) TimerEvent: {}
+[19.463991] (-) TimerEvent: {}
+[19.564416] (-) TimerEvent: {}
+[19.609331] (custom_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[19.619761] (astra_camera_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_camera_msgs/srv/get_device_info__type_support.cpp.o\x1b[0m\n'}
+[19.664527] (-) TimerEvent: {}
+[19.708074] (astra_camera_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_camera_msgs/msg/detail/dds_fastrtps/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[19.732345] (custom_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[19.764647] (-) TimerEvent: {}
+[19.780537] (custom_msgs) StdoutLine: {'line': b'[ 97%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[19.793572] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[19.864770] (-) TimerEvent: {}
+[19.965325] (-) TimerEvent: {}
+[20.008242] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[20.025443] (apriltag_ros) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[20.054620] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[20.065448] (-) TimerEvent: {}
+[20.135199] (custom_msgs) CommandEnded: {'returncode': 0}
+[20.165567] (-) TimerEvent: {}
+[20.266038] (-) TimerEvent: {}
+[20.322143] (astra_camera_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_camera_msgs/msg/detail/metadata__type_support.cpp.o\x1b[0m\n'}
+[20.366157] (-) TimerEvent: {}
+[20.418869] (astra_camera_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_camera_msgs/srv/get_camera_info__type_support.cpp.o\x1b[0m\n'}
+[20.466283] (-) TimerEvent: {}
+[20.566685] (-) TimerEvent: {}
+[20.667133] (-) TimerEvent: {}
+[20.678602] (apriltag_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[20.692023] (apriltag_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[20.722696] (apriltag_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[20.764402] (astra_camera_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_camera_msgs/msg/detail/metadata__type_support_c.cpp.o\x1b[0m\n'}
+[20.767250] (-) TimerEvent: {}
+[20.770117] (apriltag_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[20.827851] (apriltag_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[20.867373] (-) TimerEvent: {}
+[20.967788] (-) TimerEvent: {}
+[21.032049] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[21.039829] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/custom_msgs'], 'cwd': '/home/andre/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1770'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1741,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1741'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46fecebb_0805_4aad_b9cc_464193d32d2a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BBFVN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.172'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', 'humble'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[21.065026] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.065641] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[21.066109] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[21.066308] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[21.066571] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane_match.h\n'}
+[21.066734] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[21.066923] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__functions.h\n'}
+[21.067160] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.h\n'}
+[21.067347] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__functions.c\n'}
+[21.067582] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.h\n'}
+[21.067761] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__functions.c\n'}
+[21.067942] (-) TimerEvent: {}
+[21.068369] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.h\n'}
+[21.068609] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.h\n'}
+[21.068808] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__functions.c\n'}
+[21.069069] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__functions.h\n'}
+[21.069281] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.h\n'}
+[21.069449] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.h\n'}
+[21.069715] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__functions.h\n'}
+[21.069931] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.h\n'}
+[21.070224] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[21.070403] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane.h\n'}
+[21.070679] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[21.070933] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[21.072099] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[21.074242] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[21.074673] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[21.074948] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[21.075171] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[21.077505] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_fastrtps_c.h\n'}
+[21.077757] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_c.h\n'}
+[21.077977] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_fastrtps_c.h\n'}
+[21.078162] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[21.080698] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[21.081002] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[21.081160] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[21.081372] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[21.081570] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[21.081750] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_c.h\n'}
+[21.081982] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_c.h\n'}
+[21.082213] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.c\n'}
+[21.082471] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.c\n'}
+[21.082725] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_c.h\n'}
+[21.082993] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.c\n'}
+[21.083248] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[21.083504] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[21.083786] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[21.088857] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[21.089117] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[21.094585] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[21.094842] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[21.095073] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.hpp\n'}
+[21.095233] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[21.095565] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.hpp\n'}
+[21.101267] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__traits.hpp\n'}
+[21.101487] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.hpp\n'}
+[21.101653] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__traits.hpp\n'}
+[21.101808] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__builder.hpp\n'}
+[21.101958] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__builder.hpp\n'}
+[21.102133] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__builder.hpp\n'}
+[21.102286] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__traits.hpp\n'}
+[21.102438] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.hpp\n'}
+[21.102585] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane_match.hpp\n'}
+[21.102732] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane.hpp\n'}
+[21.102880] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[21.103027] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[21.103174] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[21.103322] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[21.103467] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.103617] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.103796] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.103974] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[21.104131] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[21.104284] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[21.104446] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[21.104592] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[21.104734] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[21.104880] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.cpp\n'}
+[21.105024] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.cpp\n'}
+[21.105167] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.105321] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.cpp\n'}
+[21.105463] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.105628] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.105810] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[21.105974] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[21.106173] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[21.106371] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[21.106567] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[21.106764] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[21.106962] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info\n'}
+[21.107155] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[21.116041] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[21.116283] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[21.116511] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[21.116696] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs\n'}
+[21.116874] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[21.117039] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[21.117216] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[21.117383] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.117555] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[21.117724] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[21.117890] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.118063] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.118220] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg\n'}
+[21.118371] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match_s.c\n'}
+[21.118523] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane.py\n'}
+[21.118673] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_s.c\n'}
+[21.118823] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[21.118974] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences_s.c\n'}
+[21.119124] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match.py\n'}
+[21.119283] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences.py\n'}
+[21.120425] (astra_camera_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_camera_msgs/msg/detail/dds_fastrtps/metadata__type_support.cpp.o\x1b[0m\n'}
+[21.168068] (-) TimerEvent: {}
+[21.169005] (apriltag_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[21.175646] (apriltag_ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[21.198234] (custom_msgs) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[21.198539] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py'...\n"}
+[21.198729] (custom_msgs) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[21.198903] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py'...\n"}
+[21.199075] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences.py'...\n"}
+[21.199261] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane.py'...\n"}
+[21.199432] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match.py'...\n"}
+[21.209752] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.211387] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[21.212378] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.214032] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[21.214927] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.216159] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[21.216834] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[21.218317] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""\n'}
+[21.218979] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Plane.idl\n'}
+[21.219748] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PlaneMatch.idl\n'}
+[21.220728] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Correspondences.idl\n'}
+[21.221537] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Plane.msg\n'}
+[21.222305] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PlaneMatch.msg\n'}
+[21.223123] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Correspondences.msg\n'}
+[21.224035] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[21.224360] (astra_camera_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_camera_msgs/srv/get_camera_params__type_support.cpp.o\x1b[0m\n'}
+[21.225192] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[21.225866] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[21.226579] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[21.226940] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[21.227219] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[21.227537] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[21.227899] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[21.228219] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[21.228537] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[21.228856] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[21.229299] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[21.229733] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[21.230058] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[21.230430] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[21.230767] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[21.231129] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[21.231508] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[21.231924] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[21.232251] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[21.232610] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[21.232972] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[21.233324] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[21.233671] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[21.233999] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[21.234345] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[21.234680] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[21.235038] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[21.235363] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[21.236020] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[21.236272] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[21.236914] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[21.237927] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[21.238260] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[21.238800] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[21.238975] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[21.239141] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[21.260407] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[21.260608] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[21.260772] (custom_msgs) CommandEnded: {'returncode': 0}
+[21.280256] (-) TimerEvent: {}
+[21.380948] (-) TimerEvent: {}
+[21.481385] (-) TimerEvent: {}
+[21.581883] (-) TimerEvent: {}
+[21.600602] (astra_camera_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_camera_msgs/srv/detail/get_device_info__type_support.cpp.o\x1b[0m\n'}
+[21.682010] (-) TimerEvent: {}
+[21.738927] (apriltag_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[21.782126] (-) TimerEvent: {}
+[21.855843] (apriltag_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[21.882248] (-) TimerEvent: {}
+[21.936736] (astra_camera_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_camera_msgs/srv/detail/get_device_info__type_support_c.cpp.o\x1b[0m\n'}
+[21.982368] (-) TimerEvent: {}
+[22.003531] (apriltag_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[22.060123] (apriltag_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[22.068411] (astra_camera_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_camera_msgs/srv/get_int32__type_support.cpp.o\x1b[0m\n'}
+[22.082487] (-) TimerEvent: {}
+[22.183030] (-) TimerEvent: {}
+[22.283577] (-) TimerEvent: {}
+[22.336582] (astra_camera_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_camera_msgs/srv/detail/dds_fastrtps/get_device_info__type_support.cpp.o\x1b[0m\n'}
+[22.383319] (apriltag_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[22.383618] (-) TimerEvent: {}
+[22.383902] (apriltag_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[22.483778] (-) TimerEvent: {}
+[22.584223] (-) TimerEvent: {}
+[22.684713] (-) TimerEvent: {}
+[22.743974] (astra_camera_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_camera_msgs/srv/detail/get_camera_info__type_support.cpp.o\x1b[0m\n'}
+[22.766046] (apriltag_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[22.766311] (apriltag_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[22.775935] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[22.784831] (-) TimerEvent: {}
+[22.885267] (-) TimerEvent: {}
+[22.985776] (-) TimerEvent: {}
+[23.000519] (astra_camera_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_camera_msgs/srv/get_string__type_support.cpp.o\x1b[0m\n'}
+[23.045382] (astra_camera_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_camera_msgs/srv/detail/get_camera_info__type_support_c.cpp.o\x1b[0m\n'}
+[23.085901] (-) TimerEvent: {}
+[23.186429] (-) TimerEvent: {}
+[23.286957] (-) TimerEvent: {}
+[23.387490] (-) TimerEvent: {}
+[23.433362] (apriltag_ros) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.8 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[23.487613] (-) TimerEvent: {}
+[23.588202] (-) TimerEvent: {}
+[23.651518] (astra_camera_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_camera_msgs/srv/detail/dds_fastrtps/get_camera_info__type_support.cpp.o\x1b[0m\n'}
+[23.688322] (-) TimerEvent: {}
+[23.691510] (apriltag_ros) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[23.757781] (astra_camera_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_camera_msgs/srv/detail/get_camera_params__type_support.cpp.o\x1b[0m\n'}
+[23.788438] (-) TimerEvent: {}
+[23.888840] (-) TimerEvent: {}
+[23.930179] (astra_camera_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_camera_msgs/srv/set_int32__type_support.cpp.o\x1b[0m\n'}
+[23.988958] (-) TimerEvent: {}
+[24.011526] (astra_camera_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_camera_msgs/srv/detail/get_camera_params__type_support_c.cpp.o\x1b[0m\n'}
+[24.089079] (-) TimerEvent: {}
+[24.189593] (-) TimerEvent: {}
+[24.208111] (apriltag_ros) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:38 (find_package):\n'}
+[24.208615] (apriltag_ros) StderrLine: {'line': b'  By not providing "Findapriltag_msgs.cmake" in CMAKE_MODULE_PATH this\n'}
+[24.208814] (apriltag_ros) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[24.208977] (apriltag_ros) StderrLine: {'line': b'  "apriltag_msgs", but CMake did not find one.\n'}
+[24.209139] (apriltag_ros) StderrLine: {'line': b'\n'}
+[24.209280] (apriltag_ros) StderrLine: {'line': b'  Could not find a package configuration file provided by "apriltag_msgs"\n'}
+[24.209429] (apriltag_ros) StderrLine: {'line': b'  with any of the following names:\n'}
+[24.209677] (apriltag_ros) StderrLine: {'line': b'\n'}
+[24.209845] (apriltag_ros) StderrLine: {'line': b'    apriltag_msgsConfig.cmake\n'}
+[24.210003] (apriltag_ros) StderrLine: {'line': b'    apriltag_msgs-config.cmake\n'}
+[24.210158] (apriltag_ros) StderrLine: {'line': b'\n'}
+[24.210306] (apriltag_ros) StderrLine: {'line': b'  Add the installation prefix of "apriltag_msgs" to CMAKE_PREFIX_PATH or set\n'}
+[24.210458] (apriltag_ros) StderrLine: {'line': b'  "apriltag_msgs_DIR" to a directory containing one of the above files.  If\n'}
+[24.210609] (apriltag_ros) StderrLine: {'line': b'  "apriltag_msgs" provides a separate development package or SDK, be sure it\n'}
+[24.210775] (apriltag_ros) StderrLine: {'line': b'  has been installed.\n'}
+[24.210930] (apriltag_ros) StderrLine: {'line': b'\n'}
+[24.211077] (apriltag_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[24.211225] (apriltag_ros) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[24.211383] (apriltag_ros) StdoutLine: {'line': b'See also "/home/andre/ros2_ws/build/apriltag_ros/CMakeFiles/CMakeOutput.log".\n'}
+[24.239226] (apriltag_ros) CommandEnded: {'returncode': 1}
+[24.289725] (-) TimerEvent: {}
+[24.303036] (apriltag_ros) JobEnded: {'identifier': 'apriltag_ros', 'rc': 1}
+[24.389857] (-) TimerEvent: {}
+[24.490262] (-) TimerEvent: {}
+[24.590661] (-) TimerEvent: {}
+[24.691070] (-) TimerEvent: {}
+[24.701111] (astra_camera_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_camera_msgs/srv/detail/dds_fastrtps/get_camera_params__type_support.cpp.o\x1b[0m\n'}
+[24.702190] (astra_camera_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libastra_camera_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[24.786300] (astra_camera_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_camera_msgs/srv/detail/get_int32__type_support.cpp.o\x1b[0m\n'}
+[24.791184] (-) TimerEvent: {}
+[24.815867] (astra_camera_msgs) StdoutLine: {'line': b'[ 47%] Built target astra_camera_msgs__rosidl_typesupport_cpp\n'}
+[24.847928] (astra_camera_msgs) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[24.899852] (-) TimerEvent: {}
+[25.015735] (-) TimerEvent: {}
+[25.116114] (-) TimerEvent: {}
+[25.126334] (astra_camera_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_camera_msgs/srv/detail/get_int32__type_support_c.cpp.o\x1b[0m\n'}
+[25.216224] (-) TimerEvent: {}
+[25.316620] (-) TimerEvent: {}
+[25.417002] (-) TimerEvent: {}
+[25.517376] (-) TimerEvent: {}
+[25.617748] (-) TimerEvent: {}
+[25.718118] (-) TimerEvent: {}
+[25.719042] (astra_camera_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_camera_msgs/srv/detail/get_string__type_support.cpp.o\x1b[0m\n'}
+[25.741308] (astra_camera_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_camera_msgs/srv/detail/dds_fastrtps/get_int32__type_support.cpp.o\x1b[0m\n'}
+[25.818226] (-) TimerEvent: {}
+[25.918686] (-) TimerEvent: {}
+[25.963030] (astra_camera_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_camera_msgs/srv/detail/get_string__type_support_c.cpp.o\x1b[0m\n'}
+[26.018802] (-) TimerEvent: {}
+[26.119206] (-) TimerEvent: {}
+[26.219631] (-) TimerEvent: {}
+[26.320056] (-) TimerEvent: {}
+[26.420774] (-) TimerEvent: {}
+[26.521172] (-) TimerEvent: {}
+[26.621572] (-) TimerEvent: {}
+[26.650974] (astra_camera_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_camera_msgs/srv/detail/set_int32__type_support.cpp.o\x1b[0m\n'}
+[26.709764] (astra_camera_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_camera_msgs/srv/detail/dds_fastrtps/get_string__type_support.cpp.o\x1b[0m\n'}
+[26.721701] (-) TimerEvent: {}
+[26.810647] (astra_camera_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_camera_msgs/srv/detail/set_int32__type_support_c.cpp.o\x1b[0m\n'}
+[26.821820] (-) TimerEvent: {}
+[26.922323] (-) TimerEvent: {}
+[27.022734] (-) TimerEvent: {}
+[27.045825] (astra_camera_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_camera_msgs/msg/detail/device_info__type_support.c.o\x1b[0m\n'}
+[27.122861] (-) TimerEvent: {}
+[27.129548] (astra_camera_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_camera_msgs/msg/detail/extrinsics__type_support.c.o\x1b[0m\n'}
+[27.222885] (astra_camera_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_camera_msgs/msg/detail/metadata__type_support.c.o\x1b[0m\n'}
+[27.223180] (-) TimerEvent: {}
+[27.308332] (astra_camera_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_camera_msgs/srv/detail/get_device_info__type_support.c.o\x1b[0m\n'}
+[27.323327] (-) TimerEvent: {}
+[27.400538] (astra_camera_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_camera_msgs/srv/detail/get_camera_info__type_support.c.o\x1b[0m\n'}
+[27.423452] (-) TimerEvent: {}
+[27.492675] (astra_camera_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_camera_msgs/srv/detail/get_camera_params__type_support.c.o\x1b[0m\n'}
+[27.523580] (-) TimerEvent: {}
+[27.604633] (astra_camera_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libastra_camera_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[27.608125] (astra_camera_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_camera_msgs/srv/detail/get_int32__type_support.c.o\x1b[0m\n'}
+[27.623708] (-) TimerEvent: {}
+[27.686811] (astra_camera_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_camera_msgs/srv/detail/dds_fastrtps/set_int32__type_support.cpp.o\x1b[0m\n'}
+[27.697705] (astra_camera_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_camera_msgs/srv/detail/get_string__type_support.c.o\x1b[0m\n'}
+[27.723910] (-) TimerEvent: {}
+[27.725977] (astra_camera_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libastra_camera_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[27.789604] (astra_camera_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_camera_msgs/srv/detail/set_int32__type_support.c.o\x1b[0m\n'}
+[27.824014] (-) TimerEvent: {}
+[27.844028] (astra_camera_msgs) StdoutLine: {'line': b'[ 68%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[27.868525] (astra_camera_msgs) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[27.880416] (astra_camera_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking C shared library libastra_camera_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[27.924121] (-) TimerEvent: {}
+[27.928144] (astra_camera_msgs) StdoutLine: {'line': b'[ 70%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[27.954525] (astra_camera_msgs) StdoutLine: {'line': b'[ 70%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[28.024261] (-) TimerEvent: {}
+[28.124587] (-) TimerEvent: {}
+[28.225073] (-) TimerEvent: {}
+[28.325564] (-) TimerEvent: {}
+[28.425418] (astra_camera_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libastra_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[28.425689] (-) TimerEvent: {}
+[28.526114] (-) TimerEvent: {}
+[28.551491] (astra_camera_msgs) StdoutLine: {'line': b'[ 71%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[28.626243] (-) TimerEvent: {}
+[28.680119] (astra_camera_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[28.680424] (astra_camera_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/msg/device_info__type_support.cpp.o\x1b[0m\n'}
+[28.680972] (astra_camera_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_device_info__type_support.cpp.o\x1b[0m\n'}
+[28.683538] (astra_camera_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[28.726366] (-) TimerEvent: {}
+[28.750610] (astra_camera_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_camera_params__type_support.cpp.o\x1b[0m\n'}
+[28.750900] (astra_camera_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_camera_info__type_support.cpp.o\x1b[0m\n'}
+[28.755000] (astra_camera_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_string__type_support.cpp.o\x1b[0m\n'}
+[28.755510] (astra_camera_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/get_int32__type_support.cpp.o\x1b[0m\n'}
+[28.821396] (astra_camera_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_camera_msgs/srv/set_int32__type_support.cpp.o\x1b[0m\n'}
+[28.826478] (-) TimerEvent: {}
+[28.868869] (astra_camera_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX shared library libastra_camera_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[28.926588] (-) TimerEvent: {}
+[28.931702] (astra_camera_msgs) StdoutLine: {'line': b'[ 82%] Built target astra_camera_msgs__rosidl_typesupport_c\n'}
+[28.960373] (astra_camera_msgs) StdoutLine: {'line': b'[ 82%] Built target astra_camera_msgs\n'}
+[28.990241] (astra_camera_msgs) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[29.026717] (-) TimerEvent: {}
+[29.127082] (-) TimerEvent: {}
+[29.227403] (-) TimerEvent: {}
+[29.327718] (-) TimerEvent: {}
+[29.428028] (-) TimerEvent: {}
+[29.528319] (-) TimerEvent: {}
+[29.628679] (-) TimerEvent: {}
+[29.729148] (-) TimerEvent: {}
+[29.829487] (-) TimerEvent: {}
+[29.929811] (-) TimerEvent: {}
+[30.030127] (-) TimerEvent: {}
+[30.130440] (-) TimerEvent: {}
+[30.230772] (-) TimerEvent: {}
+[30.331081] (-) TimerEvent: {}
+[30.431378] (-) TimerEvent: {}
+[30.531694] (-) TimerEvent: {}
+[30.631992] (-) TimerEvent: {}
+[30.732314] (-) TimerEvent: {}
+[30.832617] (-) TimerEvent: {}
+[30.932912] (-) TimerEvent: {}
+[31.017001] (astra_camera_msgs) StdoutLine: {'line': b'[ 83%] Built target astra_camera_msgs__py\n'}
+[31.033014] (-) TimerEvent: {}
+[31.051561] (astra_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/msg/_extrinsics_s.c.o\x1b[0m\n'}
+[31.051970] (astra_camera_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/msg/_metadata_s.c.o\x1b[0m\n'}
+[31.052188] (astra_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/srv/_get_device_info_s.c.o\x1b[0m\n'}
+[31.052819] (astra_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/msg/_device_info_s.c.o\x1b[0m\n'}
+[31.133132] (-) TimerEvent: {}
+[31.233511] (-) TimerEvent: {}
+[31.303677] (astra_camera_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/srv/_get_camera_info_s.c.o\x1b[0m\n'}
+[31.321119] (astra_camera_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/srv/_get_camera_params_s.c.o\x1b[0m\n'}
+[31.324807] (astra_camera_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/srv/_get_int32_s.c.o\x1b[0m\n'}
+[31.331042] (astra_camera_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/srv/_get_string_s.c.o\x1b[0m\n'}
+[31.333628] (-) TimerEvent: {}
+[31.434014] (-) TimerEvent: {}
+[31.534390] (-) TimerEvent: {}
+[31.572274] (astra_camera_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/astra_camera_msgs/srv/_set_int32_s.c.o\x1b[0m\n'}
+[31.634523] (-) TimerEvent: {}
+[31.734842] (-) TimerEvent: {}
+[31.743237] (astra_camera_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[31.811342] (astra_camera_msgs) StdoutLine: {'line': b'[ 93%] Built target astra_camera_msgs__rosidl_generator_py\n'}
+[31.834996] (-) TimerEvent: {}
+[31.843016] (astra_camera_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[31.852980] (astra_camera_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[31.854012] (astra_camera_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[31.935110] (-) TimerEvent: {}
+[32.035652] (-) TimerEvent: {}
+[32.085532] (astra_camera_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[32.135795] (-) TimerEvent: {}
+[32.155381] (astra_camera_msgs) StdoutLine: {'line': b'[ 97%] Built target astra_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[32.193663] (astra_camera_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[32.199904] (astra_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[32.235895] (-) TimerEvent: {}
+[32.262948] (astra_camera_msgs) StdoutLine: {'line': b'[100%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[32.267416] (astra_camera_msgs) StdoutLine: {'line': b'[100%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[32.287278] (astra_camera_msgs) JobEnded: {'identifier': 'astra_camera_msgs', 'rc': 'SIGINT'}
+[32.298006] (astra_camera) JobSkipped: {'identifier': 'astra_camera'}
+[32.298140] (detection_aruco) JobSkipped: {'identifier': 'detection_aruco'}
+[32.298178] (-) EventReactorShutdown: {}

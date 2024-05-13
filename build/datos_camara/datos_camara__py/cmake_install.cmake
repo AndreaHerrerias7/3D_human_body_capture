@@ -1,8 +1,8 @@
-# Install script for directory: /home/andrea/ros2_ws/build/datos_camara/datos_camara__py
+# Install script for directory: /home/andre/ros2_ws/build/datos_camara/datos_camara__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/andrea/ros2_ws/install/datos_camara")
+  set(CMAKE_INSTALL_PREFIX "/home/andre/ros2_ws/install/datos_camara")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

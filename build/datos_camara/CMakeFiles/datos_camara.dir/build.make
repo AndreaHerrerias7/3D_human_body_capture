@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrea/ros2_ws/src/datos_camara
+CMAKE_SOURCE_DIR = /home/andre/ros2_ws/src/datos_camara
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrea/ros2_ws/build/datos_camara
+CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/datos_camara
 
 # Utility rule file for datos_camara.
 
@@ -66,7 +66,7 @@ include CMakeFiles/datos_camara.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/datos_camara.dir/progress.make
 
-CMakeFiles/datos_camara: /home/andrea/ros2_ws/src/datos_camara/msg/Num.msg
+CMakeFiles/datos_camara: /home/andre/ros2_ws/src/datos_camara/msg/Num.msg
 CMakeFiles/datos_camara: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/datos_camara: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/datos_camara: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -110,6 +110,6 @@ CMakeFiles/datos_camara.dir/clean:
 .PHONY : CMakeFiles/datos_camara.dir/clean
 
 CMakeFiles/datos_camara.dir/depend:
-	cd /home/andrea/ros2_ws/build/datos_camara && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrea/ros2_ws/src/datos_camara /home/andrea/ros2_ws/src/datos_camara /home/andrea/ros2_ws/build/datos_camara /home/andrea/ros2_ws/build/datos_camara /home/andrea/ros2_ws/build/datos_camara/CMakeFiles/datos_camara.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andre/ros2_ws/build/datos_camara && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andre/ros2_ws/src/datos_camara /home/andre/ros2_ws/src/datos_camara /home/andre/ros2_ws/build/datos_camara /home/andre/ros2_ws/build/datos_camara /home/andre/ros2_ws/build/datos_camara/CMakeFiles/datos_camara.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/datos_camara.dir/depend
 

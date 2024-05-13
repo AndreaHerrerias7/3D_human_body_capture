@@ -1,0 +1,4 @@
+Invoking command in '/home/andre/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/custom_msgs -- -j4 -l4
+Invoked command in '/home/andre/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/custom_msgs -- -j4 -l4
+Invoking command in '/home/andre/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/custom_msgs
+Invoked command in '/home/andre/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/custom_msgs

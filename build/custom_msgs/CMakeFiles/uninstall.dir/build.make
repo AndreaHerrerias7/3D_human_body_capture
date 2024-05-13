@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrea/ros2_ws/src/custom_msgs
+CMAKE_SOURCE_DIR = /home/andre/ros2_ws/src/custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrea/ros2_ws/build/custom_msgs
+CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/custom_msgs
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/andrea/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrea/ros2_ws/src/custom_msgs /home/andrea/ros2_ws/src/custom_msgs /home/andrea/ros2_ws/build/custom_msgs /home/andrea/ros2_ws/build/custom_msgs /home/andrea/ros2_ws/build/custom_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andre/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andre/ros2_ws/src/custom_msgs /home/andre/ros2_ws/src/custom_msgs /home/andre/ros2_ws/build/custom_msgs /home/andre/ros2_ws/build/custom_msgs /home/andre/ros2_ws/build/custom_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

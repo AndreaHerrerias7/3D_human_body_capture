@@ -1,0 +1,131 @@
+[  5%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyz.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyzrgb.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/device_listener.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/dynamic_params.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_camera_info.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_frame_listener.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_timer_filter.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_camera_node_factory.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_camera_node.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ros_param_backend.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ros_service.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/utils.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_context.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/uvc_camera_driver.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/clean_up_shm_node.cpp.o[0m
+[ 88%] [32m[1mLinking CXX shared library libastra_camera.so[0m
+[ 88%] Built target astra_camera
+[ 94%] [32mBuilding CXX object CMakeFiles/list_devices_node.dir/src/list_devices_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable list_devices_node[0m
+[100%] Built target list_devices_node
+-- Install configuration: "Release"
+-- Installing: /home/andre/ros2_ws/install/astra_camera/lib/libastra_camera.so
+-- Set runtime path of "/home/andre/ros2_ws/install/astra_camera/lib/libastra_camera.so" to ""
+-- Installing: /home/andre/ros2_ws/install/astra_camera/lib/libOpenNI2.so
+-- Installing: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2
+-- Installing: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers
+-- Installing: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/OniFile.ini
+-- Installing: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/orbbec.ini
+-- Installing: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/liborbbec.so
+-- Installing: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/libOniFile.so
+-- Installing: /home/andre/ros2_ws/install/astra_camera/lib/astra_camera/list_devices_node
+-- Set runtime path of "/home/andre/ros2_ws/install/astra_camera/lib/astra_camera/list_devices_node" to ""
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ros_param_backend.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_camera_node.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/types.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_frame_listener.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/depth_traits.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/point_cloud_xyzrgb.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/point_cloud_xyz.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/utils.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/dynamic_params.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/constants.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_camera_node_factory.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/device_listener.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_timer_filter.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/uvc_camera_driver.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/DefineImageType.hpp
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_context.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OpenNI.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/MacOSX
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/MacOSX/OniPlatformMacOSX.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/Linux-Arm
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/Linux-Arm/OniPlatformLinux-Arm.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/Android-Arm
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/Android-Arm/OniPlatformAndroid-Arm.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniEnums.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/Linux-x86
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/Linux-x86/OniPlatformLinux-x86.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniPlatform.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniCEnums.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/PrimeSense.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/PSLink.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniVersion.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/PS1080.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/util.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniProperties.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/Driver
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/Driver/OniDriverAPI.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/Driver/OniDriverTypes.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/SonixCamera.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniCTypes.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniTest.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/KinectProperties.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniCAPI.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniCProperties.h
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_astra_mini.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai_dcw.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai_pro.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai_dw.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_dcw.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_pro.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_astra.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_dw.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/.gitkeep
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/astra.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_u3.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/astra_mini.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai.launch.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/launch_utils.py
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//config
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//config/.gitkeep
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/configurable_params.yaml
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/camera_params_template.yaml
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/dabai_params.yaml
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/dabai_pro_params.yaml
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/.gitkeep
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/dabai_dw_params.yaml
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/dabai_dcw_params.yaml
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/astra_mini_params.yaml
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/astra_params.yaml
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//rviz
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//rviz/multi_camera.rviz
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//rviz/.gitkeep
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//rviz/pointcloud.rviz
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/library_path.sh
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/library_path.dsv
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/ament_index/resource_index/package_run_dependencies/astra_camera
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/ament_index/resource_index/parent_prefix_path/astra_camera
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/ament_prefix_path.sh
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/ament_prefix_path.dsv
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/path.sh
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/path.dsv
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/local_setup.bash
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/local_setup.sh
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/local_setup.zsh
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/local_setup.dsv
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/package.dsv
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/ament_index/resource_index/packages/astra_camera
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/ament_index/resource_index/rclcpp_components/astra_camera
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/astra_cameraConfig.cmake
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/astra_cameraConfig-version.cmake
+-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/package.xml

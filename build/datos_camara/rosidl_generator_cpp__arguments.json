@@ -1,9 +1,9 @@
 {
   "package_name": "datos_camara",
-  "output_dir": "/home/andrea/ros2_ws/build/datos_camara/rosidl_generator_cpp/datos_camara",
+  "output_dir": "/home/andre/ros2_ws/build/datos_camara/rosidl_generator_cpp/datos_camara",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/andrea/ros2_ws/build/datos_camara/rosidl_adapter/datos_camara:msg/Num.idl"
+    "/home/andre/ros2_ws/build/datos_camara/rosidl_adapter/datos_camara:msg/Num.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -82,7 +82,7 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/andrea/ros2_ws/build/datos_camara/rosidl_adapter/datos_camara/msg/Num.idl",
+    "/home/andre/ros2_ws/build/datos_camara/rosidl_adapter/datos_camara/msg/Num.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

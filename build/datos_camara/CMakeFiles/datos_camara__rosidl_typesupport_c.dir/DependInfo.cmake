@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/andrea/ros2_ws/build/datos_camara/rosidl_typesupport_c/datos_camara/msg/num__type_support.cpp" "CMakeFiles/datos_camara__rosidl_typesupport_c.dir/rosidl_typesupport_c/datos_camara/msg/num__type_support.cpp.o" "gcc" "CMakeFiles/datos_camara__rosidl_typesupport_c.dir/rosidl_typesupport_c/datos_camara/msg/num__type_support.cpp.o.d"
+  "/home/andre/ros2_ws/build/datos_camara/rosidl_typesupport_c/datos_camara/msg/num__type_support.cpp" "CMakeFiles/datos_camara__rosidl_typesupport_c.dir/rosidl_typesupport_c/datos_camara/msg/num__type_support.cpp.o" "gcc" "CMakeFiles/datos_camara__rosidl_typesupport_c.dir/rosidl_typesupport_c/datos_camara/msg/num__type_support.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/andrea/ros2_ws/build/datos_camara/CMakeFiles/datos_camara__rosidl_generator_c.dir/DependInfo.cmake"
+  "/home/andre/ros2_ws/build/datos_camara/CMakeFiles/datos_camara__rosidl_generator_c.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrea/ros2_ws/src/datos_camara
+CMAKE_SOURCE_DIR = /home/andre/ros2_ws/src/datos_camara
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrea/ros2_ws/build/datos_camara
+CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/datos_camara
 
 # Utility rule file for datos_camara_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/datos_camara_uninstall.dir/compiler_depend.make
 include CMakeFiles/datos_camara_uninstall.dir/progress.make
 
 CMakeFiles/datos_camara_uninstall:
-	/usr/bin/cmake -P /home/andrea/ros2_ws/build/datos_camara/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/andre/ros2_ws/build/datos_camara/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 datos_camara_uninstall: CMakeFiles/datos_camara_uninstall
 datos_camara_uninstall: CMakeFiles/datos_camara_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/datos_camara_uninstall.dir/clean:
 .PHONY : CMakeFiles/datos_camara_uninstall.dir/clean
 
 CMakeFiles/datos_camara_uninstall.dir/depend:
-	cd /home/andrea/ros2_ws/build/datos_camara && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrea/ros2_ws/src/datos_camara /home/andrea/ros2_ws/src/datos_camara /home/andrea/ros2_ws/build/datos_camara /home/andrea/ros2_ws/build/datos_camara /home/andrea/ros2_ws/build/datos_camara/CMakeFiles/datos_camara_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andre/ros2_ws/build/datos_camara && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andre/ros2_ws/src/datos_camara /home/andre/ros2_ws/src/datos_camara /home/andre/ros2_ws/build/datos_camara /home/andre/ros2_ws/build/datos_camara /home/andre/ros2_ws/build/datos_camara/CMakeFiles/datos_camara_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/datos_camara_uninstall.dir/depend
 
