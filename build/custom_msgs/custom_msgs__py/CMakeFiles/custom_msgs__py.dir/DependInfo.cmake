@@ -21,6 +21,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_plane_match.py" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_plane_match_s.c" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_plane_s.c" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_point.py" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_point_s.c" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_points_camera.py" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_points_camera_s.c" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

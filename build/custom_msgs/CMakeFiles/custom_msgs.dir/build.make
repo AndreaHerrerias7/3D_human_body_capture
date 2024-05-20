@@ -69,6 +69,8 @@ include CMakeFiles/custom_msgs.dir/progress.make
 CMakeFiles/custom_msgs: /home/andre/ros2_ws/src/custom_msgs/msg/Plane.msg
 CMakeFiles/custom_msgs: /home/andre/ros2_ws/src/custom_msgs/msg/PlaneMatch.msg
 CMakeFiles/custom_msgs: /home/andre/ros2_ws/src/custom_msgs/msg/Correspondences.msg
+CMakeFiles/custom_msgs: /home/andre/ros2_ws/src/custom_msgs/msg/PointsCamera.msg
+CMakeFiles/custom_msgs: /home/andre/ros2_ws/src/custom_msgs/msg/Point.msg
 CMakeFiles/custom_msgs: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/custom_msgs: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/custom_msgs: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

@@ -4,3 +4,7 @@ msg/Plane.idl
 msg/Plane.msg
 msg/PlaneMatch.idl
 msg/PlaneMatch.msg
+msg/Point.idl
+msg/Point.msg
+msg/PointsCamera.idl
+msg/PointsCamera.msg

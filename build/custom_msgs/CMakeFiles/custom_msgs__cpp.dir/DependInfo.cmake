@@ -22,7 +22,15 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/plane_match__builder.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
   "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/plane_match__struct.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
   "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/plane_match__traits.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/point__builder.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/point__struct.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/point__traits.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__builder.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__struct.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__traits.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
   "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane_match.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/point.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
+  "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/points_camera.hpp" "/home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/plane.hpp"
   )
 
 

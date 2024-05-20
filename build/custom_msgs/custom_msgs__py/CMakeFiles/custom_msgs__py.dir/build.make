@@ -72,10 +72,14 @@ custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_cus
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_plane.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_plane_match.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_correspondences.py
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_points_camera.py
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_point.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/__init__.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_plane_s.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_plane_match_s.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_correspondences_s.c
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_points_camera_s.c
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_point_s.c
 
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -93,6 +97,8 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/Plane.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/PlaneMatch.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/Correspondences.idl
+rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/PointsCamera.idl
+rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/Point.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -170,6 +176,12 @@ rosidl_generator_py/custom_msgs/msg/_plane_match.py: rosidl_generator_py/custom_
 rosidl_generator_py/custom_msgs/msg/_correspondences.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_correspondences.py
 
+rosidl_generator_py/custom_msgs/msg/_points_camera.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_points_camera.py
+
+rosidl_generator_py/custom_msgs/msg/_point.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_point.py
+
 rosidl_generator_py/custom_msgs/msg/__init__.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/__init__.py
 
@@ -182,6 +194,12 @@ rosidl_generator_py/custom_msgs/msg/_plane_match_s.c: rosidl_generator_py/custom
 rosidl_generator_py/custom_msgs/msg/_correspondences_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_correspondences_s.c
 
+rosidl_generator_py/custom_msgs/msg/_points_camera_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_points_camera_s.c
+
+rosidl_generator_py/custom_msgs/msg/_point_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_point_s.c
+
 custom_msgs__py: custom_msgs__py/CMakeFiles/custom_msgs__py
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
@@ -193,6 +211,10 @@ custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_plane.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_plane_match.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_plane_match_s.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_plane_s.c
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_point.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_point_s.c
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_points_camera.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_points_camera_s.c
 custom_msgs__py: custom_msgs__py/CMakeFiles/custom_msgs__py.dir/build.make
 .PHONY : custom_msgs__py
 

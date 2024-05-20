@@ -1,0 +1,984 @@
+[0.000000] (-) TimerEvent: {}
+[0.002463] (astra_camera_msgs) JobQueued: {'identifier': 'astra_camera_msgs', 'dependencies': OrderedDict()}
+[0.002718] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.002774] (datos_camara) JobQueued: {'identifier': 'datos_camara', 'dependencies': OrderedDict()}
+[0.002812] (astra_camera) JobQueued: {'identifier': 'astra_camera', 'dependencies': OrderedDict([('astra_camera_msgs', '/home/andre/ros2_ws/install/astra_camera_msgs')])}
+[0.002861] (detection_aruco) JobQueued: {'identifier': 'detection_aruco', 'dependencies': OrderedDict([('custom_msgs', '/home/andre/ros2_ws/install/custom_msgs')])}
+[0.002900] (detection_astra_camera) JobQueued: {'identifier': 'detection_astra_camera', 'dependencies': OrderedDict([('astra_camera_msgs', '/home/andre/ros2_ws/install/astra_camera_msgs'), ('astra_camera', '/home/andre/ros2_ws/install/astra_camera')])}
+[0.004940] (astra_camera_msgs) JobStarted: {'identifier': 'astra_camera_msgs'}
+[0.041912] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.050725] (datos_camara) JobStarted: {'identifier': 'datos_camara'}
+[0.083694] (datos_camara) JobProgress: {'identifier': 'datos_camara', 'progress': 'cmake'}
+[0.085242] (datos_camara) JobProgress: {'identifier': 'datos_camara', 'progress': 'build'}
+[0.087269] (datos_camara) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/datos_camara', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/datos_camara', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6330'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N431N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/datos_camara'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[0.098273] (astra_camera_msgs) JobProgress: {'identifier': 'astra_camera_msgs', 'progress': 'cmake'}
+[0.099298] (astra_camera_msgs) JobProgress: {'identifier': 'astra_camera_msgs', 'progress': 'build'}
+[0.099742] (astra_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/astra_camera_msgs', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/astra_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6330'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N431N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/astra_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[0.100819] (-) TimerEvent: {}
+[0.105586] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.108555] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[0.114032] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6330'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N431N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[0.201484] (-) TimerEvent: {}
+[0.302222] (-) TimerEvent: {}
+[0.402797] (-) TimerEvent: {}
+[0.505375] (-) TimerEvent: {}
+[0.606231] (-) TimerEvent: {}
+[0.614861] (datos_camara) StdoutLine: {'line': b'[  3%] Built target datos_camara__cpp\n'}
+[0.706711] (-) TimerEvent: {}
+[0.745307] (custom_msgs) StdoutLine: {'line': b'[  2%] Built target custom_msgs__cpp\n'}
+[0.806613] (astra_camera_msgs) StdoutLine: {'line': b'[  1%] Built target astra_camera_msgs__cpp\n'}
+[0.809317] (-) TimerEvent: {}
+[0.828473] (datos_camara) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_datos_camara\n'}
+[0.910235] (-) TimerEvent: {}
+[0.935627] (astra_camera_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_astra_camera_msgs\n'}
+[0.964273] (custom_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[1.010674] (-) TimerEvent: {}
+[1.051850] (datos_camara) StdoutLine: {'line': b'[ 12%] Built target datos_camara__rosidl_typesupport_fastrtps_cpp\n'}
+[1.110698] (-) TimerEvent: {}
+[1.118512] (astra_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.186293] (custom_msgs) StdoutLine: {'line': b'[ 12%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.210972] (-) TimerEvent: {}
+[1.230373] (datos_camara) StdoutLine: {'line': b'[ 22%] Built target datos_camara__rosidl_typesupport_introspection_cpp\n'}
+[1.277011] (astra_camera_msgs) StdoutLine: {'line': b'[ 24%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.312636] (-) TimerEvent: {}
+[1.354660] (custom_msgs) StdoutLine: {'line': b'[ 23%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.413438] (-) TimerEvent: {}
+[1.513932] (-) TimerEvent: {}
+[1.614586] (-) TimerEvent: {}
+[1.715454] (-) TimerEvent: {}
+[1.816044] (-) TimerEvent: {}
+[1.916638] (-) TimerEvent: {}
+[2.017255] (-) TimerEvent: {}
+[2.117945] (-) TimerEvent: {}
+[2.220782] (-) TimerEvent: {}
+[2.221331] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.223988] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[2.224257] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[2.224417] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[2.239417] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[2.239896] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[2.320986] (-) TimerEvent: {}
+[2.422452] (-) TimerEvent: {}
+[2.440900] (custom_msgs) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[2.522524] (-) TimerEvent: {}
+[2.618516] (custom_msgs) StdoutLine: {'line': b'[ 34%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[2.622630] (-) TimerEvent: {}
+[2.723769] (-) TimerEvent: {}
+[2.769510] (datos_camara) StdoutLine: {'line': b'running egg_info\n'}
+[2.774692] (datos_camara) StdoutLine: {'line': b'writing datos_camara.egg-info/PKG-INFO\n'}
+[2.775259] (datos_camara) StdoutLine: {'line': b'writing dependency_links to datos_camara.egg-info/dependency_links.txt\n'}
+[2.775598] (datos_camara) StdoutLine: {'line': b'writing top-level names to datos_camara.egg-info/top_level.txt\n'}
+[2.780767] (datos_camara) StdoutLine: {'line': b"reading manifest file 'datos_camara.egg-info/SOURCES.txt'\n"}
+[2.782327] (datos_camara) StdoutLine: {'line': b"writing manifest file 'datos_camara.egg-info/SOURCES.txt'\n"}
+[2.823882] (-) TimerEvent: {}
+[2.831038] (custom_msgs) StdoutLine: {'line': b'[ 44%] Built target custom_msgs__rosidl_generator_c\n'}
+[2.924224] (-) TimerEvent: {}
+[2.933178] (datos_camara) StdoutLine: {'line': b'[ 22%] Built target ament_cmake_python_build_datos_camara_egg\n'}
+[2.937035] (custom_msgs) StdoutLine: {'line': b'[ 55%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.024915] (-) TimerEvent: {}
+[3.049505] (custom_msgs) StdoutLine: {'line': b'[ 65%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[3.055697] (datos_camara) StdoutLine: {'line': b'[ 32%] Built target datos_camara__rosidl_typesupport_cpp\n'}
+[3.128867] (astra_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.130023] (-) TimerEvent: {}
+[3.140813] (astra_camera_msgs) StdoutLine: {'line': b'writing astra_camera_msgs.egg-info/PKG-INFO\n'}
+[3.141182] (astra_camera_msgs) StdoutLine: {'line': b'writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt\n'}
+[3.141359] (astra_camera_msgs) StdoutLine: {'line': b'writing top-level names to astra_camera_msgs.egg-info/top_level.txt\n'}
+[3.141508] (astra_camera_msgs) StdoutLine: {'line': b"reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'\n"}
+[3.144816] (astra_camera_msgs) StdoutLine: {'line': b"writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'\n"}
+[3.188645] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[3.215557] (datos_camara) StdoutLine: {'line': b'[ 41%] Built target datos_camara__rosidl_generator_c\n'}
+[3.230239] (-) TimerEvent: {}
+[3.304897] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs\n'}
+[3.330540] (-) TimerEvent: {}
+[3.393497] (astra_camera_msgs) StdoutLine: {'line': b'[ 24%] Built target ament_cmake_python_build_astra_camera_msgs_egg\n'}
+[3.436665] (-) TimerEvent: {}
+[3.438534] (datos_camara) StdoutLine: {'line': b'[ 51%] Built target datos_camara__rosidl_typesupport_fastrtps_c\n'}
+[3.483170] (custom_msgs) StdoutLine: {'line': b'[ 78%] Built target custom_msgs__py\n'}
+[3.541964] (-) TimerEvent: {}
+[3.542297] (astra_camera_msgs) StdoutLine: {'line': b'[ 35%] Built target astra_camera_msgs__rosidl_typesupport_cpp\n'}
+[3.568489] (datos_camara) StdoutLine: {'line': b'[ 61%] Built target datos_camara__rosidl_typesupport_c\n'}
+[3.608464] (custom_msgs) StdoutLine: {'line': b'[ 87%] Built target custom_msgs__rosidl_generator_py\n'}
+[3.642101] (-) TimerEvent: {}
+[3.696518] (astra_camera_msgs) StdoutLine: {'line': b'[ 47%] Built target astra_camera_msgs__rosidl_generator_c\n'}
+[3.699398] (datos_camara) StdoutLine: {'line': b'[ 70%] Built target datos_camara__rosidl_typesupport_introspection_c\n'}
+[3.710573] (custom_msgs) StdoutLine: {'line': b'[ 91%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.743588] (-) TimerEvent: {}
+[3.814606] (custom_msgs) StdoutLine: {'line': b'[ 95%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[3.844264] (-) TimerEvent: {}
+[3.847289] (datos_camara) StdoutLine: {'line': b'[ 70%] Built target datos_camara\n'}
+[3.906483] (astra_camera_msgs) StdoutLine: {'line': b'[ 58%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.932017] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.944185] (-) TimerEvent: {}
+[4.023356] (astra_camera_msgs) StdoutLine: {'line': b'[ 70%] Built target astra_camera_msgs__rosidl_typesupport_c\n'}
+[4.044391] (-) TimerEvent: {}
+[4.058922] (custom_msgs) CommandEnded: {'returncode': 0}
+[4.109114] (astra_camera_msgs) StdoutLine: {'line': b'[ 82%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[4.144356] (datos_camara) StdoutLine: {'line': b'[ 74%] Built target datos_camara__py\n'}
+[4.144911] (-) TimerEvent: {}
+[4.250538] (-) TimerEvent: {}
+[4.288965] (astra_camera_msgs) StdoutLine: {'line': b'[ 82%] Built target astra_camera_msgs\n'}
+[4.345729] (datos_camara) StdoutLine: {'line': b'[ 80%] Built target datos_camara__rosidl_generator_py\n'}
+[4.354463] (-) TimerEvent: {}
+[4.454636] (astra_camera_msgs) StdoutLine: {'line': b'[ 83%] Built target astra_camera_msgs__py\n'}
+[4.455047] (-) TimerEvent: {}
+[4.514699] (datos_camara) StdoutLine: {'line': b'[ 87%] Built target datos_camara__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.564732] (-) TimerEvent: {}
+[4.662283] (astra_camera_msgs) StdoutLine: {'line': b'[ 93%] Built target astra_camera_msgs__rosidl_generator_py\n'}
+[4.664936] (-) TimerEvent: {}
+[4.698111] (datos_camara) StdoutLine: {'line': b'[ 93%] Built target datos_camara__rosidl_typesupport_c__pyext\n'}
+[4.766365] (-) TimerEvent: {}
+[4.867502] (-) TimerEvent: {}
+[4.892206] (astra_camera_msgs) StdoutLine: {'line': b'[ 95%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.970425] (-) TimerEvent: {}
+[4.973382] (datos_camara) StdoutLine: {'line': b'[100%] Built target datos_camara__rosidl_typesupport_introspection_c__pyext\n'}
+[5.052737] (datos_camara) CommandEnded: {'returncode': 0}
+[5.055236] (astra_camera_msgs) StdoutLine: {'line': b'[ 97%] Built target astra_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[5.074422] (-) TimerEvent: {}
+[5.175345] (-) TimerEvent: {}
+[5.222810] (astra_camera_msgs) StdoutLine: {'line': b'[100%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.266654] (astra_camera_msgs) CommandEnded: {'returncode': 0}
+[5.275572] (-) TimerEvent: {}
+[5.283796] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[5.332626] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/custom_msgs'], 'cwd': '/home/andre/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6330'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N431N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[5.366476] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.368569] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[5.369251] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.375801] (-) TimerEvent: {}
+[5.376896] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.378698] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane_match.h\n'}
+[5.381025] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.383932] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__functions.h\n'}
+[5.385651] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.h\n'}
+[5.388104] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__functions.c\n'}
+[5.390700] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.h\n'}
+[5.392554] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__functions.c\n'}
+[5.394412] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.h\n'}
+[5.395277] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.h\n'}
+[5.395728] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__functions.c\n'}
+[5.398723] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__functions.h\n'}
+[5.399435] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.h\n'}
+[5.430568] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.h\n'}
+[5.431974] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__functions.h\n'}
+[5.432226] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.h\n'}
+[5.432389] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.432527] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane.h\n'}
+[5.432646] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[5.432774] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[5.432959] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[5.433250] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.434042] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.441265] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.441463] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_fastrtps_c.h\n'}
+[5.441590] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_c.h\n'}
+[5.441704] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_fastrtps_c.h\n'}
+[5.441815] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.447542] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.447973] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.448259] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.448452] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.448647] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_c.h\n'}
+[5.457493] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_c.h\n'}
+[5.458278] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.c\n'}
+[5.458601] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.c\n'}
+[5.459087] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_c.h\n'}
+[5.459374] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.c\n'}
+[5.459845] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.460435] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.460945] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[5.477959] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.478346] (-) TimerEvent: {}
+[5.478555] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.478739] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.hpp\n'}
+[5.485081] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.485238] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.hpp\n'}
+[5.485378] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__traits.hpp\n'}
+[5.485506] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.hpp\n'}
+[5.485629] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__traits.hpp\n'}
+[5.485748] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__builder.hpp\n'}
+[5.485866] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__builder.hpp\n'}
+[5.485986] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__builder.hpp\n'}
+[5.486099] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__traits.hpp\n'}
+[5.491290] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.hpp\n'}
+[5.491564] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane_match.hpp\n'}
+[5.491719] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane.hpp\n'}
+[5.491881] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.492060] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.492216] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.498747] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[5.499030] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.499245] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.499395] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.499522] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.499682] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.499858] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.499974] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.500091] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.500334] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.cpp\n'}
+[5.500483] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.cpp\n'}
+[5.500688] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.500833] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.cpp\n'}
+[5.500976] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.501154] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.501314] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.501440] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[5.501593] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[5.501835] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[5.519029] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info\n'}
+[5.520585] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.521113] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.521308] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.521430] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.521548] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs\n'}
+[5.521658] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.521776] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.521925] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[5.522073] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.525657] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[5.526107] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.526865] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.528793] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.530070] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg\n'}
+[5.530946] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match_s.c\n'}
+[5.531553] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane.py\n'}
+[5.535144] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_s.c\n'}
+[5.535450] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[5.535911] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences_s.c\n'}
+[5.536565] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match.py\n'}
+[5.537593] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences.py\n'}
+[5.578474] (-) TimerEvent: {}
+[5.659384] (custom_msgs) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[5.660037] (custom_msgs) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[5.682694] (-) TimerEvent: {}
+[5.705859] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.714447] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.714674] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.714808] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[5.714939] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Plane.idl\n'}
+[5.715051] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PlaneMatch.idl\n'}
+[5.715162] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Correspondences.idl\n'}
+[5.715274] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Plane.msg\n'}
+[5.715393] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PlaneMatch.msg\n'}
+[5.715505] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Correspondences.msg\n'}
+[5.715620] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[5.715729] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[5.715842] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[5.715951] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[5.716059] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[5.716168] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[5.716272] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[5.716377] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[5.716483] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[5.716587] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[5.716691] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[5.716796] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[5.716905] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[5.717032] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.717138] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.717263] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.717372] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.717477] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.717582] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.717687] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.717804] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.717910] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.718013] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.745200] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.745700] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.745867] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.745985] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.748438] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.749241] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.749556] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.750767] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.751258] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.751586] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.753391] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.753685] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.753922] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.758620] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[5.759112] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[5.759401] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[5.759648] (custom_msgs) CommandEnded: {'returncode': 0}
+[5.791675] (-) TimerEvent: {}
+[5.887455] (datos_camara) JobProgress: {'identifier': 'datos_camara', 'progress': 'install'}
+[5.893453] (-) TimerEvent: {}
+[5.906273] (datos_camara) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/datos_camara'], 'cwd': '/home/andre/ros2_ws/build/datos_camara', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6330'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N431N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/datos_camara'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[5.956369] (datos_camara) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.956778] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/ament_index/resource_index/rosidl_interfaces/datos_camara\n'}
+[5.962992] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[5.963367] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[5.963608] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[5.963835] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__functions.h\n'}
+[5.964026] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__struct.h\n'}
+[5.964215] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__functions.c\n'}
+[5.964419] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.h\n'}
+[5.964590] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.964769] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/num.h\n'}
+[5.964944] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/library_path.sh\n'}
+[5.965108] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/library_path.dsv\n'}
+[5.970611] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_c.so\n'}
+[5.970929] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[5.971114] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[5.971276] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[5.971464] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[5.971622] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.971777] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_c.so\n'}
+[5.971914] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[5.972043] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[5.972168] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/num.hpp\n'}
+[5.972299] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[5.972456] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__struct.hpp\n'}
+[5.978310] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__traits.hpp\n'}
+[5.983341] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__builder.hpp\n'}
+[5.983542] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[5.983731] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[5.983908] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[5.984080] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.984258] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/dds_fastrtps\n'}
+[5.984432] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.984671] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.985017] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[6.003584] (-) TimerEvent: {}
+[6.003895] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[6.004163] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[6.004359] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[6.004560] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.c\n'}
+[6.004911] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.005034] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_c.so\n'}
+[6.005144] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_c.so\n'}
+[6.005248] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara\n'}
+[6.005371] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg\n'}
+[6.005512] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail\n'}
+[6.005681] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.005801] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/include/datos_camara/datos_camara/msg/detail/num__type_support.cpp\n'}
+[6.005908] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_introspection_cpp.so\n'}
+[6.006013] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_typesupport_cpp.so\n'}
+[6.010740] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/pythonpath.sh\n'}
+[6.011248] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/pythonpath.dsv\n'}
+[6.011384] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info\n'}
+[6.011506] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.011611] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.011714] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.011815] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.011926] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara\n'}
+[6.012027] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.012128] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.012240] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.012345] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_c.c\n'}
+[6.012480] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/_datos_camara_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.012594] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/libdatos_camara__rosidl_generator_py.so\n'}
+[6.012710] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/__init__.py\n'}
+[6.012831] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.012941] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg\n'}
+[6.013059] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/_num.py\n'}
+[6.013199] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/_num_s.c\n'}
+[6.013356] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg/__init__.py\n'}
+[6.103798] (-) TimerEvent: {}
+[6.178769] (datos_camara) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara'...\n"}
+[6.179151] (datos_camara) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/msg'...\n"}
+[6.193027] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.193586] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.194884] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages/datos_camara/datos_camara_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.195640] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/lib/libdatos_camara__rosidl_generator_py.so\n'}
+[6.196251] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/msg/Num.idl\n'}
+[6.199203] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/msg/Num.msg\n'}
+[6.199667] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/ament_index/resource_index/package_run_dependencies/datos_camara\n'}
+[6.199979] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/ament_index/resource_index/parent_prefix_path/datos_camara\n'}
+[6.200469] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/ament_prefix_path.sh\n'}
+[6.200745] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/ament_prefix_path.dsv\n'}
+[6.200985] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/path.sh\n'}
+[6.201250] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/environment/path.dsv\n'}
+[6.201509] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/local_setup.bash\n'}
+[6.201944] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/local_setup.sh\n'}
+[6.202234] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/local_setup.zsh\n'}
+[6.202487] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/local_setup.dsv\n'}
+[6.202688] (datos_camara) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/package.dsv\n'}
+[6.202896] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/ament_index/resource_index/packages/datos_camara\n'}
+[6.203327] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cExport.cmake\n'}
+[6.203733] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.203999] (-) TimerEvent: {}
+[6.205039] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.205689] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.222747] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_cppExport.cmake\n'}
+[6.223193] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.223623] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.223909] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.224168] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.224475] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cExport.cmake\n'}
+[6.224775] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.225222] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.225590] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.225813] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cppExport.cmake\n'}
+[6.226013] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camara__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.226258] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_pyExport.cmake\n'}
+[6.226435] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/export_datos_camara__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.228185] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake-extras.cmake\n'}
+[6.228427] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.228656] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.228871] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.229063] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.229266] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.229450] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.229628] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camaraConfig.cmake\n'}
+[6.229812] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/cmake/datos_camaraConfig-version.cmake\n'}
+[6.229992] (datos_camara) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/datos_camara/share/datos_camara/package.xml\n'}
+[6.245703] (datos_camara) CommandEnded: {'returncode': 0}
+[6.305609] (-) TimerEvent: {}
+[6.410369] (-) TimerEvent: {}
+[6.513785] (-) TimerEvent: {}
+[6.586470] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[6.590922] (detection_aruco) JobStarted: {'identifier': 'detection_aruco'}
+[6.615397] (-) TimerEvent: {}
+[6.715959] (-) TimerEvent: {}
+[6.818241] (-) TimerEvent: {}
+[6.921341] (-) TimerEvent: {}
+[7.021941] (-) TimerEvent: {}
+[7.122513] (-) TimerEvent: {}
+[7.223866] (-) TimerEvent: {}
+[7.324875] (-) TimerEvent: {}
+[7.425511] (-) TimerEvent: {}
+[7.526328] (-) TimerEvent: {}
+[7.627734] (-) TimerEvent: {}
+[7.728199] (-) TimerEvent: {}
+[7.782477] (datos_camara) JobEnded: {'identifier': 'datos_camara', 'rc': 0}
+[7.799695] (astra_camera_msgs) JobProgress: {'identifier': 'astra_camera_msgs', 'progress': 'install'}
+[7.800301] (astra_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/astra_camera_msgs'], 'cwd': '/home/andre/ros2_ws/build/astra_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6330'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N431N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/astra_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[7.834190] (-) TimerEvent: {}
+[7.842730] (astra_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.843180] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/astra_camera_msgs\n'}
+[7.843557] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[7.844301] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[7.844494] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/set_int32.h\n'}
+[7.844638] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_info.h\n'}
+[7.844797] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[7.844963] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__struct.h\n'}
+[7.845088] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__functions.h\n'}
+[7.845208] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__functions.c\n'}
+[7.845319] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__functions.c\n'}
+[7.845440] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.h\n'}
+[7.845552] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.h\n'}
+[7.845697] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__functions.c\n'}
+[7.845811] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__functions.c\n'}
+[7.845923] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__functions.h\n'}
+[7.846036] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.h\n'}
+[7.851083] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__struct.h\n'}
+[7.852228] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__functions.c\n'}
+[7.852593] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__functions.c\n'}
+[7.852900] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__struct.h\n'}
+[7.853219] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__functions.h\n'}
+[7.853489] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__struct.h\n'}
+[7.855895] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__functions.h\n'}
+[7.856666] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__struct.h\n'}
+[7.857319] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.h\n'}
+[7.857888] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__functions.h\n'}
+[7.858280] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.h\n'}
+[7.871190] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__functions.h\n'}
+[7.875119] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__struct.h\n'}
+[7.875341] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.h\n'}
+[7.875480] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_device_info.h\n'}
+[7.875693] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_params.h\n'}
+[7.875822] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_string.h\n'}
+[7.875974] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_int32.h\n'}
+[7.876225] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[7.876448] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/device_info.h\n'}
+[7.876630] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/metadata.h\n'}
+[7.880814] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[7.881260] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.h\n'}
+[7.882694] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__functions.c\n'}
+[7.883138] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__functions.c\n'}
+[7.883438] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.h\n'}
+[7.883555] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.h\n'}
+[7.883661] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__functions.h\n'}
+[7.883786] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__functions.h\n'}
+[7.883896] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__struct.h\n'}
+[7.884009] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__struct.h\n'}
+[7.884120] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__functions.c\n'}
+[7.884237] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__functions.h\n'}
+[7.884348] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__struct.h\n'}
+[7.884459] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/extrinsics.h\n'}
+[7.884604] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.884720] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/environment/library_path.sh\n'}
+[7.902651] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/environment/library_path.dsv\n'}
+[7.904734] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_generator_c.so\n'}
+[7.905006] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[7.905320] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[7.905454] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[7.905585] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_fastrtps_c.h\n'}
+[7.908726] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_fastrtps_c.h\n'}
+[7.908978] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[7.909211] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_fastrtps_c.h\n'}
+[7.909617] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_fastrtps_c.h\n'}
+[7.910015] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_fastrtps_c.h\n'}
+[7.910361] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[7.910612] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[7.911062] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[7.911199] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[7.911348] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[7.911509] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.911636] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[7.911757] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[7.911885] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[7.912020] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[7.912146] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.c\n'}
+[7.912267] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.c\n'}
+[7.912394] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_introspection_c.h\n'}
+[7.912516] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.c\n'}
+[7.912637] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_introspection_c.h\n'}
+[7.912759] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.c\n'}
+[7.912880] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_introspection_c.h\n'}
+[7.913024] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.c\n'}
+[7.913144] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_introspection_c.h\n'}
+[7.913273] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_introspection_c.h\n'}
+[7.913438] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_introspection_c.h\n'}
+[7.913570] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.c\n'}
+[7.913715] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[7.913837] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[7.913941] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.c\n'}
+[7.914044] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.c\n'}
+[7.921324] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.c\n'}
+[7.921520] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[7.921646] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[7.921894] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_c.h\n'}
+[7.922036] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.922200] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[7.922327] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_c.so\n'}
+[7.922441] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[7.922556] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[7.922667] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/set_int32.hpp\n'}
+[7.922784] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_info.hpp\n'}
+[7.922897] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[7.923009] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__builder.hpp\n'}
+[7.923121] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__struct.hpp\n'}
+[7.923234] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__builder.hpp\n'}
+[7.923347] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__builder.hpp\n'}
+[7.923463] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__builder.hpp\n'}
+[7.923587] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__traits.hpp\n'}
+[7.923698] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__traits.hpp\n'}
+[7.923813] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__traits.hpp\n'}
+[7.923941] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__struct.hpp\n'}
+[7.924055] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__traits.hpp\n'}
+[7.924166] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__struct.hpp\n'}
+[7.924283] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__builder.hpp\n'}
+[7.924392] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__traits.hpp\n'}
+[7.924502] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__builder.hpp\n'}
+[7.924615] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__traits.hpp\n'}
+[7.924739] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__struct.hpp\n'}
+[7.924859] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__struct.hpp\n'}
+[7.924981] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__struct.hpp\n'}
+[7.925099] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_int32.hpp\n'}
+[7.938003] (-) TimerEvent: {}
+[7.939145] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_device_info.hpp\n'}
+[7.939419] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_params.hpp\n'}
+[7.939561] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_string.hpp\n'}
+[7.939675] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[7.939783] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[7.939894] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__builder.hpp\n'}
+[7.940012] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__struct.hpp\n'}
+[7.940141] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__builder.hpp\n'}
+[7.940249] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__struct.hpp\n'}
+[7.940359] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__struct.hpp\n'}
+[7.940472] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__traits.hpp\n'}
+[7.940580] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__traits.hpp\n'}
+[7.940689] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__builder.hpp\n'}
+[7.940800] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__traits.hpp\n'}
+[7.940929] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/metadata.hpp\n'}
+[7.941041] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/extrinsics.hpp\n'}
+[7.941150] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/device_info.hpp\n'}
+[7.941258] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[7.941373] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[7.941523] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[7.941635] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.941748] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/dds_fastrtps\n'}
+[7.941859] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.941983] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.942094] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.942277] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.942402] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.942521] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[7.942620] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[7.942721] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.942933] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.943046] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/dds_fastrtps\n'}
+[7.943155] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.943258] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.943364] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.943469] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[7.944552] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[7.944905] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[7.945068] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.cpp\n'}
+[7.945222] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.cpp\n'}
+[7.947235] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.947440] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.947591] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.cpp\n'}
+[7.947752] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.947898] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.948078] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.948293] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.948543] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.cpp\n'}
+[7.948747] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.cpp\n'}
+[7.948910] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.cpp\n'}
+[7.949254] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[7.949640] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[7.949973] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.cpp\n'}
+[7.950355] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.950511] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.950662] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.cpp\n'}
+[7.950929] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.cpp\n'}
+[7.951255] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.951613] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[7.952024] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[7.952412] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/environment/pythonpath.sh\n'}
+[7.952756] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/environment/pythonpath.dsv\n'}
+[7.953058] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info\n'}
+[7.980798] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/PKG-INFO\n'}
+[7.981121] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[7.981550] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[7.981876] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/top_level.txt\n'}
+[7.982282] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs\n'}
+[7.982731] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv\n'}
+[7.982907] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_set_int32_s.c\n'}
+[7.983069] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_info_s.c\n'}
+[7.983203] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_string_s.c\n'}
+[7.983317] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_string.py\n'}
+[7.983431] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_params.py\n'}
+[7.983650] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_set_int32.py\n'}
+[7.983907] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_int32_s.c\n'}
+[7.984083] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_int32.py\n'}
+[7.984422] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/__init__.py\n'}
+[7.984598] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_info.py\n'}
+[7.984725] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_device_info_s.c\n'}
+[7.990381] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_params_s.c\n'}
+[7.990889] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_device_info.py\n'}
+[7.991062] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.991217] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[7.991424] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.991557] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.995593] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.995805] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/__init__.py\n'}
+[7.995949] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so\n'}
+[7.996063] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.996177] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg\n'}
+[7.996286] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_metadata.py\n'}
+[7.996392] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_metadata_s.c\n'}
+[7.996500] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/__init__.py\n'}
+[7.996611] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_extrinsics.py\n'}
+[7.996719] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_device_info.py\n'}
+[7.996822] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_device_info_s.c\n'}
+[7.996930] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_extrinsics_s.c\n'}
+[8.039086] (-) TimerEvent: {}
+[8.146290] (-) TimerEvent: {}
+[8.148398] (astra_camera_msgs) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs'...\n"}
+[8.148706] (astra_camera_msgs) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg'...\n"}
+[8.148989] (astra_camera_msgs) StdoutLine: {'line': b"Listing '/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv'...\n"}
+[8.179471] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.180178] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.180704] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.181534] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_generator_py.so\n'}
+[8.184034] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/msg/DeviceInfo.idl\n'}
+[8.184268] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/msg/Extrinsics.idl\n'}
+[8.184394] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/msg/Metadata.idl\n'}
+[8.184518] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetDeviceInfo.idl\n'}
+[8.186516] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraInfo.idl\n'}
+[8.186821] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraParams.idl\n'}
+[8.186983] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetInt32.idl\n'}
+[8.187155] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetString.idl\n'}
+[8.187293] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/SetInt32.idl\n'}
+[8.187419] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/msg/DeviceInfo.msg\n'}
+[8.187557] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/msg/Extrinsics.msg\n'}
+[8.187692] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/msg/Metadata.msg\n'}
+[8.187837] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetDeviceInfo.srv\n'}
+[8.188001] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetDeviceInfo_Request.msg\n'}
+[8.188141] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetDeviceInfo_Response.msg\n'}
+[8.188281] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraInfo.srv\n'}
+[8.188430] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraInfo_Request.msg\n'}
+[8.195024] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraInfo_Response.msg\n'}
+[8.195200] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraParams.srv\n'}
+[8.195322] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraParams_Request.msg\n'}
+[8.195436] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraParams_Response.msg\n'}
+[8.195565] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetInt32.srv\n'}
+[8.195708] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetInt32_Request.msg\n'}
+[8.195822] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetInt32_Response.msg\n'}
+[8.195948] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetString.srv\n'}
+[8.196084] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetString_Request.msg\n'}
+[8.196224] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetString_Response.msg\n'}
+[8.196392] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/SetInt32.srv\n'}
+[8.196522] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/SetInt32_Request.msg\n'}
+[8.196666] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/srv/SetInt32_Response.msg\n'}
+[8.196797] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/ament_index/resource_index/package_run_dependencies/astra_camera_msgs\n'}
+[8.196919] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/ament_index/resource_index/parent_prefix_path/astra_camera_msgs\n'}
+[8.197033] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/environment/ament_prefix_path.sh\n'}
+[8.197146] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[8.197257] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/environment/path.sh\n'}
+[8.197369] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/environment/path.dsv\n'}
+[8.197503] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/local_setup.bash\n'}
+[8.197617] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/local_setup.sh\n'}
+[8.202368] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/local_setup.zsh\n'}
+[8.204049] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/local_setup.dsv\n'}
+[8.204330] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.dsv\n'}
+[8.204469] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/ament_index/resource_index/packages/astra_camera_msgs\n'}
+[8.204622] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[8.204867] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.205010] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.205140] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.205262] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.205383] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.205667] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[8.206665] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.207089] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[8.207305] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.207478] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.207637] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.207765] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.207886] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[8.208003] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.208127] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_pyExport.cmake\n'}
+[8.208239] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.208354] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[8.208464] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.208693] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.208820] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.208933] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.209049] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.209228] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.209371] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgsConfig.cmake\n'}
+[8.209490] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgsConfig-version.cmake\n'}
+[8.226604] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.xml\n'}
+[8.226793] (astra_camera_msgs) CommandEnded: {'returncode': 0}
+[8.251697] (-) TimerEvent: {}
+[8.364631] (-) TimerEvent: {}
+[8.465022] (-) TimerEvent: {}
+[8.565497] (-) TimerEvent: {}
+[8.666475] (-) TimerEvent: {}
+[8.770271] (-) TimerEvent: {}
+[8.871769] (-) TimerEvent: {}
+[8.972280] (-) TimerEvent: {}
+[9.073264] (-) TimerEvent: {}
+[9.173928] (-) TimerEvent: {}
+[9.274842] (-) TimerEvent: {}
+[9.375805] (-) TimerEvent: {}
+[9.437860] (detection_aruco) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/detection_aruco', 'build', '--build-base', '/home/andre/ros2_ws/build/detection_aruco/build', 'install', '--record', '/home/andre/ros2_ws/build/detection_aruco/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/andre/ros2_ws/src/detection_aruco', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'andre', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '6330', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'andre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'andre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.N431N2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.212', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/andre/ros2_ws/build/detection_aruco', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/build/detection_aruco/prefix_override:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs'}, 'shell': False}
+[9.477664] (-) TimerEvent: {}
+[9.578518] (-) TimerEvent: {}
+[9.679089] (-) TimerEvent: {}
+[9.779731] (-) TimerEvent: {}
+[9.858391] (astra_camera_msgs) JobEnded: {'identifier': 'astra_camera_msgs', 'rc': 0}
+[9.867602] (astra_camera) JobStarted: {'identifier': 'astra_camera'}
+[9.886111] (-) TimerEvent: {}
+[9.917279] (astra_camera) JobProgress: {'identifier': 'astra_camera', 'progress': 'cmake'}
+[9.919304] (astra_camera) JobProgress: {'identifier': 'astra_camera', 'progress': 'build'}
+[9.926988] (astra_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/astra_camera', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/astra_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6330'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N431N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/astra_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[9.986438] (-) TimerEvent: {}
+[10.090239] (-) TimerEvent: {}
+[10.191555] (-) TimerEvent: {}
+[10.294226] (-) TimerEvent: {}
+[10.361494] (astra_camera) StdoutLine: {'line': b'[ 88%] Built target astra_camera\n'}
+[10.398235] (-) TimerEvent: {}
+[10.459260] (detection_aruco) StdoutLine: {'line': b'running egg_info\n'}
+[10.467021] (detection_aruco) StdoutLine: {'line': b'writing ../../build/detection_aruco/detection_aruco.egg-info/PKG-INFO\n'}
+[10.467326] (detection_aruco) StdoutLine: {'line': b'writing dependency_links to ../../build/detection_aruco/detection_aruco.egg-info/dependency_links.txt\n'}
+[10.467507] (detection_aruco) StdoutLine: {'line': b'writing entry points to ../../build/detection_aruco/detection_aruco.egg-info/entry_points.txt\n'}
+[10.467641] (detection_aruco) StdoutLine: {'line': b'writing requirements to ../../build/detection_aruco/detection_aruco.egg-info/requires.txt\n'}
+[10.467765] (detection_aruco) StdoutLine: {'line': b'writing top-level names to ../../build/detection_aruco/detection_aruco.egg-info/top_level.txt\n'}
+[10.467892] (detection_aruco) StdoutLine: {'line': b"reading manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'\n"}
+[10.468156] (detection_aruco) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[10.469383] (detection_aruco) StdoutLine: {'line': b"writing manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'\n"}
+[10.470570] (detection_aruco) StdoutLine: {'line': b'running build\n'}
+[10.470735] (detection_aruco) StdoutLine: {'line': b'running build_py\n'}
+[10.470867] (detection_aruco) StdoutLine: {'line': b'running install\n'}
+[10.473530] (detection_aruco) StdoutLine: {'line': b'running install_lib\n'}
+[10.473685] (detection_aruco) StdoutLine: {'line': b'running install_data\n'}
+[10.473833] (detection_aruco) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.476770] (detection_aruco) StdoutLine: {'line': b"removing '/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[10.477307] (detection_aruco) StdoutLine: {'line': b'Copying ../../build/detection_aruco/detection_aruco.egg-info to /home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info\n'}
+[10.485590] (detection_aruco) StdoutLine: {'line': b'running install_scripts\n'}
+[10.498580] (-) TimerEvent: {}
+[10.536489] (astra_camera) StdoutLine: {'line': b'[100%] Built target list_devices_node\n'}
+[10.591838] (astra_camera) CommandEnded: {'returncode': 0}
+[10.592626] (detection_aruco) StdoutLine: {'line': b'Installing obtain script to /home/andre/ros2_ws/install/detection_aruco/lib/detection_aruco\n'}
+[10.592809] (detection_aruco) StdoutLine: {'line': b'Installing see script to /home/andre/ros2_ws/install/detection_aruco/lib/detection_aruco\n'}
+[10.596376] (detection_aruco) StdoutLine: {'line': b"writing list of installed files to '/home/andre/ros2_ws/build/detection_aruco/install.log'\n"}
+[10.598951] (-) TimerEvent: {}
+[10.699427] (-) TimerEvent: {}
+[10.768766] (detection_aruco) CommandEnded: {'returncode': 0}
+[10.783746] (detection_aruco) JobEnded: {'identifier': 'detection_aruco', 'rc': 0}
+[10.799687] (-) TimerEvent: {}
+[10.870306] (astra_camera) JobProgress: {'identifier': 'astra_camera', 'progress': 'install'}
+[10.871132] (astra_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/astra_camera'], 'cwd': '/home/andre/ros2_ws/build/astra_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6330'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.N431N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/astra_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[10.902326] (-) TimerEvent: {}
+[10.906392] (astra_camera) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[10.908227] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/lib/libastra_camera.so\n'}
+[10.908392] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/lib/libOpenNI2.so\n'}
+[10.908521] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2\n'}
+[10.908640] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers\n'}
+[10.908754] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/OniFile.ini\n'}
+[10.908870] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/orbbec.ini\n'}
+[10.909001] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/liborbbec.so\n'}
+[10.909119] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/libOniFile.so\n'}
+[10.918469] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/lib/astra_camera/list_devices_node\n'}
+[10.918839] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include\n'}
+[10.918973] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera\n'}
+[10.919107] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ros_param_backend.h\n'}
+[10.919231] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_camera_node.h\n'}
+[10.919364] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/types.h\n'}
+[10.919490] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_frame_listener.h\n'}
+[10.919606] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc\n'}
+[10.919734] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/depth_traits.h\n'}
+[10.919878] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/point_cloud_xyzrgb.h\n'}
+[10.920010] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/point_cloud_xyz.h\n'}
+[10.920169] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/utils.h\n'}
+[10.920304] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/dynamic_params.h\n'}
+[10.920426] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/constants.h\n'}
+[10.920547] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_camera_node_factory.h\n'}
+[10.920669] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/device_listener.h\n'}
+[10.920866] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_timer_filter.h\n'}
+[10.920999] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/uvc_camera_driver.h\n'}
+[10.921112] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/DefineImageType.hpp\n'}
+[10.921231] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/astra_camera/ob_context.h\n'}
+[10.921352] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2\n'}
+[10.921476] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OpenNI.h\n'}
+[10.921607] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/MacOSX\n'}
+[10.934381] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/MacOSX/OniPlatformMacOSX.h\n'}
+[10.935119] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/Linux-Arm\n'}
+[10.935429] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/Linux-Arm/OniPlatformLinux-Arm.h\n'}
+[10.935838] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/Android-Arm\n'}
+[10.936077] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/Android-Arm/OniPlatformAndroid-Arm.h\n'}
+[10.936380] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniEnums.h\n'}
+[10.936690] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/Linux-x86\n'}
+[10.936940] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/Linux-x86/OniPlatformLinux-x86.h\n'}
+[10.937250] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniPlatform.h\n'}
+[10.937565] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniCEnums.h\n'}
+[10.937727] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/PrimeSense.h\n'}
+[10.937832] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/PSLink.h\n'}
+[10.937937] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniVersion.h\n'}
+[10.938047] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/PS1080.h\n'}
+[10.938215] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/util.h\n'}
+[10.938333] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniProperties.h\n'}
+[10.938443] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/Driver\n'}
+[10.938554] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/Driver/OniDriverAPI.h\n'}
+[10.938668] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/Driver/OniDriverTypes.h\n'}
+[10.938781] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/SonixCamera.h\n'}
+[10.938896] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniCTypes.h\n'}
+[10.939002] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniTest.h\n'}
+[10.939112] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/KinectProperties.h\n'}
+[10.939225] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniCAPI.h\n'}
+[10.939336] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/include/openni2/OniCProperties.h\n'}
+[10.939445] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch\n'}
+[10.939579] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_astra_mini.launch.py\n'}
+[10.939729] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai_dcw.launch.py\n'}
+[10.939997] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai_pro.launch.py\n'}
+[10.940241] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai_dw.launch.py\n'}
+[10.940406] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_dcw.launch.py\n'}
+[10.940554] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_pro.launch.py\n'}
+[10.940721] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_astra.launch.py\n'}
+[10.940917] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_dw.launch.py\n'}
+[10.941075] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/.gitkeep\n'}
+[10.956073] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/astra.launch.py\n'}
+[10.956802] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_u3.launch.py\n'}
+[10.957373] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/astra_mini.launch.py\n'}
+[10.957607] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai.launch.py\n'}
+[10.957811] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//launch/launch_utils.py\n'}
+[10.958032] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//config\n'}
+[10.958218] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//config/.gitkeep\n'}
+[10.958480] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params\n'}
+[10.958706] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/configurable_params.yaml\n'}
+[10.958920] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/camera_params_template.yaml\n'}
+[10.959101] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/dabai_params.yaml\n'}
+[10.959322] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/dabai_pro_params.yaml\n'}
+[10.959619] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/.gitkeep\n'}
+[10.959807] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/dabai_dw_params.yaml\n'}
+[10.959949] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/dabai_dcw_params.yaml\n'}
+[10.960117] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/astra_mini_params.yaml\n'}
+[10.960334] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//params/astra_params.yaml\n'}
+[10.960769] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//rviz\n'}
+[10.960995] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//rviz/multi_camera.rviz\n'}
+[10.961178] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//rviz/.gitkeep\n'}
+[10.961389] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera//rviz/pointcloud.rviz\n'}
+[10.961583] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/library_path.sh\n'}
+[10.961773] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/library_path.dsv\n'}
+[10.961967] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/ament_index/resource_index/package_run_dependencies/astra_camera\n'}
+[10.962216] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/ament_index/resource_index/parent_prefix_path/astra_camera\n'}
+[10.962407] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/ament_prefix_path.sh\n'}
+[10.962606] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/ament_prefix_path.dsv\n'}
+[10.962816] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/path.sh\n'}
+[10.962995] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/environment/path.dsv\n'}
+[10.963184] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/local_setup.bash\n'}
+[10.963365] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/local_setup.sh\n'}
+[10.963569] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/local_setup.zsh\n'}
+[10.963774] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/local_setup.dsv\n'}
+[10.963961] (astra_camera) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/package.dsv\n'}
+[10.964151] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/ament_index/resource_index/packages/astra_camera\n'}
+[10.964327] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/ament_index/resource_index/rclcpp_components/astra_camera\n'}
+[10.965353] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.965608] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.966108] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.966310] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/astra_cameraConfig.cmake\n'}
+[10.966468] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/cmake/astra_cameraConfig-version.cmake\n'}
+[10.966623] (astra_camera) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/astra_camera/share/astra_camera/package.xml\n'}
+[10.966807] (astra_camera) CommandEnded: {'returncode': 0}
+[11.004599] (-) TimerEvent: {}
+[11.105070] (-) TimerEvent: {}
+[11.205671] (-) TimerEvent: {}
+[11.306704] (-) TimerEvent: {}
+[11.315482] (astra_camera) JobEnded: {'identifier': 'astra_camera', 'rc': 0}
+[11.332411] (detection_astra_camera) JobStarted: {'identifier': 'detection_astra_camera'}
+[11.406856] (-) TimerEvent: {}
+[11.507318] (-) TimerEvent: {}
+[11.607804] (-) TimerEvent: {}
+[11.708287] (-) TimerEvent: {}
+[11.810935] (-) TimerEvent: {}
+[11.912858] (-) TimerEvent: {}
+[12.014578] (-) TimerEvent: {}
+[12.115233] (-) TimerEvent: {}
+[12.216490] (-) TimerEvent: {}
+[12.317096] (-) TimerEvent: {}
+[12.417939] (-) TimerEvent: {}
+[12.522212] (-) TimerEvent: {}
+[12.622663] (-) TimerEvent: {}
+[12.723241] (-) TimerEvent: {}
+[12.824559] (-) TimerEvent: {}
+[12.924924] (-) TimerEvent: {}
+[13.026786] (-) TimerEvent: {}
+[13.127772] (-) TimerEvent: {}
+[13.229838] (-) TimerEvent: {}
+[13.330219] (-) TimerEvent: {}
+[13.430651] (-) TimerEvent: {}
+[13.531161] (-) TimerEvent: {}
+[13.632234] (-) TimerEvent: {}
+[13.732728] (-) TimerEvent: {}
+[13.765654] (detection_astra_camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/detection_astra_camera', 'build', '--build-base', '/home/andre/ros2_ws/build/detection_astra_camera/build', 'install', '--record', '/home/andre/ros2_ws/build/detection_astra_camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/andre/ros2_ws/src/detection_astra_camera', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'andre', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/datos_camara/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '6330', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'andre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'andre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1514,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1514', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d1f6496f_4c72_4c39_ade6_1253eb1c75cd', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.N431N2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.212', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/andre/ros2_ws/build/detection_astra_camera', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/build/detection_astra_camera/prefix_override:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/datos_camara/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/datos_camara:/home/andre/ros2_ws/install/custom_msgs'}, 'shell': False}
+[13.833425] (-) TimerEvent: {}
+[13.934406] (-) TimerEvent: {}
+[14.035295] (-) TimerEvent: {}
+[14.135675] (-) TimerEvent: {}
+[14.236207] (-) TimerEvent: {}
+[14.348425] (-) TimerEvent: {}
+[14.449406] (-) TimerEvent: {}
+[14.550192] (-) TimerEvent: {}
+[14.633344] (detection_astra_camera) StdoutLine: {'line': b'running egg_info\n'}
+[14.637884] (detection_astra_camera) StdoutLine: {'line': b'writing ../../build/detection_astra_camera/detection_astra_camera.egg-info/PKG-INFO\n'}
+[14.638262] (detection_astra_camera) StdoutLine: {'line': b'writing dependency_links to ../../build/detection_astra_camera/detection_astra_camera.egg-info/dependency_links.txt\n'}
+[14.638982] (detection_astra_camera) StdoutLine: {'line': b'writing entry points to ../../build/detection_astra_camera/detection_astra_camera.egg-info/entry_points.txt\n'}
+[14.641655] (detection_astra_camera) StdoutLine: {'line': b'writing requirements to ../../build/detection_astra_camera/detection_astra_camera.egg-info/requires.txt\n'}
+[14.641860] (detection_astra_camera) StdoutLine: {'line': b'writing top-level names to ../../build/detection_astra_camera/detection_astra_camera.egg-info/top_level.txt\n'}
+[14.644564] (detection_astra_camera) StdoutLine: {'line': b"reading manifest file '../../build/detection_astra_camera/detection_astra_camera.egg-info/SOURCES.txt'\n"}
+[14.645346] (detection_astra_camera) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[14.647729] (detection_astra_camera) StdoutLine: {'line': b"writing manifest file '../../build/detection_astra_camera/detection_astra_camera.egg-info/SOURCES.txt'\n"}
+[14.648220] (detection_astra_camera) StdoutLine: {'line': b'running build\n'}
+[14.648456] (detection_astra_camera) StdoutLine: {'line': b'running build_py\n'}
+[14.648602] (detection_astra_camera) StdoutLine: {'line': b'copying detection_astra_camera/obtain_data_astra.py -> /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera\n'}
+[14.648784] (detection_astra_camera) StdoutLine: {'line': b'running install\n'}
+[14.649355] (detection_astra_camera) StdoutLine: {'line': b'running install_lib\n'}
+[14.650272] (-) TimerEvent: {}
+[14.650661] (detection_astra_camera) StdoutLine: {'line': b'copying /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera/obtain_data_astra.py -> /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera\n'}
+[14.652347] (detection_astra_camera) StdoutLine: {'line': b'byte-compiling /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera/obtain_data_astra.py to obtain_data_astra.cpython-310.pyc\n'}
+[14.653497] (detection_astra_camera) StdoutLine: {'line': b'running install_data\n'}
+[14.653832] (detection_astra_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.662267] (detection_astra_camera) StdoutLine: {'line': b"removing '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[14.665672] (detection_astra_camera) StdoutLine: {'line': b'Copying ../../build/detection_astra_camera/detection_astra_camera.egg-info to /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera-0.0.0-py3.10.egg-info\n'}
+[14.667983] (detection_astra_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[14.735747] (detection_astra_camera) StdoutLine: {'line': b'Installing obtain_data_astra script to /home/andre/ros2_ws/install/detection_astra_camera/lib/detection_astra_camera\n'}
+[14.737227] (detection_astra_camera) StdoutLine: {'line': b"writing list of installed files to '/home/andre/ros2_ws/build/detection_astra_camera/install.log'\n"}
+[14.750406] (-) TimerEvent: {}
+[14.834487] (detection_astra_camera) CommandEnded: {'returncode': 0}
+[14.835422] (detection_astra_camera) JobEnded: {'identifier': 'detection_astra_camera', 'rc': 0}
+[14.836419] (-) EventReactorShutdown: {}

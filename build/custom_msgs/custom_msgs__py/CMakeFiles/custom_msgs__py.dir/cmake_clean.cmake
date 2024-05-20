@@ -9,6 +9,10 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_msgs/msg/_plane_match.py"
   "../rosidl_generator_py/custom_msgs/msg/_plane_match_s.c"
   "../rosidl_generator_py/custom_msgs/msg/_plane_s.c"
+  "../rosidl_generator_py/custom_msgs/msg/_point.py"
+  "../rosidl_generator_py/custom_msgs/msg/_point_s.c"
+  "../rosidl_generator_py/custom_msgs/msg/_points_camera.py"
+  "../rosidl_generator_py/custom_msgs/msg/_points_camera_s.c"
   "CMakeFiles/custom_msgs__py"
 )
 

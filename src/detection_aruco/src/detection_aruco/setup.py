@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'obtain = detection_aruco.detection_aruco:main',
+            'obtain = detection_aruco.detection_aruco:main',
             'see = detection_aruco.obtener_imagen:main',
         ],
     },

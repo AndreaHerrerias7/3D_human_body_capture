@@ -78,6 +78,14 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/correspondence
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__builder.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/points_camera.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/point.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/point__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/point__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/point__traits.hpp
 
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -97,6 +105,8 @@ rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/rosidl_gen
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/Plane.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/PlaneMatch.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/Correspondences.idl
+rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/PointsCamera.idl
+rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/Point.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -192,6 +202,30 @@ rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__struct.hpp: rosidl_
 rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__traits.hpp
 
+rosidl_generator_cpp/custom_msgs/msg/points_camera.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/points_camera.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/point.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/point.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/point__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/point__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/point__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/point__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/point__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/point__traits.hpp
+
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/correspondences.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__builder.hpp
@@ -203,8 +237,16 @@ custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/plane__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/plane_match__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/plane_match__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/plane_match__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/point__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/point__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/point__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/points_camera__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/plane_match.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/point.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/points_camera.hpp
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp.dir/build.make
 .PHONY : custom_msgs__cpp
 

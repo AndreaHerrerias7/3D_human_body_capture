@@ -211,4 +211,10 @@ CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generato
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__functions.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/correspondences__type_support.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/correspondences__struct.h \
- /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/correspondences__functions.h
+ /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/correspondences__functions.h \
+ /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/points_camera__type_support.h \
+ /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/points_camera__struct.h \
+ /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/point__struct.h \
+ /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/points_camera__functions.h \
+ /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/point__type_support.h \
+ /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/point__functions.h

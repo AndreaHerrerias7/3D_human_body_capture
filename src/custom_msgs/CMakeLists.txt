@@ -14,6 +14,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Plane.msg"
   "msg/PlaneMatch.msg"
   "msg/Correspondences.msg"
+  "msg/PointsCamera.msg"
+  "msg/Point.msg"
   DEPENDENCIES geometry_msgs
  )
 

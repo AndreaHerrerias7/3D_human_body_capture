@@ -1,0 +1,38 @@
+[1.022s] Invoking command in '/home/andre/ros2_ws/src/detection_astra_camera': PYTHONPATH=/home/andre/ros2_ws/build/detection_astra_camera/prefix_override:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_astra_camera build --build-base /home/andre/ros2_ws/build/detection_astra_camera/build install --record /home/andre/ros2_ws/build/detection_astra_camera/install.log --single-version-externally-managed install_data
+[1.317s] running egg_info
+[1.318s] creating ../../build/detection_astra_camera/detection_astra_camera.egg-info
+[1.319s] writing ../../build/detection_astra_camera/detection_astra_camera.egg-info/PKG-INFO
+[1.319s] writing dependency_links to ../../build/detection_astra_camera/detection_astra_camera.egg-info/dependency_links.txt
+[1.319s] writing entry points to ../../build/detection_astra_camera/detection_astra_camera.egg-info/entry_points.txt
+[1.319s] writing requirements to ../../build/detection_astra_camera/detection_astra_camera.egg-info/requires.txt
+[1.320s] writing top-level names to ../../build/detection_astra_camera/detection_astra_camera.egg-info/top_level.txt
+[1.320s] writing manifest file '../../build/detection_astra_camera/detection_astra_camera.egg-info/SOURCES.txt'
+[1.322s] reading manifest file '../../build/detection_astra_camera/detection_astra_camera.egg-info/SOURCES.txt'
+[1.323s] adding license file 'LICENSE'
+[1.323s] writing manifest file '../../build/detection_astra_camera/detection_astra_camera.egg-info/SOURCES.txt'
+[1.324s] running build
+[1.324s] running build_py
+[1.324s] creating /home/andre/ros2_ws/build/detection_astra_camera/build
+[1.324s] creating /home/andre/ros2_ws/build/detection_astra_camera/build/lib
+[1.324s] creating /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera
+[1.324s] copying detection_astra_camera/obtain_data_astra.py -> /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera
+[1.325s] copying detection_astra_camera/__init__.py -> /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera
+[1.325s] running install
+[1.325s] running install_lib
+[1.326s] creating /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera
+[1.326s] copying /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera/obtain_data_astra.py -> /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera
+[1.327s] copying /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera/__init__.py -> /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera
+[1.327s] byte-compiling /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera/obtain_data_astra.py to obtain_data_astra.cpython-310.pyc
+[1.328s] byte-compiling /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera/__init__.py to __init__.cpython-310.pyc
+[1.331s] running install_data
+[1.331s] creating /home/andre/ros2_ws/install/detection_astra_camera/share/ament_index
+[1.332s] creating /home/andre/ros2_ws/install/detection_astra_camera/share/ament_index/resource_index
+[1.332s] creating /home/andre/ros2_ws/install/detection_astra_camera/share/ament_index/resource_index/packages
+[1.332s] copying resource/detection_astra_camera -> /home/andre/ros2_ws/install/detection_astra_camera/share/ament_index/resource_index/packages
+[1.332s] copying package.xml -> /home/andre/ros2_ws/install/detection_astra_camera/share/detection_astra_camera
+[1.332s] running install_egg_info
+[1.333s] Copying ../../build/detection_astra_camera/detection_astra_camera.egg-info to /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera-0.0.0-py3.10.egg-info
+[1.334s] running install_scripts
+[1.359s] Installing obtain_data_astra script to /home/andre/ros2_ws/install/detection_astra_camera/lib/detection_astra_camera
+[1.359s] writing list of installed files to '/home/andre/ros2_ws/build/detection_astra_camera/install.log'
+[1.389s] Invoked command in '/home/andre/ros2_ws/src/detection_astra_camera' returned '0': PYTHONPATH=/home/andre/ros2_ws/build/detection_astra_camera/prefix_override:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_astra_camera build --build-base /home/andre/ros2_ws/build/detection_astra_camera/build install --record /home/andre/ros2_ws/build/detection_astra_camera/install.log --single-version-externally-managed install_data

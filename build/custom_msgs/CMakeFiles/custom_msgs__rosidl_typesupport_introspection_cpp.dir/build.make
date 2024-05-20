@@ -80,6 +80,8 @@ rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesu
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/custom_msgs/msg/Plane.idl
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/custom_msgs/msg/PlaneMatch.idl
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/custom_msgs/msg/Correspondences.idl
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/custom_msgs/msg/PointsCamera.idl
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/custom_msgs/msg/Point.idl
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -148,6 +150,12 @@ rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane_match__rosidl_
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_cpp.hpp
 
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__rosidl_typesupport_introspection_cpp.hpp
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__rosidl_typesupport_introspection_cpp.hpp
+
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp
 
@@ -156,6 +164,12 @@ rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane_match__type_su
 
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp
 
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp
@@ -199,11 +213,41 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andre/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp.s
 
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andre/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.o -c /home/andre/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andre/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.i
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andre/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.s
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andre/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.o -c /home/andre/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andre/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.i
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andre/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.s
+
 # Object files for target custom_msgs__rosidl_typesupport_introspection_cpp
 custom_msgs__rosidl_typesupport_introspection_cpp_OBJECTS = \
 "CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp.o" \
 "CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane_match__type_support.cpp.o" \
-"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp.o"
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp.o" \
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.o" \
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.o"
 
 # External object files for target custom_msgs__rosidl_typesupport_introspection_cpp
 custom_msgs__rosidl_typesupport_introspection_cpp_EXTERNAL_OBJECTS =
@@ -211,6 +255,8 @@ custom_msgs__rosidl_typesupport_introspection_cpp_EXTERNAL_OBJECTS =
 libcustom_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp.o
 libcustom_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane_match__type_support.cpp.o
 libcustom_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/correspondences__type_support.cpp.o
+libcustom_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp.o
+libcustom_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp.o
 libcustom_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make
 libcustom_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 libcustom_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
@@ -220,7 +266,7 @@ libcustom_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/lib
 libcustom_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librcutils.so
 libcustom_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andre/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andre/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -237,6 +283,10 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane__type_support.cpp
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_cpp.hpp
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/plane_match__type_support.cpp
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__rosidl_typesupport_introspection_cpp.hpp
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/point__type_support.cpp
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__rosidl_typesupport_introspection_cpp.hpp
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/points_camera__type_support.cpp
 	cd /home/andre/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andre/ros2_ws/src/custom_msgs /home/andre/ros2_ws/src/custom_msgs /home/andre/ros2_ws/build/custom_msgs /home/andre/ros2_ws/build/custom_msgs /home/andre/ros2_ws/build/custom_msgs/CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/depend
 

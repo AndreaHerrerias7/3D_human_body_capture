@@ -5,7 +5,9 @@
   "idl_tuples": [
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Plane.idl",
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PlaneMatch.idl",
-    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Correspondences.idl"
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Correspondences.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PointsCamera.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Point.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -80,6 +82,8 @@
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Plane.idl",
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/PlaneMatch.idl",
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Correspondences.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/PointsCamera.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Point.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",
