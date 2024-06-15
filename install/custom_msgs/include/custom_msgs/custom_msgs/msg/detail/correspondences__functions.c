@@ -14,6 +14,9 @@
 // Include directives for member types
 // Member `correspondences`
 #include "custom_msgs/msg/detail/plane_match__functions.h"
+// Member `first_label`
+// Member `second_label`
+#include "rosidl_runtime_c/string_functions.h"
 
 bool
 custom_msgs__msg__Correspondences__init(custom_msgs__msg__Correspondences * msg)
@@ -23,6 +26,16 @@ custom_msgs__msg__Correspondences__init(custom_msgs__msg__Correspondences * msg)
   }
   // correspondences
   if (!custom_msgs__msg__PlaneMatch__Sequence__init(&msg->correspondences, 0)) {
+    custom_msgs__msg__Correspondences__fini(msg);
+    return false;
+  }
+  // first_label
+  if (!rosidl_runtime_c__String__init(&msg->first_label)) {
+    custom_msgs__msg__Correspondences__fini(msg);
+    return false;
+  }
+  // second_label
+  if (!rosidl_runtime_c__String__init(&msg->second_label)) {
     custom_msgs__msg__Correspondences__fini(msg);
     return false;
   }
@@ -37,6 +50,10 @@ custom_msgs__msg__Correspondences__fini(custom_msgs__msg__Correspondences * msg)
   }
   // correspondences
   custom_msgs__msg__PlaneMatch__Sequence__fini(&msg->correspondences);
+  // first_label
+  rosidl_runtime_c__String__fini(&msg->first_label);
+  // second_label
+  rosidl_runtime_c__String__fini(&msg->second_label);
 }
 
 bool
@@ -48,6 +65,18 @@ custom_msgs__msg__Correspondences__are_equal(const custom_msgs__msg__Corresponde
   // correspondences
   if (!custom_msgs__msg__PlaneMatch__Sequence__are_equal(
       &(lhs->correspondences), &(rhs->correspondences)))
+  {
+    return false;
+  }
+  // first_label
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->first_label), &(rhs->first_label)))
+  {
+    return false;
+  }
+  // second_label
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->second_label), &(rhs->second_label)))
   {
     return false;
   }
@@ -65,6 +94,18 @@ custom_msgs__msg__Correspondences__copy(
   // correspondences
   if (!custom_msgs__msg__PlaneMatch__Sequence__copy(
       &(input->correspondences), &(output->correspondences)))
+  {
+    return false;
+  }
+  // first_label
+  if (!rosidl_runtime_c__String__copy(
+      &(input->first_label), &(output->first_label)))
+  {
+    return false;
+  }
+  // second_label
+  if (!rosidl_runtime_c__String__copy(
+      &(input->second_label), &(output->second_label)))
   {
     return false;
   }

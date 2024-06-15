@@ -1,0 +1,152 @@
+[0.000000] (-) TimerEvent: {}
+[0.010093] (-) JobUnselected: {'identifier': 'apriltag_msgs'}
+[0.012389] (-) JobUnselected: {'identifier': 'apriltag_ros'}
+[0.012522] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.012571] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.012611] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.012649] (-) JobUnselected: {'identifier': 'detection_aruco'}
+[0.012687] (-) JobUnselected: {'identifier': 'detection_astra_camera'}
+[0.012730] (calib_correspondences) JobQueued: {'identifier': 'calib_correspondences', 'dependencies': OrderedDict()}
+[0.012775] (calib_correspondences) JobStarted: {'identifier': 'calib_correspondences'}
+[0.036669] (calib_correspondences) JobProgress: {'identifier': 'calib_correspondences', 'progress': 'cmake'}
+[0.036780] (calib_correspondences) JobProgress: {'identifier': 'calib_correspondences', 'progress': 'build'}
+[0.036832] (calib_correspondences) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/calib_correspondences', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/calib_correspondences', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '30604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1558,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1558'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a7c1558b_ef7d_4fb6_a921_a2c7d5d0787d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.VHQIO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.334'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/calib_correspondences'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/apriltag_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[0.099926] (-) TimerEvent: {}
+[0.122632] (calib_correspondences) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.200049] (-) TimerEvent: {}
+[0.300670] (-) TimerEvent: {}
+[0.401407] (-) TimerEvent: {}
+[0.502496] (-) TimerEvent: {}
+[0.503680] (calib_correspondences) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.597931] (calib_correspondences) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.602572] (-) TimerEvent: {}
+[0.608021] (calib_correspondences) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.626816] (calib_correspondences) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.670963] (calib_correspondences) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.702684] (-) TimerEvent: {}
+[0.718082] (calib_correspondences) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.802815] (-) TimerEvent: {}
+[0.903278] (-) TimerEvent: {}
+[0.912511] (calib_correspondences) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.916446] (calib_correspondences) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.003385] (-) TimerEvent: {}
+[1.103751] (-) TimerEvent: {}
+[1.204197] (-) TimerEvent: {}
+[1.243005] (calib_correspondences) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.304401] (-) TimerEvent: {}
+[1.405082] (-) TimerEvent: {}
+[1.505685] (-) TimerEvent: {}
+[1.606530] (-) TimerEvent: {}
+[1.707034] (-) TimerEvent: {}
+[1.714650] (calib_correspondences) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.807131] (-) TimerEvent: {}
+[1.907616] (-) TimerEvent: {}
+[2.008159] (-) TimerEvent: {}
+[2.108795] (-) TimerEvent: {}
+[2.142607] (calib_correspondences) StdoutLine: {'line': b'-- Found custom_msgs: 0.0.0 (/home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake)\n'}
+[2.209039] (-) TimerEvent: {}
+[2.291829] (calib_correspondences) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.6 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[2.309090] (-) TimerEvent: {}
+[2.409590] (-) TimerEvent: {}
+[2.509962] (-) TimerEvent: {}
+[2.610356] (-) TimerEvent: {}
+[2.714528] (-) TimerEvent: {}
+[2.814906] (-) TimerEvent: {}
+[2.915407] (-) TimerEvent: {}
+[3.016062] (-) TimerEvent: {}
+[3.119708] (-) TimerEvent: {}
+[3.222562] (-) TimerEvent: {}
+[3.323020] (-) TimerEvent: {}
+[3.399283] (calib_correspondences) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.420288] (calib_correspondences) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[3.423095] (-) TimerEvent: {}
+[3.478423] (calib_correspondences) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[3.523272] (-) TimerEvent: {}
+[3.623838] (-) TimerEvent: {}
+[3.726633] (-) TimerEvent: {}
+[3.828839] (-) TimerEvent: {}
+[3.929294] (-) TimerEvent: {}
+[4.029862] (-) TimerEvent: {}
+[4.133515] (-) TimerEvent: {}
+[4.233890] (-) TimerEvent: {}
+[4.334284] (-) TimerEvent: {}
+[4.382667] (calib_correspondences) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.396652] (calib_correspondences) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.3.0.85, include: /home/andre/ros2_ws/install/astra_camera/include/openni2, lib: /home/andre/ros2_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)\n'}
+[4.398123] (calib_correspondences) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[4.434427] (-) TimerEvent: {}
+[4.534821] (-) TimerEvent: {}
+[4.635266] (-) TimerEvent: {}
+[4.735652] (-) TimerEvent: {}
+[4.836227] (-) TimerEvent: {}
+[4.844538] (calib_correspondences) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.870597] (calib_correspondences) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.889989] (calib_correspondences) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.3.0.85, include: /home/andre/ros2_ws/install/astra_camera/include/openni2, lib: /home/andre/ros2_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)\n'}
+[4.940599] (-) TimerEvent: {}
+[5.041322] (-) TimerEvent: {}
+[5.141998] (-) TimerEvent: {}
+[5.242491] (-) TimerEvent: {}
+[5.342973] (-) TimerEvent: {}
+[5.375269] (calib_correspondences) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[5.443033] (-) TimerEvent: {}
+[5.544106] (-) TimerEvent: {}
+[5.650572] (-) TimerEvent: {}
+[5.750954] (-) TimerEvent: {}
+[5.830869] (calib_correspondences) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.851169] (-) TimerEvent: {}
+[5.953442] (-) TimerEvent: {}
+[6.054194] (-) TimerEvent: {}
+[6.154772] (-) TimerEvent: {}
+[6.255296] (-) TimerEvent: {}
+[6.267925] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[6.269210] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[6.270376] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[6.271573] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[6.271814] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[6.272292] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[6.273237] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[6.273993] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[6.274634] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[6.279318] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[6.279586] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[6.280127] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[6.290275] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[6.290672] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[6.290877] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[6.291073] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[6.296297] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[6.296800] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[6.301097] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[6.301355] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[6.301552] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[6.301723] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[6.302189] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[6.303142] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[6.304325] (calib_correspondences) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[6.329085] (calib_correspondences) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread \n'}
+[6.330825] (calib_correspondences) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[6.355373] (-) TimerEvent: {}
+[6.455741] (-) TimerEvent: {}
+[6.556208] (-) TimerEvent: {}
+[6.656795] (-) TimerEvent: {}
+[6.665750] (calib_correspondences) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.682066] (calib_correspondences) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:35 (add_executable):\n'}
+[6.682496] (calib_correspondences) StderrLine: {'line': b'  Cannot find source file:\n'}
+[6.682832] (calib_correspondences) StderrLine: {'line': b'\n'}
+[6.683035] (calib_correspondences) StderrLine: {'line': b'    src/Clouds2Correspondences.cpp\n'}
+[6.683227] (calib_correspondences) StderrLine: {'line': b'\n'}
+[6.683396] (calib_correspondences) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[6.683558] (calib_correspondences) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[6.683717] (calib_correspondences) StderrLine: {'line': b'\n'}
+[6.683879] (calib_correspondences) StderrLine: {'line': b'\x1b[0m\n'}
+[6.711727] (calib_correspondences) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:35 (add_executable):\n'}
+[6.712016] (calib_correspondences) StderrLine: {'line': b'  No SOURCES given to target: rosbag_reader\n'}
+[6.712170] (calib_correspondences) StderrLine: {'line': b'\n'}
+[6.712315] (calib_correspondences) StderrLine: {'line': b'\x1b[0m\n'}
+[6.715793] (calib_correspondences) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[6.756932] (-) TimerEvent: {}
+[6.791765] (calib_correspondences) StderrLine: {'line': b'gmake: *** [Makefile:472: cmake_check_build_system] Error 1\n'}
+[6.797550] (calib_correspondences) CommandEnded: {'returncode': 2}
+[6.857095] (-) TimerEvent: {}
+[6.958137] (-) TimerEvent: {}
+[6.997381] (calib_correspondences) JobEnded: {'identifier': 'calib_correspondences', 'rc': 2}
+[6.999753] (-) EventReactorShutdown: {}

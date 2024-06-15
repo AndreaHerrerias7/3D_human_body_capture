@@ -186,7 +186,9 @@ CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fas
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__struct.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/correspondences__functions.h \
  /usr/include/c++/11/stdlib.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h \
- /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__functions.h
+ /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__functions.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h

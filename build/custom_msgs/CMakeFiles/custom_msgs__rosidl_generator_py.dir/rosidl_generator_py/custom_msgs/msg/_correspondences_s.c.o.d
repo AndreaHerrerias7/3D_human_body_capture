@@ -211,8 +211,10 @@ CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__struct.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/correspondences__functions.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__functions.h

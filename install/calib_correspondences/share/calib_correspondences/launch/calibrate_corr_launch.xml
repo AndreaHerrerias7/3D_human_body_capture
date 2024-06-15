@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node pkg="calib_correspondences" exec="corr_subscriber" name="correspondences_subscriber" output="screen">
+	
+	</node>
+
+</launch>
+	
+

@@ -17,6 +17,9 @@
 #include "custom_msgs/msg/plane_match.h"
 // Member `correspondences`
 #include "custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_c.h"
+// Member `first_label`
+// Member `second_label`
+#include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -92,7 +95,7 @@ bool custom_msgs__msg__Correspondences__rosidl_typesupport_introspection_c__resi
   return custom_msgs__msg__PlaneMatch__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Correspondences__rosidl_typesupport_introspection_c__Correspondences_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Correspondences__rosidl_typesupport_introspection_c__Correspondences_message_member_array[3] = {
   {
     "correspondences",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -109,13 +112,47 @@ static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Corre
     custom_msgs__msg__Correspondences__rosidl_typesupport_introspection_c__fetch_function__Correspondences__correspondences,  // fetch(index, &value) function pointer
     custom_msgs__msg__Correspondences__rosidl_typesupport_introspection_c__assign_function__Correspondences__correspondences,  // assign(index, value) function pointer
     custom_msgs__msg__Correspondences__rosidl_typesupport_introspection_c__resize_function__Correspondences__correspondences  // resize(index) function pointer
+  },
+  {
+    "first_label",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Correspondences, first_label),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "second_label",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Correspondences, second_label),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers custom_msgs__msg__Correspondences__rosidl_typesupport_introspection_c__Correspondences_message_members = {
   "custom_msgs__msg",  // message namespace
   "Correspondences",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(custom_msgs__msg__Correspondences),
   custom_msgs__msg__Correspondences__rosidl_typesupport_introspection_c__Correspondences_message_member_array,  // message members
   custom_msgs__msg__Correspondences__rosidl_typesupport_introspection_c__Correspondences_init_function,  // function to initialize message memory (memory has to be allocated)

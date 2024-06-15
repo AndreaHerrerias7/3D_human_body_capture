@@ -1,0 +1,25 @@
+[2.887s] Invoking command in '/home/andre/ros2_ws/src/detection_astra_camera': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs LD_LIBRARY_PATH=/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/andre/ros2_ws/build/detection_astra_camera/prefix_override:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_astra_camera build --build-base /home/andre/ros2_ws/build/detection_astra_camera/build install --record /home/andre/ros2_ws/build/detection_astra_camera/install.log --single-version-externally-managed install_data
+[3.448s] running egg_info
+[3.450s] writing ../../build/detection_astra_camera/detection_astra_camera.egg-info/PKG-INFO
+[3.451s] writing dependency_links to ../../build/detection_astra_camera/detection_astra_camera.egg-info/dependency_links.txt
+[3.451s] writing entry points to ../../build/detection_astra_camera/detection_astra_camera.egg-info/entry_points.txt
+[3.451s] writing requirements to ../../build/detection_astra_camera/detection_astra_camera.egg-info/requires.txt
+[3.451s] writing top-level names to ../../build/detection_astra_camera/detection_astra_camera.egg-info/top_level.txt
+[3.454s] reading manifest file '../../build/detection_astra_camera/detection_astra_camera.egg-info/SOURCES.txt'
+[3.455s] adding license file 'LICENSE'
+[3.456s] writing manifest file '../../build/detection_astra_camera/detection_astra_camera.egg-info/SOURCES.txt'
+[3.457s] running build
+[3.457s] running build_py
+[3.457s] copying detection_astra_camera/obtain_data_astra.py -> /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera
+[3.457s] running install
+[3.458s] running install_lib
+[3.459s] copying /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera/obtain_data_astra.py -> /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera
+[3.461s] byte-compiling /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera/obtain_data_astra.py to obtain_data_astra.cpython-310.pyc
+[3.462s] running install_data
+[3.462s] running install_egg_info
+[3.465s] removing '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera-0.0.0-py3.10.egg-info' (and everything under it)
+[3.500s] Copying ../../build/detection_astra_camera/detection_astra_camera.egg-info to /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera-0.0.0-py3.10.egg-info
+[3.501s] running install_scripts
+[3.549s] Installing obtain_data_astra script to /home/andre/ros2_ws/install/detection_astra_camera/lib/detection_astra_camera
+[3.550s] writing list of installed files to '/home/andre/ros2_ws/build/detection_astra_camera/install.log'
+[3.621s] Invoked command in '/home/andre/ros2_ws/src/detection_astra_camera' returned '0': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs LD_LIBRARY_PATH=/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/andre/ros2_ws/build/detection_astra_camera/prefix_override:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_astra_camera build --build-base /home/andre/ros2_ws/build/detection_astra_camera/build install --record /home/andre/ros2_ws/build/detection_astra_camera/install.log --single-version-externally-managed install_data

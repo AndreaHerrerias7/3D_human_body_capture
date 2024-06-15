@@ -82,7 +82,7 @@ void resize_function__Correspondences__correspondences(void * untyped_member, si
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Correspondences_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Correspondences_message_member_array[3] = {
   {
     "correspondences",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -99,13 +99,47 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Correspondenc
     fetch_function__Correspondences__correspondences,  // fetch(index, &value) function pointer
     assign_function__Correspondences__correspondences,  // assign(index, value) function pointer
     resize_function__Correspondences__correspondences  // resize(index) function pointer
+  },
+  {
+    "first_label",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Correspondences, first_label),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "second_label",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Correspondences, second_label),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Correspondences_message_members = {
   "custom_msgs::msg",  // message namespace
   "Correspondences",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(custom_msgs::msg::Correspondences),
   Correspondences_message_member_array,  // message members
   Correspondences_init_function,  // function to initialize message memory (memory has to be allocated)

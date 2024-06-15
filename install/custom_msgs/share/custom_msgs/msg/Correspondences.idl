@@ -8,6 +8,10 @@ module custom_msgs {
   module msg {
     struct Correspondences {
       sequence<custom_msgs::msg::PlaneMatch> correspondences;
+
+      string first_label;
+
+      string second_label;
     };
   };
 };

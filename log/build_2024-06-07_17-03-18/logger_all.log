@@ -1,0 +1,232 @@
+[0.687s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'calib_correspondences']
+[0.687s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['calib_correspondences'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x79c4bf4f3cd0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79c4bf4f3760>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79c4bf4f3760>>)
+[5.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[5.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[5.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[5.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[5.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[5.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[5.370s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/andre/ros2_ws'
+[5.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[5.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[5.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[5.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[5.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[5.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[5.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[5.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[5.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_msgs-master) by extensions ['ignore', 'ignore_ament_install']
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_msgs-master) by extension 'ignore'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_msgs-master) by extension 'ignore_ament_install'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_msgs-master) by extensions ['colcon_pkg']
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_msgs-master) by extension 'colcon_pkg'
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_msgs-master) by extensions ['colcon_meta']
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_msgs-master) by extension 'colcon_meta'
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_msgs-master) by extensions ['ros']
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_msgs-master) by extension 'ros'
+[5.489s] DEBUG:colcon.colcon_core.package_identification:Package 'src/apriltag_msgs-master' with type 'ros.ament_cmake' and name 'apriltag_msgs'
+[5.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros-master) by extensions ['ignore', 'ignore_ament_install']
+[5.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros-master) by extension 'ignore'
+[5.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros-master) by extension 'ignore_ament_install'
+[5.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros-master) by extensions ['colcon_pkg']
+[5.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros-master) by extension 'colcon_pkg'
+[5.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros-master) by extensions ['colcon_meta']
+[5.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros-master) by extension 'colcon_meta'
+[5.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros-master) by extensions ['ros']
+[5.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/apriltag_ros-master) by extension 'ros'
+[5.496s] DEBUG:colcon.colcon_core.package_identification:Package 'src/apriltag_ros-master' with type 'ros.ament_cmake' and name 'apriltag_ros'
+[5.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[5.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'ignore'
+[5.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'ignore_ament_install'
+[5.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['colcon_pkg']
+[5.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'colcon_pkg'
+[5.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['colcon_meta']
+[5.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'colcon_meta'
+[5.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['ros']
+[5.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'ros'
+[5.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['cmake', 'python']
+[5.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'cmake'
+[5.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'python'
+[5.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['python_setup_py']
+[5.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'python_setup_py'
+[5.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[5.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'ignore'
+[5.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'ignore_ament_install'
+[5.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extensions ['colcon_pkg']
+[5.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'colcon_pkg'
+[5.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extensions ['colcon_meta']
+[5.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'colcon_meta'
+[5.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extensions ['ros']
+[5.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'ros'
+[5.521s] DEBUG:colcon.colcon_core.package_identification:Package 'src/astra_camera/astra_camera' with type 'ros.ament_cmake' and name 'astra_camera'
+[5.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[5.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'ignore'
+[5.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'ignore_ament_install'
+[5.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extensions ['colcon_pkg']
+[5.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'colcon_pkg'
+[5.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extensions ['colcon_meta']
+[5.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'colcon_meta'
+[5.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extensions ['ros']
+[5.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'ros'
+[5.541s] DEBUG:colcon.colcon_core.package_identification:Package 'src/astra_camera/astra_camera_msgs' with type 'ros.ament_cmake' and name 'astra_camera_msgs'
+[5.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extensions ['ignore', 'ignore_ament_install']
+[5.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'ignore'
+[5.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'ignore_ament_install'
+[5.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extensions ['colcon_pkg']
+[5.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'colcon_pkg'
+[5.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extensions ['colcon_meta']
+[5.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'colcon_meta'
+[5.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extensions ['ros']
+[5.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'ros'
+[5.553s] DEBUG:colcon.colcon_core.package_identification:Package 'src/calib_correspondences' with type 'ros.ament_cmake' and name 'calib_correspondences'
+[5.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[5.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[5.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[5.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[5.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[5.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[5.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[5.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[5.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[5.573s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[5.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['ignore', 'ignore_ament_install']
+[5.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'ignore'
+[5.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'ignore_ament_install'
+[5.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['colcon_pkg']
+[5.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'colcon_pkg'
+[5.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['colcon_meta']
+[5.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'colcon_meta'
+[5.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['ros']
+[5.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'ros'
+[5.596s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection_aruco' with type 'ros.ament_python' and name 'detection_aruco'
+[5.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[5.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'ignore'
+[5.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'ignore_ament_install'
+[5.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extensions ['colcon_pkg']
+[5.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'colcon_pkg'
+[5.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extensions ['colcon_meta']
+[5.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'colcon_meta'
+[5.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extensions ['ros']
+[5.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'ros'
+[5.614s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection_astra_camera' with type 'ros.ament_python' and name 'detection_astra_camera'
+[5.615s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[5.615s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[5.615s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[5.615s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[5.615s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.899s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'apriltag_msgs' in 'src/apriltag_msgs-master'
+[5.900s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'astra_camera_msgs' in 'src/astra_camera/astra_camera_msgs'
+[5.900s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'custom_msgs' in 'src/custom_msgs'
+[5.900s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'apriltag_ros' in 'src/apriltag_ros-master'
+[5.900s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'astra_camera' in 'src/astra_camera/astra_camera'
+[5.900s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'detection_aruco' in 'src/detection_aruco'
+[5.900s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'detection_astra_camera' in 'src/detection_astra_camera'
+[5.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.934s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/andre/ros2_ws/install
+[5.953s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/humble
+[5.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[6.976s] Level 5:colcon.colcon_core.verb:set package 'calib_correspondences' build argument 'cmake_args' from command line to 'None'
+[6.977s] Level 5:colcon.colcon_core.verb:set package 'calib_correspondences' build argument 'cmake_target' from command line to 'None'
+[6.978s] Level 5:colcon.colcon_core.verb:set package 'calib_correspondences' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.979s] Level 5:colcon.colcon_core.verb:set package 'calib_correspondences' build argument 'cmake_clean_cache' from command line to 'False'
+[6.979s] Level 5:colcon.colcon_core.verb:set package 'calib_correspondences' build argument 'cmake_clean_first' from command line to 'False'
+[6.980s] Level 5:colcon.colcon_core.verb:set package 'calib_correspondences' build argument 'cmake_force_configure' from command line to 'False'
+[6.980s] Level 5:colcon.colcon_core.verb:set package 'calib_correspondences' build argument 'ament_cmake_args' from command line to 'None'
+[6.981s] Level 5:colcon.colcon_core.verb:set package 'calib_correspondences' build argument 'catkin_cmake_args' from command line to 'None'
+[6.981s] Level 5:colcon.colcon_core.verb:set package 'calib_correspondences' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.981s] DEBUG:colcon.colcon_core.verb:Building package 'calib_correspondences' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/calib_correspondences', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/calib_correspondences', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/calib_correspondences', 'symlink_install': False, 'test_result_base': None}
+[6.984s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.990s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.991s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andre/ros2_ws/src/calib_correspondences' with build type 'ament_cmake'
+[6.992s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andre/ros2_ws/src/calib_correspondences'
+[7.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[7.074s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.074s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/calib_correspondences': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/calib_correspondences -- -j4 -l4
+[7.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/calib_correspondences' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/calib_correspondences -- -j4 -l4
+[7.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/calib_correspondences': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/calib_correspondences
+[7.966s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(calib_correspondences)
+[7.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/calib_correspondences' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/calib_correspondences
+[7.985s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences' for CMake module files
+[7.987s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences' for CMake config files
+[7.987s] Level 1:colcon.colcon_core.shell:create_environment_hook('calib_correspondences', 'cmake_prefix_path')
+[7.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/hook/cmake_prefix_path.ps1'
+[8.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/hook/cmake_prefix_path.dsv'
+[8.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/hook/cmake_prefix_path.sh'
+[8.097s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/lib'
+[8.097s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/bin'
+[8.098s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/lib/pkgconfig/calib_correspondences.pc'
+[8.099s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/lib/python3.10/site-packages'
+[8.099s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/bin'
+[8.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.ps1'
+[8.103s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.dsv'
+[8.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.sh'
+[8.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.bash'
+[8.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.zsh'
+[8.211s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/calib_correspondences/share/colcon-core/packages/calib_correspondences)
+[8.455s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(calib_correspondences)
+[8.455s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences' for CMake module files
+[8.457s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences' for CMake config files
+[8.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('calib_correspondences', 'cmake_prefix_path')
+[8.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/hook/cmake_prefix_path.ps1'
+[8.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/hook/cmake_prefix_path.dsv'
+[8.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/hook/cmake_prefix_path.sh'
+[8.460s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/lib'
+[8.460s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/bin'
+[8.460s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/lib/pkgconfig/calib_correspondences.pc'
+[8.461s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/lib/python3.10/site-packages'
+[8.461s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/calib_correspondences/bin'
+[8.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.ps1'
+[8.463s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.dsv'
+[8.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.sh'
+[8.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.bash'
+[8.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.zsh'
+[8.471s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/calib_correspondences/share/colcon-core/packages/calib_correspondences)
+[8.473s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.473s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.473s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.473s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.759s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.760s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.760s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.795s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.795s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.ps1'
+[8.798s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andre/ros2_ws/install/_local_setup_util_ps1.py'
+[8.802s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.ps1'
+[8.809s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.sh'
+[8.812s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andre/ros2_ws/install/_local_setup_util_sh.py'
+[8.814s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.sh'
+[8.824s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.bash'
+[8.826s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.bash'
+[8.833s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.zsh'
+[8.838s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.zsh'

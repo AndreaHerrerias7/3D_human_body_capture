@@ -1,0 +1,98 @@
+[0.017s] Invoking command in '/home/andre/ros2_ws/build/calib_correspondences': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/calib_correspondences -- -j4 -l4
+[0.215s] [35m[1mConsolidate compiler generated dependencies of target image_cloud_reader[0m
+[0.267s] [ 50%] Built target corr_subscriber
+[0.315s] [ 60%] [32mBuilding CXX object CMakeFiles/image_cloud_reader.dir/src/ImageCloud2Correspondences.cpp.o[0m
+[10.901s] [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:[m[K In member function ‘[01m[Kvoid ImageCloud2Correspondences::pubMessage(Correspondences, std::string, std::string)[m[K’:
+[10.902s] [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:193:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[10.902s]   193 |         std::cout << "n[0] = " << [01;31m[Kmsg[m[K.correspondences[i].second.n[0] << std::endl;
+[10.902s]       |                                   [01;31m[K^~~[m[K
+[10.902s] [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:193:35:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[10.903s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[10.903s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[10.903s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[10.903s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[10.903s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[10.903s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.903s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.905s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:6[m[K,
+[10.905s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10[m[K:
+[10.905s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[10.905s]    27 | namespace [01;36m[Kmsg[m[K
+[10.905s]       |           [01;36m[K^~~[m[K
+[10.905s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[10.905s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[10.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[10.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[10.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[10.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.907s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.907s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.907s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.907s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:6[m[K,
+[10.907s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10[m[K:
+[10.907s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[10.907s]    27 | namespace [01;36m[Kmsg[m[K
+[10.908s]       |           [01;36m[K^~~[m[K
+[10.908s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[10.908s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[10.908s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[10.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[10.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[10.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[10.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.909s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.909s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.909s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.909s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.909s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.909s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.909s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:6[m[K,
+[10.910s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10[m[K:
+[10.910s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[10.910s]    27 | namespace [01;36m[Kmsg[m[K
+[10.910s]       |           [01;36m[K^~~[m[K
+[10.910s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:20[m[K,
+[10.910s]                  from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:7[m[K,
+[10.910s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:9[m[K,
+[10.910s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10[m[K:
+[10.910s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[10.910s]    31 | namespace [01;36m[Kmsg[m[K
+[10.910s]       |           [01;36m[K^~~[m[K
+[10.911s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:22[m[K,
+[10.911s]                  from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:7[m[K,
+[10.911s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:9[m[K,
+[10.911s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10[m[K:
+[10.911s] [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+[10.911s]    27 | namespace [01;36m[Kmsg[m[K
+[10.911s]       |           [01;36m[K^~~[m[K
+[10.911s] In file included from [01m[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.hpp:20[m[K,
+[10.911s]                  from [01m[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.hpp:21[m[K,
+[10.911s]                  from [01m[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.hpp:20[m[K,
+[10.911s]                  from [01m[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.hpp:7[m[K,
+[10.911s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:20[m[K,
+[10.912s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10[m[K:
+[10.912s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+[10.912s]    27 | namespace [01;36m[Kmsg[m[K
+[10.912s]       |           [01;36m[K^~~[m[K
+[10.912s] In file included from [01m[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.hpp:21[m[K,
+[10.912s]                  from [01m[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.hpp:20[m[K,
+[10.912s]                  from [01m[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.hpp:7[m[K,
+[10.912s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:20[m[K,
+[10.912s]                  from [01m[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10[m[K:
+[10.912s] [01m[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcustom_msgs::msg[m[K’
+[10.912s]    31 | namespace [01;36m[Kmsg[m[K
+[10.912s]       |           [01;36m[K^~~[m[K
+[18.570s] gmake[2]: *** [CMakeFiles/image_cloud_reader.dir/build.make:90: CMakeFiles/image_cloud_reader.dir/src/ImageCloud2Correspondences.cpp.o] Error 1
+[18.571s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/image_cloud_reader.dir/all] Error 2
+[18.571s] gmake: *** [Makefile:146: all] Error 2
+[18.574s] Invoked command in '/home/andre/ros2_ws/build/calib_correspondences' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/calib_correspondences -- -j4 -l4

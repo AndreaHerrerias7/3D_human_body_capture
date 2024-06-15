@@ -1,0 +1,8 @@
+source;share/calib_correspondences/hook/cmake_prefix_path.ps1
+source;share/calib_correspondences/hook/cmake_prefix_path.dsv
+source;share/calib_correspondences/hook/cmake_prefix_path.sh
+source;share/calib_correspondences/local_setup.bash
+source;share/calib_correspondences/local_setup.dsv
+source;share/calib_correspondences/local_setup.ps1
+source;share/calib_correspondences/local_setup.sh
+source;share/calib_correspondences/local_setup.zsh

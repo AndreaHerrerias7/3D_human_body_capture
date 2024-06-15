@@ -1,0 +1,31 @@
+[0.034s] Invoking command in '/home/andre/ros2_ws/build/calib_correspondences': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/calib_correspondences -- -j4 -l4
+[0.327s] [ 50%] Built target image_cloud_reader
+[0.434s] [100%] Built target corr_subscriber
+[0.466s] Invoked command in '/home/andre/ros2_ws/build/calib_correspondences' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/calib_correspondences -- -j4 -l4
+[0.664s] Invoking command in '/home/andre/ros2_ws/build/calib_correspondences': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/calib_correspondences
+[0.688s] -- Install configuration: "Release"
+[0.692s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/lib/calib_correspondences/image_cloud_reader
+[0.703s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/lib/calib_correspondences/corr_subscriber
+[0.703s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//launch
+[0.704s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//launch/imgcloud2corr_launch.xml
+[0.704s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//launch/calibrate_corr_launch.xml
+[0.704s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//config
+[0.704s] -- Installing: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//config/parameters.yaml
+[0.704s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//config/params_usb0.yaml
+[0.704s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//config/params_usb1.yaml
+[0.704s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/ament_index/resource_index/package_run_dependencies/calib_correspondences
+[0.705s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/ament_index/resource_index/parent_prefix_path/calib_correspondences
+[0.705s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/environment/ament_prefix_path.sh
+[0.705s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/environment/ament_prefix_path.dsv
+[0.705s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/environment/path.sh
+[0.705s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/environment/path.dsv
+[0.705s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/local_setup.bash
+[0.705s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/local_setup.sh
+[0.706s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/local_setup.zsh
+[0.706s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/local_setup.dsv
+[0.706s] -- Installing: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.dsv
+[0.706s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/ament_index/resource_index/packages/calib_correspondences
+[0.706s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/cmake/calib_correspondencesConfig.cmake
+[0.706s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/cmake/calib_correspondencesConfig-version.cmake
+[0.706s] -- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.xml
+[0.727s] Invoked command in '/home/andre/ros2_ws/build/calib_correspondences' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/calib_correspondences

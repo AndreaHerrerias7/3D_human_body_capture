@@ -1,0 +1,6 @@
+/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco/detection_aruco.py:84: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if len(self.dets1) is not 0:
+/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco/detection_aruco.py:120: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if self.dets1.detections is not 0:
+/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco/detection_aruco.py:167: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if self.dets2.detections is not 0:

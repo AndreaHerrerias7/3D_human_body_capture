@@ -28,6 +28,8 @@ CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msg
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__struct.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/correspondences__type_support.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \

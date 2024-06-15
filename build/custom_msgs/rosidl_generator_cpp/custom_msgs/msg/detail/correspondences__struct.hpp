@@ -39,25 +39,54 @@ struct Correspondences_
 
   explicit Correspondences_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->first_label = "";
+      this->second_label = "";
+    }
   }
 
   explicit Correspondences_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : first_label(_alloc),
+    second_label(_alloc)
   {
-    (void)_init;
-    (void)_alloc;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->first_label = "";
+      this->second_label = "";
+    }
   }
 
   // field types and members
   using _correspondences_type =
     std::vector<custom_msgs::msg::PlaneMatch_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<custom_msgs::msg::PlaneMatch_<ContainerAllocator>>>;
   _correspondences_type correspondences;
+  using _first_label_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _first_label_type first_label;
+  using _second_label_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _second_label_type second_label;
 
   // setters for named parameter idiom
   Type & set__correspondences(
     const std::vector<custom_msgs::msg::PlaneMatch_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<custom_msgs::msg::PlaneMatch_<ContainerAllocator>>> & _arg)
   {
     this->correspondences = _arg;
+    return *this;
+  }
+  Type & set__first_label(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->first_label = _arg;
+    return *this;
+  }
+  Type & set__second_label(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->second_label = _arg;
     return *this;
   }
 
@@ -104,6 +133,12 @@ struct Correspondences_
   bool operator==(const Correspondences_ & other) const
   {
     if (this->correspondences != other.correspondences) {
+      return false;
+    }
+    if (this->first_label != other.first_label) {
+      return false;
+    }
+    if (this->second_label != other.second_label) {
       return false;
     }
     return true;

@@ -1,0 +1,307 @@
+[0.000000] (-) TimerEvent: {}
+[0.000357] (-) JobUnselected: {'identifier': 'apriltag_msgs'}
+[0.000478] (-) JobUnselected: {'identifier': 'apriltag_ros'}
+[0.000529] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.000612] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.000716] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.000893] (-) JobUnselected: {'identifier': 'detection_aruco'}
+[0.001025] (-) JobUnselected: {'identifier': 'detection_astra_camera'}
+[0.001074] (calib_correspondences) JobQueued: {'identifier': 'calib_correspondences', 'dependencies': OrderedDict()}
+[0.001125] (calib_correspondences) JobStarted: {'identifier': 'calib_correspondences'}
+[0.013069] (calib_correspondences) JobProgress: {'identifier': 'calib_correspondences', 'progress': 'cmake'}
+[0.014831] (calib_correspondences) JobProgress: {'identifier': 'calib_correspondences', 'progress': 'build'}
+[0.016159] (calib_correspondences) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/calib_correspondences', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/calib_correspondences', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '30604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1558,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1558'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0f46b806_72f0_4bc6_a768_7a98ea036b39'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.VHQIO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.334'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/calib_correspondences'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/apriltag_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[0.099131] (-) TimerEvent: {}
+[0.102963] (calib_correspondences) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target image_cloud_reader\x1b[0m\n'}
+[0.122168] (calib_correspondences) StdoutLine: {'line': b'[ 50%] Built target corr_subscriber\n'}
+[0.200679] (-) TimerEvent: {}
+[0.213458] (calib_correspondences) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/image_cloud_reader.dir/src/ImageCloud2Correspondences.cpp.o\x1b[0m\n'}
+[0.300808] (-) TimerEvent: {}
+[0.401174] (-) TimerEvent: {}
+[0.501505] (-) TimerEvent: {}
+[0.601880] (-) TimerEvent: {}
+[0.702324] (-) TimerEvent: {}
+[0.802670] (-) TimerEvent: {}
+[0.903013] (-) TimerEvent: {}
+[1.003360] (-) TimerEvent: {}
+[1.103773] (-) TimerEvent: {}
+[1.204152] (-) TimerEvent: {}
+[1.304548] (-) TimerEvent: {}
+[1.404924] (-) TimerEvent: {}
+[1.505318] (-) TimerEvent: {}
+[1.605706] (-) TimerEvent: {}
+[1.706103] (-) TimerEvent: {}
+[1.806502] (-) TimerEvent: {}
+[1.906882] (-) TimerEvent: {}
+[2.007287] (-) TimerEvent: {}
+[2.107655] (-) TimerEvent: {}
+[2.208033] (-) TimerEvent: {}
+[2.308403] (-) TimerEvent: {}
+[2.408809] (-) TimerEvent: {}
+[2.509178] (-) TimerEvent: {}
+[2.609538] (-) TimerEvent: {}
+[2.709899] (-) TimerEvent: {}
+[2.810299] (-) TimerEvent: {}
+[2.910628] (-) TimerEvent: {}
+[3.010997] (-) TimerEvent: {}
+[3.111426] (-) TimerEvent: {}
+[3.211787] (-) TimerEvent: {}
+[3.312161] (-) TimerEvent: {}
+[3.412516] (-) TimerEvent: {}
+[3.512914] (-) TimerEvent: {}
+[3.613332] (-) TimerEvent: {}
+[3.713739] (-) TimerEvent: {}
+[3.814089] (-) TimerEvent: {}
+[3.914515] (-) TimerEvent: {}
+[4.014948] (-) TimerEvent: {}
+[4.115393] (-) TimerEvent: {}
+[4.215802] (-) TimerEvent: {}
+[4.316208] (-) TimerEvent: {}
+[4.416781] (-) TimerEvent: {}
+[4.517174] (-) TimerEvent: {}
+[4.617745] (-) TimerEvent: {}
+[4.718144] (-) TimerEvent: {}
+[4.819658] (-) TimerEvent: {}
+[4.920129] (-) TimerEvent: {}
+[5.020602] (-) TimerEvent: {}
+[5.121048] (-) TimerEvent: {}
+[5.221445] (-) TimerEvent: {}
+[5.321872] (-) TimerEvent: {}
+[5.422271] (-) TimerEvent: {}
+[5.522689] (-) TimerEvent: {}
+[5.623093] (-) TimerEvent: {}
+[5.723447] (-) TimerEvent: {}
+[5.824074] (-) TimerEvent: {}
+[5.924709] (-) TimerEvent: {}
+[6.025096] (-) TimerEvent: {}
+[6.125482] (-) TimerEvent: {}
+[6.225878] (-) TimerEvent: {}
+[6.326259] (-) TimerEvent: {}
+[6.426654] (-) TimerEvent: {}
+[6.527036] (-) TimerEvent: {}
+[6.627402] (-) TimerEvent: {}
+[6.727778] (-) TimerEvent: {}
+[6.828163] (-) TimerEvent: {}
+[6.928546] (-) TimerEvent: {}
+[7.028917] (-) TimerEvent: {}
+[7.129314] (-) TimerEvent: {}
+[7.229689] (-) TimerEvent: {}
+[7.330058] (-) TimerEvent: {}
+[7.430449] (-) TimerEvent: {}
+[7.530816] (-) TimerEvent: {}
+[7.631188] (-) TimerEvent: {}
+[7.731570] (-) TimerEvent: {}
+[7.831990] (-) TimerEvent: {}
+[7.932404] (-) TimerEvent: {}
+[8.032790] (-) TimerEvent: {}
+[8.133180] (-) TimerEvent: {}
+[8.233573] (-) TimerEvent: {}
+[8.333977] (-) TimerEvent: {}
+[8.434379] (-) TimerEvent: {}
+[8.534785] (-) TimerEvent: {}
+[8.635172] (-) TimerEvent: {}
+[8.735570] (-) TimerEvent: {}
+[8.835951] (-) TimerEvent: {}
+[8.936338] (-) TimerEvent: {}
+[9.036738] (-) TimerEvent: {}
+[9.137129] (-) TimerEvent: {}
+[9.237540] (-) TimerEvent: {}
+[9.337908] (-) TimerEvent: {}
+[9.438301] (-) TimerEvent: {}
+[9.538759] (-) TimerEvent: {}
+[9.639129] (-) TimerEvent: {}
+[9.739507] (-) TimerEvent: {}
+[9.839888] (-) TimerEvent: {}
+[9.940251] (-) TimerEvent: {}
+[10.040619] (-) TimerEvent: {}
+[10.140968] (-) TimerEvent: {}
+[10.241317] (-) TimerEvent: {}
+[10.341683] (-) TimerEvent: {}
+[10.442031] (-) TimerEvent: {}
+[10.542443] (-) TimerEvent: {}
+[10.642833] (-) TimerEvent: {}
+[10.743249] (-) TimerEvent: {}
+[10.843593] (-) TimerEvent: {}
+[10.943968] (-) TimerEvent: {}
+[11.044374] (-) TimerEvent: {}
+[11.144750] (-) TimerEvent: {}
+[11.245127] (-) TimerEvent: {}
+[11.306950] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ImageCloud2Correspondences::pubMessage(Correspondences, std::string, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.308149] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:193:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.308412] (calib_correspondences) StderrLine: {'line': b'  193 |         std::cout << "n[0] = " << \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K.correspondences[i].second.n[0] << std::endl;\n'}
+[11.308588] (calib_correspondences) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.308754] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:193:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[11.308921] (calib_correspondences) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[11.309086] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[11.309248] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[11.309411] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[11.309587] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[11.309753] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.309937] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.310100] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.310264] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.310447] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.310623] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.310786] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.310946] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.311110] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.311266] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:6\x1b[m\x1b[K,\n'}
+[11.311428] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10\x1b[m\x1b[K:\n'}
+[11.311586] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.311751] (calib_correspondences) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[11.311907] (calib_correspondences) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.312066] (calib_correspondences) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[11.312228] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28\x1b[m\x1b[K,\n'}
+[11.312393] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30\x1b[m\x1b[K,\n'}
+[11.312543] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45\x1b[m\x1b[K,\n'}
+[11.312693] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[11.312852] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.313036] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.313202] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.313368] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.313531] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.313714] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.313878] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.314024] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:6\x1b[m\x1b[K,\n'}
+[11.314166] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10\x1b[m\x1b[K:\n'}
+[11.314295] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.314448] (calib_correspondences) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[11.314582] (calib_correspondences) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.314707] (calib_correspondences) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23\x1b[m\x1b[K,\n'}
+[11.314835] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[11.314967] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[11.315101] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[11.315231] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[11.315366] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[11.315514] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.315667] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.315825] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.315982] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.316139] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.316303] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.316472] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.316621] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:6\x1b[m\x1b[K,\n'}
+[11.316755] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10\x1b[m\x1b[K:\n'}
+[11.316903] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.317033] (calib_correspondences) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[11.317176] (calib_correspondences) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.317341] (calib_correspondences) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.317508] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:7\x1b[m\x1b[K,\n'}
+[11.317676] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:9\x1b[m\x1b[K,\n'}
+[11.317838] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10\x1b[m\x1b[K:\n'}
+[11.318006] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.318191] (calib_correspondences) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[11.318369] (calib_correspondences) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.318568] (calib_correspondences) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:22\x1b[m\x1b[K,\n'}
+[11.318733] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:7\x1b[m\x1b[K,\n'}
+[11.318896] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:9\x1b[m\x1b[K,\n'}
+[11.319056] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10\x1b[m\x1b[K:\n'}
+[11.319218] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.319385] (calib_correspondences) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[11.319549] (calib_correspondences) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.319712] (calib_correspondences) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.319877] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.hpp:21\x1b[m\x1b[K,\n'}
+[11.320070] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.320237] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.hpp:7\x1b[m\x1b[K,\n'}
+[11.320422] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:20\x1b[m\x1b[K,\n'}
+[11.320602] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10\x1b[m\x1b[K:\n'}
+[11.320769] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.320936] (calib_correspondences) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[11.321101] (calib_correspondences) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.321261] (calib_correspondences) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.hpp:21\x1b[m\x1b[K,\n'}
+[11.321425] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.321586] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.hpp:7\x1b[m\x1b[K,\n'}
+[11.321739] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/include/ImageCloud2Correspondences.hpp:20\x1b[m\x1b[K,\n'}
+[11.321886] (calib_correspondences) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/ImageCloud2Correspondences.cpp:10\x1b[m\x1b[K:\n'}
+[11.322036] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcustom_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.322183] (calib_correspondences) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[11.322334] (calib_correspondences) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.345245] (-) TimerEvent: {}
+[11.445625] (-) TimerEvent: {}
+[11.546030] (-) TimerEvent: {}
+[11.646468] (-) TimerEvent: {}
+[11.746875] (-) TimerEvent: {}
+[11.847261] (-) TimerEvent: {}
+[11.947629] (-) TimerEvent: {}
+[12.048002] (-) TimerEvent: {}
+[12.148406] (-) TimerEvent: {}
+[12.248779] (-) TimerEvent: {}
+[12.349155] (-) TimerEvent: {}
+[12.449526] (-) TimerEvent: {}
+[12.549897] (-) TimerEvent: {}
+[12.650472] (-) TimerEvent: {}
+[12.750838] (-) TimerEvent: {}
+[12.851221] (-) TimerEvent: {}
+[12.951598] (-) TimerEvent: {}
+[13.052060] (-) TimerEvent: {}
+[13.152444] (-) TimerEvent: {}
+[13.252826] (-) TimerEvent: {}
+[13.353199] (-) TimerEvent: {}
+[13.453577] (-) TimerEvent: {}
+[13.553921] (-) TimerEvent: {}
+[13.654281] (-) TimerEvent: {}
+[13.754628] (-) TimerEvent: {}
+[13.854983] (-) TimerEvent: {}
+[13.955344] (-) TimerEvent: {}
+[14.055705] (-) TimerEvent: {}
+[14.156068] (-) TimerEvent: {}
+[14.256449] (-) TimerEvent: {}
+[14.356790] (-) TimerEvent: {}
+[14.457185] (-) TimerEvent: {}
+[14.557849] (-) TimerEvent: {}
+[14.658490] (-) TimerEvent: {}
+[14.758856] (-) TimerEvent: {}
+[14.859208] (-) TimerEvent: {}
+[14.959642] (-) TimerEvent: {}
+[15.060022] (-) TimerEvent: {}
+[15.160395] (-) TimerEvent: {}
+[15.260779] (-) TimerEvent: {}
+[15.361161] (-) TimerEvent: {}
+[15.461565] (-) TimerEvent: {}
+[15.561927] (-) TimerEvent: {}
+[15.662280] (-) TimerEvent: {}
+[15.762887] (-) TimerEvent: {}
+[15.863261] (-) TimerEvent: {}
+[15.963678] (-) TimerEvent: {}
+[16.064074] (-) TimerEvent: {}
+[16.164464] (-) TimerEvent: {}
+[16.264847] (-) TimerEvent: {}
+[16.365270] (-) TimerEvent: {}
+[16.465673] (-) TimerEvent: {}
+[16.566026] (-) TimerEvent: {}
+[16.666389] (-) TimerEvent: {}
+[16.766764] (-) TimerEvent: {}
+[16.867122] (-) TimerEvent: {}
+[16.967506] (-) TimerEvent: {}
+[17.067919] (-) TimerEvent: {}
+[17.168250] (-) TimerEvent: {}
+[17.268614] (-) TimerEvent: {}
+[17.368967] (-) TimerEvent: {}
+[17.469324] (-) TimerEvent: {}
+[17.569689] (-) TimerEvent: {}
+[17.670025] (-) TimerEvent: {}
+[17.770431] (-) TimerEvent: {}
+[17.870827] (-) TimerEvent: {}
+[17.971212] (-) TimerEvent: {}
+[18.071589] (-) TimerEvent: {}
+[18.171975] (-) TimerEvent: {}
+[18.272365] (-) TimerEvent: {}
+[18.372760] (-) TimerEvent: {}
+[18.473152] (-) TimerEvent: {}
+[18.573513] (-) TimerEvent: {}
+[18.673866] (-) TimerEvent: {}
+[18.774235] (-) TimerEvent: {}
+[18.874644] (-) TimerEvent: {}
+[18.975031] (-) TimerEvent: {}
+[19.075416] (-) TimerEvent: {}
+[19.175810] (-) TimerEvent: {}
+[19.276217] (-) TimerEvent: {}
+[19.376602] (-) TimerEvent: {}
+[19.476987] (-) TimerEvent: {}
+[19.505665] (calib_correspondences) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/image_cloud_reader.dir/build.make:90: CMakeFiles/image_cloud_reader.dir/src/ImageCloud2Correspondences.cpp.o] Error 1\n'}
+[19.506232] (calib_correspondences) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/image_cloud_reader.dir/all] Error 2\n'}
+[19.506637] (calib_correspondences) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[19.509699] (calib_correspondences) CommandEnded: {'returncode': 2}
+[19.577084] (-) TimerEvent: {}
+[19.595302] (calib_correspondences) JobEnded: {'identifier': 'calib_correspondences', 'rc': 2}
+[19.606557] (-) EventReactorShutdown: {}

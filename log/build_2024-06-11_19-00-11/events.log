@@ -1,0 +1,93 @@
+[0.000000] (-) TimerEvent: {}
+[0.003763] (-) JobUnselected: {'identifier': 'apriltag_msgs'}
+[0.003946] (-) JobUnselected: {'identifier': 'apriltag_ros'}
+[0.004100] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.004358] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.004923] (-) JobUnselected: {'identifier': 'calib_correspondences'}
+[0.005297] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.005838] (-) JobUnselected: {'identifier': 'detection_aruco'}
+[0.005972] (detection_astra_camera) JobQueued: {'identifier': 'detection_astra_camera', 'dependencies': OrderedDict([('astra_camera_msgs', '/home/andre/ros2_ws/install/astra_camera_msgs'), ('astra_camera', '/home/andre/ros2_ws/install/astra_camera')])}
+[0.006078] (detection_astra_camera) JobStarted: {'identifier': 'detection_astra_camera'}
+[0.099976] (-) TimerEvent: {}
+[0.200535] (-) TimerEvent: {}
+[0.307744] (-) TimerEvent: {}
+[0.408840] (-) TimerEvent: {}
+[0.513134] (-) TimerEvent: {}
+[0.613565] (-) TimerEvent: {}
+[0.714009] (-) TimerEvent: {}
+[0.814803] (-) TimerEvent: {}
+[0.916758] (-) TimerEvent: {}
+[1.017607] (-) TimerEvent: {}
+[1.119335] (-) TimerEvent: {}
+[1.220261] (-) TimerEvent: {}
+[1.321125] (-) TimerEvent: {}
+[1.427303] (-) TimerEvent: {}
+[1.528855] (-) TimerEvent: {}
+[1.631078] (-) TimerEvent: {}
+[1.731715] (-) TimerEvent: {}
+[1.832446] (-) TimerEvent: {}
+[1.933752] (-) TimerEvent: {}
+[2.034624] (-) TimerEvent: {}
+[2.135202] (-) TimerEvent: {}
+[2.236090] (-) TimerEvent: {}
+[2.336851] (-) TimerEvent: {}
+[2.437608] (-) TimerEvent: {}
+[2.538238] (-) TimerEvent: {}
+[2.638812] (-) TimerEvent: {}
+[2.739469] (-) TimerEvent: {}
+[2.840131] (-) TimerEvent: {}
+[2.941514] (-) TimerEvent: {}
+[3.041889] (-) TimerEvent: {}
+[3.145141] (-) TimerEvent: {}
+[3.250005] (-) TimerEvent: {}
+[3.351471] (-) TimerEvent: {}
+[3.452296] (-) TimerEvent: {}
+[3.552686] (-) TimerEvent: {}
+[3.640185] (detection_astra_camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/detection_astra_camera', 'build', '--build-base', '/home/andre/ros2_ws/build/detection_astra_camera/build', 'install', '--record', '/home/andre/ros2_ws/build/detection_astra_camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/andre/ros2_ws/src/detection_astra_camera', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'andre', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1401', 'SYSTEMD_EXEC_PID': '1585', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '133552', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'andre', 'JOURNAL_STREAM': '8:32021', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'andre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1558,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1558', 'INVOCATION_ID': 'b0ab86d9c4194ea6b42466e75acad475', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VHQIO2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:5d68e07b-ffbc-442f-a8d6-ec9cb4e9c232', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/andre/ros2_ws/build/detection_astra_camera', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/build/detection_astra_camera/prefix_override:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/apriltag_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs'}, 'shell': False}
+[3.652895] (-) TimerEvent: {}
+[3.753896] (-) TimerEvent: {}
+[3.854463] (-) TimerEvent: {}
+[3.955178] (-) TimerEvent: {}
+[4.057665] (-) TimerEvent: {}
+[4.158314] (-) TimerEvent: {}
+[4.258725] (-) TimerEvent: {}
+[4.359324] (-) TimerEvent: {}
+[4.459951] (-) TimerEvent: {}
+[4.560816] (-) TimerEvent: {}
+[4.661652] (-) TimerEvent: {}
+[4.762666] (-) TimerEvent: {}
+[4.863306] (-) TimerEvent: {}
+[4.964140] (-) TimerEvent: {}
+[5.064843] (-) TimerEvent: {}
+[5.165944] (-) TimerEvent: {}
+[5.220568] (detection_astra_camera) StdoutLine: {'line': b'running egg_info\n'}
+[5.225760] (detection_astra_camera) StdoutLine: {'line': b'writing ../../build/detection_astra_camera/detection_astra_camera.egg-info/PKG-INFO\n'}
+[5.226674] (detection_astra_camera) StdoutLine: {'line': b'writing dependency_links to ../../build/detection_astra_camera/detection_astra_camera.egg-info/dependency_links.txt\n'}
+[5.228442] (detection_astra_camera) StdoutLine: {'line': b'writing entry points to ../../build/detection_astra_camera/detection_astra_camera.egg-info/entry_points.txt\n'}
+[5.229651] (detection_astra_camera) StdoutLine: {'line': b'writing requirements to ../../build/detection_astra_camera/detection_astra_camera.egg-info/requires.txt\n'}
+[5.235224] (detection_astra_camera) StdoutLine: {'line': b'writing top-level names to ../../build/detection_astra_camera/detection_astra_camera.egg-info/top_level.txt\n'}
+[5.244236] (detection_astra_camera) StdoutLine: {'line': b"reading manifest file '../../build/detection_astra_camera/detection_astra_camera.egg-info/SOURCES.txt'\n"}
+[5.245535] (detection_astra_camera) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[5.250899] (detection_astra_camera) StdoutLine: {'line': b"writing manifest file '../../build/detection_astra_camera/detection_astra_camera.egg-info/SOURCES.txt'\n"}
+[5.257755] (detection_astra_camera) StdoutLine: {'line': b'running build\n'}
+[5.258064] (detection_astra_camera) StdoutLine: {'line': b'running build_py\n'}
+[5.258222] (detection_astra_camera) StdoutLine: {'line': b'copying detection_astra_camera/obtain_data_astra.py -> /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera\n'}
+[5.258377] (detection_astra_camera) StdoutLine: {'line': b'running install\n'}
+[5.258522] (detection_astra_camera) StdoutLine: {'line': b'running install_lib\n'}
+[5.263217] (detection_astra_camera) StdoutLine: {'line': b'copying /home/andre/ros2_ws/build/detection_astra_camera/build/lib/detection_astra_camera/obtain_data_astra.py -> /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera\n'}
+[5.263473] (detection_astra_camera) StdoutLine: {'line': b'byte-compiling /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera/obtain_data_astra.py to obtain_data_astra.cpython-310.pyc\n'}
+[5.264058] (detection_astra_camera) StdoutLine: {'line': b'running install_data\n'}
+[5.264621] (detection_astra_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.266023] (-) TimerEvent: {}
+[5.274600] (detection_astra_camera) StdoutLine: {'line': b"removing '/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.282557] (detection_astra_camera) StdoutLine: {'line': b'Copying ../../build/detection_astra_camera/detection_astra_camera.egg-info to /home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages/detection_astra_camera-0.0.0-py3.10.egg-info\n'}
+[5.289640] (detection_astra_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[5.366337] (-) TimerEvent: {}
+[5.450796] (detection_astra_camera) StdoutLine: {'line': b'Installing obtain_data_astra script to /home/andre/ros2_ws/install/detection_astra_camera/lib/detection_astra_camera\n'}
+[5.451984] (detection_astra_camera) StdoutLine: {'line': b"writing list of installed files to '/home/andre/ros2_ws/build/detection_astra_camera/install.log'\n"}
+[5.466428] (-) TimerEvent: {}
+[5.566930] (-) TimerEvent: {}
+[5.632100] (detection_astra_camera) CommandEnded: {'returncode': 0}
+[5.667048] (-) TimerEvent: {}
+[5.711713] (detection_astra_camera) JobEnded: {'identifier': 'detection_astra_camera', 'rc': 0}
+[5.719120] (-) EventReactorShutdown: {}

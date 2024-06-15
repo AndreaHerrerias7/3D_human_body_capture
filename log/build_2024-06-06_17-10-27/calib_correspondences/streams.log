@@ -1,0 +1,67 @@
+[0.037s] Invoking command in '/home/andre/ros2_ws/build/calib_correspondences': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/calib_correspondences -- -j4 -l4
+[0.201s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.667s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.767s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.773s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.791s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.828s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.874s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.043s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.048s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.399s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.908s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.290s] -- Found custom_msgs: 0.0.0 (/home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake)
+[2.438s] -- Found tf2_eigen: 0.25.6 (/opt/ros/humble/share/tf2_eigen/cmake)
+[3.516s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.538s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[3.598s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[4.512s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.543s] -- OpenNI2 found (version: 2.3.0.85, include: /home/andre/ros2_ws/install/astra_camera/include/openni2, lib: /home/andre/ros2_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)
+[4.543s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[5.034s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.050s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.074s] -- OpenNI2 found (version: 2.3.0.85, include: /home/andre/ros2_ws/install/astra_camera/include/openni2, lib: /home/andre/ros2_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)
+[5.498s] -- Found Qhull version 8.0.2
+[5.935s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.409s] -- looking for PCL_COMMON
+[6.410s] -- looking for PCL_KDTREE
+[6.413s] -- looking for PCL_OCTREE
+[6.414s] -- looking for PCL_SEARCH
+[6.415s] -- looking for PCL_SAMPLE_CONSENSUS
+[6.416s] -- looking for PCL_FILTERS
+[6.417s] -- looking for PCL_2D
+[6.418s] -- looking for PCL_GEOMETRY
+[6.419s] -- looking for PCL_IO
+[6.420s] -- looking for PCL_FEATURES
+[6.421s] -- looking for PCL_ML
+[6.422s] -- looking for PCL_SEGMENTATION
+[6.424s] -- looking for PCL_VISUALIZATION
+[6.425s] -- looking for PCL_SURFACE
+[6.427s] -- looking for PCL_REGISTRATION
+[6.428s] -- looking for PCL_KEYPOINTS
+[6.429s] -- looking for PCL_TRACKING
+[6.430s] -- looking for PCL_RECOGNITION
+[6.431s] -- looking for PCL_STEREO
+[6.439s] -- looking for PCL_APPS
+[6.439s] -- looking for PCL_IN_HAND_SCANNER
+[6.440s] -- looking for PCL_MODELER
+[6.446s] -- looking for PCL_POINT_CLOUD_EDITOR
+[6.451s] -- looking for PCL_OUTOFCORE
+[6.451s] -- looking for PCL_PEOPLE
+[6.464s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[6.466s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[6.829s] -- Configuring done
+[7.747s] -- Generating done
+[7.753s] -- Build files have been written to: /home/andre/ros2_ws/build/calib_correspondences
+[8.077s] [35m[1mConsolidate compiler generated dependencies of target rosbag_reader[0m
+[8.213s] [  7%] [32mBuilding CXX object CMakeFiles/rosbag_reader.dir/src/auxiliar.cpp.o[0m
+[26.147s] [ 14%] [32mBuilding CXX object CMakeFiles/rosbag_reader.dir/src/Parameters.cpp.o[0m
+[36.401s] [ 21%] [32mBuilding CXX object CMakeFiles/rosbag_reader.dir/src/ProcessSensorData.cpp.o[0m
+[132.520s] [ 28%] [32m[1mLinking CXX executable rosbag_reader[0m
+[137.795s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[137.795s] (.text+0x1b): undefined reference to `main'
+[137.906s] collect2: error: ld returned 1 exit status
+[137.917s] gmake[2]: *** [CMakeFiles/rosbag_reader.dir/build.make:384: rosbag_reader] Error 1
+[137.918s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/rosbag_reader.dir/all] Error 2
+[137.920s] gmake: *** [Makefile:146: all] Error 2
+[137.939s] Invoked command in '/home/andre/ros2_ws/build/calib_correspondences' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/calib_correspondences -- -j4 -l4

@@ -1,0 +1,12 @@
+[0.000000] (-) TimerEvent: {}
+[0.000425] (-) JobUnselected: {'identifier': 'apriltag_msgs'}
+[0.000496] (-) JobUnselected: {'identifier': 'apriltag_ros'}
+[0.000581] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.000730] (-) JobUnselected: {'identifier': 'calib_correspondences'}
+[0.000867] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.000913] (-) JobUnselected: {'identifier': 'detection_aruco'}
+[0.000955] (-) JobUnselected: {'identifier': 'detection_astra_camera'}
+[0.001018] (astra_camera) JobQueued: {'identifier': 'astra_camera', 'dependencies': OrderedDict([('astra_camera_msgs', '/home/andre/ros2_ws/install/astra_camera_msgs')])}
+[0.001074] (astra_camera) JobStarted: {'identifier': 'astra_camera'}
+[0.018108] (astra_camera) JobEnded: {'identifier': 'astra_camera', 'rc': 1}
+[0.029508] (-) EventReactorShutdown: {}

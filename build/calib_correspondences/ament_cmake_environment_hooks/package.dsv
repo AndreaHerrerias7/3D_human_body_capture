@@ -1,0 +1,4 @@
+source;share/calib_correspondences/local_setup.bash
+source;share/calib_correspondences/local_setup.dsv
+source;share/calib_correspondences/local_setup.sh
+source;share/calib_correspondences/local_setup.zsh

@@ -51,6 +51,8 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/ms
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__struct.h \
  /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /usr/include/assert.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
@@ -69,4 +71,5 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/ms
  /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
  /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
  /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
- /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__functions.h
+ /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/plane_match__functions.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h

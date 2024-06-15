@@ -1,0 +1,191 @@
+[0.217s] Invoking command in '/home/andre/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/custom_msgs -- -j4 -l4
+[0.924s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_c[0m
+[0.949s] [  2%] Built target custom_msgs__cpp
+[0.960s] [ 12%] Built target custom_msgs__rosidl_generator_c
+[1.163s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[1.198s] [ 12%] Built target ament_cmake_python_copy_custom_msgs
+[1.226s] [ 23%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[1.283s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_cpp[0m
+[1.304s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_cpp[0m
+[1.310s] [ 34%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[1.317s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.335s] [ 44%] Built target custom_msgs__rosidl_typesupport_cpp
+[1.349s] [ 55%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[1.459s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c[0m
+[1.531s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c[0m
+[1.538s] [ 65%] Built target custom_msgs__rosidl_typesupport_c
+[1.602s] [ 76%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[1.746s] [ 76%] Built target custom_msgs
+[1.932s] [ 78%] Built target custom_msgs__py
+[2.080s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_py[0m
+[2.157s] [ 87%] Built target custom_msgs__rosidl_generator_py
+[2.259s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[2.262s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c__pyext[0m
+[2.275s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.344s] [ 91%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[2.354s] [ 95%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[2.361s] [100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.584s] running egg_info
+[2.586s] writing custom_msgs.egg-info/PKG-INFO
+[2.586s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[2.587s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[2.604s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[2.620s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[2.694s] [100%] Built target ament_cmake_python_build_custom_msgs_egg
+[2.736s] Invoked command in '/home/andre/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/custom_msgs -- -j4 -l4
+[3.128s] Invoking command in '/home/andre/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/custom_msgs
+[3.155s] -- Install configuration: ""
+[3.155s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[3.155s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.155s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.156s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane_match.h
+[3.156s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.176s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__functions.h
+[3.177s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.h
+[3.177s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__functions.c
+[3.178s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.h
+[3.178s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__functions.c
+[3.178s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.h
+[3.178s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.h
+[3.179s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__functions.c
+[3.179s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__functions.h
+[3.179s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.h
+[3.179s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.h
+[3.179s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__functions.h
+[3.180s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.h
+[3.180s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.180s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane.h
+[3.180s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[3.181s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[3.183s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[3.183s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.184s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.184s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.190s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_fastrtps_c.h
+[3.190s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_c.h
+[3.190s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_fastrtps_c.h
+[3.191s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.191s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[3.191s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.191s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.192s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.192s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_c.h
+[3.192s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_c.h
+[3.193s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.c
+[3.193s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.c
+[3.193s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_c.h
+[3.193s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.c
+[3.194s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.194s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[3.195s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[3.196s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.196s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.196s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/correspondences.hpp
+[3.196s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.197s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__struct.hpp
+[3.197s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__traits.hpp
+[3.198s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__struct.hpp
+[3.198s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__traits.hpp
+[3.198s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__builder.hpp
+[3.199s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__builder.hpp
+[3.199s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__builder.hpp
+[3.199s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__traits.hpp
+[3.200s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__struct.hpp
+[3.200s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane_match.hpp
+[3.200s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/plane.hpp
+[3.200s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.200s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.201s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.201s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps
+[3.201s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_fastrtps_cpp.hpp
+[3.203s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_cpp.hpp
+[3.203s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_fastrtps_cpp.hpp
+[3.204s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.204s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.204s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.204s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.204s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.207s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__type_support.cpp
+[3.207s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__type_support.cpp
+[3.207s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/correspondences__rosidl_typesupport_introspection_cpp.hpp
+[3.207s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__type_support.cpp
+[3.208s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane_match__rosidl_typesupport_introspection_cpp.hpp
+[3.208s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp
+[3.222s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[3.227s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[3.228s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[3.228s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[3.228s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info
+[3.229s] -- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[3.229s] -- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.232s] -- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.233s] -- Installing: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[3.235s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs
+[3.236s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.236s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[3.237s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so
+[3.238s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.238s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py
+[3.239s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.239s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.241s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.241s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg
+[3.243s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match_s.c
+[3.244s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane.py
+[3.244s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_s.c
+[3.244s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py
+[3.244s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences_s.c
+[3.244s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_plane_match.py
+[3.244s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_correspondences.py
+[3.422s] Listing '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...
+[3.422s] Listing '/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...
+[3.438s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.439s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.441s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.441s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[3.442s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Plane.idl
+[3.442s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PlaneMatch.idl
+[3.443s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Correspondences.idl
+[3.443s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Plane.msg
+[3.443s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PlaneMatch.msg
+[3.443s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/msg/Correspondences.msg
+[3.444s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[3.444s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[3.444s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[3.445s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[3.445s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh
+[3.445s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[3.446s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash
+[3.446s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh
+[3.446s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[3.446s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[3.447s] -- Installing: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv
+[3.447s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[3.447s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[3.447s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.450s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.450s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.450s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.451s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.458s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[3.458s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.459s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[3.459s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.459s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.459s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.460s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.460s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[3.460s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.461s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[3.461s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.461s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[3.461s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.462s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.462s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.462s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.462s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.463s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.463s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[3.463s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[3.463s] -- Up-to-date: /home/andre/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml
+[3.470s] Invoked command in '/home/andre/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/custom_msgs

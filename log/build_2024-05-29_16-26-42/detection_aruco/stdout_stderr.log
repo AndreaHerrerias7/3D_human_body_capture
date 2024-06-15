@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/detection_aruco/detection_aruco.egg-info/PKG-INFO
+writing dependency_links to ../../build/detection_aruco/detection_aruco.egg-info/dependency_links.txt
+writing entry points to ../../build/detection_aruco/detection_aruco.egg-info/entry_points.txt
+writing requirements to ../../build/detection_aruco/detection_aruco.egg-info/requires.txt
+writing top-level names to ../../build/detection_aruco/detection_aruco.egg-info/top_level.txt
+reading manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'
+running build
+running build_py
+copying detection_aruco/detection_aruco.py -> /home/andre/ros2_ws/build/detection_aruco/build/lib/detection_aruco
+running install
+running install_lib
+copying /home/andre/ros2_ws/build/detection_aruco/build/lib/detection_aruco/detection_aruco.py -> /home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco
+byte-compiling /home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco/detection_aruco.py to detection_aruco.cpython-310.pyc
+/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco/detection_aruco.py:84: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if len(self.dets1) is not 0:
+/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco/detection_aruco.py:120: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if self.dets1.detections is not 0:
+running install_data
+running install_egg_info
+removing '/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/detection_aruco/detection_aruco.egg-info to /home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info
+running install_scripts
+Installing obtain script to /home/andre/ros2_ws/install/detection_aruco/lib/detection_aruco
+Installing see script to /home/andre/ros2_ws/install/detection_aruco/lib/detection_aruco
+writing list of installed files to '/home/andre/ros2_ws/build/detection_aruco/install.log'

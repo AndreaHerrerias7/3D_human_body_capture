@@ -5,14 +5,9 @@ import cv2
 import numpy as np
 from datetime import datetime, timedelta
 from builtin_interfaces.msg import Time
-
-# from astra_camera.msg import DeviceInfo, Extrinsics, Metadata
+import std_msgs.msg
 from sensor_msgs.msg import PointCloud2, PointField
 import sensor_msgs_py.point_cloud2 as pc2
-import struct
-from custom_msgs.msg import PointsCamera, Point
-
-from custom_msgs.msg import PointsCamera, Point
 
 class DetectionAstra(Node):
     def __init__(self):
@@ -20,74 +15,67 @@ class DetectionAstra(Node):
         self.get_logger().info('Iniciado')
 
         # Suscriptor
-        """self.image_sub = self.create_subscription(PointCloud2, '/camera1/depth/points', self.data_camera1, 10) # 18072430022
-        self.image_sub = self.create_subscription(PointCloud2, '/camera2/depth/points', self.data_camera2, 10) """
-
-        # Suscriptor para solo una cámara
-        self.image_sub = self.create_subscription(PointCloud2, '/camera/depth/points', self.data_camera1, 10)
-
+        self.image_sub = self.create_subscription(PointCloud2, '/camera2/depth/points', self.data_camera1, 10)
+        
         # Publicador
-        self.publisher = self.create_publisher(PointsCamera, '/processed/points', 10)
+        self.publisher = self.create_publisher(PointCloud2, '/processed/points', 10)
+
+        # Matriz de calibración
+        self.k = np.array([
+            [1, 0, 0, 0.44],
+            [0, 1, 0, 0],
+            [0, 0, 1, 0],
+            [0.0, 0.0, 0.0, 1.0]
+        ])
+
+        """self.k =  np.array([
+    [0.691733,  -0.114198,  -0.713067,   0.596189],
+    [0.139864,   0.989907, -0.0228555,  0.0396064],
+    [0.70848,  -0.0839221,   0.700724,   0.274987],
+    [0,          0,          0,          1]
+])"""
+
 
     def data_camera1(self, msg):
-        self.get_logger().info('Mensaje recibido')
+        points = np.array(pc2.read_points(msg, skip_nans=True, field_names=("x", "y", "z")))
+        self.get_logger().info(f'Puntos recibidos: {len(points)}')
+        self.get_logger().info(f'Punto 1: {points[0]}')
 
-        field_names = [field.name for field in msg.fields]
+        processed_points = []
+        for point in points:
+            x, y, z = point
+            #self.get_logger().info(f'Punto procesado: x={x}, y={y}, z={z}')
 
-        if 'x' in field_names and 'y' in field_names and 'z' in field_names:
-            points = pc2.read_points(msg, skip_nans=True, field_names=("x", "y", "z"))
+            # Añadir 1 al final del punto para la multiplicación con la matriz 4x4
+            point_with_one = np.array([x, y, z, 1.0])
 
-            processed_points = []
+            # Multiplicar por la matriz de calibración
+            transformed_point = np.dot(self.k, point_with_one)
+            #self.get_logger().info(f'Punto transformado: {transformed_point}')
 
-            for point in points:
-                x, y, z = point
-                self.get_logger().info(f'Punto procesado: x={x}, y={y}, z={z}')
-                # Crear instancia de Point para cada punto
-                point_msg = Point()
-                point_msg.x = float(x)
-                point_msg.y = float(y)
-                point_msg.z = float(z)
-                processed_points.append(point_msg)
+            # Normalizar el punto
+            transformed_point /= transformed_point[3]
+            #self.get_logger().info(f'Punto normalizado: {transformed_point}')
 
-                if len(processed_points) > 1000:
-                    break
+            processed_points.append(transformed_point[:3])  # Tomar solo x, y, z transformados
+            
+            """if len(processed_points) > 50000:
+                break"""
 
-            # Publicar puntos procesados
-            msg = PointsCamera()
-            msg.points1 = processed_points
-            self.publisher.publish(msg)
-        else:
-            self.get_logger().error('Los campos x, y, z no están presentes en el mensaje de PointCloud2')
+        # Crear el mensaje PointCloud2
+        header = msg.header
+        fields = [
+            PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
+            PointField(name='y', offset=4, datatype=PointField.FLOAT32, count=1),
+            PointField(name='z', offset=8, datatype=PointField.FLOAT32, count=1)
+        ]
+        points_data = np.array(processed_points).reshape(-1, 3)
+        cloud_msg = pc2.create_cloud(header, fields, points_data)
+        #self.get_logger().info(f'Mensaje PointCloud2 creado: {cloud_msg}')
 
-    def data_camera2(self, msg):
-        self.get_logger().info('Mensaje recibido')
+        # Publicar puntos procesados
+        self.publisher.publish(cloud_msg)
 
-        field_names = [field.name for field in msg.fields]
-
-        if 'x' in field_names and 'y' in field_names and 'z' in field_names:
-            points = pc2.read_points(msg, skip_nans=True, field_names=("x", "y", "z"))
-
-            processed_points = []
-
-            for point in points:
-                x, y, z = point
-                self.get_logger().info(f'Punto procesado: x={x}, y={y}, z={z}')
-                # Crear instancia de Point para cada punto
-                point_msg = Point()
-                point_msg.x = float(x)
-                point_msg.y = float(y)
-                point_msg.z = float(z)
-                processed_points.append(point_msg)
-
-                if len(processed_points) > 1000:
-                    break
-
-            # Publicar puntos procesados
-            msg = PointsCamera()
-            msg.points2 = processed_points
-            self.publisher.publish(msg)
-        else:
-            self.get_logger().error('Los campos x, y, z no están presentes en el mensaje de PointCloud2')
     
 def main(args=None):
     rclpy.init(args=args)

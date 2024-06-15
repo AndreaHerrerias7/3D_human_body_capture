@@ -50,8 +50,11 @@ def generate_launch_description():
         default_params = yaml.safe_load(file)
 
     # leave serial numbers empty to autoselect
-    serial_number1 = "18072430022" # overhead
-    serial_number2 = "18072430134" # neck
+    serial_number1 = "18072430268" # overhead
+    #serial_number1 = "18072430314"
+    #serial_number2 = "20070830312" # neck 
+    # serial_number2 = "20070830057"
+    serial_number2 = "18112330000"
     params1 = duplicate_params(default_params, "1", serial_number1)
     params2 = duplicate_params(default_params, "2", serial_number2)
     container1 = generate_container_node("camera1", params1)

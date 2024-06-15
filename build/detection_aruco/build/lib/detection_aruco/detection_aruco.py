@@ -9,10 +9,10 @@ from geometry_msgs.msg import Vector3
 from datetime import datetime, timedelta
 from builtin_interfaces.msg import Time
 
-from datos_camara.msg import Num
 from custom_msgs.msg import Correspondences, Plane, PlaneMatch
 
 TH_TSTAMPS = 0.01
+
 
 class CDetectedPlane():
     def __init__(self) -> None:
@@ -53,51 +53,75 @@ class DrawAruco():
 
         return image
     
-    def drawAxis(self, image, ids, corners, K, distorsion, marker_length):
+
+    
+    def drawAxis(self, image, marker_points, ids, corners, K, distorsion, marker_length):
         if ids is not None: 
             id = ids.flatten()
             for (markerCorner, markerID) in zip(corners, id):
-                rvecs, tvecs, markerPoints = cv2.aruco.estimatePoseSingleMarkers(markerCorner, marker_length, K, distorsion)
+                _, rvecs, tvecs = cv2.solvePnP(marker_points, markerCorner, K, distorsion, False, cv2.SOLVEPNP_IPPE_SQUARE)
                 rvecs_matrix, _ = cv2.Rodrigues(rvecs)
                 image = cv2.aruco.drawAxis(image, K, distorsion, rvecs_matrix, tvecs, marker_length)
 
         return image
 
+def calculate_distance_to_plane(tvec, normal):
+    # tvec is the translation vector from solvePnP
+    # normal is the normal vector to the plane obtained from R[:, 2]
+
+    # Components of the normal vector
+    a, b, c = normal
+
+    # Coordinates of the point tvec
+    x0, y0, z0 = tvec.flatten()
+
+    # Plane equation: ax + by + cz + d = 0
+    # Assuming the plane passes through the origin, d = 0
+    d = 0  # This can be adjusted if the plane does not pass through the origin
+
+    # Calculate the distance
+    distance = abs(a * x0 + b * y0 + c * z0 + d) / np.sqrt(a**2 + b**2 + c**2)
+
+    return distance
 
     
 class DetectionAruco(Node):
     def __init__(self):
-        super().__init__('apriltag_subscriber')
+        super().__init__('Detection_Aruco')
         self.get_logger().info(f'Iniciado')
 
         self.br = CvBridge()
 
-        # Parámetros camara usb
-        # self.K = np.array(((676.699523, 0., 283.804190),
-        #                    (0., 676.358437, 247.200716),
-        #                    (0., 0., 1.)))
-        # self.distorsion = np.array((0.019135, -0.44869, 0.000693, -0.014817, 0.0))
+        """ Parámetros de la cámara """
+        # fx: Focal length of the camera along the x-axis
+        self.fx = 517.301
+        # fy: Focal length of the camera along the y-axis
+        self.fy = 519.291
+        # cx: X-coordinate of the principal point/optical center of the camera in pixels
+        self.cx = 326.785
+        # cy: Y-coordinate of the principal point/optical center of the camera in pixels
+        self.cy = 244.563
 
-        # camera matrix camera without sticker
-        self.K_1 = np.array([[739.901716, 0.000000, 348.296261],
-                           [0.000000, 730.526241, 193.897742],
-                           [0.000000, 0.000000, 1.000000]])
+        self.k = np.array([[self.fx, 0, self.cx],
+                      [0, self.fy, self.cy],
+                      [0, 0, 1]])
+        
+        self.distorsion = np.array([0.031420, -0.379982, -0.002606, -0.007450, 0.0])
+        
+        """ Parámetros Aruco opencv"""
+        self.marker_length = 0.173
 
-        # distortion camera without sticker
-        self.distorsion_1 = np.array([0.251910, -0.443212, 0.005339, 0.024901, 0.000000])
-
-        # Parámetros cámara nueva (tiene la pegatina)
-        self.K_2 = np.array([[613.957058, 0., 323.62420],
-                            [0., 618.575469, 216.459925],
-                            [0., 0., 1.]])
-        self.distorsion_2 = np.array([-0.083010, 0.161326, -0.007532, 0.000727, 0.0])
+        # marker point location (center) for solvePNP
+        self.marker_points = np.array([[-self.marker_length / 2, self.marker_length / 2, 0],
+                              [self.marker_length / 2, self.marker_length / 2, 0],
+                              [self.marker_length / 2, -self.marker_length / 2, 0],
+                              [-self.marker_length / 2, -self.marker_length / 2, 0]], dtype=np.float32)
         
         self.R = np.eye(3)
         self.t = np.zeros((3, 1))
 
 
-        """ Parámetros Aruco opencv"""
-        self.marker_length = 17.2
+        
 
         """Parámetros Detector Aruco"""
         self.arucoDict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_50)
@@ -105,20 +129,21 @@ class DetectionAruco(Node):
         
         self.observations = [None, None] # cameras one and two
 
-        self.image_sub = self.create_subscription(Image, '/usb_cam_1/image_raw', self.on_camera1, 10)
-        self.image_sub = self.create_subscription(Image, '/usb_cam_2/image_raw', self.on_camera2, 10)
-        self.publisher = self.create_publisher(Correspondences, '/detection_aruco/topic', 10)
+        self.image_sub = self.create_subscription(Image, '/camera1/color/image_raw', self.on_camera1, 10)
+        self.image_sub = self.create_subscription(Image, '/camera2/color/image_raw', self.on_camera2, 10)
+        self.publisher = self.create_publisher(Correspondences, '/custom_msgs/msg/correspondences', 10)
 
         # timer to send info every 5 secs
         self.timer = self.create_timer(1.0, self.publisher_image)
 
 
+
     def on_camera1(self, image):
-        self.get_logger().info(f'Camara 1 - prueba funciona bien')
+        # self.get_logger().info(f'Camara 1')
 
         # process image
         cv_image = self.br.imgmsg_to_cv2(image)
-        cv_image_bgr = cv2.cvtColor(cv_image, cv2.COLOR_YUV2BGR_YUYV)  
+        cv_image_bgr = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)  
 
 
         # initialize observation
@@ -133,17 +158,14 @@ class DetectionAruco(Node):
         (corners, ids, rejected) = cv2.aruco.detectMarkers(cv_image_bgr, self.arucoDict, parameters=self.arucoParams)
 
         if self.observations[0]:
-            self.get_logger().info(f'Detecciones hechas tal vez esteeeeee, {self.observations[0]}')
             return
 
         cv_image_bgr = drawImage.drawMarker(cv_image_bgr, corners, ids)
         cv_image_bgr = drawImage.drawCenter(cv_image_bgr, corners, ids)
-        cv_image_bgr = drawImage.drawAxis(cv_image_bgr, ids, corners, self.K_1, self.distorsion_1, self.marker_length)
+        cv_image_bgr = drawImage.drawAxis(cv_image_bgr, self.marker_points, ids, corners, self.k, self.distorsion, self.marker_length)
 
         cv2.imshow('Imagen 1', cv_image_bgr)
         cv2.waitKey(1)
-
-
 
         # Si se detecta algún marcador
         if ids is not None:
@@ -153,31 +175,39 @@ class DetectionAruco(Node):
             # Recorre los marcadores detectados
             # En cada for se cogerá el id con sus esquinas correspondientes
             for (markerCorner, markerID) in zip(corners, ids):
+                #self.get_logger().info(f'Esquinas, {markerCorner}')
 
                 # Calcula la posición y orientación del marcador
-                rvecs, tvecs, markerPoints = cv2.aruco.estimatePoseSingleMarkers(markerCorner, self.marker_length, self.K_1, self.distorsion_1)
+                _, rvecs, tvecs = cv2.solvePnP(self.marker_points, markerCorner, self.k, self.distorsion, False, cv2.SOLVEPNP_IPPE_SQUARE)
 
-                self.get_logger().info(f'Marcador detectado, {markerID}')
-
+                #self.get_logger().info(f'Marcador detectado, {markerID}')
+                #self.get_logger().info(f'Matriz rotación , {rvecs}')
                 # Aplicar Rodrigues
                 rvecs_matrix, _ = cv2.Rodrigues(rvecs)
                 # self.get_logger().info(f'Marcador detectado, {rvecs_matrix}')
                 # Devuelve rvecs_matrix un array (3x3) -> Matriz rotacion
                                      #   un array (3x9) -> Derivada de la matriz de rotación respecto al vector de rotación
-                                     #                     Esta es una matriz Jacobiana para ver cuánto varia la matriz de rotación    
+                                     #                     Esta es una matriz Jacobiana para ver cuánto varia la matriz de rotación 
 
+                #self.get_logger().info(f'Matriz rotación Rodrigues, {rvecs_matrix}')
+                normal = rvecs_matrix[:, 2]
+                self.get_logger().info(f'Matriz rotación Rodrigues, {rvecs_matrix}')
+                self.get_logger().info(f'Matriz rotación Rodrigues, {normal}')
+
+                # Calcular la distancia mínima desde la cámara hasta el plano
+                distance = calculate_distance_to_plane(tvecs, normal)
 
                 # store plane information
                 plane = CDetectedPlane()
                 plane.id = markerID
-                plane.d = np.linalg.norm(tvecs)
+                plane.d = distance
                 plane.normal = rvecs_matrix[:, 2]
 
                 # add it to the observation
                 obs.planes.append(plane)
 
             # debug
-            self.get_logger().info(f'obs, {obs}')
+            self.get_logger().info(f'obs cam1, {obs}')
 
             # store observation (and implicitly set ready flag)
             self.observations[0] = obs
@@ -186,12 +216,10 @@ class DetectionAruco(Node):
 
     def on_camera2(self, image):
         
-        self.get_logger().info(f'Camara 1 - a ver si funciona')
-        # check if we already have an observation
         
         # process image
         cv_image = self.br.imgmsg_to_cv2(image)
-        cv_image_bgr = cv2.cvtColor(cv_image, cv2.COLOR_YUV2BGR_YUYV)
+        cv_image_bgr = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
 
         # Dibujar Marcador, centro y texto
         drawImage = DrawAruco()
@@ -205,7 +233,7 @@ class DetectionAruco(Node):
 
 
         if self.observations[1]:
-            self.get_logger().info(f'Detecciones hechas tal vez con la otra camara, {self.observations[1]}')
+            # self.get_logger().info(f'Detecciones hechas tal vez con la otra camara, {self.observations[1]}')
             return
         
         # Detecta las esquinas e ids de los marcadores
@@ -216,7 +244,7 @@ class DetectionAruco(Node):
 
         cv_image_bgr = drawImage.drawMarker(cv_image_bgr, corners, ids)
         cv_image_bgr = drawImage.drawCenter(cv_image_bgr, corners, ids)
-        cv_image_bgr = drawImage.drawAxis(cv_image_bgr, ids, corners, self.K_2, self.distorsion_2, self.marker_length)
+        cv_image_bgr = drawImage.drawAxis(cv_image_bgr, self.marker_points, ids, corners, self.k, self.distorsion, self.marker_length)
 
         cv2.imshow('Imagen 2', cv_image_bgr)
         cv2.waitKey(1)
@@ -234,24 +262,28 @@ class DetectionAruco(Node):
             for (markerCorner, markerID) in zip(corners, ids): 
 
                 # Calcula la posición y orientación del marcador
-                rvecs, tvecs, markerPoints = cv2.aruco.estimatePoseSingleMarkers(markerCorner, self.marker_length, self.K_2, self.distorsion_2)
+                _, rvecs, tvecs = cv2.solvePnP(self.marker_points, markerCorner, self.k, self.distorsion, False, cv2.SOLVEPNP_IPPE_SQUARE)
 
 
-                self.get_logger().info(f'Marcador detectado, {markerID}')
+                #self.get_logger().info(f'Marcador detectado, {markerID}')
 
                 #Aplicar Rodrigues
-                rvecs_matrix, _ = cv2.Rodrigues(rvecs)
+                rvecs_matrix, matrix_der = cv2.Rodrigues(rvecs)
                 # self.get_logger().info(f'Marcador detectado, {rvecs_matrix}')
                 # Deevuelve rvecs_matrix un array (3x3) -> Matriz rotacion
                                      #   un array (3x9) -> Derivada de la matriz de rotación respecto al vector de rotación
                                      #                     Esta es una matriz Jacobiana para ver cuánto varia la matriz de rotación    
-                self.get_logger().info(f'Vector translación, {rvecs_matrix}')
+                # self.get_logger().info(f'Vector translación, {rvecs_matrix}')
 
+                #Calcular distancia entre plano del aruco y la cámara 
+                normal = rvecs_matrix[:, 2]
+                # Calcular la distancia mínima desde la cámara hasta el plano
+                distance = calculate_distance_to_plane(tvecs, normal)
 
                 # store plane information
                 plane = CDetectedPlane()
                 plane.id = markerID
-                plane.d = np.linalg.norm(tvecs)
+                plane.d = distance
                 plane.normal = rvecs_matrix[:,2] # np.dot(rvecs_matrix, np.array([0, 0, 1]))
 
                 # add it to the observation
@@ -259,7 +291,7 @@ class DetectionAruco(Node):
 
 
             # debug
-            self.get_logger().info(f'obs, {obs}')
+            self.get_logger().info(f'obs cam2, {obs}')
 
             # store observation (and implicitly set ready flag)
             self.observations[1] = obs
@@ -294,13 +326,17 @@ class DetectionAruco(Node):
                             
 
                             msg.correspondences.append(plane_match)
-                
+                msg.first_label = '/camera1/color/image_raw'
+                msg.second_label = '/camera2/color/image_raw'
+
                 if len(msg.correspondences) > 0:
                     self.publisher.publish(msg)
                 
             # reset observations
             self.observations[0] = None
             self.observations[1] = None
+
+    
                       
 
 def main(args=None):
@@ -312,3 +348,7 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
+
+
+

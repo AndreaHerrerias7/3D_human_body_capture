@@ -1,0 +1,40 @@
+# dual_apriltag.launch.py
+
+# Importa las librerías necesarias
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+def generate_launch_description():
+    # Define la descripción del lanzamiento
+    return LaunchDescription([
+        # Lanza el primer nodo apriltag_ros con remapeo de tópicos
+        Node(
+            package='apriltag_ros',
+            executable='apriltag_node',
+            name='apriltag_node1',
+            output='screen',
+            # Especifica el remapeo de tópicos para la primera cámara
+            remappings=[
+                ('image_rect', '/camera1/color/image_raw'),  # Remapea el topic de la imagen
+                ('camera_info', '/camera1/color/camera_info'),      # Remapea el topic de la información de la cámara
+                ('/detections', '/camera1/detections')
+            ],
+            # Configura el archivo YAML de parámetros para la primera cámara
+            parameters=[{'file': '$(find-pkg-share apriltag_ros)/cfg/tags_36h11_v2.yaml'}]  # Asegúrate de especificar la ruta correcta
+        ),
+        
+        # Lanza el segundo nodo apriltag_ros con remapeo de tópicos
+        Node(
+            package='apriltag_ros',
+            executable='apriltag_node',
+            name='apriltag_node2',
+            output='screen',
+            remappings=[
+                ('image_rect', '/camera2/color/image_raw'),  # Remapea el topic de la imagen
+                ('camera_info', '/camera2/color/camera_info'), # Remapea el topic de la información de la cámara
+                ('/detections', '/camera2/detections')
+            ],
+            # Configura el archivo YAML de parámetros para la segunda cámara
+            parameters=[{'file': '$(find-pkg-share apriltag_ros)/cfg/tags_36h11.yaml'}]  # Asegúrate de especificar la ruta correcta
+        )
+    ])

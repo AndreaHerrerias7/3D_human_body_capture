@@ -8,5 +8,3 @@ custom_msgs/msg/__init__.py
 custom_msgs/msg/_correspondences.py
 custom_msgs/msg/_plane.py
 custom_msgs/msg/_plane_match.py
-custom_msgs/msg/_point.py
-custom_msgs/msg/_points_camera.py

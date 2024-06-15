@@ -1,0 +1,26 @@
+[1.776s] Invoking command in '/home/andre/ros2_ws/src/detection_aruco': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/apriltag_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs LD_LIBRARY_PATH=/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/andre/ros2_ws/build/detection_aruco/prefix_override:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_aruco build --build-base /home/andre/ros2_ws/build/detection_aruco/build install --record /home/andre/ros2_ws/build/detection_aruco/install.log --single-version-externally-managed install_data
+[2.434s] running egg_info
+[2.437s] writing ../../build/detection_aruco/detection_aruco.egg-info/PKG-INFO
+[2.440s] writing dependency_links to ../../build/detection_aruco/detection_aruco.egg-info/dependency_links.txt
+[2.442s] writing entry points to ../../build/detection_aruco/detection_aruco.egg-info/entry_points.txt
+[2.444s] writing requirements to ../../build/detection_aruco/detection_aruco.egg-info/requires.txt
+[2.445s] writing top-level names to ../../build/detection_aruco/detection_aruco.egg-info/top_level.txt
+[2.452s] reading manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'
+[2.453s] adding license file 'LICENSE'
+[2.456s] writing manifest file '../../build/detection_aruco/detection_aruco.egg-info/SOURCES.txt'
+[2.458s] running build
+[2.458s] running build_py
+[2.460s] copying detection_aruco/detection_aruco.py -> /home/andre/ros2_ws/build/detection_aruco/build/lib/detection_aruco
+[2.463s] running install
+[2.465s] running install_lib
+[2.468s] copying /home/andre/ros2_ws/build/detection_aruco/build/lib/detection_aruco/detection_aruco.py -> /home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco
+[2.474s] byte-compiling /home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco/detection_aruco.py to detection_aruco.cpython-310.pyc
+[2.482s] running install_data
+[2.484s] running install_egg_info
+[2.489s] removing '/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info' (and everything under it)
+[2.496s] Copying ../../build/detection_aruco/detection_aruco.egg-info to /home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages/detection_aruco-0.0.0-py3.10.egg-info
+[2.500s] running install_scripts
+[2.566s] Installing obtain script to /home/andre/ros2_ws/install/detection_aruco/lib/detection_aruco
+[2.568s] Installing see script to /home/andre/ros2_ws/install/detection_aruco/lib/detection_aruco
+[2.570s] writing list of installed files to '/home/andre/ros2_ws/build/detection_aruco/install.log'
+[2.668s] Invoked command in '/home/andre/ros2_ws/src/detection_aruco' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/apriltag_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs LD_LIBRARY_PATH=/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/andre/ros2_ws/build/detection_aruco/prefix_override:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_aruco build --build-base /home/andre/ros2_ws/build/detection_aruco/build install --record /home/andre/ros2_ws/build/detection_aruco/install.log --single-version-externally-managed install_data

@@ -1,0 +1,35 @@
+[0.042s] Invoking command in '/home/andre/ros2_ws/build/apriltag_ros': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble LD_LIBRARY_PATH=/home/andre/ros2_ws/install/apriltag_msgs/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/andre/ros2_ws/build/apriltag_ros -- -j4 -l4
+[0.198s] [ 16%] Built target tags
+[0.271s] [ 50%] Built target apriltag_node
+[0.340s] [ 66%] Built target pose_estimation
+[0.418s] [100%] Built target AprilTagNode
+[0.451s] Invoked command in '/home/andre/ros2_ws/build/apriltag_ros' returned '0': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble LD_LIBRARY_PATH=/home/andre/ros2_ws/install/apriltag_msgs/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/andre/ros2_ws/build/apriltag_ros -- -j4 -l4
+[0.588s] Invoking command in '/home/andre/ros2_ws/build/apriltag_ros': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble LD_LIBRARY_PATH=/home/andre/ros2_ws/install/apriltag_msgs/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/andre/ros2_ws/build/apriltag_ros
+[0.613s] -- Install configuration: ""
+[0.614s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/lib/apriltag_ros/apriltag_node
+[0.614s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/library_path.sh
+[0.615s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/library_path.dsv
+[0.616s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/lib/libAprilTagNode.so
+[0.618s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/cfg
+[0.618s] -- Installing: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/cfg/tags_36h11_v2.yaml
+[0.622s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/cfg/tags_36h11.yaml
+[0.628s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/launch
+[0.629s] -- Installing: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/launch/astracamera_april.launch.yml
+[0.629s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/launch/v4l2_36h11.launch.yml
+[0.629s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/ament_index/resource_index/package_run_dependencies/apriltag_ros
+[0.629s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/ament_index/resource_index/parent_prefix_path/apriltag_ros
+[0.630s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/ament_prefix_path.sh
+[0.630s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/ament_prefix_path.dsv
+[0.630s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/path.sh
+[0.630s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/environment/path.dsv
+[0.630s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/local_setup.bash
+[0.630s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/local_setup.sh
+[0.630s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/local_setup.zsh
+[0.631s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/local_setup.dsv
+[0.631s] -- Installing: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.dsv
+[0.631s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/ament_index/resource_index/packages/apriltag_ros
+[0.631s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/ament_index/resource_index/rclcpp_components/apriltag_ros
+[0.631s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/cmake/apriltag_rosConfig.cmake
+[0.631s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/cmake/apriltag_rosConfig-version.cmake
+[0.631s] -- Up-to-date: /home/andre/ros2_ws/install/apriltag_ros/share/apriltag_ros/package.xml
+[0.647s] Invoked command in '/home/andre/ros2_ws/build/apriltag_ros' returned '0': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble LD_LIBRARY_PATH=/home/andre/ros2_ws/install/apriltag_msgs/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/andre/ros2_ws/build/apriltag_ros

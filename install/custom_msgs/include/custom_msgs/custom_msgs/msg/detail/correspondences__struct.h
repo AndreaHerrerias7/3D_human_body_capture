@@ -20,11 +20,16 @@ extern "C"
 // Include directives for member types
 // Member 'correspondences'
 #include "custom_msgs/msg/detail/plane_match__struct.h"
+// Member 'first_label'
+// Member 'second_label'
+#include "rosidl_runtime_c/string.h"
 
 /// Struct defined in msg/Correspondences in the package custom_msgs.
 typedef struct custom_msgs__msg__Correspondences
 {
   custom_msgs__msg__PlaneMatch__Sequence correspondences;
+  rosidl_runtime_c__String first_label;
+  rosidl_runtime_c__String second_label;
 } custom_msgs__msg__Correspondences;
 
 // Struct for a sequence of custom_msgs__msg__Correspondences.

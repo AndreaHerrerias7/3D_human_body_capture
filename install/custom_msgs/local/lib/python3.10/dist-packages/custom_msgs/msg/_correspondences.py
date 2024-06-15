@@ -60,14 +60,20 @@ class Correspondences(metaclass=Metaclass_Correspondences):
 
     __slots__ = [
         '_correspondences',
+        '_first_label',
+        '_second_label',
     ]
 
     _fields_and_field_types = {
         'correspondences': 'sequence<custom_msgs/PlaneMatch>',
+        'first_label': 'string',
+        'second_label': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['custom_msgs', 'msg'], 'PlaneMatch')),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -75,6 +81,8 @@ class Correspondences(metaclass=Metaclass_Correspondences):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.correspondences = kwargs.get('correspondences', [])
+        self.first_label = kwargs.get('first_label', str())
+        self.second_label = kwargs.get('second_label', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -107,6 +115,10 @@ class Correspondences(metaclass=Metaclass_Correspondences):
             return False
         if self.correspondences != other.correspondences:
             return False
+        if self.first_label != other.first_label:
+            return False
+        if self.second_label != other.second_label:
+            return False
         return True
 
     @classmethod
@@ -137,3 +149,29 @@ class Correspondences(metaclass=Metaclass_Correspondences):
                  True), \
                 "The 'correspondences' field must be a set or sequence and each value of type 'PlaneMatch'"
         self._correspondences = value
+
+    @builtins.property
+    def first_label(self):
+        """Message field 'first_label'."""
+        return self._first_label
+
+    @first_label.setter
+    def first_label(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'first_label' field must be of type 'str'"
+        self._first_label = value
+
+    @builtins.property
+    def second_label(self):
+        """Message field 'second_label'."""
+        return self._second_label
+
+    @second_label.setter
+    def second_label(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'second_label' field must be of type 'str'"
+        self._second_label = value

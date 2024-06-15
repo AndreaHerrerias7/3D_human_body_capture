@@ -66,6 +66,10 @@ cdr_serialize(
         cdr);
     }
   }
+  // Member: first_label
+  cdr << ros_message.first_label;
+  // Member: second_label
+  cdr << ros_message.second_label;
   return true;
 }
 
@@ -86,6 +90,12 @@ cdr_deserialize(
         cdr, ros_message.correspondences[i]);
     }
   }
+
+  // Member: first_label
+  cdr >> ros_message.first_label;
+
+  // Member: second_label
+  cdr >> ros_message.second_label;
 
   return true;
 }
@@ -116,6 +126,14 @@ get_serialized_size(
         ros_message.correspondences[index], current_alignment);
     }
   }
+  // Member: first_label
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.first_label.size() + 1);
+  // Member: second_label
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.second_label.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -163,6 +181,32 @@ max_serialized_size_Correspondences(
     }
   }
 
+  // Member: first_label
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Member: second_label
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -171,7 +215,7 @@ max_serialized_size_Correspondences(
     using DataType = custom_msgs::msg::Correspondences;
     is_plain =
       (
-      offsetof(DataType, correspondences) +
+      offsetof(DataType, second_label) +
       last_member_size
       ) == ret_val;
   }

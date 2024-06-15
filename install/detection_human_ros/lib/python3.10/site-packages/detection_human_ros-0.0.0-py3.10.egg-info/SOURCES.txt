@@ -1,0 +1,17 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/detection_human_ros/detection_human_ros.egg-info/PKG-INFO
+../../build/detection_human_ros/detection_human_ros.egg-info/SOURCES.txt
+../../build/detection_human_ros/detection_human_ros.egg-info/dependency_links.txt
+../../build/detection_human_ros/detection_human_ros.egg-info/entry_points.txt
+../../build/detection_human_ros/detection_human_ros.egg-info/requires.txt
+../../build/detection_human_ros/detection_human_ros.egg-info/top_level.txt
+../../build/detection_human_ros/detection_human_ros.egg-info/zip-safe
+detection_human_ros/__init__.py
+detection_human_ros/detection_human.py
+resource/detection_human_ros
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
