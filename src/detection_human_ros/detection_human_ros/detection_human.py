@@ -22,8 +22,10 @@ from mediapipe.framework.formats import landmark_pb2
 import numpy as np
 
 
+
 class DetectionHuman(Node):
     def __init__(self):
+        
         super().__init__('detection_pose_human')
         self.get_logger().info('Iniciado')
 
