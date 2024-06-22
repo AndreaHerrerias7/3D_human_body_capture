@@ -1,0 +1,23 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/pcl_example_node.dir/src/pcl_example_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable pcl_example_node[0m
+[100%] Built target pcl_example_node
+-- Install configuration: ""
+-- Installing: /home/andre/ros2_ws/install/pcl_example/lib/pcl_example/pcl_example_node
+-- Set runtime path of "/home/andre/ros2_ws/install/pcl_example/lib/pcl_example/pcl_example_node" to ""
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/launch
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/launch/pcl_example_launch.py
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/package_run_dependencies/pcl_example
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/parent_prefix_path/pcl_example
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/ament_prefix_path.sh
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/path.sh
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/path.dsv
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.bash
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.sh
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.zsh
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.dsv
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/package.dsv
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/packages/pcl_example
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/cmake/pcl_exampleConfig.cmake
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/cmake/pcl_exampleConfig-version.cmake
+-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/package.xml

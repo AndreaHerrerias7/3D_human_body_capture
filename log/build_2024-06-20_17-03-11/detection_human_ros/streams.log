@@ -1,0 +1,25 @@
+[1.177s] Invoking command in '/home/andre/ros2_ws/src/detection_human_ros': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs LD_LIBRARY_PATH=/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/andre/ros2_ws/build/detection_human_ros/prefix_override:/home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_human_ros build --build-base /home/andre/ros2_ws/build/detection_human_ros/build install --record /home/andre/ros2_ws/build/detection_human_ros/install.log --single-version-externally-managed install_data
+[1.532s] running egg_info
+[1.533s] writing ../../build/detection_human_ros/detection_human_ros.egg-info/PKG-INFO
+[1.534s] writing dependency_links to ../../build/detection_human_ros/detection_human_ros.egg-info/dependency_links.txt
+[1.534s] writing entry points to ../../build/detection_human_ros/detection_human_ros.egg-info/entry_points.txt
+[1.535s] writing requirements to ../../build/detection_human_ros/detection_human_ros.egg-info/requires.txt
+[1.535s] writing top-level names to ../../build/detection_human_ros/detection_human_ros.egg-info/top_level.txt
+[1.538s] reading manifest file '../../build/detection_human_ros/detection_human_ros.egg-info/SOURCES.txt'
+[1.538s] adding license file 'LICENSE'
+[1.540s] writing manifest file '../../build/detection_human_ros/detection_human_ros.egg-info/SOURCES.txt'
+[1.540s] running build
+[1.540s] running build_py
+[1.540s] copying detection_human_ros/detection_human.py -> /home/andre/ros2_ws/build/detection_human_ros/build/lib/detection_human_ros
+[1.540s] running install
+[1.541s] running install_lib
+[1.542s] copying /home/andre/ros2_ws/build/detection_human_ros/build/lib/detection_human_ros/detection_human.py -> /home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages/detection_human_ros
+[1.543s] byte-compiling /home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages/detection_human_ros/detection_human.py to detection_human.cpython-310.pyc
+[1.544s] running install_data
+[1.544s] running install_egg_info
+[1.547s] removing '/home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages/detection_human_ros-0.0.0-py3.10.egg-info' (and everything under it)
+[1.547s] Copying ../../build/detection_human_ros/detection_human_ros.egg-info to /home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages/detection_human_ros-0.0.0-py3.10.egg-info
+[1.558s] running install_scripts
+[1.589s] Installing obtain_human script to /home/andre/ros2_ws/install/detection_human_ros/lib/detection_human_ros
+[1.590s] writing list of installed files to '/home/andre/ros2_ws/build/detection_human_ros/install.log'
+[1.622s] Invoked command in '/home/andre/ros2_ws/src/detection_human_ros' returned '0': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs LD_LIBRARY_PATH=/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/andre/ros2_ws/build/detection_human_ros/prefix_override:/home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_human_ros build --build-base /home/andre/ros2_ws/build/detection_human_ros/build install --record /home/andre/ros2_ws/build/detection_human_ros/install.log --single-version-externally-managed install_data

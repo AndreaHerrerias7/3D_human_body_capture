@@ -1,0 +1,374 @@
+[0.000000] (-) TimerEvent: {}
+[0.000913] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.001362] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.001453] (-) JobUnselected: {'identifier': 'calib_correspondences'}
+[0.001528] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.001592] (-) JobUnselected: {'identifier': 'detection_aruco'}
+[0.001651] (-) JobUnselected: {'identifier': 'detection_astra_camera'}
+[0.001737] (-) JobUnselected: {'identifier': 'detection_human_ros'}
+[0.001868] (-) JobUnselected: {'identifier': 'detection_person'}
+[0.001931] (pcl_example) JobQueued: {'identifier': 'pcl_example', 'dependencies': OrderedDict()}
+[0.001971] (pcl_example) JobStarted: {'identifier': 'pcl_example'}
+[0.018016] (pcl_example) JobProgress: {'identifier': 'pcl_example', 'progress': 'cmake'}
+[0.023953] (pcl_example) JobProgress: {'identifier': 'pcl_example', 'progress': 'build'}
+[0.024171] (pcl_example) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/pcl_example', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/pcl_example', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1585'), ('SYSTEMD_EXEC_PID', '1758'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '9061'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('JOURNAL_STREAM', '8:32121'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1737,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1737'), ('INVOCATION_ID', '29b2841836ac481787b05df284066d0e'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G98VP2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/pcl_example:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:7088569b-d30f-4dab-9f12-e9917453b967'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/pcl_example'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/apriltag_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/pcl_example:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[0.099416] (-) TimerEvent: {}
+[0.199493] (pcl_example) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pcl_example_node.dir/src/pcl_example_node.cpp.o\x1b[0m\n'}
+[0.199939] (-) TimerEvent: {}
+[0.300234] (-) TimerEvent: {}
+[0.400581] (-) TimerEvent: {}
+[0.500913] (-) TimerEvent: {}
+[0.601316] (-) TimerEvent: {}
+[0.701649] (-) TimerEvent: {}
+[0.802040] (-) TimerEvent: {}
+[0.902505] (-) TimerEvent: {}
+[1.002976] (-) TimerEvent: {}
+[1.103330] (-) TimerEvent: {}
+[1.203678] (-) TimerEvent: {}
+[1.304057] (-) TimerEvent: {}
+[1.404449] (-) TimerEvent: {}
+[1.504786] (-) TimerEvent: {}
+[1.605125] (-) TimerEvent: {}
+[1.705520] (-) TimerEvent: {}
+[1.805921] (-) TimerEvent: {}
+[1.906310] (-) TimerEvent: {}
+[2.006717] (-) TimerEvent: {}
+[2.107257] (-) TimerEvent: {}
+[2.208030] (-) TimerEvent: {}
+[2.308415] (-) TimerEvent: {}
+[2.408773] (-) TimerEvent: {}
+[2.509555] (-) TimerEvent: {}
+[2.609939] (-) TimerEvent: {}
+[2.710293] (-) TimerEvent: {}
+[2.810942] (-) TimerEvent: {}
+[2.911324] (-) TimerEvent: {}
+[3.011685] (-) TimerEvent: {}
+[3.112245] (-) TimerEvent: {}
+[3.212947] (-) TimerEvent: {}
+[3.313402] (-) TimerEvent: {}
+[3.414588] (-) TimerEvent: {}
+[3.514929] (-) TimerEvent: {}
+[3.615467] (-) TimerEvent: {}
+[3.715970] (-) TimerEvent: {}
+[3.816647] (-) TimerEvent: {}
+[3.917041] (-) TimerEvent: {}
+[4.017464] (-) TimerEvent: {}
+[4.118331] (-) TimerEvent: {}
+[4.218721] (-) TimerEvent: {}
+[4.319092] (-) TimerEvent: {}
+[4.419568] (-) TimerEvent: {}
+[4.520361] (-) TimerEvent: {}
+[4.621111] (-) TimerEvent: {}
+[4.721580] (-) TimerEvent: {}
+[4.822026] (-) TimerEvent: {}
+[4.922746] (-) TimerEvent: {}
+[5.023520] (-) TimerEvent: {}
+[5.124151] (-) TimerEvent: {}
+[5.224802] (-) TimerEvent: {}
+[5.325144] (-) TimerEvent: {}
+[5.425549] (-) TimerEvent: {}
+[5.525888] (-) TimerEvent: {}
+[5.626216] (-) TimerEvent: {}
+[5.726620] (-) TimerEvent: {}
+[5.826994] (-) TimerEvent: {}
+[5.928409] (-) TimerEvent: {}
+[6.028819] (-) TimerEvent: {}
+[6.129619] (-) TimerEvent: {}
+[6.230005] (-) TimerEvent: {}
+[6.330360] (-) TimerEvent: {}
+[6.430817] (-) TimerEvent: {}
+[6.531571] (-) TimerEvent: {}
+[6.632044] (-) TimerEvent: {}
+[6.732389] (-) TimerEvent: {}
+[6.832750] (-) TimerEvent: {}
+[6.933119] (-) TimerEvent: {}
+[7.033593] (-) TimerEvent: {}
+[7.134042] (-) TimerEvent: {}
+[7.234700] (-) TimerEvent: {}
+[7.335192] (-) TimerEvent: {}
+[7.435606] (-) TimerEvent: {}
+[7.535975] (-) TimerEvent: {}
+[7.636341] (-) TimerEvent: {}
+[7.736738] (-) TimerEvent: {}
+[7.837274] (-) TimerEvent: {}
+[7.937675] (-) TimerEvent: {}
+[8.038136] (-) TimerEvent: {}
+[8.138714] (-) TimerEvent: {}
+[8.239387] (-) TimerEvent: {}
+[8.339716] (-) TimerEvent: {}
+[8.440095] (-) TimerEvent: {}
+[8.540612] (-) TimerEvent: {}
+[8.640986] (-) TimerEvent: {}
+[8.741310] (-) TimerEvent: {}
+[8.841783] (-) TimerEvent: {}
+[8.942568] (-) TimerEvent: {}
+[9.042926] (-) TimerEvent: {}
+[9.143498] (-) TimerEvent: {}
+[9.244358] (-) TimerEvent: {}
+[9.345289] (-) TimerEvent: {}
+[9.445885] (-) TimerEvent: {}
+[9.546525] (-) TimerEvent: {}
+[9.647249] (-) TimerEvent: {}
+[9.747675] (-) TimerEvent: {}
+[9.848066] (-) TimerEvent: {}
+[9.948430] (-) TimerEvent: {}
+[10.048893] (-) TimerEvent: {}
+[10.149394] (-) TimerEvent: {}
+[10.249771] (-) TimerEvent: {}
+[10.350193] (-) TimerEvent: {}
+[10.450567] (-) TimerEvent: {}
+[10.551023] (-) TimerEvent: {}
+[10.651692] (-) TimerEvent: {}
+[10.752458] (-) TimerEvent: {}
+[10.853309] (-) TimerEvent: {}
+[10.954146] (-) TimerEvent: {}
+[11.054637] (-) TimerEvent: {}
+[11.154972] (-) TimerEvent: {}
+[11.255338] (-) TimerEvent: {}
+[11.355795] (-) TimerEvent: {}
+[11.456597] (-) TimerEvent: {}
+[11.557232] (-) TimerEvent: {}
+[11.657643] (-) TimerEvent: {}
+[11.758005] (-) TimerEvent: {}
+[11.858360] (-) TimerEvent: {}
+[11.958776] (-) TimerEvent: {}
+[12.059199] (-) TimerEvent: {}
+[12.159605] (-) TimerEvent: {}
+[12.259978] (-) TimerEvent: {}
+[12.360293] (-) TimerEvent: {}
+[12.460632] (-) TimerEvent: {}
+[12.560947] (-) TimerEvent: {}
+[12.661281] (-) TimerEvent: {}
+[12.761634] (-) TimerEvent: {}
+[12.861954] (-) TimerEvent: {}
+[12.962324] (-) TimerEvent: {}
+[13.062663] (-) TimerEvent: {}
+[13.163035] (-) TimerEvent: {}
+[13.263398] (-) TimerEvent: {}
+[13.363749] (-) TimerEvent: {}
+[13.464111] (-) TimerEvent: {}
+[13.564443] (-) TimerEvent: {}
+[13.664744] (-) TimerEvent: {}
+[13.765086] (-) TimerEvent: {}
+[13.865369] (-) TimerEvent: {}
+[13.965692] (-) TimerEvent: {}
+[14.066062] (-) TimerEvent: {}
+[14.166423] (-) TimerEvent: {}
+[14.266779] (-) TimerEvent: {}
+[14.367122] (-) TimerEvent: {}
+[14.467490] (-) TimerEvent: {}
+[14.567976] (-) TimerEvent: {}
+[14.668384] (-) TimerEvent: {}
+[14.768806] (-) TimerEvent: {}
+[14.869320] (-) TimerEvent: {}
+[14.969761] (-) TimerEvent: {}
+[15.070193] (-) TimerEvent: {}
+[15.171006] (-) TimerEvent: {}
+[15.271705] (-) TimerEvent: {}
+[15.372175] (-) TimerEvent: {}
+[15.472857] (-) TimerEvent: {}
+[15.574014] (-) TimerEvent: {}
+[15.674607] (-) TimerEvent: {}
+[15.775687] (-) TimerEvent: {}
+[15.876461] (-) TimerEvent: {}
+[15.977149] (-) TimerEvent: {}
+[16.077638] (-) TimerEvent: {}
+[16.178173] (-) TimerEvent: {}
+[16.278687] (-) TimerEvent: {}
+[16.379418] (-) TimerEvent: {}
+[16.480048] (-) TimerEvent: {}
+[16.580498] (-) TimerEvent: {}
+[16.681032] (-) TimerEvent: {}
+[16.781448] (-) TimerEvent: {}
+[16.881896] (-) TimerEvent: {}
+[16.982245] (-) TimerEvent: {}
+[17.082616] (-) TimerEvent: {}
+[17.182956] (-) TimerEvent: {}
+[17.283302] (-) TimerEvent: {}
+[17.383685] (-) TimerEvent: {}
+[17.484137] (-) TimerEvent: {}
+[17.584562] (-) TimerEvent: {}
+[17.684941] (-) TimerEvent: {}
+[17.785279] (-) TimerEvent: {}
+[17.885658] (-) TimerEvent: {}
+[17.986031] (-) TimerEvent: {}
+[18.086411] (-) TimerEvent: {}
+[18.187281] (-) TimerEvent: {}
+[18.287640] (-) TimerEvent: {}
+[18.388036] (-) TimerEvent: {}
+[18.488452] (-) TimerEvent: {}
+[18.589958] (-) TimerEvent: {}
+[18.690607] (-) TimerEvent: {}
+[18.791432] (-) TimerEvent: {}
+[18.891815] (-) TimerEvent: {}
+[18.992342] (-) TimerEvent: {}
+[19.093536] (-) TimerEvent: {}
+[19.194220] (-) TimerEvent: {}
+[19.294633] (-) TimerEvent: {}
+[19.395392] (-) TimerEvent: {}
+[19.496055] (-) TimerEvent: {}
+[19.596868] (-) TimerEvent: {}
+[19.697960] (-) TimerEvent: {}
+[19.798731] (-) TimerEvent: {}
+[19.899491] (-) TimerEvent: {}
+[20.000801] (-) TimerEvent: {}
+[20.101331] (-) TimerEvent: {}
+[20.202050] (-) TimerEvent: {}
+[20.302599] (-) TimerEvent: {}
+[20.403011] (-) TimerEvent: {}
+[20.503477] (-) TimerEvent: {}
+[20.603964] (-) TimerEvent: {}
+[20.704350] (-) TimerEvent: {}
+[20.804746] (-) TimerEvent: {}
+[20.905333] (-) TimerEvent: {}
+[21.006058] (-) TimerEvent: {}
+[21.106712] (-) TimerEvent: {}
+[21.207055] (-) TimerEvent: {}
+[21.307395] (-) TimerEvent: {}
+[21.407723] (-) TimerEvent: {}
+[21.508173] (-) TimerEvent: {}
+[21.609143] (-) TimerEvent: {}
+[21.709517] (-) TimerEvent: {}
+[21.809863] (-) TimerEvent: {}
+[21.910205] (-) TimerEvent: {}
+[22.010575] (-) TimerEvent: {}
+[22.110909] (-) TimerEvent: {}
+[22.211278] (-) TimerEvent: {}
+[22.311616] (-) TimerEvent: {}
+[22.411972] (-) TimerEvent: {}
+[22.512406] (-) TimerEvent: {}
+[22.612811] (-) TimerEvent: {}
+[22.713319] (-) TimerEvent: {}
+[22.813659] (-) TimerEvent: {}
+[22.914004] (-) TimerEvent: {}
+[23.014383] (-) TimerEvent: {}
+[23.114761] (-) TimerEvent: {}
+[23.215089] (-) TimerEvent: {}
+[23.315449] (-) TimerEvent: {}
+[23.415815] (-) TimerEvent: {}
+[23.516155] (-) TimerEvent: {}
+[23.616586] (-) TimerEvent: {}
+[23.717196] (-) TimerEvent: {}
+[23.817564] (-) TimerEvent: {}
+[23.918038] (-) TimerEvent: {}
+[24.018927] (-) TimerEvent: {}
+[24.119631] (-) TimerEvent: {}
+[24.220390] (-) TimerEvent: {}
+[24.321063] (-) TimerEvent: {}
+[24.421930] (-) TimerEvent: {}
+[24.522786] (-) TimerEvent: {}
+[24.623430] (-) TimerEvent: {}
+[24.723815] (-) TimerEvent: {}
+[24.824233] (-) TimerEvent: {}
+[24.924612] (-) TimerEvent: {}
+[25.024927] (-) TimerEvent: {}
+[25.125459] (-) TimerEvent: {}
+[25.226207] (-) TimerEvent: {}
+[25.326576] (-) TimerEvent: {}
+[25.427885] (-) TimerEvent: {}
+[25.527355] (pcl_example) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pcl_example_node\x1b[0m\n'}
+[25.546667] (-) TimerEvent: {}
+[25.646961] (-) TimerEvent: {}
+[25.747404] (-) TimerEvent: {}
+[25.848156] (-) TimerEvent: {}
+[25.948953] (-) TimerEvent: {}
+[26.049340] (-) TimerEvent: {}
+[26.149866] (-) TimerEvent: {}
+[26.250318] (-) TimerEvent: {}
+[26.350971] (-) TimerEvent: {}
+[26.451546] (-) TimerEvent: {}
+[26.552247] (-) TimerEvent: {}
+[26.653320] (-) TimerEvent: {}
+[26.754021] (-) TimerEvent: {}
+[26.854392] (-) TimerEvent: {}
+[26.954740] (-) TimerEvent: {}
+[27.055084] (-) TimerEvent: {}
+[27.155506] (-) TimerEvent: {}
+[27.256149] (-) TimerEvent: {}
+[27.356729] (-) TimerEvent: {}
+[27.457303] (-) TimerEvent: {}
+[27.559241] (-) TimerEvent: {}
+[27.659695] (-) TimerEvent: {}
+[27.760133] (-) TimerEvent: {}
+[27.860644] (-) TimerEvent: {}
+[27.961689] (-) TimerEvent: {}
+[28.062047] (-) TimerEvent: {}
+[28.162487] (-) TimerEvent: {}
+[28.262766] (-) TimerEvent: {}
+[28.363056] (-) TimerEvent: {}
+[28.463416] (-) TimerEvent: {}
+[28.563779] (-) TimerEvent: {}
+[28.664111] (-) TimerEvent: {}
+[28.764577] (-) TimerEvent: {}
+[28.865452] (-) TimerEvent: {}
+[28.965985] (-) TimerEvent: {}
+[29.066337] (-) TimerEvent: {}
+[29.166680] (-) TimerEvent: {}
+[29.267033] (-) TimerEvent: {}
+[29.367462] (-) TimerEvent: {}
+[29.467827] (-) TimerEvent: {}
+[29.568217] (-) TimerEvent: {}
+[29.668633] (-) TimerEvent: {}
+[29.769111] (-) TimerEvent: {}
+[29.869724] (-) TimerEvent: {}
+[29.970187] (-) TimerEvent: {}
+[30.070700] (-) TimerEvent: {}
+[30.171198] (-) TimerEvent: {}
+[30.271634] (-) TimerEvent: {}
+[30.372734] (-) TimerEvent: {}
+[30.473714] (-) TimerEvent: {}
+[30.574660] (-) TimerEvent: {}
+[30.675133] (-) TimerEvent: {}
+[30.775890] (-) TimerEvent: {}
+[30.876671] (-) TimerEvent: {}
+[30.977457] (-) TimerEvent: {}
+[31.078196] (-) TimerEvent: {}
+[31.178794] (-) TimerEvent: {}
+[31.279236] (-) TimerEvent: {}
+[31.379891] (-) TimerEvent: {}
+[31.480609] (-) TimerEvent: {}
+[31.580917] (-) TimerEvent: {}
+[31.681268] (-) TimerEvent: {}
+[31.781734] (-) TimerEvent: {}
+[31.882857] (-) TimerEvent: {}
+[31.983219] (-) TimerEvent: {}
+[32.083920] (-) TimerEvent: {}
+[32.184386] (-) TimerEvent: {}
+[32.284795] (-) TimerEvent: {}
+[32.385242] (-) TimerEvent: {}
+[32.485549] (-) TimerEvent: {}
+[32.585873] (-) TimerEvent: {}
+[32.686342] (-) TimerEvent: {}
+[32.787169] (-) TimerEvent: {}
+[32.887500] (-) TimerEvent: {}
+[32.936186] (pcl_example) StdoutLine: {'line': b'[100%] Built target pcl_example_node\n'}
+[32.979802] (pcl_example) CommandEnded: {'returncode': 0}
+[32.990508] (-) TimerEvent: {}
+[33.042739] (pcl_example) JobProgress: {'identifier': 'pcl_example', 'progress': 'install'}
+[33.061244] (pcl_example) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/pcl_example'], 'cwd': '/home/andre/ros2_ws/build/pcl_example', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1585'), ('SYSTEMD_EXEC_PID', '1758'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '9061'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('JOURNAL_STREAM', '8:32121'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/andre-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1737,unix/andre-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1737'), ('INVOCATION_ID', '29b2841836ac481787b05df284066d0e'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G98VP2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/pcl_example:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:7088569b-d30f-4dab-9f12-e9917453b967'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/pcl_example'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/apriltag_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/pcl_example:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[33.074455] (pcl_example) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.090630] (-) TimerEvent: {}
+[33.126332] (pcl_example) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/pcl_example/lib/pcl_example/pcl_example_node\n'}
+[33.143851] (pcl_example) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/pcl_example/lib/pcl_example/pcl_example_node" to ""\n'}
+[33.144145] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/launch\n'}
+[33.146379] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/launch/pcl_example_launch.py\n'}
+[33.146684] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/package_run_dependencies/pcl_example\n'}
+[33.146822] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/parent_prefix_path/pcl_example\n'}
+[33.146971] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/ament_prefix_path.sh\n'}
+[33.147160] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/ament_prefix_path.dsv\n'}
+[33.147279] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/path.sh\n'}
+[33.147388] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/path.dsv\n'}
+[33.147497] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.bash\n'}
+[33.147605] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.sh\n'}
+[33.147776] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.zsh\n'}
+[33.147898] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.dsv\n'}
+[33.148004] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/package.dsv\n'}
+[33.154057] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/packages/pcl_example\n'}
+[33.154388] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/cmake/pcl_exampleConfig.cmake\n'}
+[33.154526] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/cmake/pcl_exampleConfig-version.cmake\n'}
+[33.154648] (pcl_example) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/package.xml\n'}
+[33.159835] (pcl_example) CommandEnded: {'returncode': 0}
+[33.190761] (-) TimerEvent: {}
+[33.291142] (-) TimerEvent: {}
+[33.380580] (pcl_example) JobEnded: {'identifier': 'pcl_example', 'rc': 0}
+[33.381746] (-) EventReactorShutdown: {}
