@@ -1537,19 +1537,8 @@ CMakeFiles/pcl_example_node.dir/src/pcl_example_node.cpp.o: /home/andre/ros2_ws/
   /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
   /usr/include/x86_64-linux-gnu/bits/mman-shared.h \
   /usr/include/x86_64-linux-gnu/sys/fcntl.h \
-  /usr/include/pcl-1.12/pcl/io/lzf.h \
-  /usr/include/pcl-1.12/pcl/filters/voxel_grid.h \
-  /usr/include/pcl-1.12/pcl/filters/filter.h \
-  /usr/include/pcl-1.12/pcl/pcl_base.h \
-  /usr/include/c++/11/cfloat \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
+  /usr/include/pcl-1.12/pcl/io/lzf.h
 
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
-
-/usr/include/pcl-1.12/pcl/pcl_base.h:
-
-/usr/include/pcl-1.12/pcl/filters/voxel_grid.h:
 
 /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h:
 
@@ -1913,8 +1902,6 @@ CMakeFiles/pcl_example_node.dir/src/pcl_example_node.cpp.o: /home/andre/ros2_ws/
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp:
 
-/usr/include/c++/11/cfloat:
-
 /usr/include/boost/type_traits/is_scalar.hpp:
 
 /usr/include/boost/type_traits/is_pod.hpp:
@@ -2056,8 +2043,6 @@ CMakeFiles/pcl_example_node.dir/src/pcl_example_node.cpp.o: /home/andre/ros2_ws/
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
-
-/usr/include/pcl-1.12/pcl/filters/filter.h:
 
 /usr/include/boost/date_time/date_iterator.hpp:
 

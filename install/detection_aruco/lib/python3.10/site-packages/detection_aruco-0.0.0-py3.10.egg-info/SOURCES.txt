@@ -11,7 +11,6 @@ setup.py
 ../../build/detection_aruco/detection_aruco.egg-info/zip-safe
 detection_aruco/__init__.py
 detection_aruco/detection_aruco.py
-detection_aruco/detection_aruco_v_anterior.py
 detection_aruco/obtener_imagen.py
 resource/detection_aruco
 test/test_copyright.py

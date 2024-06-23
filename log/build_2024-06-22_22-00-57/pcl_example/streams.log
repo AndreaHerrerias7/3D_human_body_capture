@@ -1,0 +1,28 @@
+[0.025s] Invoking command in '/home/andre/ros2_ws/build/pcl_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/pcl_example -- -j4 -l4
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target pcl_example_node[0m
+[0.223s] [ 50%] [32mBuilding CXX object CMakeFiles/pcl_example_node.dir/src/pcl_example_node.cpp.o[0m
+[25.419s] [100%] [32m[1mLinking CXX executable pcl_example_node[0m
+[27.865s] [100%] Built target pcl_example_node
+[27.890s] Invoked command in '/home/andre/ros2_ws/build/pcl_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/pcl_example -- -j4 -l4
+[27.973s] Invoking command in '/home/andre/ros2_ws/build/pcl_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/pcl_example
+[27.995s] -- Install configuration: ""
+[27.997s] -- Installing: /home/andre/ros2_ws/install/pcl_example/lib/pcl_example/pcl_example_node
+[28.004s] -- Set runtime path of "/home/andre/ros2_ws/install/pcl_example/lib/pcl_example/pcl_example_node" to ""
+[28.004s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/launch
+[28.004s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/launch/pcl_example_launch.py
+[28.004s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/package_run_dependencies/pcl_example
+[28.005s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/parent_prefix_path/pcl_example
+[28.005s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/ament_prefix_path.sh
+[28.005s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/ament_prefix_path.dsv
+[28.005s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/path.sh
+[28.005s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/path.dsv
+[28.005s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.bash
+[28.006s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.sh
+[28.006s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.zsh
+[28.006s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.dsv
+[28.006s] -- Installing: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/package.dsv
+[28.006s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/packages/pcl_example
+[28.006s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/cmake/pcl_exampleConfig.cmake
+[28.006s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/cmake/pcl_exampleConfig-version.cmake
+[28.007s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/package.xml
+[28.009s] Invoked command in '/home/andre/ros2_ws/build/pcl_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --install /home/andre/ros2_ws/build/pcl_example

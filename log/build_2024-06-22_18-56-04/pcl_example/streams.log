@@ -1,0 +1,69 @@
+[0.083s] Invoking command in '/home/andre/ros2_ws/build/pcl_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/pcl_example -- -j4 -l4
+[1.362s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.076s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[2.503s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.534s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.586s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.642s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.730s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.009s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.053s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.611s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.039s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.321s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[4.758s] -- Found pcl_ros: 2.4.0 (/opt/ros/humble/share/pcl_ros/cmake)
+[5.117s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[5.141s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[6.049s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.237s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[9.177s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[9.189s] -- OpenNI2 found (version: 2.3.0.85, include: /home/andre/ros2_ws/install/astra_camera/include/openni2, lib: /home/andre/ros2_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)
+[9.474s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[9.485s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[9.497s] -- OpenNI2 found (version: 2.3.0.85, include: /home/andre/ros2_ws/install/astra_camera/include/openni2, lib: /home/andre/ros2_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)
+[9.814s] -- Found Qhull version 8.0.2
+[10.030s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[10.439s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[10.770s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.771s] -- Configured cppcheck include dirs: 
+[10.771s] -- Configured cppcheck exclude dirs and/or files: 
+[10.772s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.773s] -- Added test 'lint_cmake' to check CMake code style
+[10.773s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[10.775s] -- Added test 'uncrustify' to check C / C++ code style
+[10.775s] -- Configured uncrustify additional arguments: 
+[10.776s] -- Added test 'xmllint' to check XML markup files
+[10.778s] -- Configuring done
+[12.268s] -- Generating done
+[12.274s] -- Build files have been written to: /home/andre/ros2_ws/build/pcl_example
+[12.372s] [35m[1mConsolidate compiler generated dependencies of target pcl_example_node[0m
+[12.474s] [ 50%] [32mBuilding CXX object CMakeFiles/pcl_example_node.dir/src/pcl_example_node.cpp.o[0m
+[24.583s] [01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:[m[K In member function ‘[01m[Kvoid PlaneFilterNode::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[24.583s] [01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:25:10:[m[K [01;31m[Kerror: [m[K‘[01m[KExtractIndices[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+[24.583s]    25 |     pcl::[01;31m[KExtractIndices[m[K<pcl::PCLPointCloud2> extract;
+[24.584s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.584s] [01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:25:44:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[24.584s]    25 |     pcl::ExtractIndices<pcl::PCLPointCloud2[01;31m[K>[m[K extract;
+[24.584s]       |                                            [01;31m[K^[m[K
+[24.698s] [01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:25:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kextract[m[K’ was not declared in this scope
+[24.698s]    25 |     pcl::ExtractIndices<pcl::PCLPointCloud2> [01;31m[Kextract[m[K;
+[24.698s]       |                                              [01;31m[K^~~~~~~[m[K
+[24.700s] [01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:26:10:[m[K [01;31m[Kerror: [m[K‘[01m[KSACSegmentation[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+[24.701s]    26 |     pcl::[01;31m[KSACSegmentation[m[K<pcl::PCLPointCloud2> seg;
+[24.701s]       |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.701s] [01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:26:45:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[24.702s]    26 |     pcl::SACSegmentation<pcl::PCLPointCloud2[01;31m[K>[m[K seg;
+[24.702s]       |                                             [01;31m[K^[m[K
+[24.712s] [01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:26:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kseg[m[K’ was not declared in this scope
+[24.712s]    26 |     pcl::SACSegmentation<pcl::PCLPointCloud2> [01;31m[Kseg[m[K;
+[24.712s]       |                                               [01;31m[K^~~[m[K
+[24.722s] [01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:31:27:[m[K [01;31m[Kerror: [m[K‘[01m[KSACMODEL_PLANE[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+[24.722s]    31 |     seg.setModelType(pcl::[01;31m[KSACMODEL_PLANE[m[K);
+[24.722s]       |                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.724s] [01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:32:28:[m[K [01;31m[Kerror: [m[K‘[01m[KSAC_RANSAC[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+[24.724s]    32 |     seg.setMethodType(pcl::[01;31m[KSAC_RANSAC[m[K);
+[24.724s]       |                            [01;31m[K^~~~~~~~~~[m[K
+[29.215s] gmake[2]: *** [CMakeFiles/pcl_example_node.dir/build.make:76: CMakeFiles/pcl_example_node.dir/src/pcl_example_node.cpp.o] Error 1
+[29.215s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pcl_example_node.dir/all] Error 2
+[29.216s] gmake: *** [Makefile:146: all] Error 2
+[29.269s] Invoked command in '/home/andre/ros2_ws/build/pcl_example' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble /usr/bin/cmake --build /home/andre/ros2_ws/build/pcl_example -- -j4 -l4

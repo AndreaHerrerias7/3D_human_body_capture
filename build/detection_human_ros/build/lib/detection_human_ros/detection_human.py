@@ -1,5 +1,3 @@
-#@markdown To better demonstrate the Pose Landmarker API, we have created a set of visualization tools that will be used in this colab. These will draw the landmarks on a detect person, as well as the expected connections between those markers.
-
 from mediapipe import solutions
 from mediapipe.framework.formats import landmark_pb2
 import numpy as np
@@ -14,13 +12,11 @@ from builtin_interfaces.msg import Time
 import std_msgs.msg
 from sensor_msgs.msg import PointCloud2, PointField
 import sensor_msgs_py.point_cloud2 as pc2
-import cv2
 import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 from mediapipe.framework.formats import landmark_pb2
 import numpy as np
-
 
 class DetectionHuman(Node):
     def __init__(self):
@@ -30,48 +26,56 @@ class DetectionHuman(Node):
         self.br = CvBridge()
 
         # Suscriptor
-        self.image_sub = self.create_subscription(Image, '/camera1/color/image_raw', self.data_camera1, 10)
+        self.image_sub = self.create_subscription(Image, '/camera/color/image_raw', self.data_camera1, 10)
         
         # Publicador
         self.publisher = self.create_publisher(PointCloud2, '/processed/points', 10)
 
-        # Create a PoseLandmarker object.
-        base_options = python.BaseOptions(model_asset_path='pose_landmarker.task')
-        options = vision.PoseLandmarkerOptions(
-            base_options=base_options,
-            output_segmentation_masks=True)
-        self.detector = vision.PoseLandmarker.create_from_options(options)
-
+        self.pose = mp.solutions.pose.Pose(static_image_mode=True, model_complexity=2, enable_segmentation=True, min_detection_confidence=0.5, min_tracking_confidence=0.5)
+        
 
     def data_camera1(self, image):
         # Convert the ROS Image message to an OpenCV image.
         cv_image = self.br.imgmsg_to_cv2(image)
 
         # Convert the frame to RGB.
-        rgb_frame = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
-        mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb_frame)
+        #rgb_frame = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
+        rgb_frame = cv_image
 
         # Detect pose landmarks from the frame.
-        detection_result = self.detector.detect(mp_image)
+        results = self.pose.process(rgb_frame)
 
-        pose_landmarks_list = detection_result.pose_landmarks
-        self.get_logger().info(f'Pose landmarks detected: {len(pose_landmarks_list)}')
-        self.get_logger().info(f'Pose landmarks: {pose_landmarks_list}')
+        pose_landmarks = results.pose_landmarks
+        if pose_landmarks:
+            self.get_logger().info(f'Pose landmarks detected')
+            for idx, landmark in enumerate(pose_landmarks.landmark):
+                self.get_logger().info(f'Landmark {idx}: (x={landmark.x}, y={landmark.y}, z={landmark.z})')
 
-        # Process and publish the pose landmarks as PointCloud2.
-        self.publish_points(pose_landmarks_list, image.header)
+            # Draw the pose landmarks on the image.
+            annotated_image = cv2.cvtColor(rgb_frame, cv2.COLOR_RGB2BGR)
+            mp.solutions.drawing_utils.draw_landmarks(
+                annotated_image,
+                pose_landmarks,
+                mp.solutions.pose.POSE_CONNECTIONS,
+                mp.solutions.drawing_utils.DrawingSpec(color=(0, 0, 255), thickness=2, circle_radius=2),
+                mp.solutions.drawing_utils.DrawingSpec(color=(0, 255, 0), thickness=2, circle_radius=2)
+            )
+
+            # Display the annotated image.
+            cv2.imshow('Pose Landmarks', annotated_image)
+            cv2.waitKey(10000)  # Adjust the delay to control the display time
+
+            # Process and publish the pose landmarks as PointCloud2.
+            self.publish_points(pose_landmarks, image.header)
 
 
-    def publish_points(self, pose_landmarks_list, header):
-        if not pose_landmarks_list:
-            #self.get_logger().info('No landmarks detected')
+    def publish_points(self, pose_landmarks, header):
+        if not pose_landmarks:
             return
 
         points = []
-        for pose_landmarks in pose_landmarks_list:
-            for landmark in pose_landmarks:
-                points.append([landmark.x, landmark.y, landmark.z])
-
+        for landmark in pose_landmarks.landmark:
+            points.append([landmark.x, landmark.y, landmark.z])
 
         fields = [
             PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
@@ -84,8 +88,6 @@ class DetectionHuman(Node):
 
         # Publish the processed points.
         self.publisher.publish(cloud_msg)
-        #self.get_logger().info(f'Published PointCloud2 message with {len(points)} points')
-
 
 def main(args=None):
     rclpy.init(args=args)

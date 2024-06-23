@@ -1,0 +1,28 @@
+[01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:[m[K In member function ‘[01m[Kvoid PlaneFilterNode::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:25:10:[m[K [01;31m[Kerror: [m[K‘[01m[KExtractIndices[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+   25 |     pcl::[01;31m[KExtractIndices[m[K<pcl::PCLPointCloud2> extract;
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:25:44:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   25 |     pcl::ExtractIndices<pcl::PCLPointCloud2[01;31m[K>[m[K extract;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:25:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kextract[m[K’ was not declared in this scope
+   25 |     pcl::ExtractIndices<pcl::PCLPointCloud2> [01;31m[Kextract[m[K;
+      |                                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:26:10:[m[K [01;31m[Kerror: [m[K‘[01m[KSACSegmentation[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+   26 |     pcl::[01;31m[KSACSegmentation[m[K<pcl::PCLPointCloud2> seg;
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:26:45:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   26 |     pcl::SACSegmentation<pcl::PCLPointCloud2[01;31m[K>[m[K seg;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:26:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kseg[m[K’ was not declared in this scope
+   26 |     pcl::SACSegmentation<pcl::PCLPointCloud2> [01;31m[Kseg[m[K;
+      |                                               [01;31m[K^~~[m[K
+[01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:31:27:[m[K [01;31m[Kerror: [m[K‘[01m[KSACMODEL_PLANE[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+   31 |     seg.setModelType(pcl::[01;31m[KSACMODEL_PLANE[m[K);
+      |                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/andre/ros2_ws/src/pcl_example/src/pcl_example_node.cpp:32:28:[m[K [01;31m[Kerror: [m[K‘[01m[KSAC_RANSAC[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+   32 |     seg.setMethodType(pcl::[01;31m[KSAC_RANSAC[m[K);
+      |                            [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pcl_example_node.dir/build.make:76: CMakeFiles/pcl_example_node.dir/src/pcl_example_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pcl_example_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

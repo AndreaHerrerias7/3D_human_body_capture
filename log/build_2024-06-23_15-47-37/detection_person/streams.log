@@ -1,0 +1,25 @@
+[2.089s] Invoking command in '/home/andre/ros2_ws/src/detection_person': PYTHONPATH=/home/andre/ros2_ws/build/detection_person/prefix_override:/home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_person build --build-base /home/andre/ros2_ws/build/detection_person/build install --record /home/andre/ros2_ws/build/detection_person/install.log --single-version-externally-managed install_data
+[2.937s] running egg_info
+[2.940s] writing ../../build/detection_person/detection_person.egg-info/PKG-INFO
+[2.940s] writing dependency_links to ../../build/detection_person/detection_person.egg-info/dependency_links.txt
+[2.941s] writing entry points to ../../build/detection_person/detection_person.egg-info/entry_points.txt
+[2.941s] writing requirements to ../../build/detection_person/detection_person.egg-info/requires.txt
+[2.942s] writing top-level names to ../../build/detection_person/detection_person.egg-info/top_level.txt
+[2.958s] reading manifest file '../../build/detection_person/detection_person.egg-info/SOURCES.txt'
+[2.958s] adding license file 'LICENSE'
+[2.960s] writing manifest file '../../build/detection_person/detection_person.egg-info/SOURCES.txt'
+[2.961s] running build
+[2.961s] running build_py
+[2.961s] copying detection_person/detection_person.py -> /home/andre/ros2_ws/build/detection_person/build/lib/detection_person
+[2.962s] running install
+[2.965s] running install_lib
+[2.969s] copying /home/andre/ros2_ws/build/detection_person/build/lib/detection_person/detection_person.py -> /home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages/detection_person
+[2.971s] byte-compiling /home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages/detection_person/detection_person.py to detection_person.cpython-310.pyc
+[2.975s] running install_data
+[2.975s] running install_egg_info
+[2.979s] removing '/home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages/detection_person-0.0.0-py3.10.egg-info' (and everything under it)
+[2.980s] Copying ../../build/detection_person/detection_person.egg-info to /home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages/detection_person-0.0.0-py3.10.egg-info
+[2.982s] running install_scripts
+[3.049s] Installing obtain_person script to /home/andre/ros2_ws/install/detection_person/lib/detection_person
+[3.049s] writing list of installed files to '/home/andre/ros2_ws/build/detection_person/install.log'
+[3.175s] Invoked command in '/home/andre/ros2_ws/src/detection_person' returned '0': PYTHONPATH=/home/andre/ros2_ws/build/detection_person/prefix_override:/home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_person build --build-base /home/andre/ros2_ws/build/detection_person/build install --record /home/andre/ros2_ws/build/detection_person/install.log --single-version-externally-managed install_data
