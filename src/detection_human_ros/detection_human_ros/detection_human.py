@@ -61,9 +61,6 @@ class DetectionHuman(Node):
                 mp.solutions.drawing_utils.DrawingSpec(color=(0, 255, 0), thickness=2, circle_radius=2)
             )
 
-            # Display the annotated image.
-            cv2.imshow('Pose Landmarks', annotated_image)
-            cv2.waitKey(10000)  # Adjust the delay to control the display time
 
             # Process and publish the pose landmarks as PointCloud2.
             self.publish_points(pose_landmarks, image.header)
