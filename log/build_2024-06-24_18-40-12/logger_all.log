@@ -1,0 +1,229 @@
+[1.115s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'detection_person']
+[1.115s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['detection_person'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b8c59d12b00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b8c59e0f850>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b8c59e0f850>>, mixin_verb=('build',))
+[8.652s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[8.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[8.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[8.655s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[8.655s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[8.656s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[8.656s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/andre/ros2_ws'
+[8.657s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[8.658s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[8.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[8.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[8.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[8.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[8.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[8.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[8.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[8.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[8.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[8.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[8.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[8.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[8.981s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[8.981s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[8.981s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[8.981s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[8.981s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[8.981s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[8.982s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[8.982s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[8.982s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[8.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[8.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[8.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[8.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[8.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[8.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[8.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[8.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[8.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[8.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[8.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[8.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[8.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[8.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[8.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[8.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'ignore'
+[8.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'ignore_ament_install'
+[8.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['colcon_pkg']
+[8.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'colcon_pkg'
+[8.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['colcon_meta']
+[8.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'colcon_meta'
+[8.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['ros']
+[8.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'ros'
+[8.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['cmake', 'python']
+[8.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'cmake'
+[8.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'python'
+[8.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extensions ['python_setup_py']
+[8.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera) by extension 'python_setup_py'
+[8.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[8.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'ignore'
+[8.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'ignore_ament_install'
+[8.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extensions ['colcon_pkg']
+[8.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'colcon_pkg'
+[8.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extensions ['colcon_meta']
+[8.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'colcon_meta'
+[8.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extensions ['ros']
+[8.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera) by extension 'ros'
+[9.022s] DEBUG:colcon.colcon_core.package_identification:Package 'src/astra_camera/astra_camera' with type 'ros.ament_cmake' and name 'astra_camera'
+[9.023s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[9.024s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'ignore'
+[9.025s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'ignore_ament_install'
+[9.025s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extensions ['colcon_pkg']
+[9.026s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'colcon_pkg'
+[9.026s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extensions ['colcon_meta']
+[9.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'colcon_meta'
+[9.028s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extensions ['ros']
+[9.028s] Level 1:colcon.colcon_core.package_identification:_identify(src/astra_camera/astra_camera_msgs) by extension 'ros'
+[9.034s] DEBUG:colcon.colcon_core.package_identification:Package 'src/astra_camera/astra_camera_msgs' with type 'ros.ament_cmake' and name 'astra_camera_msgs'
+[9.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extensions ['ignore', 'ignore_ament_install']
+[9.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'ignore'
+[9.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'ignore_ament_install'
+[9.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extensions ['colcon_pkg']
+[9.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'colcon_pkg'
+[9.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extensions ['colcon_meta']
+[9.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'colcon_meta'
+[9.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extensions ['ros']
+[9.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/calib_correspondences) by extension 'ros'
+[9.040s] DEBUG:colcon.colcon_core.package_identification:Package 'src/calib_correspondences' with type 'ros.ament_cmake' and name 'calib_correspondences'
+[9.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[9.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[9.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[9.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[9.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[9.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[9.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[9.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[9.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[9.044s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[9.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['ignore', 'ignore_ament_install']
+[9.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'ignore'
+[9.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'ignore_ament_install'
+[9.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['colcon_pkg']
+[9.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'colcon_pkg'
+[9.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['colcon_meta']
+[9.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'colcon_meta'
+[9.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extensions ['ros']
+[9.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_aruco) by extension 'ros'
+[9.048s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection_aruco' with type 'ros.ament_python' and name 'detection_aruco'
+[9.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[9.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'ignore'
+[9.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'ignore_ament_install'
+[9.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extensions ['colcon_pkg']
+[9.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'colcon_pkg'
+[9.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extensions ['colcon_meta']
+[9.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'colcon_meta'
+[9.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extensions ['ros']
+[9.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_astra_camera) by extension 'ros'
+[9.051s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection_astra_camera' with type 'ros.ament_python' and name 'detection_astra_camera'
+[9.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_human_ros) by extensions ['ignore', 'ignore_ament_install']
+[9.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_human_ros) by extension 'ignore'
+[9.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_human_ros) by extension 'ignore_ament_install'
+[9.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_human_ros) by extensions ['colcon_pkg']
+[9.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_human_ros) by extension 'colcon_pkg'
+[9.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_human_ros) by extensions ['colcon_meta']
+[9.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_human_ros) by extension 'colcon_meta'
+[9.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_human_ros) by extensions ['ros']
+[9.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_human_ros) by extension 'ros'
+[9.087s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection_human_ros' with type 'ros.ament_python' and name 'detection_human_ros'
+[9.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_person) by extensions ['ignore', 'ignore_ament_install']
+[9.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_person) by extension 'ignore'
+[9.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_person) by extension 'ignore_ament_install'
+[9.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_person) by extensions ['colcon_pkg']
+[9.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_person) by extension 'colcon_pkg'
+[9.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_person) by extensions ['colcon_meta']
+[9.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_person) by extension 'colcon_meta'
+[9.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_person) by extensions ['ros']
+[9.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_person) by extension 'ros'
+[9.092s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection_person' with type 'ros.ament_python' and name 'detection_person'
+[9.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/pcl_example) by extensions ['ignore', 'ignore_ament_install']
+[9.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/pcl_example) by extension 'ignore'
+[9.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/pcl_example) by extension 'ignore_ament_install'
+[9.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/pcl_example) by extensions ['colcon_pkg']
+[9.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/pcl_example) by extension 'colcon_pkg'
+[9.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/pcl_example) by extensions ['colcon_meta']
+[9.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/pcl_example) by extension 'colcon_meta'
+[9.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/pcl_example) by extensions ['ros']
+[9.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/pcl_example) by extension 'ros'
+[9.122s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pcl_example' with type 'ros.ament_cmake' and name 'pcl_example'
+[9.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[9.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[9.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[9.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[9.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[9.479s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'astra_camera_msgs' in 'src/astra_camera/astra_camera_msgs'
+[9.480s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'calib_correspondences' in 'src/calib_correspondences'
+[9.480s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'custom_msgs' in 'src/custom_msgs'
+[9.480s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'pcl_example' in 'src/pcl_example'
+[9.480s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'astra_camera' in 'src/astra_camera/astra_camera'
+[9.481s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'detection_aruco' in 'src/detection_aruco'
+[9.481s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'detection_astra_camera' in 'src/detection_astra_camera'
+[9.481s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'detection_human_ros' in 'src/detection_human_ros'
+[9.482s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[9.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[9.569s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/andre/ros2_ws/install
+[9.572s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[9.575s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[12.759s] Level 5:colcon.colcon_core.verb:set package 'detection_person' build argument 'cmake_args' from command line to 'None'
+[12.760s] Level 5:colcon.colcon_core.verb:set package 'detection_person' build argument 'cmake_target' from command line to 'None'
+[12.761s] Level 5:colcon.colcon_core.verb:set package 'detection_person' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[12.761s] Level 5:colcon.colcon_core.verb:set package 'detection_person' build argument 'cmake_clean_cache' from command line to 'False'
+[12.761s] Level 5:colcon.colcon_core.verb:set package 'detection_person' build argument 'cmake_clean_first' from command line to 'False'
+[12.762s] Level 5:colcon.colcon_core.verb:set package 'detection_person' build argument 'cmake_force_configure' from command line to 'False'
+[12.762s] Level 5:colcon.colcon_core.verb:set package 'detection_person' build argument 'ament_cmake_args' from command line to 'None'
+[12.762s] Level 5:colcon.colcon_core.verb:set package 'detection_person' build argument 'catkin_cmake_args' from command line to 'None'
+[12.762s] Level 5:colcon.colcon_core.verb:set package 'detection_person' build argument 'catkin_skip_building_tests' from command line to 'False'
+[12.763s] DEBUG:colcon.colcon_core.verb:Building package 'detection_person' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/detection_person', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/detection_person', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/detection_person', 'symlink_install': False, 'test_result_base': None}
+[12.763s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[12.766s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[12.766s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andre/ros2_ws/src/detection_person' with build type 'ament_python'
+[12.767s] Level 1:colcon.colcon_core.shell:create_environment_hook('detection_person', 'ament_prefix_path')
+[12.829s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[12.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/detection_person/share/detection_person/hook/ament_prefix_path.ps1'
+[12.846s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/detection_person/share/detection_person/hook/ament_prefix_path.dsv'
+[12.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/detection_person/share/detection_person/hook/ament_prefix_path.sh'
+[12.900s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.901s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.997s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andre/ros2_ws/src/detection_person'
+[13.998s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.999s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/src/detection_person': PYTHONPATH=/home/andre/ros2_ws/build/detection_person/prefix_override:/home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_person build --build-base /home/andre/ros2_ws/build/detection_person/build install --record /home/andre/ros2_ws/build/detection_person/install.log --single-version-externally-managed install_data
+[17.062s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/src/detection_person' returned '0': PYTHONPATH=/home/andre/ros2_ws/build/detection_person/prefix_override:/home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/detection_person build --build-base /home/andre/ros2_ws/build/detection_person/build install --record /home/andre/ros2_ws/build/detection_person/install.log --single-version-externally-managed install_data
+[17.152s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/detection_person' for CMake module files
+[17.153s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/detection_person' for CMake config files
+[17.156s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/detection_person/lib'
+[17.156s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/detection_person/bin'
+[17.156s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/detection_person/lib/pkgconfig/detection_person.pc'
+[17.159s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages'
+[17.160s] Level 1:colcon.colcon_core.shell:create_environment_hook('detection_person', 'pythonpath')
+[17.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/detection_person/share/detection_person/hook/pythonpath.ps1'
+[17.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/detection_person/share/detection_person/hook/pythonpath.dsv'
+[17.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/detection_person/share/detection_person/hook/pythonpath.sh'
+[17.175s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/detection_person/bin'
+[17.176s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(detection_person)
+[17.177s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/detection_person/share/detection_person/package.ps1'
+[17.185s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/detection_person/share/detection_person/package.dsv'
+[17.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/detection_person/share/detection_person/package.sh'
+[17.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/detection_person/share/detection_person/package.bash'
+[17.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/detection_person/share/detection_person/package.zsh'
+[17.238s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/detection_person/share/colcon-core/packages/detection_person)
+[17.242s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[17.242s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[17.243s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[17.243s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[17.352s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[17.353s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[17.353s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[17.392s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[17.393s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.ps1'
+[17.399s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andre/ros2_ws/install/_local_setup_util_ps1.py'
+[17.413s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.ps1'
+[17.420s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.sh'
+[17.434s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andre/ros2_ws/install/_local_setup_util_sh.py'
+[17.436s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.sh'
+[17.463s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.bash'
+[17.465s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.bash'
+[17.481s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.zsh'
+[17.487s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.zsh'
