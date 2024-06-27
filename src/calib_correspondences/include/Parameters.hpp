@@ -13,6 +13,7 @@
 //Boost
 #include <boost/smart_ptr/shared_ptr.hpp>
 
+
 /**
  * @brief Store and manage all parameters used along the calibration process.
  *
@@ -99,17 +100,32 @@ public:
     void getIndicesFromPairId(std::size_t vector_index, std::size_t& id_i, 
         std::size_t& id_j);
 
+    /**
+     * @brief Retrieve the number of image sensors (cameras) in the system.
+     *
+     * @return number of image sensors (cameras) in the system
+     */
+    std::size_t getNumImgSensors();
+
+    /**
+     * @brief Retrieve the number of depth sensors (RGB-D, LiDAR) in the system.
+     *
+     * @return number of depth sensors in the system
+     */
+    std::size_t getNumCloudSensors();
+
+
     bool verbose;                   
     
     // Image matching
     double max_time_diff;           /**< Max time difference for image pair consideration */ 
 
     // Segmentation of point clouds
-    bool visualize;                
+    bool visualize;        
     double sigma_s;                 /**< Allowed spatial extent for similar points */
     double sigma_r;                 /**< Allowed intensity difference for similar points */
     double max_change_factor;       /**< Max relative depth change for same surface points */
-    double smoothing_size;          /**< Area around point for normal vector computation */
+    int smoothing_size;             /**< Number of nearest neighbour points for normal vector computation */
     double inliers_ratio;           /**< Number of points required to form a plane */
     double angular_th;              /**< Max angular difference for points in a plane (radians) */
     double distance_th;             /**< Max perpendicular distance for points in a plane */
@@ -127,14 +143,15 @@ public:
     // Calibration
     double max_angle;                   /**< Max angle difference for normal vectors in different coordinate systems */
     double max_distance;                /**< Max distance for points considered part of the same plane in different coordinate systems */
-    std::string calib_strategy;         /**< Calibration strategy ("star" or "redundant") */
+    std::string calib_strategy;         /**< Calibration strategy ("standard" or "redundant") */
     std::string algorithm;              /**< Optimization algorithm ("std", "lm", or "lmr") */
     bool error_analysis;                /**< Runs the calibration multiple times (25) with a randomly selected sample of `lim_correspondences` correspondences (for error analysis) */
     std::size_t lim_correspondences;    /**< Limits the values of considered correspondences for the calibration (only for error convergence analysis) */
     
     // Sensor data
+    int num_sensors;                                    /**< Number of sensors in the system */
     std::vector<std::string> sensor_topics;             /**< Storing all sensors' topics */
-    std::vector<std::string> msg_types;                 /**< Storing all sensors' message types (`Image` or P`ointCloud2`)*/
+    std::vector<std::string> msg_types;                 /**< Storing all sensors' message types (`Image` or `PointCloud2`)*/
     std::vector<Eigen::Matrix4f> init_pose;             /**< Initial pose of all sensors in a 4x4 matrix using the same order as `sensor_topics` */
     std::map< std::string, std::size_t > sensor_id;     /**< Maps all topics to a number */
 };

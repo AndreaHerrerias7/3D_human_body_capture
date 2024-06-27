@@ -17,20 +17,22 @@
  * 
  * This class represents a plane in the Hesse normal form, i. e. it is
  * determined by its normal vector n and the minimal distance to the origin d 
- * in meters.
+ * in meters. Optionally a centroid can be added that is used for the 
+ * visualization but mostly not needed.
  */
 class Plane
 {
 public:
-    Eigen::Vector3f n; /**< Normal vector of the plane */
-    float d; /**< Distance from the origin along the normal vector */
+    Eigen::Vector3f n;  /**< Normal vector of the plane */
+    float d;            /**< Distance from the origin along the normal vector */
+    Eigen::Vector3f c;  /**< Centroid, not necessarily to be set */
 
     /**
      * @brief Default constructor.
      */
     Plane()
         : n(Eigen::Vector3f::Zero()), d(0.f)
-    {   }
+    {    }
 
     /**
      * @brief Parameterized constructor.
@@ -43,7 +45,7 @@ public:
     {    }
 
     /**
-     * @brief Print plane data
+     * @brief Print plane data.
      * 
      * This method prints a planes normal vector and distance, e. g. for
      * debugging purposes.
@@ -52,8 +54,19 @@ public:
     {
         std::cout << "n = " << n[0] << ", " << n[1] << ", " << n[2] << ")" << std::endl;
         std::cout << "d = " << d << std::endl;
+        if(hasValidCentroid())
+            std::cout << "c = " << c[0] << ", " << c[1] << ", " << c[2] << ")" << std::endl;
+    }
+
+    /**
+     * @brief Check if the plane has a valid centroid (i. e. not NaN).
+     * 
+     */
+    bool hasValidCentroid() {
+        return !std::isnan(c[0]) && !std::isnan(c[1]) && !std::isnan(c[2]);
     }
 };
+
 
 /** @typedef PlanesList
  *  @brief Alias for a list of Plane objects.

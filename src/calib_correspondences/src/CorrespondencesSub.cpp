@@ -57,6 +57,20 @@ void CorrespondencesSub::rcvMessage(const custom_msgs::msg::Correspondences &msg
         p2.n[1] = msg.correspondences[i].second.n.y;
         p2.n[2] = msg.correspondences[i].second.n.z;
 
+        // std::cout << "Recieved:" << std::endl;
+        // std::cout << "first:" << std::endl;
+        // std::cout << "n[0] = " << msg.correspondences[i].first.n.x << std::endl;
+        // std::cout << "n[1] = " << msg.correspondences[i].first.n.y << std::endl;
+        // std::cout << "n[2] = " << msg.correspondences[i].first.n.z << std::endl;
+        // std::cout << "d = " << msg.correspondences[i].first.d << std::endl;
+        // std::cout << "-----" << std::endl;
+        // std::cout << "second:" << std::endl;
+        // std::cout << "n[0] = " << msg.correspondences[i].second.n.x << std::endl;
+        // std::cout << "n[1] = " << msg.correspondences[i].second.n.y << std::endl;
+        // std::cout << "n[2] = " << msg.correspondences[i].second.n.z << std::endl;
+        // std::cout << "d = " << msg.correspondences[i].second.d << std::endl;
+        // std::cout << "-----" << std::endl;
+
         // Put back together into match
         if (id_first > id_second)
         {
@@ -68,7 +82,8 @@ void CorrespondencesSub::rcvMessage(const custom_msgs::msg::Correspondences &msg
             match.first = p1;
             match.second = p2;
         }
-        else std::cerr << "Sensor labels in custom_msgs::msg::Correspondences msg must be different." << std::endl;
+        else 
+            std::cerr << "Sensor labels in custom_msgs::msg::Correspondences msg must be different." << std::endl;
 
         correspondences.push_back(match);
 
@@ -76,7 +91,7 @@ void CorrespondencesSub::rcvMessage(const custom_msgs::msg::Correspondences &msg
     std::size_t index = params_->getPairId(id_first, id_second);
     all_correspondences[index].insert(all_correspondences[index].end(), correspondences.begin(), correspondences.end()); 
     
-    if (all_correspondences[index].size() + correspondences.size() > params_->lim_correspondences)
+    if (all_correspondences[index].size() + correspondences.size() > params_->lim_correspondences && params_->error_analysis == true)
     {
         RCLCPP_INFO_STREAM(this->get_logger(), "Limit of " << params_->lim_correspondences << " correspondences reached for (" << id_first << ", " << id_second << ").");
     }

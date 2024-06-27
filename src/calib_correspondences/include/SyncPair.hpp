@@ -35,9 +35,11 @@ public:
      */
     SyncPair(std::string topic1, std::string topic2, rclcpp::Node *node)  
     {
-        sub1 = std::make_shared<message_filters::Subscriber<Msg1>>(node, topic1, rmw_qos_profile_default);
-        sub2 = std::make_shared<message_filters::Subscriber<Msg2>>(node, topic2, rmw_qos_profile_default);
-        sync = std::make_shared<message_filters::Synchronizer<SyncPolicy>>(SyncPolicy(10), *sub1, *sub2);
+        rmw_qos_profile_t qos_profile = rmw_qos_profile_default;
+        qos_profile.reliability = RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT;
+        sub1 = std::make_shared<message_filters::Subscriber<Msg1>>(node, topic1, qos_profile);
+        sub2 = std::make_shared<message_filters::Subscriber<Msg2>>(node, topic2, qos_profile);
+        sync = std::make_shared<message_filters::Synchronizer<SyncPolicy>>(SyncPolicy(50), *sub1, *sub2);
     }
 
     /// Shared pointer to the synchronizer that uses the defined SyncPolicy.

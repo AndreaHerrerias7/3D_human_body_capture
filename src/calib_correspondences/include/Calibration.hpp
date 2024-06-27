@@ -4,7 +4,6 @@
 #include <string>
 #include <vector>
 #include <map>
-#include <utility>
 #include <cstddef>
 
 #include "Parameters.hpp"
@@ -28,7 +27,7 @@ public:
     /**
      * @brief Run calibrations according to `calib_strategy` and `algorithm`.
      * 
-     * If `calib_strategy` is set to "star", the calibration is run for every
+     * If `calib_strategy` is set to "standard", the calibration is run for every
      * `params->sensor_id` combination 0-i (i = 1, ..., number of sensors - 1),
      * i. e. all sensors are calibrated with respect to the reference sensor 
      * with ID 0. Mind that this requires data for every of these combinations 
@@ -39,7 +38,7 @@ public:
      * 0 - 2 \n
      * 0 - 3 \n
      * where sensor 0 is the reference. \n
-     * If `calib_strategy` is set to "star", the calibration is run for every 
+     * If `calib_strategy` is set to "standard", the calibration is run for every 
      * possible 2-sensor combination in the system. This is kind of redundant,
      * but might be interesting for future purposes. Apparently, to run this 
      * type of calibration, `corr_vec` needs entries in every field (i. e. for 

@@ -12,7 +12,7 @@ Parameters::Parameters() {
     sigma_s = 0.0;
     sigma_r = 0.0;
     max_change_factor = 0.0;
-    smoothing_size = 0.0;
+    smoothing_size = 0;
     inliers_ratio = 0.0;
     angular_th = 0.0;
     distance_th = 0.0;
@@ -31,6 +31,7 @@ Parameters::Parameters() {
     algorithm = "";
     error_analysis = false;
     lim_correspondences = 1000;
+    num_sensors = 0;
 }
 
 
@@ -47,7 +48,17 @@ void Parameters::addSensorPose(std::string topic, std::string msg_type,
     init_pose.push_back(pose_i);
     sensor_topics.push_back(topic);
     msg_types.push_back(msg_type);
-}
+
+    // if (topic != "/ouster/points")
+    // {
+    //     Eigen::Matrix3f A;
+    //     A << 0., 0., -1., 1., 0., 0., 0., -1., 0.;
+    //     pose_i.block<3,3>(0,0) = A;
+    // }
+
+    // std::cout << "Matrix for " << topic << ": " << std::endl;
+    // std::cout << pose_i << std::endl;
+} 
 
 
 void Parameters::loadFromYAML(const std::string& filename) {
@@ -72,7 +83,7 @@ void Parameters::loadFromYAML(const std::string& filename) {
     sigma_s = config["sigma_s"].as<double>();
     sigma_r = config["sigma_r"].as<double>();
     max_change_factor = config["max_change_factor"].as<double>();
-    smoothing_size = config["smoothing_size"].as<double>();
+    smoothing_size = config["smoothing_size"].as<int>();
     inliers_ratio = config["inliers_ratio"].as<double>();
     angular_th = config["angular_th"].as<double>();
     distance_th = config["distance_th"].as<double>();
@@ -94,7 +105,13 @@ void Parameters::loadFromYAML(const std::string& filename) {
     lim_correspondences = config["lim_correspondences"].as<std::size_t>();
 
     // Process sensor data
-    int num_sensors = config["num_sensors"].as<int>();
+    num_sensors = config["num_sensors"].as<int>();
+
+    if (num_sensors < 2 && calib_strategy == "standard")
+        std::cerr << "At least 2 sensors required for standard calibration. " << num_sensors << " were given." << std::endl;
+
+    else if (num_sensors < 3 && calib_strategy == "redundant")
+        std::cerr << "At least 3 sensors required for loop calibration. " << num_sensors << " were given." << std::endl;
 
     for (int i = 0; i < num_sensors; ++i) 
     {
@@ -144,4 +161,34 @@ void Parameters::getIndicesFromPairId(std::size_t vector_index, std::size_t& id_
         id_i++;
     }
     id_j = id_i + 1 + vector_index;
+}
+
+
+std::size_t Parameters::getNumImgSensors()
+{
+    std::size_t img_counter = 0;
+
+    for (auto &msg_type : msg_types)
+    {
+        if (msg_type == "Image")
+        {   
+            img_counter++;
+        }
+    }
+    return img_counter;
+}
+
+
+std::size_t Parameters::getNumCloudSensors()
+{
+    std::size_t cloud_counter = 0;
+
+    for (auto &msg_type : msg_types)
+    {
+        if (msg_type == "PointCloud2")
+        {   
+            cloud_counter++;
+        }
+    }
+    return cloud_counter;
 }

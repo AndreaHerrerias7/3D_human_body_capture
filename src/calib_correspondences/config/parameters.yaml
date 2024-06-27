@@ -20,7 +20,7 @@ sigma_r: 0.005
 # max_change_factor: Maximum allowed change factor between points
 max_change_factor: 0.05
 # smoothing_size: Size of the Gaussian kernel for smoothing
-smoothing_size: 10.0
+smoothing_size: 10
 # inliers_ratio: Ratio of inliers required for segmentation
 inliers_ratio: 0.05
 # angular_th: Maximum allowed angle between normals
@@ -56,9 +56,9 @@ max_angle: 15.0
 # max_distance: Maximum distance for calibration
 max_distance: 0.2
 # calib_strategy: Calibration strategy ('star' or 'redundant')
-calib_strategy: star
+calib_strategy: standard
 # algorithm: Algorithm selection for calibration
-algorithm: lm_robust
+algorithm: std
 # error_analysis: runs the calibration 25 times using a random set of `lim_correspondences` for every calibration
 error_analysis: false
 # lim_correspondences: Limits the max correspondences number to be considered for calibration (for error convergence analysis), set to big number if should not be limited
@@ -93,8 +93,8 @@ r0: [0.0, 0.0, 0.0]
 topic_0: "/camera1/color/image_raw"
 msgtype_0: "Image"
 
-t1: [0.54, 0.20, -0.3]
-r1: [30.0, 10.0, 5.0]
+t1: [-3.46, -0.4, -0.0]
+r1: [0.0, 40.0, 0.0]
 topic_1: "/camera2/color/image_raw"
 msgtype_1: "Image"
 
@@ -102,4 +102,3 @@ msgtype_1: "Image"
 #r2: [12.0, 0.0, 0.0]
 #topic_2: "/camera2/color/image_raw"
 #msgtype_2: "Image"
-

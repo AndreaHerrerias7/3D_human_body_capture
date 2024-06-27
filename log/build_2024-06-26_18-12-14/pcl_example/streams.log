@@ -1,0 +1,24 @@
+[0.110s] Invoking command in '/home/andre/ros2_ws/build/pcl_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/andre/ros2_ws/build/pcl_example -- -j4 -l4
+[1.009s] [100%] Built target pcl_example_node
+[1.048s] Invoked command in '/home/andre/ros2_ws/build/pcl_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/andre/ros2_ws/build/pcl_example -- -j4 -l4
+[1.513s] Invoking command in '/home/andre/ros2_ws/build/pcl_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/andre/ros2_ws/build/pcl_example
+[1.593s] -- Install configuration: ""
+[1.626s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/lib/pcl_example/pcl_example_node
+[1.627s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/launch
+[1.628s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/launch/pcl_example_launch.py
+[1.628s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/package_run_dependencies/pcl_example
+[1.629s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/parent_prefix_path/pcl_example
+[1.629s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/ament_prefix_path.sh
+[1.631s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/ament_prefix_path.dsv
+[1.632s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/path.sh
+[1.632s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/environment/path.dsv
+[1.633s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.bash
+[1.633s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.sh
+[1.634s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.zsh
+[1.634s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/local_setup.dsv
+[1.634s] -- Installing: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/package.dsv
+[1.646s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/ament_index/resource_index/packages/pcl_example
+[1.646s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/cmake/pcl_exampleConfig.cmake
+[1.646s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/cmake/pcl_exampleConfig-version.cmake
+[1.646s] -- Up-to-date: /home/andre/ros2_ws/install/pcl_example/share/pcl_example/package.xml
+[1.655s] Invoked command in '/home/andre/ros2_ws/build/pcl_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/andre/ros2_ws/build/pcl_example

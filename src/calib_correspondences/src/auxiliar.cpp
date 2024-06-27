@@ -202,19 +202,39 @@ Vector6d reverse_se3(Vector6d x){
     return x_out;
 }
 
-Matrix4f create_se3(const Vector3f& translation, const Vector3f& rotation)
-{
-    Matrix4f se3Matrix = Matrix4f::Identity();
+Matrix4f create_se3(const Vector3f& translation, const Vector3f& rotation) {
+    // Convert rotation angles from degrees to radians
+    Vector3f r = rotation * M_PI / 180.0;
     
-    // Translation vector
-    se3Matrix.block<3, 1>(0, 3) = translation;
-    // Rotation matrix
-    AngleAxisf yawAngle(rotation[0] * M_PI / 180.0, Vector3f::UnitZ());
-    AngleAxisf pitchAngle(rotation[1] * M_PI / 180.0, Vector3f::UnitY());
-    AngleAxisf rollAngle(rotation[2] * M_PI / 180.0, Vector3f::UnitX());
-    Quaternionf quaternion = yawAngle * pitchAngle * rollAngle;
-    se3Matrix.block<3, 3>(0, 0) = quaternion.toRotationMatrix();
-    return se3Matrix;
+    // Extract individual rotation angles
+    float rx = r(0);
+    float ry = r(1);
+    float rz = r(2);
+    
+    // Rotation matrices around each axis
+    Matrix4f Rx = Matrix4f::Identity();
+    Rx(1, 1) = cos(rx); Rx(1, 2) = -sin(rx);
+    Rx(2, 1) = sin(rx); Rx(2, 2) = cos(rx);
+    
+    Matrix4f Ry = Matrix4f::Identity();
+    Ry(0, 0) = cos(ry); Ry(0, 2) = sin(ry);
+    Ry(2, 0) = -sin(ry); Ry(2, 2) = cos(ry);
+    
+    Matrix4f Rz = Matrix4f::Identity();
+    Rz(0, 0) = cos(rz); Rz(0, 1) = -sin(rz);
+    Rz(1, 0) = sin(rz); Rz(1, 1) = cos(rz);
+    
+    // Combined rotation matrix (order: Rz * Ry * Rx)
+    Matrix4f R = Rx * Ry * Rz;
+    
+    // Translation matrix
+    Matrix4f T_translation = Matrix4f::Identity();
+    T_translation.block<3, 1>(0, 3) = translation;
+
+    // Combined transformation matrix (Translation * Rotation)
+    Matrix4f T = T_translation * R;
+    
+    return T;
 }
 
 Vector3d logarithm_map_so3(Matrix3d R){

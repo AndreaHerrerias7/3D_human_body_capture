@@ -17,10 +17,13 @@ find_package(custom_msgs REQUIRED)
 find_package(tf2_eigen REQUIRED)
 find_package(message_filters REQUIRED)
 find_package(PCL REQUIRED)
+find_package(pcl_conversions REQUIRED)
 find_package(Boost REQUIRED COMPONENTS thread)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(YAML-cpp REQUIRED)
+find_package(OpenMP)
+find_package(visualization_msgs REQUIRED)
 
 include_directories(
   include
@@ -30,7 +33,6 @@ include_directories(
   ${OpenCV_INCLUDE_DIRS}
   ${YAML_CPP_INCLUDE_DIR}
 )
-
 
 add_executable(image_cloud_reader
   src/auxiliar.cpp
@@ -50,7 +52,10 @@ ament_target_dependencies(
   Boost
   cv_bridge
   OpenCV
-  YAML-cpp)
+  YAML-cpp
+  pcl_conversions
+  OpenMP
+  visualization_msgs)
 
 add_executable(corr_subscriber
   src/auxiliar.cpp
@@ -70,7 +75,7 @@ ament_target_dependencies(
   Boost
   YAML-cpp)
 
-target_link_libraries(image_cloud_reader ${PCL_LIBRARIES} Boost::thread ${YAML_CPP_LIBRARIES})
+target_link_libraries(image_cloud_reader ${PCL_LIBRARIES} Boost::thread ${YAML_CPP_LIBRARIES} OpenMP::OpenMP_CXX)
 target_link_libraries(corr_subscriber ${YAML_CPP_LIBRARIES})
 
 install(TARGETS

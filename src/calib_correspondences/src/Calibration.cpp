@@ -39,39 +39,41 @@ inline Eigen::Vector3f undoHomogeneousVector(const Eigen::Vector4f &h)
 Correspondences getRandomElements(std::size_t size, const Correspondences& corr) {
     // Check if l is greater than the size of the input vector
     if (size > corr.size()) {
-        std::cout << "WARNING: Not enough elements. " << corr.size()  << " were given, " << size << " were selected as lim_correspondences parameter." << std::endl;
+        // std::cout << "WARNING: Not enough elements. " << corr.size()  << " were given, " << size << " were selected as lim_correspondences parameter." << std::endl;
         return corr;
     }
 
-    // If size is less than or equal to 10, ensure there are at least 3 elements between selected elements
-    if (size <= 10 && corr.size() > 10) {
-        std::cout << "WARNING: Size is less than or equal to 10. Ensuring at least 3 elements between selected elements." << std::endl;
-        std::size_t min_gap = 3; // Minimum gap between selected elements
-        std::size_t gap = (corr.size() - min_gap * (size - 1)) / size;
-        std::vector<std::size_t> indices;
+    // // If size is less than or equal to 10, ensure there are at least 3 elements between selected elements
+    // if (size <= 10 && corr.size() > size) {
+    //     // std::cout << "WARNING: Size is less than or equal to 10. Ensuring at least 3 elements between selected elements." << std::endl;
+    //     std::size_t min_gap = 3; // Minimum gap between selected elements
+    //     std::size_t gap = (corr.size() - min_gap * (size - 1)) / size;
+    //     std::vector<std::size_t> indices;
 
-        // Random number generator
-        std::random_device rd;
-        std::mt19937 gen(rd());
+    //     // Random number generator
+    //     std::random_device rd;
+    //     std::mt19937 gen(rd());
 
-        // Generate random indices ensuring minimum gap
-        std::uniform_int_distribution<std::size_t> dist(0, gap - 1);
-        std::size_t start_index = dist(gen);
-        for (std::size_t i = 0; i < size; ++i) {
-            indices.push_back(start_index + i * (gap + min_gap));
-        }
+    //     // Generate random indices ensuring minimum gap
+    //     std::uniform_int_distribution<std::size_t> dist(0, gap - 1);
+    //     std::size_t start_index = dist(gen);
+    //     for (std::size_t i = 0; i < size; ++i) {
+    //         indices.push_back(start_index + i * (gap + min_gap));
+    //         std::cout << start_index + i * (gap + min_gap) << std::endl;
+    //     }
 
-        // Copy selected elements into u
-        Correspondences u;
-        for (std::size_t index : indices) {
-            u.push_back(corr[index]);
-        }
+    //     // Copy selected elements into u
+    //     Correspondences u;
+    //     for (std::size_t index : indices) {
+    //         std::cout << "push back vector." << std::endl;
+    //         u.push_back(corr[index]);
+    //     }
 
-        std::cout << "Selected " << size << " elements for calibration randomly with at least 3 elements between them." << std::endl;
-        return u;
-    }
+    //     std::cout << "Selected " << size << " elements for calibration randomly with at least 3 elements between them." << std::endl;
+    //     return u;
+    // }
 
-    // If size is greater than 10 or there are less than 10 elements in the input, proceed normally
+    // If size is greater than 10 or there are not enough elements, proceed normally
     Correspondences u;
 
     // Random number generator
@@ -588,7 +590,7 @@ std::vector<Eigen::Matrix4f> Calibration::runAllCalibrations() {
         }
     };
 
-    if (calib_strategy == "star") {
+    if (calib_strategy == "standard") {
         results.resize(N - 1); // One field for every sensor pair (0, 1), (0, 2), ...
         for (std::size_t k = 1; k < N; ++k) 
         {
@@ -606,6 +608,7 @@ std::vector<Eigen::Matrix4f> Calibration::runAllCalibrations() {
         std::size_t iters = params_->error_analysis ? 25 : 1;
         std::vector<Eigen::Matrix4f> CL_vector(iters, Eigen::Matrix4f::Zero()); // Store individual closed loop errors
         Eigen::Matrix4f sum_CL = Eigen::Matrix4f::Zero();    // Store the sum of closed loop matrices
+        Eigen::Matrix4f T_total;
 
         for (std::size_t i = 0; i < iters; ++i) 
         {
@@ -627,10 +630,11 @@ std::vector<Eigen::Matrix4f> Calibration::runAllCalibrations() {
                     std::cout <<"WARNING: No data for sensor pair (" << id_i << ", " << id_j << ")." << std::endl;
             }
 
+            T_total = Eigen::Matrix4f::Identity();
+
             if (N > 2)
             {
                 // Calculate error by closed loop
-                Eigen::Matrix4f T_total = Eigen::Matrix4f::Identity();
                 bool last = false;
                 size_t id1, id2;
                 for (std::size_t l = 0; l < N; ++l) 
@@ -653,9 +657,8 @@ std::vector<Eigen::Matrix4f> Calibration::runAllCalibrations() {
                 }
                 std::cout << std::endl;
 
-                Eigen::Matrix4f T_err = T_total;
-                sum_CL += T_err;
-                CL_vector[i] = T_err;
+                sum_CL += T_total;
+                CL_vector[i] = T_total;
             }
             else 
             {
@@ -676,9 +679,6 @@ std::vector<Eigen::Matrix4f> Calibration::runAllCalibrations() {
 
             std::vector<float> angles = extractEulerAngles(mean_rotation_matrix);
 
-            // float angle_x = atan2(R32, R33) * 180 / M_PI;
-            // float angle_y = atan2(-R31, sqrt(R32*R32 + R33*R33)) * 180 / M_PI;
-            // float angle_z = atan2(R21, R11) * 180 / M_PI;
             std::cout << "Angle errors:" << std::endl;
             std::cout << "\tdeg(x) = " << angles[0] << std::endl;
             std::cout << "\tdeg(y) = " << angles[1] << std::endl;
@@ -689,6 +689,7 @@ std::vector<Eigen::Matrix4f> Calibration::runAllCalibrations() {
 
             std::vector<float> squared_diffs_R;
             std::vector<float> squared_diffs_t;
+            
             // Calc std deviation
             for (const auto& res : CL_vector)
             {
@@ -712,8 +713,12 @@ std::vector<Eigen::Matrix4f> Calibration::runAllCalibrations() {
             std::cout << "Rotation error standard deviation (norm): " << stddev_R_err << std::endl;
             std::cout << "Translation error standard deviation (meters): " << stddev_t_err << std::endl;
         }
+        else if (!params_->error_analysis)
+        {
+            std::cout << "Closed loop transformation matrix:" << std::endl << T_total << std::endl;
+        }
     } else {
-        std::cerr << calib_strategy << " is not a valid calibration strategy. Set a feasible parameter ('redundant' or 'star')." << std::endl;
+        std::cerr << calib_strategy << " is not a valid calibration strategy. Set a feasible parameter ('redundant' or 'standard')." << std::endl;
     }
 
     return results;

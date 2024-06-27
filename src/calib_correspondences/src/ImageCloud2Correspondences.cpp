@@ -25,15 +25,15 @@ ImageCloud2Correspondences::ImageCloud2Correspondences() :
 //----------------------------------------------------------------------------//
 
     // Initialize tools from fetched parameters
-    tools_.emplace(params_);
+    tools_.emplace(params_, *this);
 
     // Initialize synchronizers
     rclcpp::Duration time_diff = rclcpp::Duration::from_seconds(params_->max_time_diff);
     std::string policy;
     
-    if (params_->calib_strategy == "star") 
+    if (params_->calib_strategy == "standard") 
     {
-        for (std::size_t i = 1; i < params_->sensor_topics.size(); ++i)
+        for (int i = 1; i < params_->num_sensors; ++i)
         {   
             if (params_->msg_types[0] == "PointCloud2" && params_->msg_types[i] == "Image")
             {
@@ -158,7 +158,43 @@ ImageCloud2Correspondences::ImageCloud2Correspondences() :
     }
 
     publisher_ = this->create_publisher<custom_msgs::msg::Correspondences>("/custom_msgs/msg/correspondences", 10);
+
+    // One element for every sensor pair to count the correspondences
+    int N = params_->num_sensors;
+    corr_counter.resize(params_->calib_strategy == "redundant" ? (N * (N - 1) / 2) : (N - 1));
+
+
+    // Visualization (initialize all publishers)
+    // std::size_t img_counter = params_->getNumImgSensors();
+    // tools_->vis_planes_img_.resize(img_counter);
+    // std::size_t pc2_counter = params_->getNumCloudSensors();
+    // tools_->vis_planes_pc_.resize(pc2_counter);
+    // tools_->vis_marker_.resize(pc2_counter);
+
+    // for (std::size_t i = 0; i < img_counter; ++i)
+    //     tools_->vis_planes_img_[i] = this->create_publisher<sensor_msgs::msg::Image>("/visualize/segmented_image" + std::to_string(i), 10);
+    // for (std::size_t j = 0; j < pc2_counter; ++j)
+    // {
+    //     tools_->vis_planes_pc_[j] = this->create_publisher<sensor_msgs::msg::PointCloud2>("/visualize/segmented_cloud" + std::to_string(j), 10);
+    //     tools_->vis_marker_[j] = this->create_publisher<visualization_msgs::msg::Marker>("/visualize/cloud_marker" + std::to_string(j), 10);
+    // }
 }
+
+
+ImageCloud2Correspondences::~ImageCloud2Correspondences() 
+{
+    std::size_t id_i, id_j;
+    std::cout << "----- Total published correspondences: -----" << std::endl;
+    for (std::size_t idx = 0; idx < corr_counter.size(); ++idx) 
+    {
+        if (corr_counter[idx] > 0) 
+        {
+            params_->getIndicesFromPairId(idx, id_i, id_j);
+            std::cout << "(" << id_i << ", " << id_j << "):\t" << corr_counter[idx] << std::endl;
+        }
+    }
+}
+
 
 void ImageCloud2Correspondences::pubMessage(Correspondences correspondences,
                                             std::string first_label,
@@ -182,20 +218,6 @@ void ImageCloud2Correspondences::pubMessage(Correspondences correspondences,
         plane2.n.y = correspondences[i].second.n[1];
         plane2.n.z = correspondences[i].second.n[2];
 
-        std::cout << "Recieved:" << std::endl;
-        std::cout << "first:" << std::endl;
-        std::cout << "n[0] = " << correspondences[i].first.n[0] << std::endl;
-        std::cout << "n[1] = " << correspondences[i].first.n[1] << std::endl;
-        std::cout << "n[2] = " << correspondences[i].first.n[2] << std::endl;
-        std::cout << "d = " << correspondences[i].first.d << std::endl;
-        std::cout << "-----" << std::endl;
-        std::cout << "second:" << std::endl;
-        std::cout << "n[0] = " << correspondences[i].second.n[0] << std::endl;
-        std::cout << "n[1] = " << correspondences[i].second.n[1] << std::endl;
-        std::cout << "n[2] = " << correspondences[i].second.n[2] << std::endl;
-        std::cout << "d = " << correspondences[i].second.d << std::endl;
-        std::cout << "-----" << std::endl;
-
         // Put planes into Match
         match.first = plane1;
         match.second = plane2;
@@ -207,6 +229,10 @@ void ImageCloud2Correspondences::pubMessage(Correspondences correspondences,
     std::cout << "Successfully published " << correspondences.size() << " plane correspondences." << std::endl;
     std::cout << "Topics: " << first_label << ", " << second_label << std::endl << std::endl;
     publisher_->publish(message);
+
+    std::size_t first_id = params_->sensor_id[first_label];
+    std::size_t second_id = params_->sensor_id[second_label];
+    ++corr_counter[params_->getPairId(first_id, second_id)];
 }
 
 
