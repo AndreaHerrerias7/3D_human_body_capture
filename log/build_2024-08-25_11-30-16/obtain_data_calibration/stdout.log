@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/obtain_data_calibration/obtain_data_calibration.egg-info/PKG-INFO
+writing dependency_links to ../../build/obtain_data_calibration/obtain_data_calibration.egg-info/dependency_links.txt
+writing entry points to ../../build/obtain_data_calibration/obtain_data_calibration.egg-info/entry_points.txt
+writing requirements to ../../build/obtain_data_calibration/obtain_data_calibration.egg-info/requires.txt
+writing top-level names to ../../build/obtain_data_calibration/obtain_data_calibration.egg-info/top_level.txt
+reading manifest file '../../build/obtain_data_calibration/obtain_data_calibration.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/obtain_data_calibration/obtain_data_calibration.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/andre/ros2_ws/install/obtain_data_calibration/lib/python3.10/site-packages/obtain_data_calibration-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/obtain_data_calibration/obtain_data_calibration.egg-info to /home/andre/ros2_ws/install/obtain_data_calibration/lib/python3.10/site-packages/obtain_data_calibration-0.0.0-py3.10.egg-info
+running install_scripts
+Installing obtain_data_calibration script to /home/andre/ros2_ws/install/obtain_data_calibration/lib/obtain_data_calibration
+writing list of installed files to '/home/andre/ros2_ws/build/obtain_data_calibration/install.log'

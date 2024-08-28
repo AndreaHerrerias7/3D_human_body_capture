@@ -1,0 +1,3 @@
+[console_scripts]
+form_body = get_body_reconstruction.get_body_reconstruction:main
+

@@ -5,7 +5,9 @@
   "idl_tuples": [
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Plane.idl",
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PlaneMatch.idl",
-    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Correspondences.idl"
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Correspondences.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Articulations.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/ArticulationList.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -35,6 +37,7 @@
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl",
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Vector3.idl",
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl",
+    "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl",
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Wrench.idl",
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl",
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -66,7 +69,9 @@
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt64.idl",
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl",
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt8.idl",
-    "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl"
+    "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
@@ -80,6 +85,8 @@
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Plane.idl",
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/PlaneMatch.idl",
     "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Correspondences.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Articulations.idl",
+    "/home/andre/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/ArticulationList.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",
@@ -107,6 +114,7 @@
     "/opt/ros/humble/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Vector3.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl",
+    "/opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Wrench.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -138,6 +146,8 @@
     "/opt/ros/humble/share/std_msgs/msg/UInt64.idl",
     "/opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl",
     "/opt/ros/humble/share/std_msgs/msg/UInt8.idl",
-    "/opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl"
+    "/opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
   ]
 }

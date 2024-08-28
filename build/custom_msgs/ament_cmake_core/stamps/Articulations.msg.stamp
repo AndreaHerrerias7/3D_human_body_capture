@@ -1,0 +1,3 @@
+geometry_msgs/Vector3 coordinates
+float32 visibility
+int32 id

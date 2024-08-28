@@ -52,13 +52,14 @@ squareSize: 0.03
 
 ### Parameters for calibration setting
 # max_angle: Maximum angle for calibration
-max_angle: 15.0
+max_angle: 60.0
 # max_distance: Maximum distance for calibration
-max_distance: 0.2
+max_distance: 2.0
 # calib_strategy: Calibration strategy ('star' or 'redundant')
 calib_strategy: standard
 # algorithm: Algorithm selection for calibration
-algorithm: std
+algorithm: lm_robust
+
 # error_analysis: runs the calibration 25 times using a random set of `lim_correspondences` for every calibration
 error_analysis: false
 # lim_correspondences: Limits the max correspondences number to be considered for calibration (for error convergence analysis), set to big number if should not be limited
@@ -93,8 +94,11 @@ r0: [0.0, 0.0, 0.0]
 topic_0: "/camera1/color/image_raw"
 msgtype_0: "Image"
 
-t1: [-3.46, -0.4, -0.0]
-r1: [0.0, 40.0, 0.0]
+
+#t1: [0.42, 0.52, 0.0]
+#r1: [0.0, -45.0, 0.0]
+t1: [1.0, -0.7, 0]
+r1: [0.0, -45, 0.0]
 topic_1: "/camera2/color/image_raw"
 msgtype_1: "Image"
 
@@ -102,3 +106,4 @@ msgtype_1: "Image"
 #r2: [12.0, 0.0, 0.0]
 #topic_2: "/camera2/color/image_raw"
 #msgtype_2: "Image"
+2,90 y 1.30 x 0.78 y  45 y y -30 en x

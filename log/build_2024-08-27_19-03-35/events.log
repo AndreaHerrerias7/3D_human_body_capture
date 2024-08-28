@@ -1,0 +1,625 @@
+[0.000000] (-) TimerEvent: {}
+[0.000473] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.000512] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.000533] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.000552] (-) JobUnselected: {'identifier': 'detection_aruco'}
+[0.000569] (-) JobUnselected: {'identifier': 'detection_person'}
+[0.000587] (-) JobUnselected: {'identifier': 'get_body_reconstruction'}
+[0.000605] (-) JobUnselected: {'identifier': 'my-test-package'}
+[0.000622] (-) JobUnselected: {'identifier': 'obtain_data_calibration'}
+[0.000642] (calib_correspondences) JobQueued: {'identifier': 'calib_correspondences', 'dependencies': OrderedDict()}
+[0.000664] (calib_correspondences) JobStarted: {'identifier': 'calib_correspondences'}
+[0.064038] (calib_correspondences) JobProgress: {'identifier': 'calib_correspondences', 'progress': 'cmake'}
+[0.091769] (calib_correspondences) JobProgress: {'identifier': 'calib_correspondences', 'progress': 'build'}
+[0.097792] (calib_correspondences) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/calib_correspondences', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/calib_correspondences', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1451'), ('SYSTEMD_EXEC_PID', '1647'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '90295'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('JOURNAL_STREAM', '8:11250'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Laptop:@/tmp/.ICE-unix/1623,unix/Laptop:/tmp/.ICE-unix/1623'), ('INVOCATION_ID', '65630afca76b4c708c196c5f3593ec4e'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4XSQS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/pcl_example:/home/andre/ros2_ws/install/obtain_data_calibration:/home/andre/ros2_ws/install/get_body_reconstruction:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:1731fb04-282a-4274-8017-886881a2e4bb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/calib_correspondences'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/obtain_data_calibration/lib/python3.10/site-packages:/home/andre/ros2_ws/install/my-test-package/lib/python3.10/site-packages:/home/andre/ros2_ws/install/get_body_reconstruction/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/apriltag_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/pcl_example:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/obtain_data_calibration:/home/andre/ros2_ws/install/get_body_reconstruction:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[0.101935] (-) TimerEvent: {}
+[0.202400] (-) TimerEvent: {}
+[0.303046] (-) TimerEvent: {}
+[0.403826] (-) TimerEvent: {}
+[0.504742] (-) TimerEvent: {}
+[0.605559] (-) TimerEvent: {}
+[0.706187] (-) TimerEvent: {}
+[0.806702] (-) TimerEvent: {}
+[0.907238] (-) TimerEvent: {}
+[1.007943] (-) TimerEvent: {}
+[1.108695] (-) TimerEvent: {}
+[1.209532] (-) TimerEvent: {}
+[1.310173] (-) TimerEvent: {}
+[1.410949] (-) TimerEvent: {}
+[1.511586] (-) TimerEvent: {}
+[1.612159] (-) TimerEvent: {}
+[1.712846] (-) TimerEvent: {}
+[1.813865] (-) TimerEvent: {}
+[1.867807] (calib_correspondences) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target corr_subscriber\x1b[0m\n'}
+[1.914090] (-) TimerEvent: {}
+[2.014434] (-) TimerEvent: {}
+[2.115054] (-) TimerEvent: {}
+[2.215579] (-) TimerEvent: {}
+[2.316305] (-) TimerEvent: {}
+[2.416924] (-) TimerEvent: {}
+[2.517396] (-) TimerEvent: {}
+[2.521521] (calib_correspondences) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/corr_subscriber.dir/src/CorrespondencesSub.cpp.o\x1b[0m\n'}
+[2.617833] (-) TimerEvent: {}
+[2.718790] (-) TimerEvent: {}
+[2.819495] (-) TimerEvent: {}
+[2.920139] (-) TimerEvent: {}
+[3.020688] (-) TimerEvent: {}
+[3.141355] (-) TimerEvent: {}
+[3.241934] (-) TimerEvent: {}
+[3.342591] (-) TimerEvent: {}
+[3.443428] (-) TimerEvent: {}
+[3.544886] (-) TimerEvent: {}
+[3.645687] (-) TimerEvent: {}
+[3.696356] (calib_correspondences) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/image_cloud_reader.dir/src/ImageCloud2Correspondences.cpp.o\x1b[0m\n'}
+[3.745938] (-) TimerEvent: {}
+[3.846358] (-) TimerEvent: {}
+[3.947046] (-) TimerEvent: {}
+[4.047823] (-) TimerEvent: {}
+[4.148873] (-) TimerEvent: {}
+[4.249909] (-) TimerEvent: {}
+[4.350736] (-) TimerEvent: {}
+[4.451532] (-) TimerEvent: {}
+[4.552211] (-) TimerEvent: {}
+[4.652645] (-) TimerEvent: {}
+[4.753392] (-) TimerEvent: {}
+[4.854432] (-) TimerEvent: {}
+[4.954959] (-) TimerEvent: {}
+[5.055803] (-) TimerEvent: {}
+[5.156395] (-) TimerEvent: {}
+[5.256764] (-) TimerEvent: {}
+[5.357121] (-) TimerEvent: {}
+[5.457567] (-) TimerEvent: {}
+[5.558528] (-) TimerEvent: {}
+[5.659177] (-) TimerEvent: {}
+[5.760007] (-) TimerEvent: {}
+[5.860573] (-) TimerEvent: {}
+[5.960920] (-) TimerEvent: {}
+[6.061288] (-) TimerEvent: {}
+[6.161676] (-) TimerEvent: {}
+[6.262310] (-) TimerEvent: {}
+[6.363192] (-) TimerEvent: {}
+[6.463877] (-) TimerEvent: {}
+[6.564669] (-) TimerEvent: {}
+[6.665431] (-) TimerEvent: {}
+[6.766133] (-) TimerEvent: {}
+[6.867102] (-) TimerEvent: {}
+[6.968695] (-) TimerEvent: {}
+[7.069656] (-) TimerEvent: {}
+[7.170555] (-) TimerEvent: {}
+[7.271452] (-) TimerEvent: {}
+[7.372237] (-) TimerEvent: {}
+[7.473116] (-) TimerEvent: {}
+[7.574089] (-) TimerEvent: {}
+[7.675034] (-) TimerEvent: {}
+[7.775907] (-) TimerEvent: {}
+[7.876914] (-) TimerEvent: {}
+[7.977948] (-) TimerEvent: {}
+[8.078645] (-) TimerEvent: {}
+[8.179567] (-) TimerEvent: {}
+[8.280681] (-) TimerEvent: {}
+[8.381545] (-) TimerEvent: {}
+[8.482896] (-) TimerEvent: {}
+[8.583844] (-) TimerEvent: {}
+[8.684607] (-) TimerEvent: {}
+[8.785467] (-) TimerEvent: {}
+[8.886797] (-) TimerEvent: {}
+[8.987627] (-) TimerEvent: {}
+[9.088648] (-) TimerEvent: {}
+[9.189305] (-) TimerEvent: {}
+[9.289877] (-) TimerEvent: {}
+[9.390343] (-) TimerEvent: {}
+[9.491044] (-) TimerEvent: {}
+[9.592005] (-) TimerEvent: {}
+[9.692875] (-) TimerEvent: {}
+[9.793434] (-) TimerEvent: {}
+[9.893816] (-) TimerEvent: {}
+[9.994303] (-) TimerEvent: {}
+[10.094639] (-) TimerEvent: {}
+[10.195096] (-) TimerEvent: {}
+[10.295508] (-) TimerEvent: {}
+[10.395810] (-) TimerEvent: {}
+[10.496116] (-) TimerEvent: {}
+[10.596421] (-) TimerEvent: {}
+[10.696710] (-) TimerEvent: {}
+[10.797008] (-) TimerEvent: {}
+[10.897386] (-) TimerEvent: {}
+[10.997889] (-) TimerEvent: {}
+[11.098180] (-) TimerEvent: {}
+[11.198579] (-) TimerEvent: {}
+[11.298915] (-) TimerEvent: {}
+[11.399240] (-) TimerEvent: {}
+[11.499575] (-) TimerEvent: {}
+[11.600124] (-) TimerEvent: {}
+[11.700717] (-) TimerEvent: {}
+[11.801052] (-) TimerEvent: {}
+[11.901443] (-) TimerEvent: {}
+[12.001781] (-) TimerEvent: {}
+[12.102135] (-) TimerEvent: {}
+[12.202547] (-) TimerEvent: {}
+[12.302899] (-) TimerEvent: {}
+[12.403587] (-) TimerEvent: {}
+[12.504174] (-) TimerEvent: {}
+[12.604533] (-) TimerEvent: {}
+[12.704895] (-) TimerEvent: {}
+[12.805328] (-) TimerEvent: {}
+[12.905666] (-) TimerEvent: {}
+[13.006007] (-) TimerEvent: {}
+[13.107431] (-) TimerEvent: {}
+[13.208031] (-) TimerEvent: {}
+[13.308494] (-) TimerEvent: {}
+[13.408853] (-) TimerEvent: {}
+[13.509216] (-) TimerEvent: {}
+[13.609565] (-) TimerEvent: {}
+[13.709907] (-) TimerEvent: {}
+[13.810414] (-) TimerEvent: {}
+[13.911350] (-) TimerEvent: {}
+[14.011782] (-) TimerEvent: {}
+[14.112161] (-) TimerEvent: {}
+[14.212535] (-) TimerEvent: {}
+[14.312868] (-) TimerEvent: {}
+[14.413192] (-) TimerEvent: {}
+[14.513591] (-) TimerEvent: {}
+[14.614161] (-) TimerEvent: {}
+[14.714544] (-) TimerEvent: {}
+[14.814890] (-) TimerEvent: {}
+[14.915237] (-) TimerEvent: {}
+[15.015615] (-) TimerEvent: {}
+[15.115979] (-) TimerEvent: {}
+[15.216318] (-) TimerEvent: {}
+[15.316832] (-) TimerEvent: {}
+[15.417486] (-) TimerEvent: {}
+[15.517828] (-) TimerEvent: {}
+[15.618182] (-) TimerEvent: {}
+[15.718573] (-) TimerEvent: {}
+[15.818904] (-) TimerEvent: {}
+[15.919353] (-) TimerEvent: {}
+[16.019921] (-) TimerEvent: {}
+[16.120475] (-) TimerEvent: {}
+[16.220821] (-) TimerEvent: {}
+[16.321183] (-) TimerEvent: {}
+[16.421541] (-) TimerEvent: {}
+[16.521888] (-) TimerEvent: {}
+[16.622232] (-) TimerEvent: {}
+[16.722716] (-) TimerEvent: {}
+[16.823471] (-) TimerEvent: {}
+[16.923819] (-) TimerEvent: {}
+[17.024173] (-) TimerEvent: {}
+[17.124537] (-) TimerEvent: {}
+[17.224871] (-) TimerEvent: {}
+[17.325227] (-) TimerEvent: {}
+[17.425691] (-) TimerEvent: {}
+[17.526540] (-) TimerEvent: {}
+[17.626960] (-) TimerEvent: {}
+[17.727314] (-) TimerEvent: {}
+[17.827665] (-) TimerEvent: {}
+[17.928027] (-) TimerEvent: {}
+[18.028324] (-) TimerEvent: {}
+[18.128717] (-) TimerEvent: {}
+[18.229282] (-) TimerEvent: {}
+[18.330046] (-) TimerEvent: {}
+[18.430329] (-) TimerEvent: {}
+[18.530670] (-) TimerEvent: {}
+[18.631012] (-) TimerEvent: {}
+[18.731331] (-) TimerEvent: {}
+[18.831784] (-) TimerEvent: {}
+[18.932487] (-) TimerEvent: {}
+[19.033499] (-) TimerEvent: {}
+[19.133842] (-) TimerEvent: {}
+[19.234276] (-) TimerEvent: {}
+[19.334666] (-) TimerEvent: {}
+[19.435014] (-) TimerEvent: {}
+[19.535418] (-) TimerEvent: {}
+[19.636154] (-) TimerEvent: {}
+[19.736708] (-) TimerEvent: {}
+[19.837065] (-) TimerEvent: {}
+[19.937427] (-) TimerEvent: {}
+[20.037873] (-) TimerEvent: {}
+[20.138233] (-) TimerEvent: {}
+[20.238608] (-) TimerEvent: {}
+[20.339055] (-) TimerEvent: {}
+[20.439661] (-) TimerEvent: {}
+[20.540126] (-) TimerEvent: {}
+[20.640490] (-) TimerEvent: {}
+[20.740839] (-) TimerEvent: {}
+[20.841296] (-) TimerEvent: {}
+[20.941642] (-) TimerEvent: {}
+[21.042085] (-) TimerEvent: {}
+[21.143187] (-) TimerEvent: {}
+[21.243671] (-) TimerEvent: {}
+[21.344022] (-) TimerEvent: {}
+[21.444422] (-) TimerEvent: {}
+[21.544771] (-) TimerEvent: {}
+[21.645071] (-) TimerEvent: {}
+[21.745468] (-) TimerEvent: {}
+[21.845989] (-) TimerEvent: {}
+[21.946460] (-) TimerEvent: {}
+[22.046787] (-) TimerEvent: {}
+[22.147111] (-) TimerEvent: {}
+[22.247456] (-) TimerEvent: {}
+[22.347809] (-) TimerEvent: {}
+[22.448200] (-) TimerEvent: {}
+[22.548845] (-) TimerEvent: {}
+[22.649204] (-) TimerEvent: {}
+[22.749566] (-) TimerEvent: {}
+[22.849917] (-) TimerEvent: {}
+[22.950291] (-) TimerEvent: {}
+[23.050666] (-) TimerEvent: {}
+[23.151055] (-) TimerEvent: {}
+[23.251533] (-) TimerEvent: {}
+[23.352133] (-) TimerEvent: {}
+[23.452595] (-) TimerEvent: {}
+[23.552969] (-) TimerEvent: {}
+[23.653324] (-) TimerEvent: {}
+[23.753664] (-) TimerEvent: {}
+[23.854018] (-) TimerEvent: {}
+[23.954459] (-) TimerEvent: {}
+[24.055036] (-) TimerEvent: {}
+[24.155543] (-) TimerEvent: {}
+[24.256108] (-) TimerEvent: {}
+[24.356531] (-) TimerEvent: {}
+[24.456851] (-) TimerEvent: {}
+[24.557188] (-) TimerEvent: {}
+[24.658418] (-) TimerEvent: {}
+[24.758959] (-) TimerEvent: {}
+[24.859353] (-) TimerEvent: {}
+[24.959630] (-) TimerEvent: {}
+[25.059939] (-) TimerEvent: {}
+[25.160291] (-) TimerEvent: {}
+[25.260658] (-) TimerEvent: {}
+[25.361180] (-) TimerEvent: {}
+[25.435415] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/CorrespondencesSub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CorrespondencesSub::rcvMessage(const Correspondences&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.435829] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/CorrespondencesSub.cpp:40:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kp1.Plane::c.Eigen::Matrix<float, 3, 1, 0, 3, 1>::<unnamed>.Eigen::PlainObjectBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::m_storage.Eigen::DenseStorage<float, 3, 3, 1, 0>::m_data.Eigen::internal::plain_array<float, 3, 0, 0>::array[1]\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[25.436092] (calib_correspondences) StderrLine: {'line': b'   40 |     Plane \x1b[01;35m\x1b[Kp1\x1b[m\x1b[K, p2;\n'}
+[25.436224] (calib_correspondences) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[25.436359] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/CorrespondencesSub.cpp:40:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kp1.Plane::c.Eigen::Matrix<float, 3, 1, 0, 3, 1>::<unnamed>.Eigen::PlainObjectBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::m_storage.Eigen::DenseStorage<float, 3, 3, 1, 0>::m_data.Eigen::internal::plain_array<float, 3, 0, 0>::array[2]\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[25.436481] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/CorrespondencesSub.cpp:40:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K*(const float*)((char*)&p2 + offsetof(Plane, Plane::c.Eigen::Matrix<float, 3, 1, 0, 3, 1>::<unnamed>.Eigen::PlainObjectBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::<unnamed>.Eigen::MatrixBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::<unnamed>.Eigen::DenseBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::<unnamed>.Eigen::DenseCoeffsBase<Eigen::Matrix<float, 3, 1, 0, 3, 1>, 3>::<unnamed>.Eigen::DenseCoeffsBase<Eigen::Matrix<float, 3, 1, 0, 3, 1>, 1>::<unnamed>.Eigen::DenseCoeffsBase<Eigen::Matrix<float, 3, 1, 0, 3, 1>, 0>::<unnamed>))\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[25.436612] (calib_correspondences) StderrLine: {'line': b'   40 |     Plane p1, \x1b[01;35m\x1b[Kp2\x1b[m\x1b[K;\n'}
+[25.436720] (calib_correspondences) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[25.436826] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/CorrespondencesSub.cpp:40:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kp2.Plane::c.Eigen::Matrix<float, 3, 1, 0, 3, 1>::<unnamed>.Eigen::PlainObjectBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::m_storage.Eigen::DenseStorage<float, 3, 3, 1, 0>::m_data.Eigen::internal::plain_array<float, 3, 0, 0>::array[1]\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[25.436946] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/CorrespondencesSub.cpp:40:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kp2.Plane::c.Eigen::Matrix<float, 3, 1, 0, 3, 1>::<unnamed>.Eigen::PlainObjectBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::m_storage.Eigen::DenseStorage<float, 3, 3, 1, 0>::m_data.Eigen::internal::plain_array<float, 3, 0, 0>::array[2]\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[25.437071] (calib_correspondences) StderrLine: {'line': b'\x1b[01m\x1b[K/home/andre/ros2_ws/src/calib_correspondences/src/CorrespondencesSub.cpp:40:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K*(const float*)((char*)&p1 + offsetof(Plane, Plane::c.Eigen::Matrix<float, 3, 1, 0, 3, 1>::<unnamed>.Eigen::PlainObjectBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::<unnamed>.Eigen::MatrixBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::<unnamed>.Eigen::DenseBase<Eigen::Matrix<float, 3, 1, 0, 3, 1> >::<unnamed>.Eigen::DenseCoeffsBase<Eigen::Matrix<float, 3, 1, 0, 3, 1>, 3>::<unnamed>.Eigen::DenseCoeffsBase<Eigen::Matrix<float, 3, 1, 0, 3, 1>, 1>::<unnamed>.Eigen::DenseCoeffsBase<Eigen::Matrix<float, 3, 1, 0, 3, 1>, 0>::<unnamed>))\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[25.437214] (calib_correspondences) StderrLine: {'line': b'   40 |     Plane \x1b[01;35m\x1b[Kp1\x1b[m\x1b[K, p2;\n'}
+[25.437351] (calib_correspondences) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[25.461410] (-) TimerEvent: {}
+[25.562184] (-) TimerEvent: {}
+[25.662559] (-) TimerEvent: {}
+[25.762879] (-) TimerEvent: {}
+[25.863167] (-) TimerEvent: {}
+[25.963516] (-) TimerEvent: {}
+[26.064183] (-) TimerEvent: {}
+[26.165681] (-) TimerEvent: {}
+[26.266217] (-) TimerEvent: {}
+[26.366577] (-) TimerEvent: {}
+[26.467044] (-) TimerEvent: {}
+[26.567412] (-) TimerEvent: {}
+[26.667766] (-) TimerEvent: {}
+[26.768235] (-) TimerEvent: {}
+[26.868794] (-) TimerEvent: {}
+[26.969319] (-) TimerEvent: {}
+[27.069667] (-) TimerEvent: {}
+[27.170020] (-) TimerEvent: {}
+[27.270336] (-) TimerEvent: {}
+[27.370693] (-) TimerEvent: {}
+[27.472406] (-) TimerEvent: {}
+[27.573425] (-) TimerEvent: {}
+[27.674242] (-) TimerEvent: {}
+[27.774624] (-) TimerEvent: {}
+[27.874962] (-) TimerEvent: {}
+[27.975312] (-) TimerEvent: {}
+[28.075660] (-) TimerEvent: {}
+[28.176336] (-) TimerEvent: {}
+[28.277210] (-) TimerEvent: {}
+[28.377897] (-) TimerEvent: {}
+[28.478259] (-) TimerEvent: {}
+[28.570869] (calib_correspondences) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking CXX executable corr_subscriber\x1b[0m\n'}
+[28.578327] (-) TimerEvent: {}
+[28.678684] (-) TimerEvent: {}
+[28.779009] (-) TimerEvent: {}
+[28.879402] (-) TimerEvent: {}
+[28.980067] (-) TimerEvent: {}
+[29.080574] (-) TimerEvent: {}
+[29.180887] (-) TimerEvent: {}
+[29.281202] (-) TimerEvent: {}
+[29.381545] (-) TimerEvent: {}
+[29.482003] (-) TimerEvent: {}
+[29.582270] (-) TimerEvent: {}
+[29.682707] (-) TimerEvent: {}
+[29.783410] (-) TimerEvent: {}
+[29.883803] (-) TimerEvent: {}
+[29.984133] (-) TimerEvent: {}
+[30.019664] (calib_correspondences) StdoutLine: {'line': b'[ 60%] Built target corr_subscriber\n'}
+[30.084274] (-) TimerEvent: {}
+[30.184568] (-) TimerEvent: {}
+[30.284881] (-) TimerEvent: {}
+[30.385289] (-) TimerEvent: {}
+[30.485765] (-) TimerEvent: {}
+[30.586119] (-) TimerEvent: {}
+[30.686396] (-) TimerEvent: {}
+[30.786775] (-) TimerEvent: {}
+[30.887082] (-) TimerEvent: {}
+[30.987340] (-) TimerEvent: {}
+[31.087689] (-) TimerEvent: {}
+[31.188357] (-) TimerEvent: {}
+[31.288753] (-) TimerEvent: {}
+[31.389080] (-) TimerEvent: {}
+[31.489412] (-) TimerEvent: {}
+[31.589750] (-) TimerEvent: {}
+[31.690070] (-) TimerEvent: {}
+[31.790411] (-) TimerEvent: {}
+[31.890993] (-) TimerEvent: {}
+[31.991640] (-) TimerEvent: {}
+[32.091968] (-) TimerEvent: {}
+[32.192302] (-) TimerEvent: {}
+[32.292597] (-) TimerEvent: {}
+[32.392917] (-) TimerEvent: {}
+[32.493223] (-) TimerEvent: {}
+[32.593552] (-) TimerEvent: {}
+[32.694144] (-) TimerEvent: {}
+[32.794502] (-) TimerEvent: {}
+[32.894813] (-) TimerEvent: {}
+[32.995122] (-) TimerEvent: {}
+[33.095410] (-) TimerEvent: {}
+[33.195735] (-) TimerEvent: {}
+[33.296082] (-) TimerEvent: {}
+[33.396646] (-) TimerEvent: {}
+[33.497277] (-) TimerEvent: {}
+[33.597576] (-) TimerEvent: {}
+[33.697881] (-) TimerEvent: {}
+[33.798190] (-) TimerEvent: {}
+[33.898485] (-) TimerEvent: {}
+[33.998905] (-) TimerEvent: {}
+[34.099544] (-) TimerEvent: {}
+[34.200090] (-) TimerEvent: {}
+[34.300380] (-) TimerEvent: {}
+[34.400657] (-) TimerEvent: {}
+[34.500970] (-) TimerEvent: {}
+[34.601299] (-) TimerEvent: {}
+[34.701570] (-) TimerEvent: {}
+[34.802019] (-) TimerEvent: {}
+[34.902740] (-) TimerEvent: {}
+[35.003148] (-) TimerEvent: {}
+[35.103425] (-) TimerEvent: {}
+[35.203734] (-) TimerEvent: {}
+[35.304036] (-) TimerEvent: {}
+[35.404346] (-) TimerEvent: {}
+[35.504742] (-) TimerEvent: {}
+[35.605465] (-) TimerEvent: {}
+[35.705793] (-) TimerEvent: {}
+[35.806103] (-) TimerEvent: {}
+[35.906343] (-) TimerEvent: {}
+[36.006656] (-) TimerEvent: {}
+[36.106956] (-) TimerEvent: {}
+[36.207362] (-) TimerEvent: {}
+[36.307935] (-) TimerEvent: {}
+[36.408443] (-) TimerEvent: {}
+[36.508747] (-) TimerEvent: {}
+[36.609074] (-) TimerEvent: {}
+[36.709345] (-) TimerEvent: {}
+[36.809622] (-) TimerEvent: {}
+[36.909962] (-) TimerEvent: {}
+[37.010639] (-) TimerEvent: {}
+[37.111337] (-) TimerEvent: {}
+[37.211642] (-) TimerEvent: {}
+[37.311944] (-) TimerEvent: {}
+[37.412271] (-) TimerEvent: {}
+[37.512557] (-) TimerEvent: {}
+[37.612863] (-) TimerEvent: {}
+[37.713223] (-) TimerEvent: {}
+[37.813694] (-) TimerEvent: {}
+[37.914008] (-) TimerEvent: {}
+[38.014326] (-) TimerEvent: {}
+[38.114653] (-) TimerEvent: {}
+[38.214983] (-) TimerEvent: {}
+[38.315260] (-) TimerEvent: {}
+[38.415603] (-) TimerEvent: {}
+[38.516185] (-) TimerEvent: {}
+[38.616640] (-) TimerEvent: {}
+[38.716943] (-) TimerEvent: {}
+[38.817266] (-) TimerEvent: {}
+[38.917567] (-) TimerEvent: {}
+[39.017879] (-) TimerEvent: {}
+[39.118158] (-) TimerEvent: {}
+[39.218604] (-) TimerEvent: {}
+[39.319083] (-) TimerEvent: {}
+[39.419338] (-) TimerEvent: {}
+[39.519632] (-) TimerEvent: {}
+[39.619930] (-) TimerEvent: {}
+[39.720228] (-) TimerEvent: {}
+[39.820501] (-) TimerEvent: {}
+[39.920861] (-) TimerEvent: {}
+[40.021398] (-) TimerEvent: {}
+[40.121751] (-) TimerEvent: {}
+[40.222053] (-) TimerEvent: {}
+[40.322337] (-) TimerEvent: {}
+[40.422637] (-) TimerEvent: {}
+[40.522939] (-) TimerEvent: {}
+[40.623349] (-) TimerEvent: {}
+[40.724051] (-) TimerEvent: {}
+[40.824686] (-) TimerEvent: {}
+[40.925013] (-) TimerEvent: {}
+[41.025324] (-) TimerEvent: {}
+[41.125620] (-) TimerEvent: {}
+[41.225923] (-) TimerEvent: {}
+[41.326227] (-) TimerEvent: {}
+[41.426579] (-) TimerEvent: {}
+[41.527067] (-) TimerEvent: {}
+[41.627343] (-) TimerEvent: {}
+[41.727646] (-) TimerEvent: {}
+[41.827942] (-) TimerEvent: {}
+[41.928273] (-) TimerEvent: {}
+[42.028574] (-) TimerEvent: {}
+[42.128985] (-) TimerEvent: {}
+[42.229417] (-) TimerEvent: {}
+[42.329734] (-) TimerEvent: {}
+[42.430034] (-) TimerEvent: {}
+[42.530338] (-) TimerEvent: {}
+[42.630636] (-) TimerEvent: {}
+[42.730967] (-) TimerEvent: {}
+[42.831756] (-) TimerEvent: {}
+[42.932342] (-) TimerEvent: {}
+[43.032666] (-) TimerEvent: {}
+[43.132997] (-) TimerEvent: {}
+[43.233302] (-) TimerEvent: {}
+[43.333583] (-) TimerEvent: {}
+[43.433874] (-) TimerEvent: {}
+[43.534160] (-) TimerEvent: {}
+[43.634566] (-) TimerEvent: {}
+[43.735079] (-) TimerEvent: {}
+[43.835438] (-) TimerEvent: {}
+[43.935750] (-) TimerEvent: {}
+[44.036050] (-) TimerEvent: {}
+[44.136340] (-) TimerEvent: {}
+[44.236637] (-) TimerEvent: {}
+[44.337019] (-) TimerEvent: {}
+[44.437839] (-) TimerEvent: {}
+[44.538191] (-) TimerEvent: {}
+[44.638474] (-) TimerEvent: {}
+[44.738782] (-) TimerEvent: {}
+[44.839040] (-) TimerEvent: {}
+[44.939338] (-) TimerEvent: {}
+[45.039703] (-) TimerEvent: {}
+[45.140363] (-) TimerEvent: {}
+[45.240753] (-) TimerEvent: {}
+[45.341087] (-) TimerEvent: {}
+[45.441347] (-) TimerEvent: {}
+[45.541672] (-) TimerEvent: {}
+[45.641997] (-) TimerEvent: {}
+[45.742322] (-) TimerEvent: {}
+[45.842805] (-) TimerEvent: {}
+[45.943425] (-) TimerEvent: {}
+[46.043736] (-) TimerEvent: {}
+[46.144060] (-) TimerEvent: {}
+[46.244344] (-) TimerEvent: {}
+[46.344653] (-) TimerEvent: {}
+[46.429730] (calib_correspondences) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable image_cloud_reader\x1b[0m\n'}
+[46.444798] (-) TimerEvent: {}
+[46.545111] (-) TimerEvent: {}
+[46.645660] (-) TimerEvent: {}
+[46.746286] (-) TimerEvent: {}
+[46.846967] (-) TimerEvent: {}
+[46.947802] (-) TimerEvent: {}
+[47.048408] (-) TimerEvent: {}
+[47.148979] (-) TimerEvent: {}
+[47.249611] (-) TimerEvent: {}
+[47.350391] (-) TimerEvent: {}
+[47.451074] (-) TimerEvent: {}
+[47.551750] (-) TimerEvent: {}
+[47.652347] (-) TimerEvent: {}
+[47.752710] (-) TimerEvent: {}
+[47.853502] (-) TimerEvent: {}
+[47.953903] (-) TimerEvent: {}
+[48.054605] (-) TimerEvent: {}
+[48.155335] (-) TimerEvent: {}
+[48.255888] (-) TimerEvent: {}
+[48.359317] (-) TimerEvent: {}
+[48.459806] (-) TimerEvent: {}
+[48.560438] (-) TimerEvent: {}
+[48.661166] (-) TimerEvent: {}
+[48.761977] (-) TimerEvent: {}
+[48.862705] (-) TimerEvent: {}
+[48.963395] (-) TimerEvent: {}
+[49.064054] (-) TimerEvent: {}
+[49.164780] (-) TimerEvent: {}
+[49.265408] (-) TimerEvent: {}
+[49.366138] (-) TimerEvent: {}
+[49.467009] (-) TimerEvent: {}
+[49.567951] (-) TimerEvent: {}
+[49.668734] (-) TimerEvent: {}
+[49.769086] (-) TimerEvent: {}
+[49.869697] (-) TimerEvent: {}
+[49.970240] (-) TimerEvent: {}
+[50.071107] (-) TimerEvent: {}
+[50.171852] (-) TimerEvent: {}
+[50.272515] (-) TimerEvent: {}
+[50.373148] (-) TimerEvent: {}
+[50.473680] (-) TimerEvent: {}
+[50.574334] (-) TimerEvent: {}
+[50.674979] (-) TimerEvent: {}
+[50.775954] (-) TimerEvent: {}
+[50.876667] (-) TimerEvent: {}
+[50.977482] (-) TimerEvent: {}
+[51.078191] (-) TimerEvent: {}
+[51.179008] (-) TimerEvent: {}
+[51.279834] (-) TimerEvent: {}
+[51.380694] (-) TimerEvent: {}
+[51.481386] (-) TimerEvent: {}
+[51.581797] (-) TimerEvent: {}
+[51.682590] (-) TimerEvent: {}
+[51.783271] (-) TimerEvent: {}
+[51.884101] (-) TimerEvent: {}
+[51.984979] (-) TimerEvent: {}
+[52.086093] (-) TimerEvent: {}
+[52.187011] (-) TimerEvent: {}
+[52.287534] (-) TimerEvent: {}
+[52.388226] (-) TimerEvent: {}
+[52.488749] (-) TimerEvent: {}
+[52.589462] (-) TimerEvent: {}
+[52.690163] (-) TimerEvent: {}
+[52.791019] (-) TimerEvent: {}
+[52.891512] (-) TimerEvent: {}
+[52.992371] (-) TimerEvent: {}
+[53.093011] (-) TimerEvent: {}
+[53.193675] (-) TimerEvent: {}
+[53.294410] (-) TimerEvent: {}
+[53.395339] (-) TimerEvent: {}
+[53.496205] (-) TimerEvent: {}
+[53.597038] (-) TimerEvent: {}
+[53.697905] (-) TimerEvent: {}
+[53.798638] (-) TimerEvent: {}
+[53.899372] (-) TimerEvent: {}
+[54.000039] (-) TimerEvent: {}
+[54.100732] (-) TimerEvent: {}
+[54.201397] (-) TimerEvent: {}
+[54.301858] (-) TimerEvent: {}
+[54.402524] (-) TimerEvent: {}
+[54.503014] (-) TimerEvent: {}
+[54.603914] (-) TimerEvent: {}
+[54.704771] (-) TimerEvent: {}
+[54.805572] (-) TimerEvent: {}
+[54.905928] (-) TimerEvent: {}
+[55.006381] (-) TimerEvent: {}
+[55.106853] (-) TimerEvent: {}
+[55.207301] (-) TimerEvent: {}
+[55.307593] (-) TimerEvent: {}
+[55.407961] (-) TimerEvent: {}
+[55.508530] (-) TimerEvent: {}
+[55.556970] (calib_correspondences) StdoutLine: {'line': b'[100%] Built target image_cloud_reader\n'}
+[55.575491] (calib_correspondences) CommandEnded: {'returncode': 0}
+[55.608608] (-) TimerEvent: {}
+[55.632298] (calib_correspondences) JobProgress: {'identifier': 'calib_correspondences', 'progress': 'install'}
+[55.648226] (calib_correspondences) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/calib_correspondences'], 'cwd': '/home/andre/ros2_ws/build/calib_correspondences', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'andre'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/custom_msgs/lib:/home/andre/ros2_ws/install/astra_camera/lib:/home/andre/ros2_ws/install/astra_camera_msgs/lib:/home/andre/ros2_ws/install/apriltag_ros/lib:/home/andre/ros2_ws/install/apriltag_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1451'), ('SYSTEMD_EXEC_PID', '1647'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '90295'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('JOURNAL_STREAM', '8:11250'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'andre'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/andre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Laptop:@/tmp/.ICE-unix/1623,unix/Laptop:/tmp/.ICE-unix/1623'), ('INVOCATION_ID', '65630afca76b4c708c196c5f3593ec4e'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4XSQS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/pcl_example:/home/andre/ros2_ws/install/obtain_data_calibration:/home/andre/ros2_ws/install/get_body_reconstruction:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:1731fb04-282a-4274-8017-886881a2e4bb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/andre/ros2_ws/build/calib_correspondences'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/install/obtain_data_calibration/lib/python3.10/site-packages:/home/andre/ros2_ws/install/my-test-package/lib/python3.10/site-packages:/home/andre/ros2_ws/install/get_body_reconstruction/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_person/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_human_ros/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_astra_camera/lib/python3.10/site-packages:/home/andre/ros2_ws/install/detection_aruco/lib/python3.10/site-packages:/home/andre/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/andre/ros2_ws/install/apriltag_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/pcl_example:/home/andre/ros2_ws/install/custom_msgs:/home/andre/ros2_ws/install/calib_correspondences:/home/andre/ros2_ws/install/astra_camera:/home/andre/ros2_ws/install/astra_camera_msgs:/home/andre/ros2_ws/install/apriltag_ros:/home/andre/ros2_ws/install/apriltag_msgs:/home/andre/ros2_ws/install/obtain_data_calibration:/home/andre/ros2_ws/install/get_body_reconstruction:/home/andre/ros2_ws/install/detection_person:/home/andre/ros2_ws/install/detection_human_ros:/home/andre/ros2_ws/install/detection_astra_camera:/home/andre/ros2_ws/install/detection_aruco:/opt/ros/humble')]), 'shell': False}
+[55.692348] (calib_correspondences) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[55.708855] (-) TimerEvent: {}
+[55.726035] (calib_correspondences) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/calib_correspondences/lib/calib_correspondences/image_cloud_reader\n'}
+[55.749845] (calib_correspondences) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/calib_correspondences/lib/calib_correspondences/image_cloud_reader" to ""\n'}
+[55.750848] (calib_correspondences) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/calib_correspondences/lib/calib_correspondences/corr_subscriber\n'}
+[55.754848] (calib_correspondences) StdoutLine: {'line': b'-- Set runtime path of "/home/andre/ros2_ws/install/calib_correspondences/lib/calib_correspondences/corr_subscriber" to ""\n'}
+[55.755451] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//launch\n'}
+[55.755849] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//launch/calibrate_corr_launch.xml\n'}
+[55.756112] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//launch/imgcloud2corr_launch.xml\n'}
+[55.756477] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//config\n'}
+[55.756646] (calib_correspondences) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//config/parameters.yaml\n'}
+[55.756773] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//config/params_usb0.yaml\n'}
+[55.756875] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences//config/params_usb1.yaml\n'}
+[55.756974] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/ament_index/resource_index/package_run_dependencies/calib_correspondences\n'}
+[55.757074] (calib_correspondences) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/calib_correspondences/share/ament_index/resource_index/parent_prefix_path/calib_correspondences\n'}
+[55.769816] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/environment/ament_prefix_path.sh\n'}
+[55.770124] (calib_correspondences) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/environment/ament_prefix_path.dsv\n'}
+[55.770344] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/environment/path.sh\n'}
+[55.770441] (calib_correspondences) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/environment/path.dsv\n'}
+[55.770640] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/local_setup.bash\n'}
+[55.770875] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/local_setup.sh\n'}
+[55.771030] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/local_setup.zsh\n'}
+[55.771165] (calib_correspondences) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/local_setup.dsv\n'}
+[55.771266] (calib_correspondences) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.dsv\n'}
+[55.771462] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/ament_index/resource_index/packages/calib_correspondences\n'}
+[55.771666] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/cmake/calib_correspondencesConfig.cmake\n'}
+[55.771817] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/cmake/calib_correspondencesConfig-version.cmake\n'}
+[55.771988] (calib_correspondences) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/calib_correspondences/share/calib_correspondences/package.xml\n'}
+[55.791725] (calib_correspondences) CommandEnded: {'returncode': 0}
+[55.809098] (-) TimerEvent: {}
+[55.909867] (-) TimerEvent: {}
+[56.010464] (-) TimerEvent: {}
+[56.110868] (-) TimerEvent: {}
+[56.131016] (calib_correspondences) JobEnded: {'identifier': 'calib_correspondences', 'rc': 0}
+[56.131812] (-) EventReactorShutdown: {}

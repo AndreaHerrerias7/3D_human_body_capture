@@ -1,3 +1,7 @@
+msg/ArticulationList.idl
+msg/ArticulationList.msg
+msg/Articulations.idl
+msg/Articulations.msg
 msg/Correspondences.idl
 msg/Correspondences.msg
 msg/Plane.idl

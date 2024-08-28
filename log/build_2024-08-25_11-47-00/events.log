@@ -1,0 +1,18 @@
+[0.000000] (-) TimerEvent: {}
+[0.000542] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.000782] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.000808] (-) JobUnselected: {'identifier': 'calib_correspondences'}
+[0.000829] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.000849] (-) JobUnselected: {'identifier': 'detection_aruco'}
+[0.000868] (-) JobUnselected: {'identifier': 'detection_person'}
+[0.000887] (-) JobUnselected: {'identifier': 'get_body_reconstruction'}
+[0.000905] (-) JobUnselected: {'identifier': 'my-test-package'}
+[0.000926] (obtain_data_calibration) JobQueued: {'identifier': 'obtain_data_calibration', 'dependencies': OrderedDict([('astra_camera_msgs', '/home/andre/ros2_ws/install/astra_camera_msgs'), ('detection_person', '/home/andre/ros2_ws/install/detection_person'), ('astra_camera', '/home/andre/ros2_ws/install/astra_camera')])}
+[0.000960] (obtain_data_calibration) JobStarted: {'identifier': 'obtain_data_calibration'}
+[0.099625] (-) TimerEvent: {}
+[0.199905] (-) TimerEvent: {}
+[0.300202] (-) TimerEvent: {}
+[0.400478] (-) TimerEvent: {}
+[0.458132] (obtain_data_calibration) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 51, in build\n    setup_py_data = get_setup_data(self.context.pkg, env)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 20, in get_setup_data\n    return dict(pkg.metadata[key](env))\n  File "/usr/lib/python3/dist-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 57, in getter\n    return get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 241, in get_setup_information\n    _setup_information_cache[hashable_env] = _get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 288, in _get_setup_information\n    result = subprocess.run(\n  File "/usr/lib/python3.10/subprocess.py", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'/usr/bin/python3\', \'-c\', \'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \\\'setup.py\\\', script_args=(\\\'--dry-run\\\',), stop_after=\\\'config\\\');skip_keys = (\\\'cmdclass\\\', \\\'distclass\\\', \\\'ext_modules\\\', \\\'metadata\\\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\\\'_\\\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\\\'metadata\\\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\\\'license_files\\\', \\\'provides_extras\\\')};sys.stdout.buffer.write(repr(data).encode(\\\'utf-8\\\'))\']\' returned non-zero exit status 1.\n'}
+[0.458802] (obtain_data_calibration) JobEnded: {'identifier': 'obtain_data_calibration', 'rc': 1}
+[0.469547] (-) EventReactorShutdown: {}

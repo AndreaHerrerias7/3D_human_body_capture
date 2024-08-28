@@ -78,6 +78,14 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/correspondence
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__builder.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/articulations.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulations__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulations__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulations__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/articulation_list.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__traits.hpp
 
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -97,6 +105,8 @@ rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/rosidl_gen
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/Plane.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/PlaneMatch.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/Correspondences.idl
+rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/Articulations.idl
+rosidl_generator_cpp/custom_msgs/msg/plane.hpp: rosidl_adapter/custom_msgs/msg/ArticulationList.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -124,6 +134,7 @@ rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_m
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/Vector3.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl
+rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -156,6 +167,8 @@ rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/std_msgs/m
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/custom_msgs/msg/plane.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/andre/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/andre/ros2_ws/build/custom_msgs/rosidl_generator_cpp__arguments.json
 
@@ -192,8 +205,40 @@ rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__struct.hpp: rosidl_
 rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__traits.hpp
 
+rosidl_generator_cpp/custom_msgs/msg/articulations.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/articulations.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/articulations__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/articulations__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/articulations__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/articulations__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/articulations__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/articulations__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/articulation_list.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/articulation_list.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/plane.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__traits.hpp
+
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/articulation_list.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/articulations.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/correspondences.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulation_list__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulations__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulations__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/articulations__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/correspondences__traits.hpp

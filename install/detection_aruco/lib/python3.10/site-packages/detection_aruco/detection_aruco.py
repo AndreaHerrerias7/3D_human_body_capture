@@ -11,7 +11,7 @@ from builtin_interfaces.msg import Time
 
 from custom_msgs.msg import Correspondences, Plane, PlaneMatch
 
-TH_TSTAMPS = 0.01
+TH_TSTAMPS = 3
 
 
 class CDetectedPlane():
@@ -134,7 +134,7 @@ class DetectionAruco(Node):
         self.publisher = self.create_publisher(Correspondences, '/custom_msgs/msg/correspondences', 10)
 
         # timer to send info every 5 secs
-        self.timer = self.create_timer(1.0, self.publisher_image)
+        self.timer = self.create_timer(6, self.publisher_image)
 
 
 
@@ -191,8 +191,8 @@ class DetectionAruco(Node):
 
                 #self.get_logger().info(f'Matriz rotación Rodrigues, {rvecs_matrix}')
                 normal = rvecs_matrix[:, 2]
-                self.get_logger().info(f'Matriz rotación Rodrigues, {rvecs_matrix}')
-                self.get_logger().info(f'Matriz rotación Rodrigues, {normal}')
+                #self.get_logger().info(f'Matriz rotación Rodrigues, {rvecs_matrix}')
+                #self.get_logger().info(f'Matriz rotación Rodrigues, {normal}')
 
                 # Calcular la distancia mínima desde la cámara hasta el plano
                 distance = calculate_distance_to_plane(tvecs, normal)

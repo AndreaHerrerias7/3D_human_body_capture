@@ -1,0 +1,34 @@
+[1.017s] Invoking command in '/home/andre/ros2_ws/src/get_body_reconstruction': PYTHONPATH=/home/andre/ros2_ws/build/get_body_reconstruction/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/get_body_reconstruction/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/get_body_reconstruction build --build-base /home/andre/ros2_ws/build/get_body_reconstruction/build install --record /home/andre/ros2_ws/build/get_body_reconstruction/install.log --single-version-externally-managed install_data
+[1.352s] running egg_info
+[1.353s] creating ../../build/get_body_reconstruction/get_body_reconstruction.egg-info
+[1.354s] writing ../../build/get_body_reconstruction/get_body_reconstruction.egg-info/PKG-INFO
+[1.354s] writing dependency_links to ../../build/get_body_reconstruction/get_body_reconstruction.egg-info/dependency_links.txt
+[1.355s] writing entry points to ../../build/get_body_reconstruction/get_body_reconstruction.egg-info/entry_points.txt
+[1.355s] writing requirements to ../../build/get_body_reconstruction/get_body_reconstruction.egg-info/requires.txt
+[1.355s] writing top-level names to ../../build/get_body_reconstruction/get_body_reconstruction.egg-info/top_level.txt
+[1.355s] writing manifest file '../../build/get_body_reconstruction/get_body_reconstruction.egg-info/SOURCES.txt'
+[1.358s] reading manifest file '../../build/get_body_reconstruction/get_body_reconstruction.egg-info/SOURCES.txt'
+[1.358s] adding license file 'LICENSE'
+[1.360s] writing manifest file '../../build/get_body_reconstruction/get_body_reconstruction.egg-info/SOURCES.txt'
+[1.360s] running build
+[1.360s] running build_py
+[1.360s] creating /home/andre/ros2_ws/build/get_body_reconstruction/build
+[1.360s] creating /home/andre/ros2_ws/build/get_body_reconstruction/build/lib
+[1.361s] creating /home/andre/ros2_ws/build/get_body_reconstruction/build/lib/get_body_reconstruction
+[1.361s] copying get_body_reconstruction/__init__.py -> /home/andre/ros2_ws/build/get_body_reconstruction/build/lib/get_body_reconstruction
+[1.361s] running install
+[1.361s] running install_lib
+[1.364s] creating /home/andre/ros2_ws/install/get_body_reconstruction/lib/python3.10/site-packages/get_body_reconstruction
+[1.364s] copying /home/andre/ros2_ws/build/get_body_reconstruction/build/lib/get_body_reconstruction/__init__.py -> /home/andre/ros2_ws/install/get_body_reconstruction/lib/python3.10/site-packages/get_body_reconstruction
+[1.365s] byte-compiling /home/andre/ros2_ws/install/get_body_reconstruction/lib/python3.10/site-packages/get_body_reconstruction/__init__.py to __init__.cpython-310.pyc
+[1.365s] running install_data
+[1.366s] creating /home/andre/ros2_ws/install/get_body_reconstruction/share/ament_index
+[1.366s] creating /home/andre/ros2_ws/install/get_body_reconstruction/share/ament_index/resource_index
+[1.366s] creating /home/andre/ros2_ws/install/get_body_reconstruction/share/ament_index/resource_index/packages
+[1.366s] copying resource/get_body_reconstruction -> /home/andre/ros2_ws/install/get_body_reconstruction/share/ament_index/resource_index/packages
+[1.366s] copying package.xml -> /home/andre/ros2_ws/install/get_body_reconstruction/share/get_body_reconstruction
+[1.366s] running install_egg_info
+[1.369s] Copying ../../build/get_body_reconstruction/get_body_reconstruction.egg-info to /home/andre/ros2_ws/install/get_body_reconstruction/lib/python3.10/site-packages/get_body_reconstruction-0.0.0-py3.10.egg-info
+[1.370s] running install_scripts
+[1.399s] writing list of installed files to '/home/andre/ros2_ws/build/get_body_reconstruction/install.log'
+[1.433s] Invoked command in '/home/andre/ros2_ws/src/get_body_reconstruction' returned '0': PYTHONPATH=/home/andre/ros2_ws/build/get_body_reconstruction/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/get_body_reconstruction/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/get_body_reconstruction build --build-base /home/andre/ros2_ws/build/get_body_reconstruction/build install --record /home/andre/ros2_ws/build/get_body_reconstruction/install.log --single-version-externally-managed install_data
