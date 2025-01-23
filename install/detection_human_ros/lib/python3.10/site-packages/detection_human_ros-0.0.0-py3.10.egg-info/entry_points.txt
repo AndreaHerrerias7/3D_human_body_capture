@@ -1,3 +1,0 @@
-[console_scripts]
-obtain_human = detection_human_ros.detection_human:main
-

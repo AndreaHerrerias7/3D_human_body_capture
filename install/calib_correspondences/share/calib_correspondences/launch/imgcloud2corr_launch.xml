@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-	<node pkg="calib_correspondences" exec="image_cloud_reader" name="imagecloud2correspondences" output="screen"> 
-	
-	</node>
-
-</launch>

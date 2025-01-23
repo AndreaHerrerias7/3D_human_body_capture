@@ -1,0 +1,47 @@
+# Ignorar archivos de Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar entornos virtuales
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignorar archivos de configuración de IDEs (si usas alguno)
+.vscode/
+.idea/
+
+# Ignorar archivos de configuración de editor de texto
+*.swp
+*~
+*.bak
+
+# Ignorar archivos de distribución de Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+pip-wheel-metadata/
+
+# Ignorar archivos de instalación
+*.log
+
+# Ignorar dependencias de pruebas
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+
+# Ignorar configuraciones de Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Ignorar archivos de configuración de pytest
+pytest.ini

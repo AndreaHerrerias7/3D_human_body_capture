@@ -1,5 +1,0 @@
-  File "/home/andre/ros2_ws/install/get_body_reconstruction/lib/python3.10/site-packages/get_body_reconstruction/get_body_reconstruction.py", line 89
-    self.get_logger().info(f'Usando id {point_id} punto de cámara 1 y 2: {self.points_c1[point_id]['coordinates']} y {self.points_c2[point_id]["coordinates"]} con visibilidad {visibility_c1} y {visibility_c2}')
-                                                                                                     ^^^^^^^^^^^
-SyntaxError: f-string: unmatched '['
-

@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-	<node pkg="calib_correspondences" exec="rosbag_reader" name="clouds2correspondences" output="screen">
-	
-	</node>
-
-</launch>

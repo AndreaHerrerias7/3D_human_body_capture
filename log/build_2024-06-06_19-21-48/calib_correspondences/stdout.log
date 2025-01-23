@@ -1,3 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target image_cloud_reader[0m
-[ 50%] Built target corr_subscriber
-[ 60%] [32mBuilding CXX object CMakeFiles/image_cloud_reader.dir/src/ImageCloud2Correspondences.cpp.o[0m

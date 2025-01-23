@@ -1,3 +1,0 @@
-[console_scripts]
-obtain_data_astra = detection_astra_camera.obtain_data_astra:main
-

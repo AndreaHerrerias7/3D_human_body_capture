@@ -1,3 +1,0 @@
-[console_scripts]
-obtain_person = detection_person.detection_person:main
-

@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target image_cloud_reader[0m
-[ 50%] Built target image_cloud_reader
-[35m[1mConsolidate compiler generated dependencies of target corr_subscriber[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/corr_subscriber.dir/src/Calibration.cpp.o[0m

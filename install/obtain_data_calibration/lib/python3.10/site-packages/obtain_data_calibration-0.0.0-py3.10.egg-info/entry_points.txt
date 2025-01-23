@@ -1,3 +1,0 @@
-[console_scripts]
-obtain_calibration = obtain_data_calibration.obtain_data_calibration:main
-
